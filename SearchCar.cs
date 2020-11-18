@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace _291GroupProject
 {
-    public partial class Form1 : Form
+    public partial class SearchCar : Form
     {
-        public Form1()
+        public SearchCar()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
