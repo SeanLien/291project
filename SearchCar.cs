@@ -26,5 +26,12 @@ namespace _291GroupProject
         {
 
         }
+
+        private void SearchBackButton_Click(object sender, EventArgs e)
+        {
+            var newForm = new MainMenu();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }

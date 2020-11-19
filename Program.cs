@@ -16,7 +16,7 @@ namespace _291GroupProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SearchCar());
+            Application.Run(new MainMenu());
         }
     }
 }

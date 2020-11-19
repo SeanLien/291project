@@ -52,6 +52,7 @@ namespace _291GroupProject
             this.label11 = new System.Windows.Forms.Label();
             this.IdBox = new System.Windows.Forms.TextBox();
             this.ConfirmButton = new System.Windows.Forms.Button();
+            this.AddAccountBackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -266,11 +267,22 @@ namespace _291GroupProject
             this.ConfirmButton.Text = "Confirm";
             this.ConfirmButton.UseVisualStyleBackColor = true;
             // 
+            // AddAccountBackButton
+            // 
+            this.AddAccountBackButton.Location = new System.Drawing.Point(4, 13);
+            this.AddAccountBackButton.Name = "AddAccountBackButton";
+            this.AddAccountBackButton.Size = new System.Drawing.Size(85, 26);
+            this.AddAccountBackButton.TabIndex = 23;
+            this.AddAccountBackButton.Text = "Back";
+            this.AddAccountBackButton.UseVisualStyleBackColor = true;
+            this.AddAccountBackButton.Click += new System.EventHandler(this.AddAccountBackButton_Click);
+            // 
             // AddAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 797);
+            this.Controls.Add(this.AddAccountBackButton);
             this.Controls.Add(this.ConfirmButton);
             this.Controls.Add(this.IdBox);
             this.Controls.Add(this.label11);
@@ -295,7 +307,7 @@ namespace _291GroupProject
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddAccount";
-            this.Text = "Form1";
+            this.Text = "AddAccountForm";
             this.Load += new System.EventHandler(this.AddAccount_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -327,5 +339,6 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox IdBox;
         private System.Windows.Forms.Button ConfirmButton;
+        private System.Windows.Forms.Button AddAccountBackButton;
     }
 }

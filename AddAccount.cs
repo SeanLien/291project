@@ -46,5 +46,12 @@ namespace _291GroupProject
         {
 
         }
+
+        private void AddAccountBackButton_Click(object sender, EventArgs e)
+        {
+            var newForm = new MainMenu();
+            newForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -56,6 +56,11 @@ namespace _291GroupProject
             this.GreenButton = new System.Windows.Forms.Button();
             this.BlueButton = new System.Windows.Forms.Button();
             this.PurpleButton = new System.Windows.Forms.Button();
+            this.SearchBackButton = new System.Windows.Forms.Button();
+            this.RentButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -306,11 +311,64 @@ namespace _291GroupProject
             this.PurpleButton.TabIndex = 26;
             this.PurpleButton.UseVisualStyleBackColor = false;
             // 
+            // SearchBackButton
+            // 
+            this.SearchBackButton.Location = new System.Drawing.Point(13, 4);
+            this.SearchBackButton.Name = "SearchBackButton";
+            this.SearchBackButton.Size = new System.Drawing.Size(86, 27);
+            this.SearchBackButton.TabIndex = 27;
+            this.SearchBackButton.Text = "Back";
+            this.SearchBackButton.UseVisualStyleBackColor = true;
+            this.SearchBackButton.Click += new System.EventHandler(this.SearchBackButton_Click);
+            // 
+            // RentButton
+            // 
+            this.RentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RentButton.ForeColor = System.Drawing.Color.Black;
+            this.RentButton.Location = new System.Drawing.Point(718, 660);
+            this.RentButton.Name = "RentButton";
+            this.RentButton.Size = new System.Drawing.Size(244, 79);
+            this.RentButton.TabIndex = 28;
+            this.RentButton.Text = "RENT";
+            this.RentButton.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(500, 497);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(131, 13);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Car Name, model, Number";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(383, 540);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(329, 13);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Current location (Branch) (User can choose a branch and see stock)";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(500, 521);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 13);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "Prices (day, week, month)";
+            // 
             // SearchCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1035, 742);
+            this.ClientSize = new System.Drawing.Size(1035, 780);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.RentButton);
+            this.Controls.Add(this.SearchBackButton);
             this.Controls.Add(this.PurpleButton);
             this.Controls.Add(this.BlueButton);
             this.Controls.Add(this.GreenButton);
@@ -340,7 +398,7 @@ namespace _291GroupProject
             this.Controls.Add(this.SearchCarBox);
             this.ForeColor = System.Drawing.Color.DarkBlue;
             this.Name = "SearchCar";
-            this.Text = "Form1";
+            this.Text = "SearchCarForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -382,6 +440,11 @@ namespace _291GroupProject
         private System.Windows.Forms.Button GreenButton;
         private System.Windows.Forms.Button BlueButton;
         private System.Windows.Forms.Button PurpleButton;
+        private System.Windows.Forms.Button SearchBackButton;
+        private System.Windows.Forms.Button RentButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
