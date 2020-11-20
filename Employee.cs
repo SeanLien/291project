@@ -25,5 +25,10 @@ namespace _291GroupProject
         private void tabPage2_Click(object sender, EventArgs e)
         {
                     }
+
+        private void Employee_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

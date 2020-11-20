@@ -19,7 +19,8 @@ namespace _291GroupProject
 
         private void EmployeeButton_Click(object sender, EventArgs e)
         {
-            
+            Employee employee1 = new Employee();
+            employee1.ShowDialog();
           
         }
 
