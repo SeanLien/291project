@@ -116,6 +116,31 @@ namespace _291GroupProject
             this.label30 = new System.Windows.Forms.Label();
             this.textBox30 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label44 = new System.Windows.Forms.Label();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.prev_rental.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -123,11 +148,14 @@ namespace _291GroupProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // prev_rental
             // 
             this.prev_rental.Controls.Add(this.tabPage1);
+            this.prev_rental.Controls.Add(this.tabPage4);
             this.prev_rental.Controls.Add(this.tabPage2);
             this.prev_rental.Controls.Add(this.tabPage3);
             this.prev_rental.Location = new System.Drawing.Point(17, 16);
@@ -925,6 +953,235 @@ namespace _291GroupProject
             this.label31.TabIndex = 35;
             this.label31.Text = "Branch ID";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.button9);
+            this.tabPage4.Controls.Add(this.textBox36);
+            this.tabPage4.Controls.Add(this.label47);
+            this.tabPage4.Controls.Add(this.dateTimePicker3);
+            this.tabPage4.Controls.Add(this.textBox37);
+            this.tabPage4.Controls.Add(this.label43);
+            this.tabPage4.Controls.Add(this.dateTimePicker1);
+            this.tabPage4.Controls.Add(this.label44);
+            this.tabPage4.Controls.Add(this.textBox38);
+            this.tabPage4.Controls.Add(this.label45);
+            this.tabPage4.Controls.Add(this.label46);
+            this.tabPage4.Controls.Add(this.textBox29);
+            this.tabPage4.Controls.Add(this.label38);
+            this.tabPage4.Controls.Add(this.textBox32);
+            this.tabPage4.Controls.Add(this.label39);
+            this.tabPage4.Controls.Add(this.pictureBox4);
+            this.tabPage4.Controls.Add(this.button8);
+            this.tabPage4.Controls.Add(this.button7);
+            this.tabPage4.Controls.Add(this.textBox33);
+            this.tabPage4.Controls.Add(this.label40);
+            this.tabPage4.Controls.Add(this.textBox34);
+            this.tabPage4.Controls.Add(this.label41);
+            this.tabPage4.Controls.Add(this.textBox35);
+            this.tabPage4.Controls.Add(this.label42);
+            this.tabPage4.Location = new System.Drawing.Point(8, 39);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1395, 809);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Create New Rental";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // textBox29
+            // 
+            this.textBox29.Location = new System.Drawing.Point(482, 490);
+            this.textBox29.Name = "textBox29";
+            this.textBox29.Size = new System.Drawing.Size(215, 31);
+            this.textBox29.TabIndex = 23;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(292, 493);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(113, 25);
+            this.label38.TabIndex = 22;
+            this.label38.Text = "Daily price";
+            // 
+            // textBox32
+            // 
+            this.textBox32.Location = new System.Drawing.Point(482, 438);
+            this.textBox32.Name = "textBox32";
+            this.textBox32.Size = new System.Drawing.Size(215, 31);
+            this.textBox32.TabIndex = 21;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(292, 441);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(100, 25);
+            this.label39.TabIndex = 20;
+            this.label39.Text = "Car Type";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Location = new System.Drawing.Point(75, 438);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(165, 161);
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(69, 322);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(273, 52);
+            this.button7.TabIndex = 18;
+            this.button7.Text = "View Available cars";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // textBox33
+            // 
+            this.textBox33.Location = new System.Drawing.Point(803, 122);
+            this.textBox33.Name = "textBox33";
+            this.textBox33.Size = new System.Drawing.Size(277, 31);
+            this.textBox33.TabIndex = 17;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(615, 122);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(116, 25);
+            this.label40.TabIndex = 16;
+            this.label40.Text = "First Name";
+            // 
+            // textBox34
+            // 
+            this.textBox34.Location = new System.Drawing.Point(256, 119);
+            this.textBox34.Name = "textBox34";
+            this.textBox34.Size = new System.Drawing.Size(277, 31);
+            this.textBox34.TabIndex = 15;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(66, 122);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(115, 25);
+            this.label41.TabIndex = 14;
+            this.label41.Text = "Last Name";
+            // 
+            // textBox35
+            // 
+            this.textBox35.Location = new System.Drawing.Point(256, 60);
+            this.textBox35.Name = "textBox35";
+            this.textBox35.Size = new System.Drawing.Size(277, 31);
+            this.textBox35.TabIndex = 13;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(66, 63);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(100, 25);
+            this.label42.TabIndex = 12;
+            this.label42.Text = "Rental ID";
+            // 
+            // textBox37
+            // 
+            this.textBox37.Location = new System.Drawing.Point(805, 253);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.Size = new System.Drawing.Size(277, 31);
+            this.textBox37.TabIndex = 33;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(615, 256);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(150, 25);
+            this.label43.TabIndex = 32;
+            this.label43.Text = "Return Branch";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(805, 183);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(275, 31);
+            this.dateTimePicker1.TabIndex = 31;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(615, 183);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(127, 25);
+            this.label44.TabIndex = 30;
+            this.label44.Text = "Return Date";
+            // 
+            // textBox38
+            // 
+            this.textBox38.Location = new System.Drawing.Point(254, 253);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.Size = new System.Drawing.Size(277, 31);
+            this.textBox38.TabIndex = 29;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(64, 256);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(151, 25);
+            this.label45.TabIndex = 28;
+            this.label45.Text = "Pickup Branch";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(64, 183);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(128, 25);
+            this.label46.TabIndex = 27;
+            this.label46.Text = "Pickup Date";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Location = new System.Drawing.Point(254, 183);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(275, 31);
+            this.dateTimePicker3.TabIndex = 34;
+            // 
+            // textBox36
+            // 
+            this.textBox36.Location = new System.Drawing.Point(256, 655);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.Size = new System.Drawing.Size(277, 31);
+            this.textBox36.TabIndex = 38;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(66, 658);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(146, 25);
+            this.label47.TabIndex = 37;
+            this.label47.Text = "Etimated Cost";
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(643, 631);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(273, 52);
+            this.button8.TabIndex = 18;
+            this.button8.Text = "Print Estimate";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(976, 631);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(273, 52);
+            this.button9.TabIndex = 39;
+            this.button9.Text = "Email Estimate";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -944,6 +1201,9 @@ namespace _291GroupProject
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1037,5 +1297,30 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.TextBox textBox36;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.Label label42;
     }
 }
