@@ -40,7 +40,7 @@ namespace _291GroupProject
             this.EmployeeButton.Name = "EmployeeButton";
             this.EmployeeButton.Size = new System.Drawing.Size(154, 94);
             this.EmployeeButton.TabIndex = 0;
-            this.EmployeeButton.Text = "EmployeeTest";
+            this.EmployeeButton.Text = "Employee";
             this.EmployeeButton.UseVisualStyleBackColor = true;
             this.EmployeeButton.Click += new System.EventHandler(this.EmployeeButton_Click);
             // 

@@ -53,5 +53,10 @@ namespace _291GroupProject
             newForm.Show();
             this.Hide();
         }
+
+        private void ZipBox_TextChanged(object sender, EventArgs e)
+        {
+        
+        }
     }
 }

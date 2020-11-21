@@ -217,6 +217,7 @@ namespace _291GroupProject
             this.ZipBox.Size = new System.Drawing.Size(161, 20);
             this.ZipBox.TabIndex = 17;
             this.ZipBox.Text = "ZIP/Postal Code";
+            this.ZipBox.TextChanged += new System.EventHandler(this.ZipBox_TextChanged);
             // 
             // label9
             // 
