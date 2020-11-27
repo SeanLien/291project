@@ -212,7 +212,11 @@ namespace _291GroupProject
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            myCommand.CommandText = "select * from Employee";
+        }
+
+        private void button4_Click_2(object sender, EventArgs e)
+        {
+            myCommand.CommandText = "select * from customer";
 
             try
             {
@@ -222,7 +226,122 @@ namespace _291GroupProject
                 dataGridView1.Rows.Clear();
                 while (myReader.Read())
                 {
-                    dataGridView1.Rows.Add(myReader["Employee_ID"].ToString(), myReader["first_name"].ToString(), myReader["middle_initial"].ToString(), myReader["last_name"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
+                    dataGridView1.Rows.Add(myReader["Customer_ID"].ToString(), myReader["first_name"].ToString(), myReader["last_name"].ToString(), myReader["middle_initial"].ToString(), myReader["membershilp"].ToString(),  myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["apt_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
+                }
+
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            myCommand.CommandText = "select * from Car";
+
+            try
+            {
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+
+                dataGridView5.Rows.Clear();
+                while (myReader.Read())
+                {
+                    dataGridView5.Rows.Add(myReader["VIN"].ToString(), myReader["Color"].ToString(), myReader["Model"].ToString(), myReader["Family"].ToString(), myReader["Branch_ID"].ToString());
+                }
+
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+            }
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            myCommand.CommandText = "select * from Car_type";
+
+            try
+            {
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+
+                dataGridView4.Rows.Clear();
+                while (myReader.Read())
+                {
+                    dataGridView4.Rows.Add(myReader["Family"].ToString(), myReader["price_D"].ToString(), myReader["price_W"].ToString(), myReader["priceM"].ToString());
+                }
+
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            myCommand.CommandText = "select * from Branch";
+
+            try
+            {
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+
+                dataGridView3.Rows.Clear();
+                while (myReader.Read())
+                {
+                    dataGridView3.Rows.Add(myReader["Branch_ID"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
+                }
+
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            myCommand.CommandText = "select * from Employee";
+
+            try
+            {
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+
+                dataGridView2.Rows.Clear();
+                while (myReader.Read())
+                {
+                    dataGridView2.Rows.Add(myReader["Employee_ID"].ToString(), myReader["first_name"].ToString(), myReader["middle_initial"].ToString(), myReader["last_name"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
+                }
+
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+            }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            myCommand.CommandText = "select * from Rental_trans";
+
+            try
+            {
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+
+                dataGridView6.Rows.Clear();
+                while (myReader.Read())
+                {
+                    dataGridView6.Rows.Add(myReader["Rental_ID"].ToString(), myReader["S_date"].ToString(), myReader["E_date"].ToString(), myReader["price"].ToString(), myReader["returnDate"].ToString(), myReader["Customer_ID"].ToString(), myReader["Employee_ID"].ToString(), myReader["pickup_Branch_ID"].ToString(), myReader["return_Branch_ID"].ToString(), myReader["VIN"].ToString());
                 }
 
                 myReader.Close();
