@@ -95,6 +95,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -158,6 +159,54 @@
     <Content Include="pictures\truck\truck_4.png" />
     <Content Include="pictures\truck\truck_5.png" />
     <Content Include="pictures\truck\truck_6.png" />
+    <None Include="Resources\compact_6.png" />
+    <None Include="Resources\compact_5.png" />
+    <None Include="Resources\compact_4.png" />
+    <None Include="Resources\compact_3.png" />
+    <None Include="Resources\compact_2.png" />
+    <None Include="Resources\compact_1.png" />
+    <None Include="Resources\convertible_6.png" />
+    <None Include="Resources\convertible_5.png" />
+    <None Include="Resources\convertible_4.png" />
+    <None Include="Resources\convertible_3.png" />
+    <None Include="Resources\convertible_2.png" />
+    <None Include="Resources\convertible_1.png" />
+    <None Include="Resources\hybrid_6.png" />
+    <None Include="Resources\hybrid_5.png" />
+    <None Include="Resources\hybrid_4.png" />
+    <None Include="Resources\hybrid_3.png" />
+    <None Include="Resources\hybrid_2.png" />
+    <None Include="Resources\hybrid_1.png" />
+    <None Include="Resources\jeep_1.png" />
+    <None Include="Resources\jeep_6.png" />
+    <None Include="Resources\jeep_5.png" />
+    <None Include="Resources\jeep_4.png" />
+    <None Include="Resources\jeep_3.png" />
+    <None Include="Resources\jeep_2.png" />
+    <None Include="Resources\sedan_6.png" />
+    <None Include="Resources\sedan_5.png" />
+    <None Include="Resources\sedan_4.png" />
+    <None Include="Resources\sedan_3.png" />
+    <None Include="Resources\sedan_2.png" />
+    <None Include="Resources\sedan_1.png" />
+    <None Include="Resources\sports_6.png" />
+    <None Include="Resources\sports_5.png" />
+    <None Include="Resources\sports_4.png" />
+    <None Include="Resources\sports_3.png" />
+    <None Include="Resources\sports_2.png" />
+    <None Include="Resources\sports_1.png" />
+    <None Include="Resources\suv_6.png" />
+    <None Include="Resources\suv_5.png" />
+    <None Include="Resources\suv_4.png" />
+    <None Include="Resources\suv_3.png" />
+    <None Include="Resources\suv_2.png" />
+    <None Include="Resources\suv_1.png" />
+    <None Include="Resources\truck_6.png" />
+    <None Include="Resources\truck_5.png" />
+    <None Include="Resources\truck_4.png" />
+    <None Include="Resources\truck_3.png" />
+    <None Include="Resources\truck_1.png" />
+    <None Include="Resources\truck_2.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
