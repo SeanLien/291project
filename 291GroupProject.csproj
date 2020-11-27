@@ -109,5 +109,56 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="pictures\compact\compact_1.png" />
+    <Content Include="pictures\compact\compact_2.png" />
+    <Content Include="pictures\compact\compact_3.png" />
+    <Content Include="pictures\compact\compact_4.png" />
+    <Content Include="pictures\compact\compact_5.png" />
+    <Content Include="pictures\compact\compact_6.png" />
+    <Content Include="pictures\convertible\convertible_1.png" />
+    <Content Include="pictures\convertible\convertible_2.png" />
+    <Content Include="pictures\convertible\convertible_3.png" />
+    <Content Include="pictures\convertible\convertible_4.png" />
+    <Content Include="pictures\convertible\convertible_5.png" />
+    <Content Include="pictures\convertible\convertible_6.png" />
+    <Content Include="pictures\hybrid\hybrid_1.png" />
+    <Content Include="pictures\hybrid\hybrid_2.png" />
+    <Content Include="pictures\hybrid\hybrid_3.png" />
+    <Content Include="pictures\hybrid\hybrid_4.png" />
+    <Content Include="pictures\hybrid\hybrid_5.png" />
+    <Content Include="pictures\hybrid\hybrid_6.png" />
+    <Content Include="pictures\jeep\jeep_1.png" />
+    <Content Include="pictures\jeep\jeep_2.png" />
+    <Content Include="pictures\jeep\jeep_3.png" />
+    <Content Include="pictures\jeep\jeep_4.png" />
+    <Content Include="pictures\jeep\jeep_5.png" />
+    <Content Include="pictures\jeep\jeep_6.png" />
+    <Content Include="pictures\sedan\sedan_1.png" />
+    <Content Include="pictures\sedan\sedan_2.png" />
+    <Content Include="pictures\sedan\sedan_3.png" />
+    <Content Include="pictures\sedan\sedan_4.png" />
+    <Content Include="pictures\sedan\sedan_5.png" />
+    <Content Include="pictures\sedan\sedan_6.png" />
+    <Content Include="pictures\sports\sports_1.png" />
+    <Content Include="pictures\sports\sports_2.png" />
+    <Content Include="pictures\sports\sports_3.png" />
+    <Content Include="pictures\sports\sports_4.png" />
+    <Content Include="pictures\sports\sports_5.png" />
+    <Content Include="pictures\sports\sports_6.png" />
+    <Content Include="pictures\suv\suv_1.png" />
+    <Content Include="pictures\suv\suv_2.png" />
+    <Content Include="pictures\suv\suv_3.png" />
+    <Content Include="pictures\suv\suv_4.png" />
+    <Content Include="pictures\suv\suv_5.png" />
+    <Content Include="pictures\suv\suv_6.png" />
+    <Content Include="pictures\truck\truck_1.png" />
+    <Content Include="pictures\truck\truck_2.png" />
+    <Content Include="pictures\truck\truck_3.png" />
+    <Content Include="pictures\truck\truck_4.png" />
+    <Content Include="pictures\truck\truck_5.png" />
+    <Content Include="pictures\truck\truck_6.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

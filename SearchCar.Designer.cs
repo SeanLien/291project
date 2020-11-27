@@ -73,138 +73,154 @@ namespace _291GroupProject
             // SearchCarBox
             // 
             this.SearchCarBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchCarBox.Location = new System.Drawing.Point(58, 49);
+            this.SearchCarBox.Location = new System.Drawing.Point(77, 60);
+            this.SearchCarBox.Margin = new System.Windows.Forms.Padding(4);
             this.SearchCarBox.Name = "SearchCarBox";
-            this.SearchCarBox.Size = new System.Drawing.Size(904, 27);
+            this.SearchCarBox.Size = new System.Drawing.Size(1204, 32);
             this.SearchCarBox.TabIndex = 0;
             this.SearchCarBox.Text = "Search";
             // 
             // TruckButton
             // 
-            this.TruckButton.Location = new System.Drawing.Point(33, 117);
+            this.TruckButton.Location = new System.Drawing.Point(44, 144);
+            this.TruckButton.Margin = new System.Windows.Forms.Padding(4);
             this.TruckButton.Name = "TruckButton";
-            this.TruckButton.Size = new System.Drawing.Size(75, 23);
+            this.TruckButton.Size = new System.Drawing.Size(100, 28);
             this.TruckButton.TabIndex = 1;
             this.TruckButton.Text = "Truck";
             this.TruckButton.UseVisualStyleBackColor = true;
             // 
             // SUVbutton
             // 
-            this.SUVbutton.Location = new System.Drawing.Point(152, 117);
+            this.SUVbutton.Location = new System.Drawing.Point(203, 144);
+            this.SUVbutton.Margin = new System.Windows.Forms.Padding(4);
             this.SUVbutton.Name = "SUVbutton";
-            this.SUVbutton.Size = new System.Drawing.Size(75, 23);
+            this.SUVbutton.Size = new System.Drawing.Size(100, 28);
             this.SUVbutton.TabIndex = 2;
             this.SUVbutton.Text = "SUV";
             this.SUVbutton.UseVisualStyleBackColor = true;
             // 
             // SedanButton
             // 
-            this.SedanButton.Location = new System.Drawing.Point(280, 117);
+            this.SedanButton.Location = new System.Drawing.Point(373, 144);
+            this.SedanButton.Margin = new System.Windows.Forms.Padding(4);
             this.SedanButton.Name = "SedanButton";
-            this.SedanButton.Size = new System.Drawing.Size(75, 23);
+            this.SedanButton.Size = new System.Drawing.Size(100, 28);
             this.SedanButton.TabIndex = 3;
             this.SedanButton.Text = "Sedan";
             this.SedanButton.UseVisualStyleBackColor = true;
             // 
             // JeepButton
             // 
-            this.JeepButton.Location = new System.Drawing.Point(412, 117);
+            this.JeepButton.Location = new System.Drawing.Point(549, 144);
+            this.JeepButton.Margin = new System.Windows.Forms.Padding(4);
             this.JeepButton.Name = "JeepButton";
-            this.JeepButton.Size = new System.Drawing.Size(75, 23);
+            this.JeepButton.Size = new System.Drawing.Size(100, 28);
             this.JeepButton.TabIndex = 4;
             this.JeepButton.Text = "Jeep";
             this.JeepButton.UseVisualStyleBackColor = true;
             // 
             // SportsCarButton
             // 
-            this.SportsCarButton.Location = new System.Drawing.Point(538, 117);
+            this.SportsCarButton.Location = new System.Drawing.Point(717, 144);
+            this.SportsCarButton.Margin = new System.Windows.Forms.Padding(4);
             this.SportsCarButton.Name = "SportsCarButton";
-            this.SportsCarButton.Size = new System.Drawing.Size(75, 23);
+            this.SportsCarButton.Size = new System.Drawing.Size(100, 28);
             this.SportsCarButton.TabIndex = 5;
             this.SportsCarButton.Text = "Sports Car";
             this.SportsCarButton.UseVisualStyleBackColor = true;
             // 
             // HybridButton
             // 
-            this.HybridButton.Location = new System.Drawing.Point(660, 117);
+            this.HybridButton.Location = new System.Drawing.Point(880, 144);
+            this.HybridButton.Margin = new System.Windows.Forms.Padding(4);
             this.HybridButton.Name = "HybridButton";
-            this.HybridButton.Size = new System.Drawing.Size(75, 23);
+            this.HybridButton.Size = new System.Drawing.Size(100, 28);
             this.HybridButton.TabIndex = 6;
             this.HybridButton.Text = "Hybrid";
             this.HybridButton.UseVisualStyleBackColor = true;
             // 
             // CompactButton
             // 
-            this.CompactButton.Location = new System.Drawing.Point(779, 117);
+            this.CompactButton.Location = new System.Drawing.Point(1039, 144);
+            this.CompactButton.Margin = new System.Windows.Forms.Padding(4);
             this.CompactButton.Name = "CompactButton";
-            this.CompactButton.Size = new System.Drawing.Size(75, 23);
+            this.CompactButton.Size = new System.Drawing.Size(100, 28);
             this.CompactButton.TabIndex = 7;
             this.CompactButton.Text = "Compact";
             this.CompactButton.UseVisualStyleBackColor = true;
             // 
             // ConvertibleButton
             // 
-            this.ConvertibleButton.Location = new System.Drawing.Point(909, 117);
+            this.ConvertibleButton.Location = new System.Drawing.Point(1212, 144);
+            this.ConvertibleButton.Margin = new System.Windows.Forms.Padding(4);
             this.ConvertibleButton.Name = "ConvertibleButton";
-            this.ConvertibleButton.Size = new System.Drawing.Size(75, 23);
+            this.ConvertibleButton.Size = new System.Drawing.Size(100, 28);
             this.ConvertibleButton.TabIndex = 8;
             this.ConvertibleButton.Text = "Convertible";
             this.ConvertibleButton.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(48, 259);
+            this.pictureBox1.Location = new System.Drawing.Point(64, 319);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(133, 62);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(188, 259);
+            this.pictureBox2.Location = new System.Drawing.Point(251, 319);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(133, 62);
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(48, 420);
+            this.pictureBox3.Location = new System.Drawing.Point(64, 517);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(133, 62);
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(188, 420);
+            this.pictureBox4.Location = new System.Drawing.Point(251, 517);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(133, 62);
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(48, 578);
+            this.pictureBox5.Location = new System.Drawing.Point(64, 711);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox5.Size = new System.Drawing.Size(133, 62);
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(188, 578);
+            this.pictureBox6.Location = new System.Drawing.Point(251, 711);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox6.Size = new System.Drawing.Size(133, 62);
             this.pictureBox6.TabIndex = 14;
             this.pictureBox6.TabStop = false;
             // 
             // SelectedCarImage
             // 
-            this.SelectedCarImage.Location = new System.Drawing.Point(635, 215);
+            this.SelectedCarImage.Location = new System.Drawing.Point(847, 265);
+            this.SelectedCarImage.Margin = new System.Windows.Forms.Padding(4);
             this.SelectedCarImage.Name = "SelectedCarImage";
-            this.SelectedCarImage.Size = new System.Drawing.Size(369, 175);
+            this.SelectedCarImage.Size = new System.Drawing.Size(492, 215);
             this.SelectedCarImage.TabIndex = 15;
             this.SelectedCarImage.TabStop = false;
             // 
@@ -214,9 +230,10 @@ namespace _291GroupProject
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(743, 445);
+            this.label1.Location = new System.Drawing.Point(991, 548);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(149, 24);
+            this.label1.Size = new System.Drawing.Size(192, 29);
             this.label1.TabIndex = 16;
             this.label1.Text = "Colour Selection";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -224,98 +241,119 @@ namespace _291GroupProject
             // RedButton
             // 
             this.RedButton.BackColor = System.Drawing.Color.Red;
-            this.RedButton.Location = new System.Drawing.Point(718, 497);
+            this.RedButton.Location = new System.Drawing.Point(957, 612);
+            this.RedButton.Margin = new System.Windows.Forms.Padding(4);
             this.RedButton.Name = "RedButton";
-            this.RedButton.Size = new System.Drawing.Size(44, 37);
+            this.RedButton.Size = new System.Drawing.Size(59, 46);
             this.RedButton.TabIndex = 17;
             this.RedButton.UseVisualStyleBackColor = false;
+            this.RedButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.redClick);
             // 
             // CyanButton
             // 
             this.CyanButton.BackColor = System.Drawing.Color.Cyan;
-            this.CyanButton.Location = new System.Drawing.Point(768, 497);
+            this.CyanButton.Location = new System.Drawing.Point(1024, 612);
+            this.CyanButton.Margin = new System.Windows.Forms.Padding(4);
             this.CyanButton.Name = "CyanButton";
-            this.CyanButton.Size = new System.Drawing.Size(44, 37);
+            this.CyanButton.Size = new System.Drawing.Size(59, 46);
             this.CyanButton.TabIndex = 18;
             this.CyanButton.UseVisualStyleBackColor = false;
+            this.CyanButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cyanClick);
             // 
             // WhiteButton
             // 
             this.WhiteButton.BackColor = System.Drawing.Color.White;
-            this.WhiteButton.Location = new System.Drawing.Point(818, 497);
+            this.WhiteButton.Location = new System.Drawing.Point(1091, 612);
+            this.WhiteButton.Margin = new System.Windows.Forms.Padding(4);
             this.WhiteButton.Name = "WhiteButton";
-            this.WhiteButton.Size = new System.Drawing.Size(44, 37);
+            this.WhiteButton.Size = new System.Drawing.Size(59, 46);
             this.WhiteButton.TabIndex = 19;
             this.WhiteButton.UseVisualStyleBackColor = false;
+            this.WhiteButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.whiteClick);
             // 
             // BlackButton
             // 
             this.BlackButton.BackColor = System.Drawing.Color.Black;
-            this.BlackButton.Location = new System.Drawing.Point(868, 497);
+            this.BlackButton.Location = new System.Drawing.Point(1157, 612);
+            this.BlackButton.Margin = new System.Windows.Forms.Padding(4);
             this.BlackButton.Name = "BlackButton";
-            this.BlackButton.Size = new System.Drawing.Size(44, 37);
+            this.BlackButton.Size = new System.Drawing.Size(59, 46);
             this.BlackButton.TabIndex = 20;
             this.BlackButton.UseVisualStyleBackColor = false;
+            this.BlackButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.blackClick);
             // 
             // Yellowbutton
             // 
             this.Yellowbutton.BackColor = System.Drawing.Color.Yellow;
-            this.Yellowbutton.Location = new System.Drawing.Point(718, 540);
+            this.Yellowbutton.Location = new System.Drawing.Point(957, 665);
+            this.Yellowbutton.Margin = new System.Windows.Forms.Padding(4);
             this.Yellowbutton.Name = "Yellowbutton";
-            this.Yellowbutton.Size = new System.Drawing.Size(44, 37);
+            this.Yellowbutton.Size = new System.Drawing.Size(59, 46);
             this.Yellowbutton.TabIndex = 21;
             this.Yellowbutton.UseVisualStyleBackColor = false;
+            this.Yellowbutton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.yellowClick);
             // 
             // GreyButton
             // 
             this.GreyButton.BackColor = System.Drawing.Color.Gray;
-            this.GreyButton.Location = new System.Drawing.Point(818, 540);
+            this.GreyButton.Location = new System.Drawing.Point(1091, 665);
+            this.GreyButton.Margin = new System.Windows.Forms.Padding(4);
             this.GreyButton.Name = "GreyButton";
-            this.GreyButton.Size = new System.Drawing.Size(44, 37);
+            this.GreyButton.Size = new System.Drawing.Size(59, 46);
             this.GreyButton.TabIndex = 22;
             this.GreyButton.UseVisualStyleBackColor = false;
+            this.GreyButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.greyClick);
             // 
             // OrangeButton
             // 
             this.OrangeButton.BackColor = System.Drawing.Color.Orange;
-            this.OrangeButton.Location = new System.Drawing.Point(868, 540);
+            this.OrangeButton.Location = new System.Drawing.Point(1157, 665);
+            this.OrangeButton.Margin = new System.Windows.Forms.Padding(4);
             this.OrangeButton.Name = "OrangeButton";
-            this.OrangeButton.Size = new System.Drawing.Size(44, 37);
+            this.OrangeButton.Size = new System.Drawing.Size(59, 46);
             this.OrangeButton.TabIndex = 23;
             this.OrangeButton.UseVisualStyleBackColor = false;
+            this.OrangeButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.orangeClick);
             // 
             // GreenButton
             // 
             this.GreenButton.BackColor = System.Drawing.Color.Green;
-            this.GreenButton.Location = new System.Drawing.Point(918, 497);
+            this.GreenButton.Location = new System.Drawing.Point(1224, 612);
+            this.GreenButton.Margin = new System.Windows.Forms.Padding(4);
             this.GreenButton.Name = "GreenButton";
-            this.GreenButton.Size = new System.Drawing.Size(44, 37);
+            this.GreenButton.Size = new System.Drawing.Size(59, 46);
             this.GreenButton.TabIndex = 24;
             this.GreenButton.UseVisualStyleBackColor = false;
+            this.GreenButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.greenClick);
             // 
             // BlueButton
             // 
             this.BlueButton.BackColor = System.Drawing.Color.Blue;
-            this.BlueButton.Location = new System.Drawing.Point(768, 540);
+            this.BlueButton.Location = new System.Drawing.Point(1024, 665);
+            this.BlueButton.Margin = new System.Windows.Forms.Padding(4);
             this.BlueButton.Name = "BlueButton";
-            this.BlueButton.Size = new System.Drawing.Size(44, 37);
+            this.BlueButton.Size = new System.Drawing.Size(59, 46);
             this.BlueButton.TabIndex = 25;
             this.BlueButton.UseVisualStyleBackColor = false;
+            this.BlueButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.blueClick);
             // 
             // PurpleButton
             // 
             this.PurpleButton.BackColor = System.Drawing.Color.Purple;
-            this.PurpleButton.Location = new System.Drawing.Point(918, 540);
+            this.PurpleButton.Location = new System.Drawing.Point(1224, 665);
+            this.PurpleButton.Margin = new System.Windows.Forms.Padding(4);
             this.PurpleButton.Name = "PurpleButton";
-            this.PurpleButton.Size = new System.Drawing.Size(44, 37);
+            this.PurpleButton.Size = new System.Drawing.Size(59, 46);
             this.PurpleButton.TabIndex = 26;
             this.PurpleButton.UseVisualStyleBackColor = false;
+            this.PurpleButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.purpleClick);
             // 
             // SearchBackButton
             // 
-            this.SearchBackButton.Location = new System.Drawing.Point(13, 4);
+            this.SearchBackButton.Location = new System.Drawing.Point(17, 5);
+            this.SearchBackButton.Margin = new System.Windows.Forms.Padding(4);
             this.SearchBackButton.Name = "SearchBackButton";
-            this.SearchBackButton.Size = new System.Drawing.Size(86, 27);
+            this.SearchBackButton.Size = new System.Drawing.Size(115, 33);
             this.SearchBackButton.TabIndex = 27;
             this.SearchBackButton.Text = "Back";
             this.SearchBackButton.UseVisualStyleBackColor = true;
@@ -325,9 +363,10 @@ namespace _291GroupProject
             // 
             this.RentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RentButton.ForeColor = System.Drawing.Color.Black;
-            this.RentButton.Location = new System.Drawing.Point(718, 660);
+            this.RentButton.Location = new System.Drawing.Point(957, 812);
+            this.RentButton.Margin = new System.Windows.Forms.Padding(4);
             this.RentButton.Name = "RentButton";
-            this.RentButton.Size = new System.Drawing.Size(244, 79);
+            this.RentButton.Size = new System.Drawing.Size(325, 97);
             this.RentButton.TabIndex = 28;
             this.RentButton.Text = "RENT";
             this.RentButton.UseVisualStyleBackColor = true;
@@ -335,35 +374,38 @@ namespace _291GroupProject
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(500, 497);
+            this.label2.Location = new System.Drawing.Point(667, 612);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 13);
+            this.label2.Size = new System.Drawing.Size(175, 17);
             this.label2.TabIndex = 29;
             this.label2.Text = "Car Name, model, Number";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(383, 540);
+            this.label3.Location = new System.Drawing.Point(511, 665);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(329, 13);
+            this.label3.Size = new System.Drawing.Size(440, 17);
             this.label3.TabIndex = 30;
             this.label3.Text = "Current location (Branch) (User can choose a branch and see stock)";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(500, 521);
+            this.label4.Location = new System.Drawing.Point(667, 641);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 13);
+            this.label4.Size = new System.Drawing.Size(171, 17);
             this.label4.TabIndex = 31;
             this.label4.Text = "Prices (day, week, month)";
             // 
             // SearchCar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1035, 780);
+            this.ClientSize = new System.Drawing.Size(1380, 960);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -397,6 +439,7 @@ namespace _291GroupProject
             this.Controls.Add(this.TruckButton);
             this.Controls.Add(this.SearchCarBox);
             this.ForeColor = System.Drawing.Color.DarkBlue;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SearchCar";
             this.Text = "SearchCarForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
