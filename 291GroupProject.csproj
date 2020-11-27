@@ -208,6 +208,8 @@
     <None Include="Resources\truck_1.png" />
     <None Include="Resources\truck_2.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

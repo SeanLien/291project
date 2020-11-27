@@ -209,5 +209,28 @@ namespace _291GroupProject
                 MessageBox.Show(e3.ToString(), "Error");
             }
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            myCommand.CommandText = "select * from Employee";
+
+            try
+            {
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+
+                dataGridView1.Rows.Clear();
+                while (myReader.Read())
+                {
+                    dataGridView1.Rows.Add(myReader["Employee_ID"].ToString(), myReader["first_name"].ToString(), myReader["middle_initial"].ToString(), myReader["last_name"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
+                }
+
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+            }
+        }
     }
 }
