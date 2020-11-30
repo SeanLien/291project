@@ -351,5 +351,20 @@ namespace _291GroupProject
                 MessageBox.Show(e3.ToString(), "Error");
             }
         }
+
+        private void textBox36_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
