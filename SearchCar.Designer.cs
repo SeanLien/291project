@@ -87,6 +87,7 @@ namespace _291GroupProject
             this.TruckButton.TabIndex = 1;
             this.TruckButton.Text = "Truck";
             this.TruckButton.UseVisualStyleBackColor = false;
+            this.TruckButton.Click += new System.EventHandler(this.TruckButton_Click);
             // 
             // SUVbutton
             // 
@@ -97,6 +98,7 @@ namespace _291GroupProject
             this.SUVbutton.TabIndex = 2;
             this.SUVbutton.Text = "SUV";
             this.SUVbutton.UseVisualStyleBackColor = true;
+            this.SUVbutton.Click += new System.EventHandler(this.SUVbutton_Click);
             // 
             // SedanButton
             // 
@@ -107,6 +109,7 @@ namespace _291GroupProject
             this.SedanButton.TabIndex = 3;
             this.SedanButton.Text = "Sedan";
             this.SedanButton.UseVisualStyleBackColor = true;
+            this.SedanButton.Click += new System.EventHandler(this.SedanButton_Click);
             // 
             // JeepButton
             // 
@@ -117,6 +120,7 @@ namespace _291GroupProject
             this.JeepButton.TabIndex = 4;
             this.JeepButton.Text = "Jeep";
             this.JeepButton.UseVisualStyleBackColor = true;
+            this.JeepButton.Click += new System.EventHandler(this.JeepButton_Click);
             // 
             // SportsCarButton
             // 
@@ -127,6 +131,7 @@ namespace _291GroupProject
             this.SportsCarButton.TabIndex = 5;
             this.SportsCarButton.Text = "Sports Car";
             this.SportsCarButton.UseVisualStyleBackColor = true;
+            this.SportsCarButton.Click += new System.EventHandler(this.SportsCarButton_Click);
             // 
             // HybridButton
             // 
@@ -137,6 +142,7 @@ namespace _291GroupProject
             this.HybridButton.TabIndex = 6;
             this.HybridButton.Text = "Hybrid";
             this.HybridButton.UseVisualStyleBackColor = true;
+            this.HybridButton.Click += new System.EventHandler(this.HybridButton_Click);
             // 
             // CompactButton
             // 
@@ -147,6 +153,7 @@ namespace _291GroupProject
             this.CompactButton.TabIndex = 7;
             this.CompactButton.Text = "Compact";
             this.CompactButton.UseVisualStyleBackColor = true;
+            this.CompactButton.Click += new System.EventHandler(this.CompactButton_Click);
             // 
             // ConvertibleButton
             // 
@@ -157,6 +164,7 @@ namespace _291GroupProject
             this.ConvertibleButton.TabIndex = 8;
             this.ConvertibleButton.Text = "Convertible";
             this.ConvertibleButton.UseVisualStyleBackColor = true;
+            this.ConvertibleButton.Click += new System.EventHandler(this.ConvertibleButton_Click);
             // 
             // label1
             // 
