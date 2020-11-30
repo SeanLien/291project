@@ -218,7 +218,7 @@ namespace _291GroupProject
 
         private void button4_Click_2(object sender, EventArgs e)
         {
-            myCommand.CommandText = "select * from customer";
+            myCommand.CommandText = "select * from Customers";
 
             try
             {
@@ -241,7 +241,7 @@ namespace _291GroupProject
 
         private void button13_Click(object sender, EventArgs e)
         {
-            myCommand.CommandText = "select * from Car";
+            myCommand.CommandText = "select * from Cars";
 
             try
             {
@@ -264,7 +264,7 @@ namespace _291GroupProject
 
         private void button12_Click(object sender, EventArgs e)
         {
-            myCommand.CommandText = "select * from Car_type";
+            myCommand.CommandText = "select * from Car_types";
 
             try
             {
@@ -287,7 +287,7 @@ namespace _291GroupProject
 
         private void button11_Click(object sender, EventArgs e)
         {
-            myCommand.CommandText = "select * from Branch";
+            myCommand.CommandText = "select * from Branches";
 
             try
             {
@@ -310,7 +310,7 @@ namespace _291GroupProject
 
         private void button10_Click(object sender, EventArgs e)
         {
-            myCommand.CommandText = "select * from Employee";
+            myCommand.CommandText = "select * from Employees";
 
             try
             {

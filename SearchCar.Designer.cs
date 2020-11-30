@@ -55,21 +55,15 @@ namespace _291GroupProject
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SelectedCarImage = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedCarImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
@@ -77,10 +71,9 @@ namespace _291GroupProject
             // SearchCarBox
             // 
             this.SearchCarBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchCarBox.Location = new System.Drawing.Point(116, 94);
-            this.SearchCarBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.SearchCarBox.Location = new System.Drawing.Point(58, 49);
             this.SearchCarBox.Name = "SearchCarBox";
-            this.SearchCarBox.Size = new System.Drawing.Size(1804, 47);
+            this.SearchCarBox.Size = new System.Drawing.Size(904, 27);
             this.SearchCarBox.TabIndex = 0;
             this.SearchCarBox.Text = "Search";
             // 
@@ -88,10 +81,9 @@ namespace _291GroupProject
             // 
             this.TruckButton.BackColor = System.Drawing.SystemColors.Control;
             this.TruckButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.TruckButton.Location = new System.Drawing.Point(116, 195);
-            this.TruckButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.TruckButton.Location = new System.Drawing.Point(58, 101);
             this.TruckButton.Name = "TruckButton";
-            this.TruckButton.Size = new System.Drawing.Size(213, 103);
+            this.TruckButton.Size = new System.Drawing.Size(106, 54);
             this.TruckButton.TabIndex = 1;
             this.TruckButton.Text = "Truck";
             this.TruckButton.UseVisualStyleBackColor = false;
@@ -99,10 +91,9 @@ namespace _291GroupProject
             // SUVbutton
             // 
             this.SUVbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SUVbutton.Location = new System.Drawing.Point(340, 195);
-            this.SUVbutton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.SUVbutton.Location = new System.Drawing.Point(170, 101);
             this.SUVbutton.Name = "SUVbutton";
-            this.SUVbutton.Size = new System.Drawing.Size(213, 103);
+            this.SUVbutton.Size = new System.Drawing.Size(106, 54);
             this.SUVbutton.TabIndex = 2;
             this.SUVbutton.Text = "SUV";
             this.SUVbutton.UseVisualStyleBackColor = true;
@@ -110,10 +101,9 @@ namespace _291GroupProject
             // SedanButton
             // 
             this.SedanButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SedanButton.Location = new System.Drawing.Point(566, 195);
-            this.SedanButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.SedanButton.Location = new System.Drawing.Point(283, 101);
             this.SedanButton.Name = "SedanButton";
-            this.SedanButton.Size = new System.Drawing.Size(213, 103);
+            this.SedanButton.Size = new System.Drawing.Size(106, 54);
             this.SedanButton.TabIndex = 3;
             this.SedanButton.Text = "Sedan";
             this.SedanButton.UseVisualStyleBackColor = true;
@@ -121,10 +111,9 @@ namespace _291GroupProject
             // JeepButton
             // 
             this.JeepButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.JeepButton.Location = new System.Drawing.Point(790, 195);
-            this.JeepButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.JeepButton.Location = new System.Drawing.Point(395, 101);
             this.JeepButton.Name = "JeepButton";
-            this.JeepButton.Size = new System.Drawing.Size(213, 103);
+            this.JeepButton.Size = new System.Drawing.Size(106, 54);
             this.JeepButton.TabIndex = 4;
             this.JeepButton.Text = "Jeep";
             this.JeepButton.UseVisualStyleBackColor = true;
@@ -132,10 +121,9 @@ namespace _291GroupProject
             // SportsCarButton
             // 
             this.SportsCarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SportsCarButton.Location = new System.Drawing.Point(1016, 195);
-            this.SportsCarButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.SportsCarButton.Location = new System.Drawing.Point(508, 101);
             this.SportsCarButton.Name = "SportsCarButton";
-            this.SportsCarButton.Size = new System.Drawing.Size(213, 103);
+            this.SportsCarButton.Size = new System.Drawing.Size(106, 54);
             this.SportsCarButton.TabIndex = 5;
             this.SportsCarButton.Text = "Sports Car";
             this.SportsCarButton.UseVisualStyleBackColor = true;
@@ -143,10 +131,9 @@ namespace _291GroupProject
             // HybridButton
             // 
             this.HybridButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.HybridButton.Location = new System.Drawing.Point(1240, 195);
-            this.HybridButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.HybridButton.Location = new System.Drawing.Point(620, 101);
             this.HybridButton.Name = "HybridButton";
-            this.HybridButton.Size = new System.Drawing.Size(213, 103);
+            this.HybridButton.Size = new System.Drawing.Size(106, 54);
             this.HybridButton.TabIndex = 6;
             this.HybridButton.Text = "Hybrid";
             this.HybridButton.UseVisualStyleBackColor = true;
@@ -154,10 +141,9 @@ namespace _291GroupProject
             // CompactButton
             // 
             this.CompactButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CompactButton.Location = new System.Drawing.Point(1466, 195);
-            this.CompactButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CompactButton.Location = new System.Drawing.Point(733, 101);
             this.CompactButton.Name = "CompactButton";
-            this.CompactButton.Size = new System.Drawing.Size(213, 103);
+            this.CompactButton.Size = new System.Drawing.Size(106, 54);
             this.CompactButton.TabIndex = 7;
             this.CompactButton.Text = "Compact";
             this.CompactButton.UseVisualStyleBackColor = true;
@@ -165,10 +151,9 @@ namespace _291GroupProject
             // ConvertibleButton
             // 
             this.ConvertibleButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ConvertibleButton.Location = new System.Drawing.Point(1690, 195);
-            this.ConvertibleButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ConvertibleButton.Location = new System.Drawing.Point(845, 101);
             this.ConvertibleButton.Name = "ConvertibleButton";
-            this.ConvertibleButton.Size = new System.Drawing.Size(213, 103);
+            this.ConvertibleButton.Size = new System.Drawing.Size(106, 54);
             this.ConvertibleButton.TabIndex = 8;
             this.ConvertibleButton.Text = "Convertible";
             this.ConvertibleButton.UseVisualStyleBackColor = true;
@@ -179,10 +164,9 @@ namespace _291GroupProject
             this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(1396, 822);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(698, 427);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 44);
+            this.label1.Size = new System.Drawing.Size(149, 24);
             this.label1.TabIndex = 16;
             this.label1.Text = "Colour Selection";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -193,10 +177,9 @@ namespace _291GroupProject
             this.RedButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.RedButton.FlatAppearance.BorderSize = 0;
             this.RedButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.RedButton.Location = new System.Drawing.Point(1342, 873);
-            this.RedButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.RedButton.Location = new System.Drawing.Point(671, 454);
             this.RedButton.Name = "RedButton";
-            this.RedButton.Size = new System.Drawing.Size(75, 62);
+            this.RedButton.Size = new System.Drawing.Size(38, 32);
             this.RedButton.TabIndex = 17;
             this.RedButton.UseVisualStyleBackColor = false;
             this.RedButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.redClick);
@@ -207,10 +190,9 @@ namespace _291GroupProject
             this.CyanButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.CyanButton.FlatAppearance.BorderSize = 0;
             this.CyanButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CyanButton.Location = new System.Drawing.Point(1516, 948);
-            this.CyanButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CyanButton.Location = new System.Drawing.Point(758, 493);
             this.CyanButton.Name = "CyanButton";
-            this.CyanButton.Size = new System.Drawing.Size(75, 62);
+            this.CyanButton.Size = new System.Drawing.Size(38, 32);
             this.CyanButton.TabIndex = 18;
             this.CyanButton.UseVisualStyleBackColor = false;
             this.CyanButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cyanClick);
@@ -221,10 +203,9 @@ namespace _291GroupProject
             this.WhiteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.WhiteButton.FlatAppearance.BorderSize = 0;
             this.WhiteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.WhiteButton.Location = new System.Drawing.Point(1604, 873);
-            this.WhiteButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.WhiteButton.Location = new System.Drawing.Point(802, 454);
             this.WhiteButton.Name = "WhiteButton";
-            this.WhiteButton.Size = new System.Drawing.Size(75, 62);
+            this.WhiteButton.Size = new System.Drawing.Size(38, 32);
             this.WhiteButton.TabIndex = 19;
             this.WhiteButton.UseVisualStyleBackColor = false;
             this.WhiteButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.whiteClick);
@@ -235,10 +216,9 @@ namespace _291GroupProject
             this.BlackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.BlackButton.FlatAppearance.BorderSize = 0;
             this.BlackButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BlackButton.Location = new System.Drawing.Point(1690, 873);
-            this.BlackButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BlackButton.Location = new System.Drawing.Point(845, 454);
             this.BlackButton.Name = "BlackButton";
-            this.BlackButton.Size = new System.Drawing.Size(75, 62);
+            this.BlackButton.Size = new System.Drawing.Size(38, 32);
             this.BlackButton.TabIndex = 20;
             this.BlackButton.UseVisualStyleBackColor = false;
             this.BlackButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.blackClick);
@@ -249,10 +229,9 @@ namespace _291GroupProject
             this.Yellowbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Yellowbutton.FlatAppearance.BorderSize = 0;
             this.Yellowbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Yellowbutton.Location = new System.Drawing.Point(1426, 948);
-            this.Yellowbutton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Yellowbutton.Location = new System.Drawing.Point(713, 493);
             this.Yellowbutton.Name = "Yellowbutton";
-            this.Yellowbutton.Size = new System.Drawing.Size(75, 62);
+            this.Yellowbutton.Size = new System.Drawing.Size(38, 32);
             this.Yellowbutton.TabIndex = 21;
             this.Yellowbutton.UseVisualStyleBackColor = false;
             this.Yellowbutton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.yellowClick);
@@ -263,10 +242,9 @@ namespace _291GroupProject
             this.GreyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.GreyButton.FlatAppearance.BorderSize = 0;
             this.GreyButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.GreyButton.Location = new System.Drawing.Point(1516, 873);
-            this.GreyButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GreyButton.Location = new System.Drawing.Point(758, 454);
             this.GreyButton.Name = "GreyButton";
-            this.GreyButton.Size = new System.Drawing.Size(75, 62);
+            this.GreyButton.Size = new System.Drawing.Size(38, 32);
             this.GreyButton.TabIndex = 22;
             this.GreyButton.UseVisualStyleBackColor = false;
             this.GreyButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.greyClick);
@@ -277,10 +255,9 @@ namespace _291GroupProject
             this.OrangeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.OrangeButton.FlatAppearance.BorderSize = 0;
             this.OrangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.OrangeButton.Location = new System.Drawing.Point(1604, 948);
-            this.OrangeButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.OrangeButton.Location = new System.Drawing.Point(802, 493);
             this.OrangeButton.Name = "OrangeButton";
-            this.OrangeButton.Size = new System.Drawing.Size(75, 62);
+            this.OrangeButton.Size = new System.Drawing.Size(38, 32);
             this.OrangeButton.TabIndex = 23;
             this.OrangeButton.UseVisualStyleBackColor = false;
             this.OrangeButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.orangeClick);
@@ -291,10 +268,9 @@ namespace _291GroupProject
             this.GreenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.GreenButton.FlatAppearance.BorderSize = 0;
             this.GreenButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.GreenButton.Location = new System.Drawing.Point(1342, 948);
-            this.GreenButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GreenButton.Location = new System.Drawing.Point(671, 493);
             this.GreenButton.Name = "GreenButton";
-            this.GreenButton.Size = new System.Drawing.Size(75, 62);
+            this.GreenButton.Size = new System.Drawing.Size(38, 32);
             this.GreenButton.TabIndex = 24;
             this.GreenButton.UseVisualStyleBackColor = false;
             this.GreenButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.greenClick);
@@ -305,10 +281,9 @@ namespace _291GroupProject
             this.BlueButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.BlueButton.FlatAppearance.BorderSize = 0;
             this.BlueButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BlueButton.Location = new System.Drawing.Point(1430, 873);
-            this.BlueButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BlueButton.Location = new System.Drawing.Point(715, 454);
             this.BlueButton.Name = "BlueButton";
-            this.BlueButton.Size = new System.Drawing.Size(75, 62);
+            this.BlueButton.Size = new System.Drawing.Size(38, 32);
             this.BlueButton.TabIndex = 25;
             this.BlueButton.UseVisualStyleBackColor = false;
             this.BlueButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.blueClick);
@@ -319,20 +294,18 @@ namespace _291GroupProject
             this.PurpleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.PurpleButton.FlatAppearance.BorderSize = 0;
             this.PurpleButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.PurpleButton.Location = new System.Drawing.Point(1690, 948);
-            this.PurpleButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.PurpleButton.Location = new System.Drawing.Point(845, 493);
             this.PurpleButton.Name = "PurpleButton";
-            this.PurpleButton.Size = new System.Drawing.Size(75, 62);
+            this.PurpleButton.Size = new System.Drawing.Size(38, 32);
             this.PurpleButton.TabIndex = 26;
             this.PurpleButton.UseVisualStyleBackColor = false;
             this.PurpleButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.purpleClick);
             // 
             // SearchBackButton
             // 
-            this.SearchBackButton.Location = new System.Drawing.Point(26, 8);
-            this.SearchBackButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.SearchBackButton.Location = new System.Drawing.Point(13, 4);
             this.SearchBackButton.Name = "SearchBackButton";
-            this.SearchBackButton.Size = new System.Drawing.Size(172, 52);
+            this.SearchBackButton.Size = new System.Drawing.Size(86, 27);
             this.SearchBackButton.TabIndex = 27;
             this.SearchBackButton.Text = "Back";
             this.SearchBackButton.UseVisualStyleBackColor = true;
@@ -342,10 +315,9 @@ namespace _291GroupProject
             // 
             this.RentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RentButton.ForeColor = System.Drawing.Color.Black;
-            this.RentButton.Location = new System.Drawing.Point(1305, 1078);
-            this.RentButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.RentButton.Location = new System.Drawing.Point(652, 561);
             this.RentButton.Name = "RentButton";
-            this.RentButton.Size = new System.Drawing.Size(488, 152);
+            this.RentButton.Size = new System.Drawing.Size(244, 79);
             this.RentButton.TabIndex = 28;
             this.RentButton.Text = "RENT";
             this.RentButton.UseVisualStyleBackColor = true;
@@ -353,134 +325,129 @@ namespace _291GroupProject
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1422, 638);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(711, 332);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(265, 25);
+            this.label2.Size = new System.Drawing.Size(131, 13);
             this.label2.TabIndex = 29;
             this.label2.Text = "Car Name, model, Number";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1188, 720);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Location = new System.Drawing.Point(594, 374);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(664, 25);
+            this.label3.Size = new System.Drawing.Size(329, 13);
             this.label3.TabIndex = 30;
             this.label3.Text = "Current location (Branch) (User can choose a branch and see stock)";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1422, 683);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Location = new System.Drawing.Point(711, 355);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(260, 25);
+            this.label4.Size = new System.Drawing.Size(129, 13);
             this.label4.TabIndex = 31;
             this.label4.Text = "Prices (day, week, month)";
             // 
             // SelectedCarImage
             // 
-            this.SelectedCarImage.Location = new System.Drawing.Point(1068, 395);
-            this.SelectedCarImage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.SelectedCarImage.Location = new System.Drawing.Point(534, 205);
             this.SelectedCarImage.Name = "SelectedCarImage";
-            this.SelectedCarImage.Size = new System.Drawing.Size(938, 388);
+            this.SelectedCarImage.Size = new System.Drawing.Size(469, 202);
             this.SelectedCarImage.TabIndex = 15;
             this.SelectedCarImage.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackgroundImage = global::_291GroupProject.Properties.Resources.truck_6;
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox6.Location = new System.Drawing.Point(520, 956);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(339, 219);
-            this.pictureBox6.TabIndex = 14;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::_291GroupProject.Properties.Resources.truck_5;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(96, 956);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(339, 219);
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::_291GroupProject.Properties.Resources.truck_4;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(520, 683);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(339, 219);
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::_291GroupProject.Properties.Resources.truck_3;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox3.Location = new System.Drawing.Point(96, 683);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(339, 219);
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::_291GroupProject.Properties.Resources.truck_2;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(520, 395);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(339, 219);
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::_291GroupProject.Properties.Resources.truck_1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(96, 395);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(339, 219);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 159);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox7.Location = new System.Drawing.Point(2, 83);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(2068, 170);
+            this.pictureBox7.Size = new System.Drawing.Size(1034, 88);
             this.pictureBox7.TabIndex = 32;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pictureBox8.Location = new System.Drawing.Point(988, 309);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox8.Location = new System.Drawing.Point(494, 161);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(1083, 959);
+            this.pictureBox8.Size = new System.Drawing.Size(542, 499);
             this.pictureBox8.TabIndex = 33;
             this.pictureBox8.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::_291GroupProject.Properties.Resources.jeep_1;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Location = new System.Drawing.Point(48, 205);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(170, 113);
+            this.button1.TabIndex = 34;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::_291GroupProject.Properties.Resources.truck_2;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Location = new System.Drawing.Point(260, 205);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(170, 113);
+            this.button2.TabIndex = 35;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::_291GroupProject.Properties.Resources.sedan_3;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.Location = new System.Drawing.Point(48, 355);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(170, 113);
+            this.button3.TabIndex = 36;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::_291GroupProject.Properties.Resources.sports_5;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.Location = new System.Drawing.Point(260, 355);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(170, 113);
+            this.button4.TabIndex = 37;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::_291GroupProject.Properties.Resources.convertible_1;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.Location = new System.Drawing.Point(48, 498);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(170, 113);
+            this.button5.TabIndex = 38;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::_291GroupProject.Properties.Resources.hybrid_6;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.Location = new System.Drawing.Point(260, 498);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(170, 113);
+            this.button6.TabIndex = 39;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // SearchCar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2070, 1250);
+            this.ClientSize = new System.Drawing.Size(1048, 653);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -498,12 +465,6 @@ namespace _291GroupProject
             this.Controls.Add(this.RedButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SelectedCarImage);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ConvertibleButton);
             this.Controls.Add(this.CompactButton);
             this.Controls.Add(this.HybridButton);
@@ -516,17 +477,10 @@ namespace _291GroupProject
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox8);
             this.ForeColor = System.Drawing.Color.DarkBlue;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "SearchCar";
             this.Text = "SearchCarForm";
             this.Load += new System.EventHandler(this.SearchCar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SelectedCarImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
@@ -545,12 +499,6 @@ namespace _291GroupProject
         private System.Windows.Forms.Button HybridButton;
         private System.Windows.Forms.Button CompactButton;
         private System.Windows.Forms.Button ConvertibleButton;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox SelectedCarImage;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button RedButton;
@@ -570,6 +518,12 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 
