@@ -7,14 +7,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace _291GroupProject
 {
     public partial class AddAccount : Form
     {
+        public SqlConnection myConnection;
+        public SqlCommand myCommand;
+        public SqlDataReader myReader;
+
         public AddAccount()
         {
             InitializeComponent();
+
+            SqlConnection myConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["291proj"].ConnectionString);
+
+
+
+            try
+            {
+                myConnection.Open(); // Open connection
+                myCommand = new SqlCommand();
+                myCommand.Connection = myConnection; // Link the command stream to the connection
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString(), "Error");
+                this.Close();
+            }
         }
 
         private void AddAccount_Load(object sender, EventArgs e)
@@ -57,6 +79,12 @@ namespace _291GroupProject
         private void ZipBox_TextChanged(object sender, EventArgs e)
         {
         
+        }
+
+        private void ConfirmButton_Click(object sender, EventArgs e)
+        {
+            //myCommand.CommandText = "insert into Customers Values(";
+            //myCommand.CommandText += "'" + NameBox.Text + "', '" + FamilyNameBox.Text + "', '" +
         }
     }
 }

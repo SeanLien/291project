@@ -97,6 +97,7 @@ namespace _291GroupProject
 
             button1.BackgroundImage = _291GroupProject.Properties.Resources.truck_1;
             button2.BackgroundImage = _291GroupProject.Properties.Resources.truck_2;
+            button2.Text = "Ram";
             button3.BackgroundImage = _291GroupProject.Properties.Resources.truck_3;
             button4.BackgroundImage = _291GroupProject.Properties.Resources.truck_4;
             button5.BackgroundImage = _291GroupProject.Properties.Resources.truck_5;
@@ -171,6 +172,15 @@ namespace _291GroupProject
             button4.BackgroundImage = _291GroupProject.Properties.Resources.convertible_4;
             button5.BackgroundImage = _291GroupProject.Properties.Resources.convertible_5;
             button6.BackgroundImage = _291GroupProject.Properties.Resources.convertible_6;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //string CarLabelStr = button2.Text + " VIN";
+            // CarLabel.Text = CarLabelStr;
+            //We could use a select statement to grab the VIN from database.
+            //Search car_types database for Prices
+
         }
     }
 }

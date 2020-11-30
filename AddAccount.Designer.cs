@@ -267,6 +267,7 @@ namespace _291GroupProject
             this.ConfirmButton.TabIndex = 22;
             this.ConfirmButton.Text = "Confirm";
             this.ConfirmButton.UseVisualStyleBackColor = true;
+            this.ConfirmButton.Click += new System.EventHandler(this.ConfirmButton_Click);
             // 
             // AddAccountBackButton
             // 

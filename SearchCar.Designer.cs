@@ -51,7 +51,7 @@ namespace _291GroupProject
             this.PurpleButton = new System.Windows.Forms.Button();
             this.SearchBackButton = new System.Windows.Forms.Button();
             this.RentButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.CarLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SelectedCarImage = new System.Windows.Forms.PictureBox();
@@ -330,14 +330,14 @@ namespace _291GroupProject
             this.RentButton.Text = "RENT";
             this.RentButton.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // CarLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(711, 332);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(131, 13);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Car Name, model, Number";
+            this.CarLabel.AutoSize = true;
+            this.CarLabel.Location = new System.Drawing.Point(711, 332);
+            this.CarLabel.Name = "CarLabel";
+            this.CarLabel.Size = new System.Drawing.Size(131, 13);
+            this.CarLabel.TabIndex = 29;
+            this.CarLabel.Text = "Car Name, model, Number";
             // 
             // label3
             // 
@@ -399,11 +399,13 @@ namespace _291GroupProject
             // 
             this.button2.BackgroundImage = global::_291GroupProject.Properties.Resources.truck_2;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(260, 205);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(170, 113);
             this.button2.TabIndex = 35;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -458,7 +460,7 @@ namespace _291GroupProject
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.CarLabel);
             this.Controls.Add(this.RentButton);
             this.Controls.Add(this.SearchBackButton);
             this.Controls.Add(this.PurpleButton);
@@ -521,7 +523,7 @@ namespace _291GroupProject
         private System.Windows.Forms.Button PurpleButton;
         private System.Windows.Forms.Button SearchBackButton;
         private System.Windows.Forms.Button RentButton;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label CarLabel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox7;
