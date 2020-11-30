@@ -68,7 +68,7 @@ namespace _291GroupProject
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void employee_search_Click(object sender, EventArgs e)
         {
 
             dspl_first.Clear();
@@ -82,9 +82,9 @@ namespace _291GroupProject
             dspl_tel.Clear();
 
 
-            myCommand.CommandText = "select * from Employee";
+            myCommand.CommandText = "select * from Employees";
             if (employee_txt.Text != " ")
-            myCommand.CommandText += " where Employee.Employee_ID = " + employee_txt.Text;
+            myCommand.CommandText += " where Employees.Employee_ID = " + employee_txt.Text;
 
 
             try
@@ -136,15 +136,15 @@ namespace _291GroupProject
 
         }
 
-        private void update_employee_Click(object sender, EventArgs e)
+        private void employee_edit_Click(object sender, EventArgs e)
         {
-            myCommand.CommandText = "update Employee";
+            myCommand.CommandText = "update Employees";
 
             myCommand.CommandText += " set " + "first_name = '" + dspl_first.Text + "', last_name = '" + dspl_last.Text+"',";
             myCommand.CommandText += "middle_initial ='" + dspl_mid.Text + "', street_name = '" + dspl_str_nm.Text+"',";
             myCommand.CommandText += "street_number = '" + dspl_str_num.Text + "', city = '" + dspl_cty.Text+"',";
             myCommand.CommandText += "province = '" + dspl_prov.Text + "', zip = '" + dspl_zip.Text + "', phone_number ='" + dspl_tel.Text +"'";
-            myCommand.CommandText += " where Employee.Employee_ID = " + employee_txt.Text;
+            myCommand.CommandText += " where Employees.Employee_ID = " + employee_txt.Text;
 
             try
             {
@@ -161,6 +161,7 @@ namespace _291GroupProject
                 dspl_zip.Clear();
                 dspl_tel.Clear();
                 employee_txt.Clear();
+                
 
 
 
@@ -178,10 +179,10 @@ namespace _291GroupProject
 
         private void add_employee_btn_Click(object sender, EventArgs e)
         {
-            myCommand.CommandText = "insert into Employee Values(";
+            myCommand.CommandText = "insert into Employees Values(";
             myCommand.CommandText += "'" + add_employee_Id.Text + "', '" + add_last.Text + "', '" + add_middle_initial.Text+" ', '" + add_first.Text + "', '";
             myCommand.CommandText += add_str_name.Text + "', '" + add_str_num.Text + "', '" + add_city.Text + "', '";
-            myCommand.CommandText += add_prov.Text+ "', '"+add_zip.Text+ "', '"+add_phone.Text+"' )";
+            myCommand.CommandText += add_prov.Text+ "', '"+add_zip.Text+ "', '"+add_phone.Text+"', '" + add_branch.Text +"')";
 
 
 
@@ -201,6 +202,7 @@ namespace _291GroupProject
                 add_phone.Clear();
                 add_city.Clear();
                 add_prov.Clear();
+                add_branch.Clear();
 
 
             }

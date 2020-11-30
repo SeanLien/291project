@@ -84,5 +84,10 @@ namespace _291GroupProject
         {
             SelectedCarImage.BackColor = Color.Purple;
         }
+
+        private void SearchCar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
