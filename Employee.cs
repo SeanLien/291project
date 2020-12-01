@@ -17,6 +17,8 @@ namespace _291GroupProject
         public SqlConnection myConnection;
         public SqlCommand myCommand;
         public SqlDataReader myReader;
+        public SqlCommand myCommand2;
+
 
 
         public Employee()
@@ -43,6 +45,8 @@ namespace _291GroupProject
             {
                 myConnection.Open(); // Open connection
                 myCommand = new SqlCommand();
+                myCommand2 = new SqlCommand();
+                myCommand2.Connection = myConnection;
                 myCommand.Connection = myConnection; // Link the command stream to the connection
             }
             catch (Exception e)
@@ -65,6 +69,8 @@ namespace _291GroupProject
 
         private void Employee_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the '_291_group_projectDataSet.Branches' table. You can move, or remove it, as needed.
+            this.branchesTableAdapter.Fill(this._291_group_projectDataSet.Branches);
 
         }
 
@@ -80,11 +86,11 @@ namespace _291GroupProject
             dspl_prov.Clear();
             dspl_zip.Clear();
             dspl_tel.Clear();
-
+            dsplBranch.Clear();
 
             myCommand.CommandText = "select * from Employees";
             if (employee_txt.Text != " ")
-            myCommand.CommandText += " where Employees.Employee_ID = " + employee_txt.Text;
+                myCommand.CommandText += " where Employees.Employee_ID = " + employee_txt.Text;
 
 
             try
@@ -92,8 +98,8 @@ namespace _291GroupProject
 
                 MessageBox.Show(myCommand.CommandText);
                 myReader = myCommand.ExecuteReader();
-             
-               
+
+
 
 
                 while (myReader.Read())
@@ -107,6 +113,7 @@ namespace _291GroupProject
                     dspl_prov.Text = myReader.GetString(7);
                     dspl_zip.Text = myReader.GetString(8);
                     dspl_tel.Text = myReader.GetString(9);
+                    dsplBranch.Text = myReader.GetInt32(10).ToString();
 
 
                 }
@@ -136,81 +143,15 @@ namespace _291GroupProject
 
         }
 
-        private void employee_edit_Click(object sender, EventArgs e)
-        {
-            myCommand.CommandText = "update Employees";
 
-            myCommand.CommandText += " set " + "first_name = '" + dspl_first.Text + "', last_name = '" + dspl_last.Text+"',";
-            myCommand.CommandText += "middle_initial ='" + dspl_mid.Text + "', street_name = '" + dspl_str_nm.Text+"',";
-            myCommand.CommandText += "street_number = '" + dspl_str_num.Text + "', city = '" + dspl_cty.Text+"',";
-            myCommand.CommandText += "province = '" + dspl_prov.Text + "', zip = '" + dspl_zip.Text + "', phone_number ='" + dspl_tel.Text +"'";
-            myCommand.CommandText += " where Employees.Employee_ID = " + employee_txt.Text;
-
-            try
-            {
-
-                MessageBox.Show(myCommand.CommandText);
-                myCommand.ExecuteNonQuery();
-                dspl_first.Clear();
-                dspl_last.Clear();
-                dspl_mid.Clear();
-                dspl_str_nm.Clear();
-                dspl_str_num.Clear();
-                dspl_cty.Clear();
-                dspl_prov.Clear();
-                dspl_zip.Clear();
-                dspl_tel.Clear();
-                employee_txt.Clear();
-                
-
-
-
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Cannot Add, make please enter employee ID");
-            }
-        }
 
         private void textBox44_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void add_employee_btn_Click(object sender, EventArgs e)
-        {
-            myCommand.CommandText = "insert into Employees Values(";
-            myCommand.CommandText += "'" + add_employee_Id.Text + "', '" + add_last.Text + "', '" + add_middle_initial.Text+" ', '" + add_first.Text + "', '";
-            myCommand.CommandText += add_str_name.Text + "', '" + add_str_num.Text + "', '" + add_city.Text + "', '";
-            myCommand.CommandText += add_prov.Text+ "', '"+add_zip.Text+ "', '"+add_phone.Text+"', '" + add_branch.Text +"')";
+        
 
-
-
-
-            try
-            {
-
-                MessageBox.Show(myCommand.CommandText);
-                myCommand.ExecuteNonQuery();
-                add_employee_Id.Clear();
-                add_last.Clear();
-                add_first.Clear();
-                add_middle_initial.Clear();
-                add_str_name.Clear();
-                add_str_num.Clear();
-                add_zip.Clear();
-                add_phone.Clear();
-                add_city.Clear();
-                add_prov.Clear();
-                add_branch.Clear();
-
-
-            }
-            catch (Exception e3)
-            {
-                MessageBox.Show(e3.ToString(), "Error");
-            }
-        }
 
         private void button4_Click_1(object sender, EventArgs e)
         {
@@ -228,7 +169,7 @@ namespace _291GroupProject
                 dataGridView1.Rows.Clear();
                 while (myReader.Read())
                 {
-                    dataGridView1.Rows.Add(myReader["Customer_ID"].ToString(), myReader["first_name"].ToString(), myReader["last_name"].ToString(), myReader["middle_initial"].ToString(), myReader["membershilp"].ToString(),  myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["apt_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
+                    dataGridView1.Rows.Add(myReader["Customer_ID"].ToString(), myReader["first_name"].ToString(), myReader["last_name"].ToString(), myReader["middle_initial"].ToString(), myReader["membershilp"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["apt_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
                 }
 
                 myReader.Close();
@@ -367,6 +308,147 @@ namespace _291GroupProject
         private void button16_Click(object sender, EventArgs e)
         {
 
+            myCommand2.CommandText = "select count (*) From Branches Where Branch_ID = '" + branch_add.Text + "';";
+            int num_branch = (int)myCommand2.ExecuteScalar();
+
+            if (num_branch < 1)
+            {
+                MessageBox.Show("Branch not valid try again");
+                
+            }
+
+            else
+            {
+                myCommand.CommandText = "insert into Employees Values(";
+                myCommand.CommandText += "'" + id_add.Text + "', '" + last_add.Text + "', '" + init_add.Text + " ', '" + first_add.Text + "', '";
+                myCommand.CommandText += street_name_add.Text + "', '" + street_no_add.Text + "', '" + city_add.Text + "', '";
+                myCommand.CommandText += prov_add.Text + "', '" + postal_add.Text + "', '" + phone_add.Text + "', '" + branch_add.Text + "')";
+
+
+
+
+                try
+                {
+
+                    MessageBox.Show(myCommand.CommandText);
+                    myCommand.ExecuteNonQuery();
+                    branch_add.Clear();
+                    id_add.Clear();
+                    first_add.Clear();
+                    init_add.Clear();
+                    last_add.Clear();
+                    street_name_add.Clear();
+                    street_no_add.Clear();
+                    postal_add.Clear();
+                    phone_add.Clear();
+                    city_add.Clear();
+                    prov_add.Clear();
+
+
+
+                }
+                catch (Exception e3)
+                {
+                    MessageBox.Show(e3.ToString(), "Error");
+                }
+            }
+        }
+
+        private void employee_edit_Click_1(object sender, EventArgs e)
+        {
+            myCommand2.CommandText = "select count (*) From Branches Where Branch_ID = '" + dsplBranch.Text + "';";
+            int num_branch = (int)myCommand2.ExecuteScalar();
+
+            if (num_branch < 1)
+            {
+                MessageBox.Show("Invalid Branch ID try again");
+            }
+
+            else
+            {
+
+                myCommand.CommandText = "update Employees";
+
+                myCommand.CommandText += " set " + "first_name = '" + dspl_first.Text + "', last_name = '" + dspl_last.Text + "',";
+                myCommand.CommandText += "middle_initial ='" + dspl_mid.Text + "', street_name = '" + dspl_str_nm.Text + "',";
+                myCommand.CommandText += "street_number = '" + dspl_str_num.Text + "', city = '" + dspl_cty.Text + "',";
+                myCommand.CommandText += "province = '" + dspl_prov.Text + "', zip = '" + dspl_zip.Text + "', phone_number ='" + dspl_tel.Text + "', Branch_ID ='" + dsplBranch.Text + "'";
+                myCommand.CommandText += " where Employees.Employee_ID = " + employee_txt.Text;
+
+                try
+                {
+
+                    MessageBox.Show(myCommand.CommandText);
+                    myCommand.ExecuteNonQuery();
+                    dspl_first.Clear();
+                    dspl_last.Clear();
+                    dspl_mid.Clear();
+                    dspl_str_nm.Clear();
+                    dspl_str_num.Clear();
+                    dspl_cty.Clear();
+                    dspl_prov.Clear();
+                    dspl_zip.Clear();
+                    dspl_tel.Clear();
+                    employee_txt.Clear();
+                    dsplBranch.Clear();
+
+
+
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show(e.ToString(), "Error");
+                }
+            }
+        }
+
+        private void add_id_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox18_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox13_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancel_edit_Click(object sender, EventArgs e)
+        {
+            dspl_first.Clear();
+            dspl_last.Clear();
+            dspl_mid.Clear();
+            dspl_str_nm.Clear();
+            dspl_str_num.Clear();
+            dspl_cty.Clear();
+            dspl_prov.Clear();
+            dspl_zip.Clear();
+            dspl_tel.Clear();
+            employee_txt.Clear();
+            dsplBranch.Clear();
+
+
+        }
+
+        private void clear_add_Click(object sender, EventArgs e)
+        {
+            branch_add.Clear();
+            id_add.Clear();
+            first_add.Clear();
+            init_add.Clear();
+            last_add.Clear();
+            street_name_add.Clear();
+            street_no_add.Clear();
+            postal_add.Clear();
+            phone_add.Clear();
+            city_add.Clear();
+            prov_add.Clear();
         }
     }
 }
+
