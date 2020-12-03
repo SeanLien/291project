@@ -180,7 +180,32 @@ namespace _291GroupProject
             // CarLabel.Text = CarLabelStr;
             //We could use a select statement to grab the VIN from database.
             //Search car_types database for Prices
+            SelectedCarImage.BackgroundImage = button2.BackgroundImage;
+        }
 
+        private void button1_click(object sender, EventArgs e)
+        {
+            SelectedCarImage.BackgroundImage = button1.BackgroundImage;
+        }
+
+        private void button3_click(object sender, EventArgs e)
+        {
+            SelectedCarImage.BackgroundImage = button3.BackgroundImage;
+        }
+
+        private void button4_click(object sender, EventArgs e)
+        {
+            SelectedCarImage.BackgroundImage = button4.BackgroundImage;
+        }
+
+        private void button5_click(object sender, EventArgs e)
+        {
+            SelectedCarImage.BackgroundImage = button5.BackgroundImage;
+        }
+
+        private void button6_click(object sender, EventArgs e)
+        {
+            SelectedCarImage.BackgroundImage = button6.BackgroundImage;
         }
     }
 }
