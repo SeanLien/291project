@@ -31,6 +31,103 @@ namespace _291GroupProject
         {
             this.components = new System.ComponentModel.Container();
             this.prev_rental = new System.Windows.Forms.TabControl();
+            this.edit_employee = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cancel_edit = new System.Windows.Forms.Button();
+            this.label72 = new System.Windows.Forms.Label();
+            this.dsplBranch = new System.Windows.Forms.TextBox();
+            this.employee_edit = new System.Windows.Forms.Button();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dspl_tel = new System.Windows.Forms.TextBox();
+            this.dspl_zip = new System.Windows.Forms.TextBox();
+            this.dspl_prov = new System.Windows.Forms.TextBox();
+            this.dspl_cty = new System.Windows.Forms.TextBox();
+            this.dspl_str_num = new System.Windows.Forms.TextBox();
+            this.dspl_str_nm = new System.Windows.Forms.TextBox();
+            this.dspl_last = new System.Windows.Forms.TextBox();
+            this.dspl_mid = new System.Windows.Forms.TextBox();
+            this.dspl_first = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.employee_search = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.employee_txt = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.clear_add = new System.Windows.Forms.Button();
+            this.label73 = new System.Windows.Forms.Label();
+            this.branch_add = new System.Windows.Forms.TextBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.new_employee = new System.Windows.Forms.Button();
+            this.label70 = new System.Windows.Forms.Label();
+            this.id_add = new System.Windows.Forms.TextBox();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.phone_add = new System.Windows.Forms.TextBox();
+            this.postal_add = new System.Windows.Forms.TextBox();
+            this.prov_add = new System.Windows.Forms.TextBox();
+            this.city_add = new System.Windows.Forms.TextBox();
+            this.street_no_add = new System.Windows.Forms.TextBox();
+            this.street_name_add = new System.Windows.Forms.TextBox();
+            this.last_add = new System.Windows.Forms.TextBox();
+            this.init_add = new System.Windows.Forms.TextBox();
+            this.first_add = new System.Windows.Forms.TextBox();
+            this.update_employee = new System.Windows.Forms.Button();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label77 = new System.Windows.Forms.Label();
+            this.search_branch = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.label49 = new System.Windows.Forms.Label();
+            this.dspl_branch_id = new System.Windows.Forms.TextBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.button19 = new System.Windows.Forms.Button();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.dspl_branch_phone = new System.Windows.Forms.TextBox();
+            this.dspl_branch_zip = new System.Windows.Forms.TextBox();
+            this.dspl_branch_prov = new System.Windows.Forms.TextBox();
+            this.dspl_branch_city = new System.Windows.Forms.TextBox();
+            this.dspl_branch_str_no = new System.Windows.Forms.TextBox();
+            this.dspl_branch_str_name = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.branch_add_id = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.add_branch = new System.Windows.Forms.Button();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.branch_add_phone = new System.Windows.Forms.TextBox();
+            this.branch_add_zip = new System.Windows.Forms.TextBox();
+            this.branch_add_prov = new System.Windows.Forms.TextBox();
+            this.branch_add_city = new System.Windows.Forms.TextBox();
+            this.branch_add_str_num = new System.Windows.Forms.TextBox();
+            this.branch_add_str_name = new System.Windows.Forms.TextBox();
+            this.label76 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
@@ -86,63 +183,6 @@ namespace _291GroupProject
             this.label41 = new System.Windows.Forms.Label();
             this.textBox35 = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.edit_employee = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label72 = new System.Windows.Forms.Label();
-            this.dsplBranch = new System.Windows.Forms.TextBox();
-            this.employee_edit = new System.Windows.Forms.Button();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.dspl_tel = new System.Windows.Forms.TextBox();
-            this.dspl_zip = new System.Windows.Forms.TextBox();
-            this.dspl_prov = new System.Windows.Forms.TextBox();
-            this.dspl_cty = new System.Windows.Forms.TextBox();
-            this.dspl_str_num = new System.Windows.Forms.TextBox();
-            this.dspl_str_nm = new System.Windows.Forms.TextBox();
-            this.dspl_last = new System.Windows.Forms.TextBox();
-            this.dspl_mid = new System.Windows.Forms.TextBox();
-            this.dspl_first = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.employee_search = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.employee_txt = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.branch_add = new System.Windows.Forms.TextBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.new_employee = new System.Windows.Forms.Button();
-            this.label70 = new System.Windows.Forms.Label();
-            this.id_add = new System.Windows.Forms.TextBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.phone_add = new System.Windows.Forms.TextBox();
-            this.postal_add = new System.Windows.Forms.TextBox();
-            this.prov_add = new System.Windows.Forms.TextBox();
-            this.city_add = new System.Windows.Forms.TextBox();
-            this.street_no_add = new System.Windows.Forms.TextBox();
-            this.street_name_add = new System.Windows.Forms.TextBox();
-            this.last_add = new System.Windows.Forms.TextBox();
-            this.init_add = new System.Windows.Forms.TextBox();
-            this.first_add = new System.Windows.Forms.TextBox();
-            this.update_employee = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
@@ -256,18 +296,21 @@ namespace _291GroupProject
             this._291_group_projectDataSet = new _291GroupProject._291_group_projectDataSet();
             this.branchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.branchesTableAdapter = new _291GroupProject._291_group_projectDataSetTableAdapters.BranchesTableAdapter();
-            this.cancel_edit = new System.Windows.Forms.Button();
-            this.clear_add = new System.Windows.Forms.Button();
             this.prev_rental.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.edit_employee.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.tabPage11.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -290,17 +333,1066 @@ namespace _291GroupProject
             // 
             // prev_rental
             // 
+            this.prev_rental.Controls.Add(this.edit_employee);
+            this.prev_rental.Controls.Add(this.tabPage11);
             this.prev_rental.Controls.Add(this.tabPage1);
             this.prev_rental.Controls.Add(this.tabPage4);
-            this.prev_rental.Controls.Add(this.edit_employee);
             this.prev_rental.Controls.Add(this.tabPage3);
             this.prev_rental.Controls.Add(this.tabPage2);
-            this.prev_rental.Location = new System.Drawing.Point(16, 15);
+            this.prev_rental.Location = new System.Drawing.Point(13, 13);
             this.prev_rental.Margin = new System.Windows.Forms.Padding(4);
             this.prev_rental.Name = "prev_rental";
             this.prev_rental.SelectedIndex = 0;
             this.prev_rental.Size = new System.Drawing.Size(2122, 1367);
             this.prev_rental.TabIndex = 0;
+            // 
+            // edit_employee
+            // 
+            this.edit_employee.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.edit_employee.Controls.Add(this.groupBox2);
+            this.edit_employee.Controls.Add(this.groupBox1);
+            this.edit_employee.Controls.Add(this.update_employee);
+            this.edit_employee.Location = new System.Drawing.Point(8, 39);
+            this.edit_employee.Margin = new System.Windows.Forms.Padding(4);
+            this.edit_employee.Name = "edit_employee";
+            this.edit_employee.Padding = new System.Windows.Forms.Padding(4);
+            this.edit_employee.Size = new System.Drawing.Size(2106, 1320);
+            this.edit_employee.TabIndex = 1;
+            this.edit_employee.Text = "Edit Employee Information";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.cancel_edit);
+            this.groupBox2.Controls.Add(this.label72);
+            this.groupBox2.Controls.Add(this.dsplBranch);
+            this.groupBox2.Controls.Add(this.employee_edit);
+            this.groupBox2.Controls.Add(this.label59);
+            this.groupBox2.Controls.Add(this.label58);
+            this.groupBox2.Controls.Add(this.label21);
+            this.groupBox2.Controls.Add(this.label20);
+            this.groupBox2.Controls.Add(this.label19);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.dspl_tel);
+            this.groupBox2.Controls.Add(this.dspl_zip);
+            this.groupBox2.Controls.Add(this.dspl_prov);
+            this.groupBox2.Controls.Add(this.dspl_cty);
+            this.groupBox2.Controls.Add(this.dspl_str_num);
+            this.groupBox2.Controls.Add(this.dspl_str_nm);
+            this.groupBox2.Controls.Add(this.dspl_last);
+            this.groupBox2.Controls.Add(this.dspl_mid);
+            this.groupBox2.Controls.Add(this.dspl_first);
+            this.groupBox2.Controls.Add(this.pictureBox2);
+            this.groupBox2.Controls.Add(this.textBox12);
+            this.groupBox2.Controls.Add(this.textBox11);
+            this.groupBox2.Controls.Add(this.employee_search);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.employee_txt);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(8, 556);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(1696, 600);
+            this.groupBox2.TabIndex = 78;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Edit Employee";
+            // 
+            // cancel_edit
+            // 
+            this.cancel_edit.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel_edit.Location = new System.Drawing.Point(842, 549);
+            this.cancel_edit.Margin = new System.Windows.Forms.Padding(4);
+            this.cancel_edit.Name = "cancel_edit";
+            this.cancel_edit.Size = new System.Drawing.Size(450, 48);
+            this.cancel_edit.TabIndex = 80;
+            this.cancel_edit.Text = "Clear Form";
+            this.cancel_edit.UseVisualStyleBackColor = true;
+            this.cancel_edit.Click += new System.EventHandler(this.cancel_edit_Click);
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.Location = new System.Drawing.Point(28, 496);
+            this.label72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(126, 38);
+            this.label72.TabIndex = 79;
+            this.label72.Text = "Branch";
+            // 
+            // dsplBranch
+            // 
+            this.dsplBranch.Location = new System.Drawing.Point(236, 496);
+            this.dsplBranch.Margin = new System.Windows.Forms.Padding(4);
+            this.dsplBranch.Name = "dsplBranch";
+            this.dsplBranch.Size = new System.Drawing.Size(320, 45);
+            this.dsplBranch.TabIndex = 78;
+            // 
+            // employee_edit
+            // 
+            this.employee_edit.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_edit.Location = new System.Drawing.Point(353, 549);
+            this.employee_edit.Margin = new System.Windows.Forms.Padding(4);
+            this.employee_edit.Name = "employee_edit";
+            this.employee_edit.Size = new System.Drawing.Size(434, 48);
+            this.employee_edit.TabIndex = 77;
+            this.employee_edit.Text = "Edit Employee Info";
+            this.employee_edit.UseVisualStyleBackColor = true;
+            this.employee_edit.Click += new System.EventHandler(this.employee_edit_Click_1);
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(1188, 412);
+            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(112, 38);
+            this.label59.TabIndex = 54;
+            this.label59.Text = "Tel No";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(24, 394);
+            this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(200, 38);
+            this.label58.TabIndex = 53;
+            this.label58.Text = "Postal Code";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(592, 404);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(150, 38);
+            this.label21.TabIndex = 52;
+            this.label21.Text = "Province";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(1212, 323);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(78, 38);
+            this.label20.TabIndex = 51;
+            this.label20.Text = "City";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(580, 315);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(238, 38);
+            this.label19.TabIndex = 50;
+            this.label19.Text = "Street Number";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(20, 310);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(206, 38);
+            this.label18.TabIndex = 49;
+            this.label18.Text = "Street Name";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(592, 231);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(97, 38);
+            this.label17.TabIndex = 48;
+            this.label17.Text = "Initial";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(1136, 233);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(180, 38);
+            this.label16.TabIndex = 47;
+            this.label16.Text = "Last Name";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(28, 231);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(182, 38);
+            this.label15.TabIndex = 46;
+            this.label15.Text = "First Name";
+            // 
+            // dspl_tel
+            // 
+            this.dspl_tel.Location = new System.Drawing.Point(1352, 402);
+            this.dspl_tel.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_tel.Name = "dspl_tel";
+            this.dspl_tel.Size = new System.Drawing.Size(320, 45);
+            this.dspl_tel.TabIndex = 45;
+            // 
+            // dspl_zip
+            // 
+            this.dspl_zip.Location = new System.Drawing.Point(232, 404);
+            this.dspl_zip.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_zip.Name = "dspl_zip";
+            this.dspl_zip.Size = new System.Drawing.Size(320, 45);
+            this.dspl_zip.TabIndex = 44;
+            // 
+            // dspl_prov
+            // 
+            this.dspl_prov.Location = new System.Drawing.Point(842, 405);
+            this.dspl_prov.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_prov.Name = "dspl_prov";
+            this.dspl_prov.Size = new System.Drawing.Size(320, 45);
+            this.dspl_prov.TabIndex = 43;
+            // 
+            // dspl_cty
+            // 
+            this.dspl_cty.Location = new System.Drawing.Point(1352, 323);
+            this.dspl_cty.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_cty.Name = "dspl_cty";
+            this.dspl_cty.Size = new System.Drawing.Size(320, 45);
+            this.dspl_cty.TabIndex = 42;
+            // 
+            // dspl_str_num
+            // 
+            this.dspl_str_num.Location = new System.Drawing.Point(842, 323);
+            this.dspl_str_num.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_str_num.Name = "dspl_str_num";
+            this.dspl_str_num.Size = new System.Drawing.Size(320, 45);
+            this.dspl_str_num.TabIndex = 41;
+            // 
+            // dspl_str_nm
+            // 
+            this.dspl_str_nm.Location = new System.Drawing.Point(232, 315);
+            this.dspl_str_nm.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_str_nm.Name = "dspl_str_nm";
+            this.dspl_str_nm.Size = new System.Drawing.Size(320, 45);
+            this.dspl_str_nm.TabIndex = 40;
+            // 
+            // dspl_last
+            // 
+            this.dspl_last.Location = new System.Drawing.Point(1352, 238);
+            this.dspl_last.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_last.Name = "dspl_last";
+            this.dspl_last.Size = new System.Drawing.Size(320, 45);
+            this.dspl_last.TabIndex = 39;
+            // 
+            // dspl_mid
+            // 
+            this.dspl_mid.Location = new System.Drawing.Point(842, 240);
+            this.dspl_mid.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_mid.Name = "dspl_mid";
+            this.dspl_mid.Size = new System.Drawing.Size(132, 45);
+            this.dspl_mid.TabIndex = 38;
+            // 
+            // dspl_first
+            // 
+            this.dspl_first.Location = new System.Drawing.Point(244, 233);
+            this.dspl_first.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_first.Name = "dspl_first";
+            this.dspl_first.Size = new System.Drawing.Size(320, 45);
+            this.dspl_first.TabIndex = 37;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(32, 62);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(176, 148);
+            this.pictureBox2.TabIndex = 35;
+            this.pictureBox2.TabStop = false;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(612, 140);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(536, 45);
+            this.textBox12.TabIndex = 27;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(612, 83);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(536, 45);
+            this.textBox11.TabIndex = 26;
+            // 
+            // employee_search
+            // 
+            this.employee_search.BackColor = System.Drawing.Color.Silver;
+            this.employee_search.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employee_search.Location = new System.Drawing.Point(1236, 73);
+            this.employee_search.Margin = new System.Windows.Forms.Padding(4);
+            this.employee_search.Name = "employee_search";
+            this.employee_search.Size = new System.Drawing.Size(368, 48);
+            this.employee_search.TabIndex = 24;
+            this.employee_search.Text = "Search Employee";
+            this.employee_search.UseVisualStyleBackColor = false;
+            this.employee_search.Click += new System.EventHandler(this.employee_search_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(356, 144);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(182, 38);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "First Name";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(356, 83);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(180, 38);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "Last Name";
+            // 
+            // employee_txt
+            // 
+            this.employee_txt.Location = new System.Drawing.Point(612, 27);
+            this.employee_txt.Margin = new System.Windows.Forms.Padding(4);
+            this.employee_txt.Name = "employee_txt";
+            this.employee_txt.Size = new System.Drawing.Size(536, 45);
+            this.employee_txt.TabIndex = 7;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(356, 29);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(207, 38);
+            this.label14.TabIndex = 6;
+            this.label14.Text = "Employee ID";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.clear_add);
+            this.groupBox1.Controls.Add(this.label73);
+            this.groupBox1.Controls.Add(this.branch_add);
+            this.groupBox1.Controls.Add(this.pictureBox6);
+            this.groupBox1.Controls.Add(this.new_employee);
+            this.groupBox1.Controls.Add(this.label70);
+            this.groupBox1.Controls.Add(this.id_add);
+            this.groupBox1.Controls.Add(this.label61);
+            this.groupBox1.Controls.Add(this.label62);
+            this.groupBox1.Controls.Add(this.label63);
+            this.groupBox1.Controls.Add(this.label64);
+            this.groupBox1.Controls.Add(this.label65);
+            this.groupBox1.Controls.Add(this.label66);
+            this.groupBox1.Controls.Add(this.label67);
+            this.groupBox1.Controls.Add(this.label68);
+            this.groupBox1.Controls.Add(this.label69);
+            this.groupBox1.Controls.Add(this.phone_add);
+            this.groupBox1.Controls.Add(this.postal_add);
+            this.groupBox1.Controls.Add(this.prov_add);
+            this.groupBox1.Controls.Add(this.city_add);
+            this.groupBox1.Controls.Add(this.street_no_add);
+            this.groupBox1.Controls.Add(this.street_name_add);
+            this.groupBox1.Controls.Add(this.last_add);
+            this.groupBox1.Controls.Add(this.init_add);
+            this.groupBox1.Controls.Add(this.first_add);
+            this.groupBox1.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBox1.Location = new System.Drawing.Point(10, 33);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(2694, 515);
+            this.groupBox1.TabIndex = 77;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "AddNew Employee";
+            // 
+            // clear_add
+            // 
+            this.clear_add.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clear_add.Location = new System.Drawing.Point(857, 436);
+            this.clear_add.Margin = new System.Windows.Forms.Padding(4);
+            this.clear_add.Name = "clear_add";
+            this.clear_add.Size = new System.Drawing.Size(441, 48);
+            this.clear_add.TabIndex = 79;
+            this.clear_add.Text = "Clear Form";
+            this.clear_add.UseVisualStyleBackColor = true;
+            this.clear_add.Click += new System.EventHandler(this.clear_add_Click);
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.Location = new System.Drawing.Point(598, 70);
+            this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(126, 38);
+            this.label73.TabIndex = 78;
+            this.label73.Text = "Branch";
+            // 
+            // branch_add
+            // 
+            this.branch_add.Location = new System.Drawing.Point(806, 67);
+            this.branch_add.Margin = new System.Windows.Forms.Padding(4);
+            this.branch_add.Name = "branch_add";
+            this.branch_add.Size = new System.Drawing.Size(320, 45);
+            this.branch_add.TabIndex = 77;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(30, 346);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(176, 148);
+            this.pictureBox6.TabIndex = 55;
+            this.pictureBox6.TabStop = false;
+            // 
+            // new_employee
+            // 
+            this.new_employee.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.new_employee.Location = new System.Drawing.Point(328, 436);
+            this.new_employee.Margin = new System.Windows.Forms.Padding(4);
+            this.new_employee.Name = "new_employee";
+            this.new_employee.Size = new System.Drawing.Size(412, 48);
+            this.new_employee.TabIndex = 76;
+            this.new_employee.Text = "Add New Employee";
+            this.new_employee.UseVisualStyleBackColor = true;
+            this.new_employee.Click += new System.EventHandler(this.button16_Click);
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(16, 60);
+            this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(207, 38);
+            this.label70.TabIndex = 75;
+            this.label70.Text = "Employee ID";
+            // 
+            // id_add
+            // 
+            this.id_add.Location = new System.Drawing.Point(228, 67);
+            this.id_add.Margin = new System.Windows.Forms.Padding(4);
+            this.id_add.Name = "id_add";
+            this.id_add.Size = new System.Drawing.Size(320, 45);
+            this.id_add.TabIndex = 74;
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(1188, 321);
+            this.label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(112, 38);
+            this.label61.TabIndex = 73;
+            this.label61.Text = "Tel No";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(24, 306);
+            this.label62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(200, 38);
+            this.label62.TabIndex = 72;
+            this.label62.Text = "Postal Code";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(590, 313);
+            this.label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(150, 38);
+            this.label63.TabIndex = 71;
+            this.label63.Text = "Province";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(1212, 235);
+            this.label64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(78, 38);
+            this.label64.TabIndex = 70;
+            this.label64.Text = "City";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(578, 227);
+            this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(238, 38);
+            this.label65.TabIndex = 69;
+            this.label65.Text = "Street Number";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Location = new System.Drawing.Point(16, 219);
+            this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(206, 38);
+            this.label66.TabIndex = 68;
+            this.label66.Text = "Street Name";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(590, 140);
+            this.label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(97, 38);
+            this.label67.TabIndex = 67;
+            this.label67.Text = "Initial";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(1136, 142);
+            this.label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(180, 38);
+            this.label68.TabIndex = 66;
+            this.label68.Text = "Last Name";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(26, 140);
+            this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(182, 38);
+            this.label69.TabIndex = 65;
+            this.label69.Text = "First Name";
+            // 
+            // phone_add
+            // 
+            this.phone_add.Location = new System.Drawing.Point(1350, 312);
+            this.phone_add.Margin = new System.Windows.Forms.Padding(4);
+            this.phone_add.Name = "phone_add";
+            this.phone_add.Size = new System.Drawing.Size(320, 45);
+            this.phone_add.TabIndex = 64;
+            // 
+            // postal_add
+            // 
+            this.postal_add.Location = new System.Drawing.Point(228, 313);
+            this.postal_add.Margin = new System.Windows.Forms.Padding(4);
+            this.postal_add.Name = "postal_add";
+            this.postal_add.Size = new System.Drawing.Size(320, 45);
+            this.postal_add.TabIndex = 63;
+            // 
+            // prov_add
+            // 
+            this.prov_add.Location = new System.Drawing.Point(792, 321);
+            this.prov_add.Margin = new System.Windows.Forms.Padding(4);
+            this.prov_add.Name = "prov_add";
+            this.prov_add.Size = new System.Drawing.Size(320, 45);
+            this.prov_add.TabIndex = 62;
+            // 
+            // city_add
+            // 
+            this.city_add.Location = new System.Drawing.Point(1350, 235);
+            this.city_add.Margin = new System.Windows.Forms.Padding(4);
+            this.city_add.Name = "city_add";
+            this.city_add.Size = new System.Drawing.Size(320, 45);
+            this.city_add.TabIndex = 61;
+            // 
+            // street_no_add
+            // 
+            this.street_no_add.Location = new System.Drawing.Point(840, 235);
+            this.street_no_add.Margin = new System.Windows.Forms.Padding(4);
+            this.street_no_add.Name = "street_no_add";
+            this.street_no_add.Size = new System.Drawing.Size(320, 45);
+            this.street_no_add.TabIndex = 60;
+            // 
+            // street_name_add
+            // 
+            this.street_name_add.Location = new System.Drawing.Point(228, 227);
+            this.street_name_add.Margin = new System.Windows.Forms.Padding(4);
+            this.street_name_add.Name = "street_name_add";
+            this.street_name_add.Size = new System.Drawing.Size(320, 45);
+            this.street_name_add.TabIndex = 59;
+            // 
+            // last_add
+            // 
+            this.last_add.Location = new System.Drawing.Point(1350, 148);
+            this.last_add.Margin = new System.Windows.Forms.Padding(4);
+            this.last_add.Name = "last_add";
+            this.last_add.Size = new System.Drawing.Size(320, 45);
+            this.last_add.TabIndex = 58;
+            // 
+            // init_add
+            // 
+            this.init_add.Location = new System.Drawing.Point(840, 150);
+            this.init_add.Margin = new System.Windows.Forms.Padding(4);
+            this.init_add.Name = "init_add";
+            this.init_add.Size = new System.Drawing.Size(132, 45);
+            this.init_add.TabIndex = 57;
+            // 
+            // first_add
+            // 
+            this.first_add.Location = new System.Drawing.Point(228, 140);
+            this.first_add.Margin = new System.Windows.Forms.Padding(4);
+            this.first_add.Name = "first_add";
+            this.first_add.Size = new System.Drawing.Size(320, 45);
+            this.first_add.TabIndex = 56;
+            // 
+            // update_employee
+            // 
+            this.update_employee.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update_employee.Location = new System.Drawing.Point(644, 1110);
+            this.update_employee.Margin = new System.Windows.Forms.Padding(4);
+            this.update_employee.Name = "update_employee";
+            this.update_employee.Size = new System.Drawing.Size(488, 48);
+            this.update_employee.TabIndex = 55;
+            this.update_employee.Text = "Update Employee Info";
+            this.update_employee.UseVisualStyleBackColor = true;
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.BackColor = System.Drawing.Color.AliceBlue;
+            this.tabPage11.Controls.Add(this.groupBox4);
+            this.tabPage11.Controls.Add(this.groupBox3);
+            this.tabPage11.Controls.Add(this.label76);
+            this.tabPage11.Location = new System.Drawing.Point(8, 39);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(2106, 1320);
+            this.tabPage11.TabIndex = 6;
+            this.tabPage11.Text = "Branch Information";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label77);
+            this.groupBox4.Controls.Add(this.search_branch);
+            this.groupBox4.Controls.Add(this.button18);
+            this.groupBox4.Controls.Add(this.label49);
+            this.groupBox4.Controls.Add(this.dspl_branch_id);
+            this.groupBox4.Controls.Add(this.pictureBox7);
+            this.groupBox4.Controls.Add(this.button19);
+            this.groupBox4.Controls.Add(this.label56);
+            this.groupBox4.Controls.Add(this.label57);
+            this.groupBox4.Controls.Add(this.label71);
+            this.groupBox4.Controls.Add(this.label74);
+            this.groupBox4.Controls.Add(this.label75);
+            this.groupBox4.Controls.Add(this.dspl_branch_phone);
+            this.groupBox4.Controls.Add(this.dspl_branch_zip);
+            this.groupBox4.Controls.Add(this.dspl_branch_prov);
+            this.groupBox4.Controls.Add(this.dspl_branch_city);
+            this.groupBox4.Controls.Add(this.dspl_branch_str_no);
+            this.groupBox4.Controls.Add(this.dspl_branch_str_name);
+            this.groupBox4.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(10, 592);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1698, 653);
+            this.groupBox4.TabIndex = 123;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Edit Branch Info";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.Location = new System.Drawing.Point(13, 308);
+            this.label77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(206, 38);
+            this.label77.TabIndex = 105;
+            this.label77.Text = "Street Name";
+            // 
+            // search_branch
+            // 
+            this.search_branch.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_branch.Location = new System.Drawing.Point(1082, 165);
+            this.search_branch.Margin = new System.Windows.Forms.Padding(4);
+            this.search_branch.Name = "search_branch";
+            this.search_branch.Size = new System.Drawing.Size(312, 48);
+            this.search_branch.TabIndex = 122;
+            this.search_branch.Text = "Search ";
+            this.search_branch.UseVisualStyleBackColor = true;
+            this.search_branch.Click += new System.EventHandler(this.search_branch_Click);
+            // 
+            // button18
+            // 
+            this.button18.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.Location = new System.Drawing.Point(846, 515);
+            this.button18.Margin = new System.Windows.Forms.Padding(4);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(441, 48);
+            this.button18.TabIndex = 121;
+            this.button18.Text = "Clear Form";
+            this.button18.UseVisualStyleBackColor = true;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(390, 175);
+            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(162, 38);
+            this.label49.TabIndex = 120;
+            this.label49.Text = "Branch Id";
+            // 
+            // dspl_branch_id
+            // 
+            this.dspl_branch_id.Location = new System.Drawing.Point(598, 172);
+            this.dspl_branch_id.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_branch_id.Name = "dspl_branch_id";
+            this.dspl_branch_id.Size = new System.Drawing.Size(320, 45);
+            this.dspl_branch_id.TabIndex = 119;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(3, 49);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(373, 204);
+            this.pictureBox7.TabIndex = 105;
+            this.pictureBox7.TabStop = false;
+            // 
+            // button19
+            // 
+            this.button19.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.Location = new System.Drawing.Point(317, 515);
+            this.button19.Margin = new System.Windows.Forms.Padding(4);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(412, 48);
+            this.button19.TabIndex = 118;
+            this.button19.Text = "Update Branch";
+            this.button19.UseVisualStyleBackColor = true;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(1177, 400);
+            this.label56.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(112, 38);
+            this.label56.TabIndex = 117;
+            this.label56.Text = "Tel No";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(582, 398);
+            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(200, 38);
+            this.label57.TabIndex = 116;
+            this.label57.Text = "Postal Code";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(15, 392);
+            this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(150, 38);
+            this.label71.TabIndex = 115;
+            this.label71.Text = "Province";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Location = new System.Drawing.Point(1201, 314);
+            this.label74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(78, 38);
+            this.label74.TabIndex = 114;
+            this.label74.Text = "City";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.Location = new System.Drawing.Point(567, 306);
+            this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(238, 38);
+            this.label75.TabIndex = 113;
+            this.label75.Text = "Street Number";
+            // 
+            // dspl_branch_phone
+            // 
+            this.dspl_branch_phone.Location = new System.Drawing.Point(1339, 391);
+            this.dspl_branch_phone.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_branch_phone.Name = "dspl_branch_phone";
+            this.dspl_branch_phone.Size = new System.Drawing.Size(320, 45);
+            this.dspl_branch_phone.TabIndex = 111;
+            // 
+            // dspl_branch_zip
+            // 
+            this.dspl_branch_zip.Location = new System.Drawing.Point(825, 400);
+            this.dspl_branch_zip.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_branch_zip.Name = "dspl_branch_zip";
+            this.dspl_branch_zip.Size = new System.Drawing.Size(320, 45);
+            this.dspl_branch_zip.TabIndex = 110;
+            // 
+            // dspl_branch_prov
+            // 
+            this.dspl_branch_prov.Location = new System.Drawing.Point(217, 400);
+            this.dspl_branch_prov.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_branch_prov.Name = "dspl_branch_prov";
+            this.dspl_branch_prov.Size = new System.Drawing.Size(320, 45);
+            this.dspl_branch_prov.TabIndex = 109;
+            // 
+            // dspl_branch_city
+            // 
+            this.dspl_branch_city.Location = new System.Drawing.Point(1339, 314);
+            this.dspl_branch_city.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_branch_city.Name = "dspl_branch_city";
+            this.dspl_branch_city.Size = new System.Drawing.Size(320, 45);
+            this.dspl_branch_city.TabIndex = 108;
+            // 
+            // dspl_branch_str_no
+            // 
+            this.dspl_branch_str_no.Location = new System.Drawing.Point(829, 314);
+            this.dspl_branch_str_no.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_branch_str_no.Name = "dspl_branch_str_no";
+            this.dspl_branch_str_no.Size = new System.Drawing.Size(320, 45);
+            this.dspl_branch_str_no.TabIndex = 107;
+            // 
+            // dspl_branch_str_name
+            // 
+            this.dspl_branch_str_name.Location = new System.Drawing.Point(217, 308);
+            this.dspl_branch_str_name.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_branch_str_name.Name = "dspl_branch_str_name";
+            this.dspl_branch_str_name.Size = new System.Drawing.Size(320, 45);
+            this.dspl_branch_str_name.TabIndex = 106;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label48);
+            this.groupBox3.Controls.Add(this.branch_add_id);
+            this.groupBox3.Controls.Add(this.pictureBox5);
+            this.groupBox3.Controls.Add(this.add_branch);
+            this.groupBox3.Controls.Add(this.label50);
+            this.groupBox3.Controls.Add(this.label51);
+            this.groupBox3.Controls.Add(this.label52);
+            this.groupBox3.Controls.Add(this.label53);
+            this.groupBox3.Controls.Add(this.label54);
+            this.groupBox3.Controls.Add(this.label55);
+            this.groupBox3.Controls.Add(this.branch_add_phone);
+            this.groupBox3.Controls.Add(this.branch_add_zip);
+            this.groupBox3.Controls.Add(this.branch_add_prov);
+            this.groupBox3.Controls.Add(this.branch_add_city);
+            this.groupBox3.Controls.Add(this.branch_add_str_num);
+            this.groupBox3.Controls.Add(this.branch_add_str_name);
+            this.groupBox3.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(3, 16);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1706, 566);
+            this.groupBox3.TabIndex = 122;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Add Branch";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(397, 159);
+            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(162, 38);
+            this.label48.TabIndex = 103;
+            this.label48.Text = "Branch Id";
+            // 
+            // branch_add_id
+            // 
+            this.branch_add_id.Location = new System.Drawing.Point(605, 156);
+            this.branch_add_id.Margin = new System.Windows.Forms.Padding(4);
+            this.branch_add_id.Name = "branch_add_id";
+            this.branch_add_id.Size = new System.Drawing.Size(320, 45);
+            this.branch_add_id.TabIndex = 102;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(10, 43);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(373, 204);
+            this.pictureBox5.TabIndex = 80;
+            this.pictureBox5.TabStop = false;
+            // 
+            // add_branch
+            // 
+            this.add_branch.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_branch.Location = new System.Drawing.Point(572, 478);
+            this.add_branch.Margin = new System.Windows.Forms.Padding(4);
+            this.add_branch.Name = "add_branch";
+            this.add_branch.Size = new System.Drawing.Size(412, 48);
+            this.add_branch.TabIndex = 101;
+            this.add_branch.Text = "Add New Branch";
+            this.add_branch.UseVisualStyleBackColor = true;
+            this.add_branch.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(1175, 384);
+            this.label50.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(112, 38);
+            this.label50.TabIndex = 98;
+            this.label50.Text = "Tel No";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(574, 375);
+            this.label51.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(200, 38);
+            this.label51.TabIndex = 97;
+            this.label51.Text = "Postal Code";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(13, 374);
+            this.label52.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(150, 38);
+            this.label52.TabIndex = 96;
+            this.label52.Text = "Province";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(1199, 298);
+            this.label53.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(78, 38);
+            this.label53.TabIndex = 95;
+            this.label53.Text = "City";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(565, 290);
+            this.label54.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(238, 38);
+            this.label54.TabIndex = 94;
+            this.label54.Text = "Street Number";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(3, 282);
+            this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(206, 38);
+            this.label55.TabIndex = 93;
+            this.label55.Text = "Street Name";
+            // 
+            // branch_add_phone
+            // 
+            this.branch_add_phone.Location = new System.Drawing.Point(1337, 375);
+            this.branch_add_phone.Margin = new System.Windows.Forms.Padding(4);
+            this.branch_add_phone.Name = "branch_add_phone";
+            this.branch_add_phone.Size = new System.Drawing.Size(320, 45);
+            this.branch_add_phone.TabIndex = 89;
+            // 
+            // branch_add_zip
+            // 
+            this.branch_add_zip.Location = new System.Drawing.Point(832, 373);
+            this.branch_add_zip.Margin = new System.Windows.Forms.Padding(4);
+            this.branch_add_zip.Name = "branch_add_zip";
+            this.branch_add_zip.Size = new System.Drawing.Size(320, 45);
+            this.branch_add_zip.TabIndex = 88;
+            // 
+            // branch_add_prov
+            // 
+            this.branch_add_prov.Location = new System.Drawing.Point(215, 382);
+            this.branch_add_prov.Margin = new System.Windows.Forms.Padding(4);
+            this.branch_add_prov.Name = "branch_add_prov";
+            this.branch_add_prov.Size = new System.Drawing.Size(320, 45);
+            this.branch_add_prov.TabIndex = 87;
+            // 
+            // branch_add_city
+            // 
+            this.branch_add_city.Location = new System.Drawing.Point(1337, 298);
+            this.branch_add_city.Margin = new System.Windows.Forms.Padding(4);
+            this.branch_add_city.Name = "branch_add_city";
+            this.branch_add_city.Size = new System.Drawing.Size(320, 45);
+            this.branch_add_city.TabIndex = 86;
+            // 
+            // branch_add_str_num
+            // 
+            this.branch_add_str_num.Location = new System.Drawing.Point(827, 298);
+            this.branch_add_str_num.Margin = new System.Windows.Forms.Padding(4);
+            this.branch_add_str_num.Name = "branch_add_str_num";
+            this.branch_add_str_num.Size = new System.Drawing.Size(320, 45);
+            this.branch_add_str_num.TabIndex = 85;
+            // 
+            // branch_add_str_name
+            // 
+            this.branch_add_str_name.Location = new System.Drawing.Point(215, 290);
+            this.branch_add_str_name.Margin = new System.Windows.Forms.Padding(4);
+            this.branch_add_str_name.Name = "branch_add_str_name";
+            this.branch_add_str_name.Size = new System.Drawing.Size(320, 45);
+            this.branch_add_str_name.TabIndex = 84;
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.Location = new System.Drawing.Point(6, 890);
+            this.label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(206, 38);
+            this.label76.TabIndex = 112;
+            this.label76.Text = "Street Name";
             // 
             // tabPage1
             // 
@@ -681,7 +1773,6 @@ namespace _291GroupProject
             this.textBox36.Name = "textBox36";
             this.textBox36.Size = new System.Drawing.Size(276, 31);
             this.textBox36.TabIndex = 38;
-            this.textBox36.TextChanged += new System.EventHandler(this.textBox36_TextChanged);
             // 
             // label47
             // 
@@ -897,629 +1988,6 @@ namespace _291GroupProject
             this.label42.Size = new System.Drawing.Size(154, 38);
             this.label42.TabIndex = 12;
             this.label42.Text = "Rental ID";
-            // 
-            // edit_employee
-            // 
-            this.edit_employee.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.edit_employee.Controls.Add(this.groupBox2);
-            this.edit_employee.Controls.Add(this.groupBox1);
-            this.edit_employee.Controls.Add(this.update_employee);
-            this.edit_employee.Location = new System.Drawing.Point(8, 39);
-            this.edit_employee.Margin = new System.Windows.Forms.Padding(4);
-            this.edit_employee.Name = "edit_employee";
-            this.edit_employee.Padding = new System.Windows.Forms.Padding(4);
-            this.edit_employee.Size = new System.Drawing.Size(2106, 1320);
-            this.edit_employee.TabIndex = 1;
-            this.edit_employee.Text = "Edit Employee Information";
-            this.edit_employee.Click += new System.EventHandler(this.tabPage2_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.cancel_edit);
-            this.groupBox2.Controls.Add(this.label72);
-            this.groupBox2.Controls.Add(this.dsplBranch);
-            this.groupBox2.Controls.Add(this.employee_edit);
-            this.groupBox2.Controls.Add(this.label59);
-            this.groupBox2.Controls.Add(this.label58);
-            this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.dspl_tel);
-            this.groupBox2.Controls.Add(this.dspl_zip);
-            this.groupBox2.Controls.Add(this.dspl_prov);
-            this.groupBox2.Controls.Add(this.dspl_cty);
-            this.groupBox2.Controls.Add(this.dspl_str_num);
-            this.groupBox2.Controls.Add(this.dspl_str_nm);
-            this.groupBox2.Controls.Add(this.dspl_last);
-            this.groupBox2.Controls.Add(this.dspl_mid);
-            this.groupBox2.Controls.Add(this.dspl_first);
-            this.groupBox2.Controls.Add(this.pictureBox2);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox11);
-            this.groupBox2.Controls.Add(this.employee_search);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.employee_txt);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(8, 556);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1696, 600);
-            this.groupBox2.TabIndex = 78;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Edit Employee";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.Location = new System.Drawing.Point(28, 496);
-            this.label72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(126, 38);
-            this.label72.TabIndex = 79;
-            this.label72.Text = "Branch";
-            // 
-            // dsplBranch
-            // 
-            this.dsplBranch.Location = new System.Drawing.Point(236, 496);
-            this.dsplBranch.Margin = new System.Windows.Forms.Padding(4);
-            this.dsplBranch.Name = "dsplBranch";
-            this.dsplBranch.Size = new System.Drawing.Size(320, 45);
-            this.dsplBranch.TabIndex = 78;
-            // 
-            // employee_edit
-            // 
-            this.employee_edit.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employee_edit.Location = new System.Drawing.Point(353, 549);
-            this.employee_edit.Margin = new System.Windows.Forms.Padding(4);
-            this.employee_edit.Name = "employee_edit";
-            this.employee_edit.Size = new System.Drawing.Size(434, 48);
-            this.employee_edit.TabIndex = 77;
-            this.employee_edit.Text = "Edit Employee Info";
-            this.employee_edit.UseVisualStyleBackColor = true;
-            this.employee_edit.Click += new System.EventHandler(this.employee_edit_Click_1);
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(1188, 412);
-            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(112, 38);
-            this.label59.TabIndex = 54;
-            this.label59.Text = "Tel No";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(24, 394);
-            this.label58.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(200, 38);
-            this.label58.TabIndex = 53;
-            this.label58.Text = "Postal Code";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(592, 404);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(150, 38);
-            this.label21.TabIndex = 52;
-            this.label21.Text = "Province";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(1212, 323);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(78, 38);
-            this.label20.TabIndex = 51;
-            this.label20.Text = "City";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(580, 315);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(238, 38);
-            this.label19.TabIndex = 50;
-            this.label19.Text = "Street Number";
-            this.label19.Click += new System.EventHandler(this.label19_Click);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(20, 310);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(206, 38);
-            this.label18.TabIndex = 49;
-            this.label18.Text = "Street Name";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(592, 231);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(97, 38);
-            this.label17.TabIndex = 48;
-            this.label17.Text = "Initial";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(1136, 233);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(180, 38);
-            this.label16.TabIndex = 47;
-            this.label16.Text = "Last Name";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(28, 231);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(182, 38);
-            this.label15.TabIndex = 46;
-            this.label15.Text = "First Name";
-            // 
-            // dspl_tel
-            // 
-            this.dspl_tel.Location = new System.Drawing.Point(1352, 402);
-            this.dspl_tel.Margin = new System.Windows.Forms.Padding(4);
-            this.dspl_tel.Name = "dspl_tel";
-            this.dspl_tel.Size = new System.Drawing.Size(320, 45);
-            this.dspl_tel.TabIndex = 45;
-            // 
-            // dspl_zip
-            // 
-            this.dspl_zip.Location = new System.Drawing.Point(232, 404);
-            this.dspl_zip.Margin = new System.Windows.Forms.Padding(4);
-            this.dspl_zip.Name = "dspl_zip";
-            this.dspl_zip.Size = new System.Drawing.Size(320, 45);
-            this.dspl_zip.TabIndex = 44;
-            // 
-            // dspl_prov
-            // 
-            this.dspl_prov.Location = new System.Drawing.Point(842, 405);
-            this.dspl_prov.Margin = new System.Windows.Forms.Padding(4);
-            this.dspl_prov.Name = "dspl_prov";
-            this.dspl_prov.Size = new System.Drawing.Size(320, 45);
-            this.dspl_prov.TabIndex = 43;
-            this.dspl_prov.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
-            // 
-            // dspl_cty
-            // 
-            this.dspl_cty.Location = new System.Drawing.Point(1352, 323);
-            this.dspl_cty.Margin = new System.Windows.Forms.Padding(4);
-            this.dspl_cty.Name = "dspl_cty";
-            this.dspl_cty.Size = new System.Drawing.Size(320, 45);
-            this.dspl_cty.TabIndex = 42;
-            this.dspl_cty.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
-            // 
-            // dspl_str_num
-            // 
-            this.dspl_str_num.Location = new System.Drawing.Point(842, 323);
-            this.dspl_str_num.Margin = new System.Windows.Forms.Padding(4);
-            this.dspl_str_num.Name = "dspl_str_num";
-            this.dspl_str_num.Size = new System.Drawing.Size(320, 45);
-            this.dspl_str_num.TabIndex = 41;
-            // 
-            // dspl_str_nm
-            // 
-            this.dspl_str_nm.Location = new System.Drawing.Point(232, 315);
-            this.dspl_str_nm.Margin = new System.Windows.Forms.Padding(4);
-            this.dspl_str_nm.Name = "dspl_str_nm";
-            this.dspl_str_nm.Size = new System.Drawing.Size(320, 45);
-            this.dspl_str_nm.TabIndex = 40;
-            // 
-            // dspl_last
-            // 
-            this.dspl_last.Location = new System.Drawing.Point(1352, 238);
-            this.dspl_last.Margin = new System.Windows.Forms.Padding(4);
-            this.dspl_last.Name = "dspl_last";
-            this.dspl_last.Size = new System.Drawing.Size(320, 45);
-            this.dspl_last.TabIndex = 39;
-            // 
-            // dspl_mid
-            // 
-            this.dspl_mid.Location = new System.Drawing.Point(842, 240);
-            this.dspl_mid.Margin = new System.Windows.Forms.Padding(4);
-            this.dspl_mid.Name = "dspl_mid";
-            this.dspl_mid.Size = new System.Drawing.Size(132, 45);
-            this.dspl_mid.TabIndex = 38;
-            // 
-            // dspl_first
-            // 
-            this.dspl_first.Location = new System.Drawing.Point(244, 233);
-            this.dspl_first.Margin = new System.Windows.Forms.Padding(4);
-            this.dspl_first.Name = "dspl_first";
-            this.dspl_first.Size = new System.Drawing.Size(320, 45);
-            this.dspl_first.TabIndex = 37;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(32, 62);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(176, 148);
-            this.pictureBox2.TabIndex = 35;
-            this.pictureBox2.TabStop = false;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(612, 140);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(536, 45);
-            this.textBox12.TabIndex = 27;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(612, 83);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(536, 45);
-            this.textBox11.TabIndex = 26;
-            // 
-            // employee_search
-            // 
-            this.employee_search.BackColor = System.Drawing.Color.Silver;
-            this.employee_search.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employee_search.Location = new System.Drawing.Point(1236, 73);
-            this.employee_search.Margin = new System.Windows.Forms.Padding(4);
-            this.employee_search.Name = "employee_search";
-            this.employee_search.Size = new System.Drawing.Size(368, 48);
-            this.employee_search.TabIndex = 24;
-            this.employee_search.Text = "Search Employee";
-            this.employee_search.UseVisualStyleBackColor = false;
-            this.employee_search.Click += new System.EventHandler(this.employee_search_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(356, 144);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(182, 38);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "First Name";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(356, 83);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(180, 38);
-            this.label13.TabIndex = 8;
-            this.label13.Text = "Last Name";
-            // 
-            // employee_txt
-            // 
-            this.employee_txt.Location = new System.Drawing.Point(612, 27);
-            this.employee_txt.Margin = new System.Windows.Forms.Padding(4);
-            this.employee_txt.Name = "employee_txt";
-            this.employee_txt.Size = new System.Drawing.Size(536, 45);
-            this.employee_txt.TabIndex = 7;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(356, 29);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(207, 38);
-            this.label14.TabIndex = 6;
-            this.label14.Text = "Employee ID";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.clear_add);
-            this.groupBox1.Controls.Add(this.label73);
-            this.groupBox1.Controls.Add(this.branch_add);
-            this.groupBox1.Controls.Add(this.pictureBox6);
-            this.groupBox1.Controls.Add(this.new_employee);
-            this.groupBox1.Controls.Add(this.label70);
-            this.groupBox1.Controls.Add(this.id_add);
-            this.groupBox1.Controls.Add(this.label61);
-            this.groupBox1.Controls.Add(this.label62);
-            this.groupBox1.Controls.Add(this.label63);
-            this.groupBox1.Controls.Add(this.label64);
-            this.groupBox1.Controls.Add(this.label65);
-            this.groupBox1.Controls.Add(this.label66);
-            this.groupBox1.Controls.Add(this.label67);
-            this.groupBox1.Controls.Add(this.label68);
-            this.groupBox1.Controls.Add(this.label69);
-            this.groupBox1.Controls.Add(this.phone_add);
-            this.groupBox1.Controls.Add(this.postal_add);
-            this.groupBox1.Controls.Add(this.prov_add);
-            this.groupBox1.Controls.Add(this.city_add);
-            this.groupBox1.Controls.Add(this.street_no_add);
-            this.groupBox1.Controls.Add(this.street_name_add);
-            this.groupBox1.Controls.Add(this.last_add);
-            this.groupBox1.Controls.Add(this.init_add);
-            this.groupBox1.Controls.Add(this.first_add);
-            this.groupBox1.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox1.Location = new System.Drawing.Point(10, 33);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(2694, 515);
-            this.groupBox1.TabIndex = 77;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "AddNew Employee";
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(598, 70);
-            this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(126, 38);
-            this.label73.TabIndex = 78;
-            this.label73.Text = "Branch";
-            // 
-            // branch_add
-            // 
-            this.branch_add.Location = new System.Drawing.Point(806, 67);
-            this.branch_add.Margin = new System.Windows.Forms.Padding(4);
-            this.branch_add.Name = "branch_add";
-            this.branch_add.Size = new System.Drawing.Size(320, 45);
-            this.branch_add.TabIndex = 77;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(30, 346);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(176, 148);
-            this.pictureBox6.TabIndex = 55;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // new_employee
-            // 
-            this.new_employee.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.new_employee.Location = new System.Drawing.Point(328, 436);
-            this.new_employee.Margin = new System.Windows.Forms.Padding(4);
-            this.new_employee.Name = "new_employee";
-            this.new_employee.Size = new System.Drawing.Size(412, 48);
-            this.new_employee.TabIndex = 76;
-            this.new_employee.Text = "Add New Employee";
-            this.new_employee.UseVisualStyleBackColor = true;
-            this.new_employee.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(16, 60);
-            this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(207, 38);
-            this.label70.TabIndex = 75;
-            this.label70.Text = "Employee ID";
-            // 
-            // id_add
-            // 
-            this.id_add.Location = new System.Drawing.Point(228, 67);
-            this.id_add.Margin = new System.Windows.Forms.Padding(4);
-            this.id_add.Name = "id_add";
-            this.id_add.Size = new System.Drawing.Size(320, 45);
-            this.id_add.TabIndex = 74;
-            this.id_add.TextChanged += new System.EventHandler(this.add_id_TextChanged);
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(1188, 321);
-            this.label61.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(112, 38);
-            this.label61.TabIndex = 73;
-            this.label61.Text = "Tel No";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(24, 306);
-            this.label62.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(200, 38);
-            this.label62.TabIndex = 72;
-            this.label62.Text = "Postal Code";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(590, 313);
-            this.label63.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(150, 38);
-            this.label63.TabIndex = 71;
-            this.label63.Text = "Province";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(1212, 235);
-            this.label64.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(78, 38);
-            this.label64.TabIndex = 70;
-            this.label64.Text = "City";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(578, 227);
-            this.label65.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(238, 38);
-            this.label65.TabIndex = 69;
-            this.label65.Text = "Street Number";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(16, 219);
-            this.label66.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(206, 38);
-            this.label66.TabIndex = 68;
-            this.label66.Text = "Street Name";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(590, 140);
-            this.label67.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(97, 38);
-            this.label67.TabIndex = 67;
-            this.label67.Text = "Initial";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(1136, 142);
-            this.label68.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(180, 38);
-            this.label68.TabIndex = 66;
-            this.label68.Text = "Last Name";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(26, 140);
-            this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(182, 38);
-            this.label69.TabIndex = 65;
-            this.label69.Text = "First Name";
-            // 
-            // phone_add
-            // 
-            this.phone_add.Location = new System.Drawing.Point(1350, 312);
-            this.phone_add.Margin = new System.Windows.Forms.Padding(4);
-            this.phone_add.Name = "phone_add";
-            this.phone_add.Size = new System.Drawing.Size(320, 45);
-            this.phone_add.TabIndex = 64;
-            // 
-            // postal_add
-            // 
-            this.postal_add.Location = new System.Drawing.Point(228, 313);
-            this.postal_add.Margin = new System.Windows.Forms.Padding(4);
-            this.postal_add.Name = "postal_add";
-            this.postal_add.Size = new System.Drawing.Size(320, 45);
-            this.postal_add.TabIndex = 63;
-            // 
-            // prov_add
-            // 
-            this.prov_add.Location = new System.Drawing.Point(792, 321);
-            this.prov_add.Margin = new System.Windows.Forms.Padding(4);
-            this.prov_add.Name = "prov_add";
-            this.prov_add.Size = new System.Drawing.Size(320, 45);
-            this.prov_add.TabIndex = 62;
-            // 
-            // city_add
-            // 
-            this.city_add.Location = new System.Drawing.Point(1350, 235);
-            this.city_add.Margin = new System.Windows.Forms.Padding(4);
-            this.city_add.Name = "city_add";
-            this.city_add.Size = new System.Drawing.Size(320, 45);
-            this.city_add.TabIndex = 61;
-            // 
-            // street_no_add
-            // 
-            this.street_no_add.Location = new System.Drawing.Point(840, 235);
-            this.street_no_add.Margin = new System.Windows.Forms.Padding(4);
-            this.street_no_add.Name = "street_no_add";
-            this.street_no_add.Size = new System.Drawing.Size(320, 45);
-            this.street_no_add.TabIndex = 60;
-            this.street_no_add.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
-            // 
-            // street_name_add
-            // 
-            this.street_name_add.Location = new System.Drawing.Point(228, 227);
-            this.street_name_add.Margin = new System.Windows.Forms.Padding(4);
-            this.street_name_add.Name = "street_name_add";
-            this.street_name_add.Size = new System.Drawing.Size(320, 45);
-            this.street_name_add.TabIndex = 59;
-            // 
-            // last_add
-            // 
-            this.last_add.Location = new System.Drawing.Point(1350, 148);
-            this.last_add.Margin = new System.Windows.Forms.Padding(4);
-            this.last_add.Name = "last_add";
-            this.last_add.Size = new System.Drawing.Size(320, 45);
-            this.last_add.TabIndex = 58;
-            // 
-            // init_add
-            // 
-            this.init_add.Location = new System.Drawing.Point(840, 150);
-            this.init_add.Margin = new System.Windows.Forms.Padding(4);
-            this.init_add.Name = "init_add";
-            this.init_add.Size = new System.Drawing.Size(132, 45);
-            this.init_add.TabIndex = 57;
-            // 
-            // first_add
-            // 
-            this.first_add.Location = new System.Drawing.Point(228, 140);
-            this.first_add.Margin = new System.Windows.Forms.Padding(4);
-            this.first_add.Name = "first_add";
-            this.first_add.Size = new System.Drawing.Size(320, 45);
-            this.first_add.TabIndex = 56;
-            // 
-            // update_employee
-            // 
-            this.update_employee.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.update_employee.Location = new System.Drawing.Point(644, 1110);
-            this.update_employee.Margin = new System.Windows.Forms.Padding(4);
-            this.update_employee.Name = "update_employee";
-            this.update_employee.Size = new System.Drawing.Size(488, 48);
-            this.update_employee.TabIndex = 55;
-            this.update_employee.Text = "Update Employee Info";
-            this.update_employee.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
@@ -2596,30 +3064,6 @@ namespace _291GroupProject
             // 
             this.branchesTableAdapter.ClearBeforeFill = true;
             // 
-            // cancel_edit
-            // 
-            this.cancel_edit.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel_edit.Location = new System.Drawing.Point(842, 549);
-            this.cancel_edit.Margin = new System.Windows.Forms.Padding(4);
-            this.cancel_edit.Name = "cancel_edit";
-            this.cancel_edit.Size = new System.Drawing.Size(450, 48);
-            this.cancel_edit.TabIndex = 80;
-            this.cancel_edit.Text = "Clear Form";
-            this.cancel_edit.UseVisualStyleBackColor = true;
-            this.cancel_edit.Click += new System.EventHandler(this.cancel_edit_Click);
-            // 
-            // clear_add
-            // 
-            this.clear_add.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clear_add.Location = new System.Drawing.Point(857, 436);
-            this.clear_add.Margin = new System.Windows.Forms.Padding(4);
-            this.clear_add.Name = "clear_add";
-            this.clear_add.Size = new System.Drawing.Size(441, 48);
-            this.clear_add.TabIndex = 79;
-            this.clear_add.Text = "Clear Form";
-            this.clear_add.UseVisualStyleBackColor = true;
-            this.clear_add.Click += new System.EventHandler(this.clear_add_Click);
-            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -2633,12 +3077,6 @@ namespace _291GroupProject
             this.Text = "Employee";
             this.Load += new System.EventHandler(this.Employee_Load);
             this.prev_rental.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.edit_employee.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -2646,6 +3084,20 @@ namespace _291GroupProject
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.tabPage11.ResumeLayout(false);
+            this.tabPage11.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -2899,5 +3351,43 @@ namespace _291GroupProject
         private _291_group_projectDataSetTableAdapters.BranchesTableAdapter branchesTableAdapter;
         private System.Windows.Forms.Button cancel_edit;
         private System.Windows.Forms.Button clear_add;
+        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TextBox branch_add_id;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button add_branch;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.TextBox branch_add_phone;
+        private System.Windows.Forms.TextBox branch_add_zip;
+        private System.Windows.Forms.TextBox branch_add_prov;
+        private System.Windows.Forms.TextBox branch_add_city;
+        private System.Windows.Forms.TextBox branch_add_str_num;
+        private System.Windows.Forms.TextBox branch_add_str_name;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button search_branch;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.TextBox dspl_branch_id;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.TextBox dspl_branch_phone;
+        private System.Windows.Forms.TextBox dspl_branch_zip;
+        private System.Windows.Forms.TextBox dspl_branch_prov;
+        private System.Windows.Forms.TextBox dspl_branch_city;
+        private System.Windows.Forms.TextBox dspl_branch_str_no;
+        private System.Windows.Forms.TextBox dspl_branch_str_name;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
     }
 }
