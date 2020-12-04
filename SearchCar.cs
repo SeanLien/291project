@@ -207,5 +207,15 @@ namespace _291GroupProject
         {
             SelectedCarImage.BackgroundImage = button6.BackgroundImage;
         }
+
+        private void RentButton_Click(object sender, EventArgs e)
+        {
+            AddReport addreport = new AddReport();
+            addreport.Show();
+        }
+    }
+    static class SelectReportImage
+    {
+        //public static Image myImg = reportCarImage.SelectedCarImage.BackgroundImage;
     }
 }
