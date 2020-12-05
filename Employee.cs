@@ -106,11 +106,12 @@ namespace _291GroupProject
                     dspl_prov.Text = myReader.GetString(7);
                     dspl_zip.Text = myReader.GetString(8);
                     dspl_tel.Text = myReader.GetString(9);
+                    chng_epmoyee_id.Text = myReader.GetInt32(0).ToString();
                     dsplBranch.Text = myReader.GetInt32(10).ToString();
 
 
                 }
-
+                employee_txt.Clear();
                 myReader.Close();
             }
             catch (Exception e3)
@@ -285,9 +286,9 @@ namespace _291GroupProject
             else
             {
                 myCommand.CommandText = "insert into Employees Values(";
-                myCommand.CommandText += "'" + id_add.Text + "', '" + first_add.Text + "', '" + init_add.Text + " ', '" + last_add.Text + "', '";
+                myCommand.CommandText += "'" + first_add.Text + "', '" + init_add.Text + " ', '" + last_add.Text + "', '";
                 myCommand.CommandText += street_name_add.Text + "', '" + street_no_add.Text + "', '" + city_add.Text + "', '";
-                myCommand.CommandText += prov_add.Text + "', '" + postal_add.Text + "', '" + phone_add.Text + "', '" + branch_add.Text + "')";
+                myCommand.CommandText += prov_add.Text + "', '" + postal_add.Text + "', '" + phone_add.Text + "', '" + branch_add.Text + "', 'Yes' )";
 
 
 
@@ -298,7 +299,6 @@ namespace _291GroupProject
                     MessageBox.Show(myCommand.CommandText);
                     myCommand.ExecuteNonQuery();
                     branch_add.Clear();
-                    id_add.Clear();
                     first_add.Clear();
                     init_add.Clear();
                     last_add.Clear();
@@ -338,7 +338,7 @@ namespace _291GroupProject
                 myCommand.CommandText += "middle_initial ='" + dspl_mid.Text + "', street_name = '" + dspl_str_nm.Text + "',";
                 myCommand.CommandText += "street_number = '" + dspl_str_num.Text + "', city = '" + dspl_cty.Text + "',";
                 myCommand.CommandText += "province = '" + dspl_prov.Text + "', zip = '" + dspl_zip.Text + "', phone_number ='" + dspl_tel.Text + "', Branch_ID ='" + dsplBranch.Text + "'";
-                myCommand.CommandText += " where Employees.Employee_ID = " + employee_txt.Text;
+                myCommand.CommandText += " where Employees.Employee_ID = " + chng_epmoyee_id.Text;
 
                 try
                 {
@@ -383,6 +383,7 @@ namespace _291GroupProject
             dspl_tel.Clear();
             employee_txt.Clear();
             dsplBranch.Clear();
+            chng_epmoyee_id.Clear();
 
 
         }
@@ -390,7 +391,6 @@ namespace _291GroupProject
         private void clear_add_Click(object sender, EventArgs e)
         {
             branch_add.Clear();
-            id_add.Clear();
             first_add.Clear();
             init_add.Clear();
             last_add.Clear();
@@ -405,7 +405,7 @@ namespace _291GroupProject
         private void button17_Click(object sender, EventArgs e)
         {
             myCommand.CommandText = "insert into Branches Values(";
-            myCommand.CommandText += "'" + branch_add_id.Text+ "', '" + branch_add_str_name.Text + "', '" + branch_add_str_num.Text + " ', '" + branch_add_city.Text + "', '";
+            myCommand.CommandText += "'" + branch_add_str_name.Text + "', '" + branch_add_str_num.Text + " ', '" + branch_add_city.Text + "', '";
             myCommand.CommandText += branch_add_prov.Text + "', '" + branch_add_zip.Text + "', '" + branch_add_phone.Text + "')";
             
 
@@ -423,7 +423,6 @@ namespace _291GroupProject
                 branch_add_prov.Clear();
                 branch_add_zip.Clear();
                 branch_add_phone.Clear();
-                branch_add_id.Clear();
                 
 
 
@@ -462,7 +461,7 @@ namespace _291GroupProject
                 while (myReader.Read())
                 {
                    if (!myReader.IsDBNull(0))
-                    dspl_branch_id.Text = myReader.GetInt32(0).ToString();
+                    change_branch_txt.Text = myReader.GetInt32(0).ToString();
                    if (!myReader.IsDBNull(1))
                      dspl_branch_str_name.Text = myReader.GetString(1);
                    if (!myReader.IsDBNull(2))
@@ -487,9 +486,52 @@ namespace _291GroupProject
                 MessageBox.Show(e3.ToString(), "Error");
                 myReader.Close();
             }
+            dspl_branch_id.Clear();
         }
 
-        
+        private void button19_Click(object sender, EventArgs e)
+        {
+            myCommand.CommandText = "update Branches";
+
+            myCommand.CommandText += " set " + "street_name = '" + dspl_branch_str_name.Text + "', street_number = '" + dspl_branch_str_no.Text+ "',";
+            myCommand.CommandText += "city ='" + dspl_branch_city.Text + "', province = '" + dspl_branch_prov.Text + "',";
+            myCommand.CommandText += "zip = '" + dspl_branch_zip.Text + "', phone_number = '" + dspl_branch_phone.Text + "'";
+            myCommand.CommandText += " where Branches.Branch_ID = " + change_branch_txt.Text;
+
+            try
+            {
+
+                MessageBox.Show(myCommand.CommandText);
+                myCommand.ExecuteNonQuery();
+                dspl_branch_str_name.Clear();
+                dspl_branch_str_no.Clear();
+                dspl_branch_city.Clear();
+                dspl_branch_prov.Clear();
+                dspl_branch_zip.Clear();
+                dspl_branch_phone.Clear();
+
+
+
+
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(e.ToString(), "Error");
+            }
+            change_branch_txt.Clear();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            dspl_branch_str_name.Clear();
+            dspl_branch_str_no.Clear();
+            dspl_branch_city.Clear();
+            dspl_branch_prov.Clear();
+            dspl_branch_zip.Clear();
+            dspl_branch_phone.Clear();
+            change_branch_txt.Clear();
+        }
     }
 }
 

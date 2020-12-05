@@ -33,6 +33,10 @@ namespace _291GroupProject
             this.prev_rental = new System.Windows.Forms.TabControl();
             this.edit_employee = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.chng_epmoyee_id = new System.Windows.Forms.TextBox();
+            this.active_combo = new System.Windows.Forms.ComboBox();
+            this.label78 = new System.Windows.Forms.Label();
             this.cancel_edit = new System.Windows.Forms.Button();
             this.label72 = new System.Windows.Forms.Label();
             this.dsplBranch = new System.Windows.Forms.TextBox();
@@ -69,8 +73,6 @@ namespace _291GroupProject
             this.branch_add = new System.Windows.Forms.TextBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.new_employee = new System.Windows.Forms.Button();
-            this.label70 = new System.Windows.Forms.Label();
-            this.id_add = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
@@ -111,8 +113,6 @@ namespace _291GroupProject
             this.dspl_branch_str_no = new System.Windows.Forms.TextBox();
             this.dspl_branch_str_name = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.branch_add_id = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.add_branch = new System.Windows.Forms.Button();
             this.label50 = new System.Windows.Forms.Label();
@@ -296,6 +296,8 @@ namespace _291GroupProject
             this._291_group_projectDataSet = new _291GroupProject._291_group_projectDataSet();
             this.branchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.branchesTableAdapter = new _291GroupProject._291_group_projectDataSetTableAdapters.BranchesTableAdapter();
+            this.label70 = new System.Windows.Forms.Label();
+            this.change_branch_txt = new System.Windows.Forms.TextBox();
             this.prev_rental.SuspendLayout();
             this.edit_employee.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -362,6 +364,10 @@ namespace _291GroupProject
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label79);
+            this.groupBox2.Controls.Add(this.chng_epmoyee_id);
+            this.groupBox2.Controls.Add(this.active_combo);
+            this.groupBox2.Controls.Add(this.label78);
             this.groupBox2.Controls.Add(this.cancel_edit);
             this.groupBox2.Controls.Add(this.label72);
             this.groupBox2.Controls.Add(this.dsplBranch);
@@ -401,6 +407,48 @@ namespace _291GroupProject
             this.groupBox2.TabIndex = 78;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Edit Employee";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.Location = new System.Drawing.Point(1192, 489);
+            this.label79.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(216, 38);
+            this.label79.TabIndex = 85;
+            this.label79.Text = "Employee_ID";
+            // 
+            // chng_epmoyee_id
+            // 
+            this.chng_epmoyee_id.Location = new System.Drawing.Point(1416, 484);
+            this.chng_epmoyee_id.Margin = new System.Windows.Forms.Padding(4);
+            this.chng_epmoyee_id.Name = "chng_epmoyee_id";
+            this.chng_epmoyee_id.ReadOnly = true;
+            this.chng_epmoyee_id.Size = new System.Drawing.Size(172, 45);
+            this.chng_epmoyee_id.TabIndex = 84;
+            // 
+            // active_combo
+            // 
+            this.active_combo.FormattingEnabled = true;
+            this.active_combo.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.active_combo.Location = new System.Drawing.Point(842, 489);
+            this.active_combo.Name = "active_combo";
+            this.active_combo.Size = new System.Drawing.Size(316, 45);
+            this.active_combo.TabIndex = 83;
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.Location = new System.Drawing.Point(674, 491);
+            this.label78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(113, 38);
+            this.label78.TabIndex = 82;
+            this.label78.Text = "Active";
             // 
             // cancel_edit
             // 
@@ -702,8 +750,6 @@ namespace _291GroupProject
             this.groupBox1.Controls.Add(this.branch_add);
             this.groupBox1.Controls.Add(this.pictureBox6);
             this.groupBox1.Controls.Add(this.new_employee);
-            this.groupBox1.Controls.Add(this.label70);
-            this.groupBox1.Controls.Add(this.id_add);
             this.groupBox1.Controls.Add(this.label61);
             this.groupBox1.Controls.Add(this.label62);
             this.groupBox1.Controls.Add(this.label63);
@@ -749,7 +795,7 @@ namespace _291GroupProject
             // 
             this.label73.AutoSize = true;
             this.label73.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(598, 70);
+            this.label73.Location = new System.Drawing.Point(20, 62);
             this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(126, 38);
@@ -758,7 +804,7 @@ namespace _291GroupProject
             // 
             // branch_add
             // 
-            this.branch_add.Location = new System.Drawing.Point(806, 67);
+            this.branch_add.Location = new System.Drawing.Point(228, 59);
             this.branch_add.Margin = new System.Windows.Forms.Padding(4);
             this.branch_add.Name = "branch_add";
             this.branch_add.Size = new System.Drawing.Size(320, 45);
@@ -784,25 +830,6 @@ namespace _291GroupProject
             this.new_employee.Text = "Add New Employee";
             this.new_employee.UseVisualStyleBackColor = true;
             this.new_employee.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(16, 60);
-            this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(207, 38);
-            this.label70.TabIndex = 75;
-            this.label70.Text = "Employee ID";
-            // 
-            // id_add
-            // 
-            this.id_add.Location = new System.Drawing.Point(228, 67);
-            this.id_add.Margin = new System.Windows.Forms.Padding(4);
-            this.id_add.Name = "id_add";
-            this.id_add.Size = new System.Drawing.Size(320, 45);
-            this.id_add.TabIndex = 74;
             // 
             // label61
             // 
@@ -1001,6 +1028,8 @@ namespace _291GroupProject
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label70);
+            this.groupBox4.Controls.Add(this.change_branch_txt);
             this.groupBox4.Controls.Add(this.label77);
             this.groupBox4.Controls.Add(this.search_branch);
             this.groupBox4.Controls.Add(this.button18);
@@ -1053,13 +1082,14 @@ namespace _291GroupProject
             // button18
             // 
             this.button18.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(846, 515);
+            this.button18.Location = new System.Drawing.Point(861, 552);
             this.button18.Margin = new System.Windows.Forms.Padding(4);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(441, 48);
             this.button18.TabIndex = 121;
             this.button18.Text = "Clear Form";
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // label49
             // 
@@ -1092,13 +1122,14 @@ namespace _291GroupProject
             // button19
             // 
             this.button19.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(317, 515);
+            this.button19.Location = new System.Drawing.Point(313, 552);
             this.button19.Margin = new System.Windows.Forms.Padding(4);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(412, 48);
             this.button19.TabIndex = 118;
             this.button19.Text = "Update Branch";
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // label56
             // 
@@ -1205,8 +1236,6 @@ namespace _291GroupProject
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label48);
-            this.groupBox3.Controls.Add(this.branch_add_id);
             this.groupBox3.Controls.Add(this.pictureBox5);
             this.groupBox3.Controls.Add(this.add_branch);
             this.groupBox3.Controls.Add(this.label50);
@@ -1228,25 +1257,6 @@ namespace _291GroupProject
             this.groupBox3.TabIndex = 122;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Add Branch";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(397, 159);
-            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(162, 38);
-            this.label48.TabIndex = 103;
-            this.label48.Text = "Branch Id";
-            // 
-            // branch_add_id
-            // 
-            this.branch_add_id.Location = new System.Drawing.Point(605, 156);
-            this.branch_add_id.Margin = new System.Windows.Forms.Padding(4);
-            this.branch_add_id.Name = "branch_add_id";
-            this.branch_add_id.Size = new System.Drawing.Size(320, 45);
-            this.branch_add_id.TabIndex = 102;
             // 
             // pictureBox5
             // 
@@ -3064,6 +3074,26 @@ namespace _291GroupProject
             // 
             this.branchesTableAdapter.ClearBeforeFill = true;
             // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(9, 478);
+            this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(162, 38);
+            this.label70.TabIndex = 124;
+            this.label70.Text = "Branch Id";
+            // 
+            // change_branch_txt
+            // 
+            this.change_branch_txt.Location = new System.Drawing.Point(217, 475);
+            this.change_branch_txt.Margin = new System.Windows.Forms.Padding(4);
+            this.change_branch_txt.Name = "change_branch_txt";
+            this.change_branch_txt.ReadOnly = true;
+            this.change_branch_txt.Size = new System.Drawing.Size(134, 45);
+            this.change_branch_txt.TabIndex = 123;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -3318,8 +3348,6 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button new_employee;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.TextBox id_add;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
@@ -3352,8 +3380,6 @@ namespace _291GroupProject
         private System.Windows.Forms.Button cancel_edit;
         private System.Windows.Forms.Button clear_add;
         private System.Windows.Forms.TabPage tabPage11;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox branch_add_id;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button add_branch;
         private System.Windows.Forms.Label label50;
@@ -3389,5 +3415,11 @@ namespace _291GroupProject
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.ComboBox active_combo;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.TextBox chng_epmoyee_id;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.TextBox change_branch_txt;
     }
 }
