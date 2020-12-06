@@ -64,10 +64,37 @@ namespace _291GroupProject
         {
             // TODO: This line of code loads data into the '_291_group_projectDataSet.Branches' table. You can move, or remove it, as needed.
             this.branchesTableAdapter.Fill(this._291_group_projectDataSet.Branches);
+            myCommand.CommandText = "select Branch_ID from Branches;";
 
-        }
+            try
+            {
+                myReader = myCommand.ExecuteReader();
 
-        private void employee_search_Click(object sender, EventArgs e)
+                while (myReader.Read())
+                {
+
+
+                    employee_add_branch_combo.Items.Add(myReader.GetValue(0).ToString());
+                    edit_empl_branch.Items.Add(myReader.GetValue(0).ToString());
+
+
+
+                }
+
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+                myReader.Close();
+            }
+
+        
+
+
+    }
+
+    private void employee_search_Click(object sender, EventArgs e)
         {
 
             dspl_first.Clear();
@@ -79,7 +106,6 @@ namespace _291GroupProject
             dspl_prov.Clear();
             dspl_zip.Clear();
             dspl_tel.Clear();
-            dsplBranch.Clear();
 
             myCommand.CommandText = "select * from Employees";
             if (employee_txt.Text != " ")
@@ -107,7 +133,7 @@ namespace _291GroupProject
                     dspl_zip.Text = myReader.GetString(8);
                     dspl_tel.Text = myReader.GetString(9);
                     chng_epmoyee_id.Text = myReader.GetInt32(0).ToString();
-                    dsplBranch.Text = myReader.GetInt32(10).ToString();
+                    edit_empl_branch.Text = myReader.GetInt32(10).ToString();
 
 
                 }
@@ -274,7 +300,7 @@ namespace _291GroupProject
         private void button16_Click(object sender, EventArgs e)
         {
 
-            myCommand2.CommandText = "select count (*) From Branches Where Branch_ID = '" + branch_add.Text + "';";
+            myCommand2.CommandText = "select count (*) From Branches Where Branch_ID = '" + employee_add_branch_combo.Text + "';";
             int num_branch = (int)myCommand2.ExecuteScalar();
 
             if (num_branch < 1)
@@ -288,7 +314,7 @@ namespace _291GroupProject
                 myCommand.CommandText = "insert into Employees Values(";
                 myCommand.CommandText += "'" + first_add.Text + "', '" + init_add.Text + " ', '" + last_add.Text + "', '";
                 myCommand.CommandText += street_name_add.Text + "', '" + street_no_add.Text + "', '" + city_add.Text + "', '";
-                myCommand.CommandText += prov_add.Text + "', '" + postal_add.Text + "', '" + phone_add.Text + "', '" + branch_add.Text + "', 'Yes' )";
+                myCommand.CommandText += prov_add.Text + "', '" + postal_add.Text + "', '" + phone_add.Text + "', '" + employee_add_branch_combo.Text + "', 'Yes' )";
 
 
 
@@ -298,7 +324,6 @@ namespace _291GroupProject
 
                     MessageBox.Show(myCommand.CommandText);
                     myCommand.ExecuteNonQuery();
-                    branch_add.Clear();
                     first_add.Clear();
                     init_add.Clear();
                     last_add.Clear();
@@ -308,8 +333,7 @@ namespace _291GroupProject
                     phone_add.Clear();
                     city_add.Clear();
                     prov_add.Clear();
-
-
+                    employee_add_branch_combo.ResetText();
 
                 }
                 catch (Exception e3)
@@ -321,7 +345,7 @@ namespace _291GroupProject
 
         private void employee_edit_Click_1(object sender, EventArgs e)
         {
-            myCommand2.CommandText = "select count (*) From Branches Where Branch_ID = '" + dsplBranch.Text + "';";
+            myCommand2.CommandText = "select count (*) From Branches Where Branch_ID = '" + edit_empl_branch.Text + "';";
             int num_branch = (int)myCommand2.ExecuteScalar();
 
             if (num_branch < 1)
@@ -337,7 +361,7 @@ namespace _291GroupProject
                 myCommand.CommandText += " set " + "first_name = '" + dspl_first.Text + "', last_name = '" + dspl_last.Text + "',";
                 myCommand.CommandText += "middle_initial ='" + dspl_mid.Text + "', street_name = '" + dspl_str_nm.Text + "',";
                 myCommand.CommandText += "street_number = '" + dspl_str_num.Text + "', city = '" + dspl_cty.Text + "',";
-                myCommand.CommandText += "province = '" + dspl_prov.Text + "', zip = '" + dspl_zip.Text + "', phone_number ='" + dspl_tel.Text + "', Branch_ID ='" + dsplBranch.Text + "'";
+                myCommand.CommandText += "province = '" + dspl_prov.Text + "', zip = '" + dspl_zip.Text + "', phone_number ='" + dspl_tel.Text + "', Branch_ID ='" + edit_empl_branch.Text + "'";
                 myCommand.CommandText += " where Employees.Employee_ID = " + chng_epmoyee_id.Text;
 
                 try
@@ -355,7 +379,8 @@ namespace _291GroupProject
                     dspl_zip.Clear();
                     dspl_tel.Clear();
                     employee_txt.Clear();
-                    dsplBranch.Clear();
+                    
+                    edit_empl_branch.ResetText();
 
 
 
@@ -382,15 +407,14 @@ namespace _291GroupProject
             dspl_zip.Clear();
             dspl_tel.Clear();
             employee_txt.Clear();
-            dsplBranch.Clear();
             chng_epmoyee_id.Clear();
+            edit_empl_branch.ResetText();
 
 
         }
 
         private void clear_add_Click(object sender, EventArgs e)
         {
-            branch_add.Clear();
             first_add.Clear();
             init_add.Clear();
             last_add.Clear();
@@ -400,6 +424,8 @@ namespace _291GroupProject
             phone_add.Clear();
             city_add.Clear();
             prov_add.Clear();
+            employee_add_branch_combo.ResetText();
+
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -532,6 +558,8 @@ namespace _291GroupProject
             dspl_branch_phone.Clear();
             change_branch_txt.Clear();
         }
+
+        
     }
 }
 
