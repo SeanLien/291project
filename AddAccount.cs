@@ -83,8 +83,15 @@ namespace _291GroupProject
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            //myCommand.CommandText = "insert into Customers Values(";
-            //myCommand.CommandText += "'" + NameBox.Text + "', '" + FamilyNameBox.Text + "', '" +
+            // Need to error check for duplicates of customer_ID, which is simple
+            myCommand.CommandText = " insert into Customers(Customer_ID,first_name,last_name,Driving_licence,street_name,street_number,apt_number,city,province,zip,phone_number)";
+            myCommand.CommandText += "Values ('" + CustomerIDBox.Text + "','" + FirstNameBox.Text + "','" + LastNameBox.Text + "','";
+            myCommand.CommandText += DrivingLicenseBox.Text + "','" + StreetNameBox.Text + "','" + NumberBox.Text + "','" + Apt_NumberBox.Text + "','" + CityBox.Text + "','";
+            myCommand.CommandText += ProvinceBox.Text + "','" + ZipBox.Text + "','" + PhoneBox.Text + "')";
+            myCommand.ExecuteNonQuery();
+
+            MessageBox.Show("Inserted a User into database (Message is a placeholder, I'll show the first name and ID or something", "Message");
+
         }
     }
 }
