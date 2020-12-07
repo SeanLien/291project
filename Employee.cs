@@ -636,6 +636,100 @@ namespace _291GroupProject
                 }
             }
         }
+
+        private void emply_search_btn_Click(object sender, EventArgs e)
+        {
+            dspl_car_branch_combo.ResetText();
+            dspl_car_col.Clear();
+            dspl_car_model.ResetText();
+            dspl_car_type_combo.ResetText();
+
+            myCommand.CommandText = "select * from Cars";
+            if (search_vin_empl.Text != " ")
+            {
+                myCommand.CommandText += " where Cars.VIN = " + search_vin_empl.Text;
+            }
+
+            try
+            {
+
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+
+
+
+
+                while (myReader.Read())
+                {
+                    if (!myReader.IsDBNull(0))
+                        dspl_vin.Text = myReader.GetInt32(0).ToString();
+                    if (!myReader.IsDBNull(1))
+                        dspl_car_col.Text = myReader.GetString(1);
+                    if (!myReader.IsDBNull(2))
+                        dspl_car_model.Text = myReader.GetString(2);
+                    if (!myReader.IsDBNull(3))
+                        dspl_car_type_combo.Text = myReader.GetString(3);
+                    if (!myReader.IsDBNull(4))
+                        dspl_car_branch_combo.Text = myReader.GetInt32(4).ToString();
+                    if (!myReader.IsDBNull(5))
+                        dspl_car_active.Text = myReader.GetString(5);
+                    
+
+
+                }
+
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+                myReader.Close();
+            }
+           search_vin_empl.Clear();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            myCommand.CommandText = "update Cars";
+
+            myCommand.CommandText += " set " + "Color = '" + dspl_car_col.Text + "', Model = '" + dspl_car_model.Text + "',";
+            myCommand.CommandText += "CarType ='" + dspl_car_type_combo.Text + "', Branch_ID = '" + dspl_car_branch_combo.Text + "',";
+            myCommand.CommandText += "active = '" + dspl_car_active.Text + "'";
+            myCommand.CommandText += " where Cars.VIN = " + dspl_vin.Text;
+
+            try
+            {
+
+                MessageBox.Show(myCommand.CommandText);
+                myCommand.ExecuteNonQuery();
+                dspl_vin.Clear();
+                dspl_car_col.Clear();
+                dspl_car_model.Clear();
+                dspl_car_branch_combo.ResetText();
+                dspl_car_type_combo.ResetText();
+                dspl_car_active.ResetText();
+
+
+
+
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(e.ToString(), "Error");
+            }
+            change_branch_txt.Clear();
+        }
+
+        private void button17_Click_1(object sender, EventArgs e)
+        {
+            dspl_vin.Clear();
+            dspl_car_col.Clear();
+            dspl_car_model.Clear();
+            dspl_car_branch_combo.ResetText();
+            dspl_car_type_combo.ResetText();
+            dspl_car_active.ResetText();
+        }
     }
 }
 
