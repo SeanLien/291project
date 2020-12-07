@@ -1422,6 +1422,7 @@ namespace _291GroupProject
             // 
             // car_info
             // 
+            this.car_info.BackColor = System.Drawing.Color.SeaShell;
             this.car_info.Controls.Add(this.groupBox5);
             this.car_info.Controls.Add(this.groupBox6);
             this.car_info.Controls.Add(this.label95);
@@ -1430,7 +1431,6 @@ namespace _291GroupProject
             this.car_info.Size = new System.Drawing.Size(2106, 1320);
             this.car_info.TabIndex = 7;
             this.car_info.Text = "Car information";
-            this.car_info.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
