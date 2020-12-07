@@ -18,6 +18,7 @@ namespace _291GroupProject
         public SqlCommand myCommand;
         public SqlDataReader myReader;
         public SqlCommand myCommand2;
+        public SqlCommand myCommand3;
 
 
 
@@ -46,6 +47,8 @@ namespace _291GroupProject
                 myConnection.Open(); // Open connection
                 myCommand = new SqlCommand();
                 myCommand2 = new SqlCommand();
+                myCommand3 = new SqlCommand();
+                myCommand3.Connection = myConnection;
                 myCommand2.Connection = myConnection;
                 myCommand.Connection = myConnection; // Link the command stream to the connection
             }
@@ -65,6 +68,7 @@ namespace _291GroupProject
             // TODO: This line of code loads data into the '_291_group_projectDataSet.Branches' table. You can move, or remove it, as needed.
             this.branchesTableAdapter.Fill(this._291_group_projectDataSet.Branches);
             myCommand.CommandText = "select Branch_ID from Branches;";
+            myCommand2.CommandText = "select CarType from Car_Types;";
 
             try
             {
@@ -76,6 +80,8 @@ namespace _291GroupProject
 
                     employee_add_branch_combo.Items.Add(myReader.GetValue(0).ToString());
                     edit_empl_branch.Items.Add(myReader.GetValue(0).ToString());
+                    add_car_branch.Items.Add(myReader.GetValue(0).ToString());
+
 
 
 
@@ -89,10 +95,32 @@ namespace _291GroupProject
                 myReader.Close();
             }
 
-        
+
+            try
+            {
+                myReader = myCommand2.ExecuteReader();
+
+                while (myReader.Read())
+                {
+                    
+                    add_car_type.Items.Add(myReader.GetValue(0).ToString());
 
 
-    }
+
+                }
+
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+                myReader.Close();
+            }
+
+
+
+
+        }
 
     private void employee_search_Click(object sender, EventArgs e)
         {
@@ -106,6 +134,7 @@ namespace _291GroupProject
             dspl_prov.Clear();
             dspl_zip.Clear();
             dspl_tel.Clear();
+            active_combo.ResetText();
 
             myCommand.CommandText = "select * from Employees";
             if (employee_txt.Text != " ")
@@ -134,6 +163,7 @@ namespace _291GroupProject
                     dspl_tel.Text = myReader.GetString(9);
                     chng_epmoyee_id.Text = myReader.GetInt32(0).ToString();
                     edit_empl_branch.Text = myReader.GetInt32(10).ToString();
+                    active_combo.Text = myReader.GetString(11);
 
 
                 }
@@ -361,7 +391,7 @@ namespace _291GroupProject
                 myCommand.CommandText += " set " + "first_name = '" + dspl_first.Text + "', last_name = '" + dspl_last.Text + "',";
                 myCommand.CommandText += "middle_initial ='" + dspl_mid.Text + "', street_name = '" + dspl_str_nm.Text + "',";
                 myCommand.CommandText += "street_number = '" + dspl_str_num.Text + "', city = '" + dspl_cty.Text + "',";
-                myCommand.CommandText += "province = '" + dspl_prov.Text + "', zip = '" + dspl_zip.Text + "', phone_number ='" + dspl_tel.Text + "', Branch_ID ='" + edit_empl_branch.Text + "'";
+                myCommand.CommandText += "province = '" + dspl_prov.Text + "', zip = '" + dspl_zip.Text + "', phone_number ='" + dspl_tel.Text + "', Branch_ID ='" + edit_empl_branch.Text + "', active='"+ active_combo.Text+"'";
                 myCommand.CommandText += " where Employees.Employee_ID = " + chng_epmoyee_id.Text;
 
                 try
@@ -379,8 +409,9 @@ namespace _291GroupProject
                     dspl_zip.Clear();
                     dspl_tel.Clear();
                     employee_txt.Clear();
-                    
+                    active_combo.ResetText();
                     edit_empl_branch.ResetText();
+                    chng_epmoyee_id.Clear();
 
 
 
@@ -409,6 +440,7 @@ namespace _291GroupProject
             employee_txt.Clear();
             chng_epmoyee_id.Clear();
             edit_empl_branch.ResetText();
+            active_combo.ResetText();
 
 
         }
@@ -432,7 +464,7 @@ namespace _291GroupProject
         {
             myCommand.CommandText = "insert into Branches Values(";
             myCommand.CommandText += "'" + branch_add_str_name.Text + "', '" + branch_add_str_num.Text + " ', '" + branch_add_city.Text + "', '";
-            myCommand.CommandText += branch_add_prov.Text + "', '" + branch_add_zip.Text + "', '" + branch_add_phone.Text + "')";
+            myCommand.CommandText += branch_add_prov.Text + "', '" + branch_add_zip.Text + "', '" + branch_add_phone.Text + "', 'Yes')";
             
 
 
@@ -468,6 +500,7 @@ namespace _291GroupProject
             dspl_branch_prov.Clear();
             dspl_branch_zip.Clear();
             dspl_branch_phone.Clear();
+            branch_active_combo.ResetText();
 
             myCommand.CommandText = "select * from Branches";
             if (dspl_branch_id.Text != " ")
@@ -500,7 +533,8 @@ namespace _291GroupProject
                         dspl_branch_zip.Text = myReader.GetString(5);
                    if (!myReader.IsDBNull(6))
                         dspl_branch_phone.Text = myReader.GetString(6);
-                    
+                    if (!myReader.IsDBNull(7))
+                        branch_active_combo.Text = myReader.GetString(7);
 
 
                 }
@@ -521,7 +555,7 @@ namespace _291GroupProject
 
             myCommand.CommandText += " set " + "street_name = '" + dspl_branch_str_name.Text + "', street_number = '" + dspl_branch_str_no.Text+ "',";
             myCommand.CommandText += "city ='" + dspl_branch_city.Text + "', province = '" + dspl_branch_prov.Text + "',";
-            myCommand.CommandText += "zip = '" + dspl_branch_zip.Text + "', phone_number = '" + dspl_branch_phone.Text + "'";
+            myCommand.CommandText += "zip = '" + dspl_branch_zip.Text + "', phone_number = '" + dspl_branch_phone.Text + "', active ='"+ branch_active_combo.Text +"'";
             myCommand.CommandText += " where Branches.Branch_ID = " + change_branch_txt.Text;
 
             try
@@ -535,6 +569,7 @@ namespace _291GroupProject
                 dspl_branch_prov.Clear();
                 dspl_branch_zip.Clear();
                 dspl_branch_phone.Clear();
+                branch_active_combo.ResetText();
 
 
 
@@ -557,9 +592,50 @@ namespace _291GroupProject
             dspl_branch_zip.Clear();
             dspl_branch_phone.Clear();
             change_branch_txt.Clear();
+            branch_active_combo.ResetText();
         }
 
-        
+        private void button21_Click(object sender, EventArgs e)
+
+        {
+            myCommand3.CommandText = "select count  (*) From Car_Types where CarType ='" + add_car_type.Text + "';";
+            myCommand2.CommandText = "select count (*) From Branches Where Branch_ID = '" + add_car_branch.Text + "';";
+            int num_branch = (int)myCommand2.ExecuteScalar();
+            int car_num = (int)myCommand3.ExecuteScalar();
+
+            if (num_branch < 1 || car_num <1)
+            {
+                MessageBox.Show("Branch not valid or car_type not Valid try again");
+
+            }
+
+            else
+            {
+                myCommand.CommandText = "insert into Cars Values(";
+                myCommand.CommandText += "'" + add_car_color.Text + "', '" + add_car_model.Text + " ', '" + add_car_type.Text + "', '";
+                
+                myCommand.CommandText += add_car_branch.Text + "', 'Yes' )";
+
+
+
+
+                try
+                {
+
+                    MessageBox.Show(myCommand.CommandText);
+                    myCommand.ExecuteNonQuery();
+                    add_car_branch.ResetText();
+                    add_car_color.Clear();
+                    add_car_model.Clear();
+                    add_car_type.ResetText();
+
+                }
+                catch (Exception e3)
+                {
+                    MessageBox.Show(e3.ToString(), "Error");
+                }
+            }
+        }
     }
 }
 

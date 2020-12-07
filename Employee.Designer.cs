@@ -159,68 +159,6 @@ namespace _291GroupProject
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label44 = new System.Windows.Forms.Label();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -298,6 +236,40 @@ namespace _291GroupProject
             this._291_group_projectDataSet = new _291GroupProject._291_group_projectDataSet();
             this.branchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.branchesTableAdapter = new _291GroupProject._291_group_projectDataSetTableAdapters.BranchesTableAdapter();
+            this.label48 = new System.Windows.Forms.Label();
+            this.branch_active_combo = new System.Windows.Forms.ComboBox();
+            this.car_info = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.car_active = new System.Windows.Forms.ComboBox();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.dspl_vin = new System.Windows.Forms.TextBox();
+            this.label82 = new System.Windows.Forms.Label();
+            this.emply_search_btn = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.label83 = new System.Windows.Forms.Label();
+            this.search_vin_empl = new System.Windows.Forms.TextBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.dspl_car_model = new System.Windows.Forms.TextBox();
+            this.dspl_car_col = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.add_car = new System.Windows.Forms.Button();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.add_car_model = new System.Windows.Forms.TextBox();
+            this.add_car_color = new System.Windows.Forms.TextBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.add_car_branch = new System.Windows.Forms.ComboBox();
+            this.add_car_type = new System.Windows.Forms.ComboBox();
+            this.dspl_car_type_combo = new System.Windows.Forms.ComboBox();
+            this.dspl_car_branch_combo = new System.Windows.Forms.ComboBox();
             this.prev_rental.SuspendLayout();
             this.edit_employee.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -311,10 +283,6 @@ namespace _291GroupProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -331,15 +299,19 @@ namespace _291GroupProject
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._291_group_projectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchesBindingSource)).BeginInit();
+            this.car_info.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // prev_rental
             // 
             this.prev_rental.Controls.Add(this.edit_employee);
             this.prev_rental.Controls.Add(this.tabPage11);
+            this.prev_rental.Controls.Add(this.car_info);
             this.prev_rental.Controls.Add(this.tabPage1);
-            this.prev_rental.Controls.Add(this.tabPage4);
-            this.prev_rental.Controls.Add(this.tabPage3);
             this.prev_rental.Controls.Add(this.tabPage2);
             this.prev_rental.Location = new System.Drawing.Point(13, 13);
             this.prev_rental.Margin = new System.Windows.Forms.Padding(4);
@@ -1028,6 +1000,8 @@ namespace _291GroupProject
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.branch_active_combo);
+            this.groupBox4.Controls.Add(this.label48);
             this.groupBox4.Controls.Add(this.label70);
             this.groupBox4.Controls.Add(this.change_branch_txt);
             this.groupBox4.Controls.Add(this.label77);
@@ -1736,657 +1710,6 @@ namespace _291GroupProject
             this.label1.TabIndex = 0;
             this.label1.Text = "Rental ID";
             // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.LightGray;
-            this.tabPage4.Controls.Add(this.button15);
-            this.tabPage4.Controls.Add(this.button9);
-            this.tabPage4.Controls.Add(this.textBox36);
-            this.tabPage4.Controls.Add(this.label47);
-            this.tabPage4.Controls.Add(this.dateTimePicker3);
-            this.tabPage4.Controls.Add(this.textBox37);
-            this.tabPage4.Controls.Add(this.label43);
-            this.tabPage4.Controls.Add(this.dateTimePicker1);
-            this.tabPage4.Controls.Add(this.label44);
-            this.tabPage4.Controls.Add(this.textBox38);
-            this.tabPage4.Controls.Add(this.label45);
-            this.tabPage4.Controls.Add(this.label46);
-            this.tabPage4.Controls.Add(this.textBox29);
-            this.tabPage4.Controls.Add(this.label38);
-            this.tabPage4.Controls.Add(this.textBox32);
-            this.tabPage4.Controls.Add(this.label39);
-            this.tabPage4.Controls.Add(this.pictureBox4);
-            this.tabPage4.Controls.Add(this.button8);
-            this.tabPage4.Controls.Add(this.button7);
-            this.tabPage4.Controls.Add(this.textBox33);
-            this.tabPage4.Controls.Add(this.label40);
-            this.tabPage4.Controls.Add(this.textBox34);
-            this.tabPage4.Controls.Add(this.label41);
-            this.tabPage4.Controls.Add(this.textBox35);
-            this.tabPage4.Controls.Add(this.label42);
-            this.tabPage4.Location = new System.Drawing.Point(8, 39);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(2106, 1320);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Create New Rental";
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.Silver;
-            this.button15.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(902, 812);
-            this.button15.Margin = new System.Windows.Forms.Padding(4);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(272, 52);
-            this.button15.TabIndex = 40;
-            this.button15.Text = "Create Rental";
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Silver;
-            this.button9.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(1046, 929);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(272, 52);
-            this.button9.TabIndex = 39;
-            this.button9.Text = "Email Estimate";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // textBox36
-            // 
-            this.textBox36.Location = new System.Drawing.Point(390, 825);
-            this.textBox36.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(276, 31);
-            this.textBox36.TabIndex = 38;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(100, 825);
-            this.label47.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(249, 38);
-            this.label47.TabIndex = 37;
-            this.label47.Text = "Estimated Cost";
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(356, 296);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(276, 31);
-            this.dateTimePicker3.TabIndex = 34;
-            // 
-            // textBox37
-            // 
-            this.textBox37.Location = new System.Drawing.Point(968, 369);
-            this.textBox37.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(276, 31);
-            this.textBox37.TabIndex = 33;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(716, 369);
-            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(237, 38);
-            this.label43.TabIndex = 32;
-            this.label43.Text = "Return Branch";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(968, 300);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(276, 31);
-            this.dateTimePicker1.TabIndex = 31;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(716, 296);
-            this.label44.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(198, 38);
-            this.label44.TabIndex = 30;
-            this.label44.Text = "Return Date";
-            // 
-            // textBox38
-            // 
-            this.textBox38.Location = new System.Drawing.Point(356, 367);
-            this.textBox38.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(276, 31);
-            this.textBox38.TabIndex = 29;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(100, 369);
-            this.label45.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(238, 38);
-            this.label45.TabIndex = 28;
-            this.label45.Text = "Pickup Branch";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(100, 296);
-            this.label46.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(199, 38);
-            this.label46.TabIndex = 27;
-            this.label46.Text = "Pickup Date";
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(516, 669);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(216, 31);
-            this.textBox29.TabIndex = 23;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(324, 662);
-            this.label38.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(177, 38);
-            this.label38.TabIndex = 22;
-            this.label38.Text = "Daily price";
-            // 
-            // textBox32
-            // 
-            this.textBox32.Location = new System.Drawing.Point(516, 606);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(216, 31);
-            this.textBox32.TabIndex = 21;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(324, 608);
-            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(70, 38);
-            this.label39.TabIndex = 20;
-            this.label39.Text = "VIN";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(92, 592);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(164, 162);
-            this.pictureBox4.TabIndex = 19;
-            this.pictureBox4.TabStop = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Silver;
-            this.button8.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(680, 929);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(272, 52);
-            this.button8.TabIndex = 18;
-            this.button8.Text = "Print Estimate";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Silver;
-            this.button7.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(456, 465);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(404, 52);
-            this.button7.TabIndex = 18;
-            this.button7.Text = "View Available Cars";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // textBox33
-            // 
-            this.textBox33.Location = new System.Drawing.Point(964, 238);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(276, 31);
-            this.textBox33.TabIndex = 17;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(716, 237);
-            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(182, 38);
-            this.label40.TabIndex = 16;
-            this.label40.Text = "First Name";
-            // 
-            // textBox34
-            // 
-            this.textBox34.Location = new System.Drawing.Point(356, 233);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(276, 31);
-            this.textBox34.TabIndex = 15;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(104, 237);
-            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(180, 38);
-            this.label41.TabIndex = 14;
-            this.label41.Text = "Last Name";
-            // 
-            // textBox35
-            // 
-            this.textBox35.Location = new System.Drawing.Point(356, 177);
-            this.textBox35.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(276, 31);
-            this.textBox35.TabIndex = 13;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(104, 177);
-            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(154, 38);
-            this.label42.TabIndex = 12;
-            this.label42.Text = "Rental ID";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.pictureBox3);
-            this.tabPage3.Controls.Add(this.comboBox6);
-            this.tabPage3.Controls.Add(this.label37);
-            this.tabPage3.Controls.Add(this.comboBox5);
-            this.tabPage3.Controls.Add(this.label36);
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.comboBox4);
-            this.tabPage3.Controls.Add(this.comboBox3);
-            this.tabPage3.Controls.Add(this.label35);
-            this.tabPage3.Controls.Add(this.textBox31);
-            this.tabPage3.Controls.Add(this.label34);
-            this.tabPage3.Controls.Add(this.comboBox2);
-            this.tabPage3.Controls.Add(this.label33);
-            this.tabPage3.Controls.Add(this.comboBox1);
-            this.tabPage3.Controls.Add(this.label29);
-            this.tabPage3.Controls.Add(this.textBox28);
-            this.tabPage3.Controls.Add(this.label32);
-            this.tabPage3.Controls.Add(this.textBox21);
-            this.tabPage3.Controls.Add(this.textBox22);
-            this.tabPage3.Controls.Add(this.textBox23);
-            this.tabPage3.Controls.Add(this.textBox24);
-            this.tabPage3.Controls.Add(this.textBox25);
-            this.tabPage3.Controls.Add(this.textBox26);
-            this.tabPage3.Controls.Add(this.textBox27);
-            this.tabPage3.Controls.Add(this.label22);
-            this.tabPage3.Controls.Add(this.button5);
-            this.tabPage3.Controls.Add(this.label23);
-            this.tabPage3.Controls.Add(this.label24);
-            this.tabPage3.Controls.Add(this.label25);
-            this.tabPage3.Controls.Add(this.label26);
-            this.tabPage3.Controls.Add(this.label27);
-            this.tabPage3.Controls.Add(this.label28);
-            this.tabPage3.Controls.Add(this.label30);
-            this.tabPage3.Controls.Add(this.textBox30);
-            this.tabPage3.Controls.Add(this.label31);
-            this.tabPage3.Location = new System.Drawing.Point(8, 39);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(2106, 1320);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Admin";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(778, 98);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(188, 87);
-            this.pictureBox3.TabIndex = 73;
-            this.pictureBox3.TabStop = false;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(968, 550);
-            this.comboBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(320, 33);
-            this.comboBox6.TabIndex = 72;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(778, 550);
-            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(71, 25);
-            this.label37.TabIndex = 71;
-            this.label37.Text = "Active";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(244, 638);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(320, 33);
-            this.comboBox5.TabIndex = 70;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(54, 638);
-            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(71, 25);
-            this.label36.TabIndex = 69;
-            this.label36.Text = "Active";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(968, 617);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(340, 48);
-            this.button6.TabIndex = 68;
-            this.button6.Text = "Update Car";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(970, 500);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(320, 33);
-            this.comboBox4.TabIndex = 67;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(970, 456);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(320, 33);
-            this.comboBox3.TabIndex = 66;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(778, 456);
-            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(106, 25);
-            this.label35.TabIndex = 65;
-            this.label35.Text = "Branch ID";
-            // 
-            // textBox31
-            // 
-            this.textBox31.Location = new System.Drawing.Point(968, 394);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(320, 31);
-            this.textBox31.TabIndex = 64;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(780, 404);
-            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(111, 25);
-            this.label34.TabIndex = 63;
-            this.label34.Text = "Daily Rate";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(970, 331);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(320, 33);
-            this.comboBox2.TabIndex = 62;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(780, 338);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(63, 25);
-            this.label33.TabIndex = 61;
-            this.label33.Text = "Color";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(968, 269);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(320, 33);
-            this.comboBox1.TabIndex = 60;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(778, 277);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(100, 25);
-            this.label29.TabIndex = 59;
-            this.label29.Text = "Car Type";
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(970, 210);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(320, 31);
-            this.textBox28.TabIndex = 58;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(780, 212);
-            this.label32.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(46, 25);
-            this.label32.TabIndex = 57;
-            this.label32.Text = "VIN";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(244, 590);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(320, 31);
-            this.textBox21.TabIndex = 55;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(244, 513);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(320, 31);
-            this.textBox22.TabIndex = 54;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(244, 444);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(320, 31);
-            this.textBox23.TabIndex = 53;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(244, 377);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(320, 31);
-            this.textBox24.TabIndex = 52;
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(244, 315);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(320, 31);
-            this.textBox25.TabIndex = 51;
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(244, 248);
-            this.textBox26.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(320, 31);
-            this.textBox26.TabIndex = 50;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(244, 188);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(320, 31);
-            this.textBox27.TabIndex = 49;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(54, 590);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(107, 25);
-            this.label22.TabIndex = 46;
-            this.label22.Text = "Phone No";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(244, 729);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(340, 48);
-            this.button5.TabIndex = 45;
-            this.button5.Text = "Update Branch";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(54, 513);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(107, 25);
-            this.label23.TabIndex = 44;
-            this.label23.Text = "Phone No";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(54, 444);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(129, 25);
-            this.label24.TabIndex = 43;
-            this.label24.Text = "Postal Code";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(54, 377);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(96, 25);
-            this.label25.TabIndex = 42;
-            this.label25.Text = "Province";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(54, 315);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(49, 25);
-            this.label26.TabIndex = 41;
-            this.label26.Text = "City";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(54, 248);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(150, 25);
-            this.label27.TabIndex = 40;
-            this.label27.Text = "Street Number";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(54, 188);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(131, 25);
-            this.label28.TabIndex = 39;
-            this.label28.Text = "Street Name";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(778, 508);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(142, 25);
-            this.label30.TabIndex = 37;
-            this.label30.Text = "Branch Name";
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(244, 98);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(320, 31);
-            this.textBox30.TabIndex = 36;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(54, 102);
-            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(106, 25);
-            this.label31.TabIndex = 35;
-            this.label31.Text = "Branch ID";
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tabControl1);
@@ -3094,6 +2417,381 @@ namespace _291GroupProject
             // 
             this.branchesTableAdapter.ClearBeforeFill = true;
             // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(582, 476);
+            this.label48.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(113, 38);
+            this.label48.TabIndex = 126;
+            this.label48.Text = "Active";
+            // 
+            // branch_active_combo
+            // 
+            this.branch_active_combo.FormattingEnabled = true;
+            this.branch_active_combo.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.branch_active_combo.Location = new System.Drawing.Point(829, 476);
+            this.branch_active_combo.Name = "branch_active_combo";
+            this.branch_active_combo.Size = new System.Drawing.Size(310, 45);
+            this.branch_active_combo.TabIndex = 127;
+            // 
+            // car_info
+            // 
+            this.car_info.Controls.Add(this.groupBox5);
+            this.car_info.Controls.Add(this.groupBox6);
+            this.car_info.Controls.Add(this.label95);
+            this.car_info.Location = new System.Drawing.Point(8, 39);
+            this.car_info.Name = "car_info";
+            this.car_info.Size = new System.Drawing.Size(2106, 1320);
+            this.car_info.TabIndex = 7;
+            this.car_info.Text = "Car information";
+            this.car_info.UseVisualStyleBackColor = true;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.dspl_car_branch_combo);
+            this.groupBox5.Controls.Add(this.dspl_car_type_combo);
+            this.groupBox5.Controls.Add(this.car_active);
+            this.groupBox5.Controls.Add(this.label80);
+            this.groupBox5.Controls.Add(this.label81);
+            this.groupBox5.Controls.Add(this.dspl_vin);
+            this.groupBox5.Controls.Add(this.label82);
+            this.groupBox5.Controls.Add(this.emply_search_btn);
+            this.groupBox5.Controls.Add(this.button17);
+            this.groupBox5.Controls.Add(this.label83);
+            this.groupBox5.Controls.Add(this.search_vin_empl);
+            this.groupBox5.Controls.Add(this.pictureBox8);
+            this.groupBox5.Controls.Add(this.button20);
+            this.groupBox5.Controls.Add(this.label86);
+            this.groupBox5.Controls.Add(this.label87);
+            this.groupBox5.Controls.Add(this.label88);
+            this.groupBox5.Controls.Add(this.dspl_car_model);
+            this.groupBox5.Controls.Add(this.dspl_car_col);
+            this.groupBox5.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(51, 603);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(1698, 653);
+            this.groupBox5.TabIndex = 126;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Edit Car Info";
+            // 
+            // car_active
+            // 
+            this.car_active.FormattingEnabled = true;
+            this.car_active.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.car_active.Location = new System.Drawing.Point(1339, 402);
+            this.car_active.Name = "car_active";
+            this.car_active.Size = new System.Drawing.Size(310, 45);
+            this.car_active.TabIndex = 127;
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.Location = new System.Drawing.Point(1201, 402);
+            this.label80.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(113, 38);
+            this.label80.TabIndex = 126;
+            this.label80.Text = "Active";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.Location = new System.Drawing.Point(584, 402);
+            this.label81.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(70, 38);
+            this.label81.TabIndex = 124;
+            this.label81.Text = "VIN";
+            // 
+            // dspl_vin
+            // 
+            this.dspl_vin.Location = new System.Drawing.Point(829, 395);
+            this.dspl_vin.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_vin.Name = "dspl_vin";
+            this.dspl_vin.ReadOnly = true;
+            this.dspl_vin.Size = new System.Drawing.Size(320, 45);
+            this.dspl_vin.TabIndex = 123;
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.Location = new System.Drawing.Point(13, 308);
+            this.label82.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(98, 38);
+            this.label82.TabIndex = 105;
+            this.label82.Text = "Color";
+            // 
+            // emply_search_btn
+            // 
+            this.emply_search_btn.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emply_search_btn.Location = new System.Drawing.Point(1082, 165);
+            this.emply_search_btn.Margin = new System.Windows.Forms.Padding(4);
+            this.emply_search_btn.Name = "emply_search_btn";
+            this.emply_search_btn.Size = new System.Drawing.Size(312, 48);
+            this.emply_search_btn.TabIndex = 122;
+            this.emply_search_btn.Text = "Search ";
+            this.emply_search_btn.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            this.button17.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.Location = new System.Drawing.Point(861, 552);
+            this.button17.Margin = new System.Windows.Forms.Padding(4);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(441, 48);
+            this.button17.TabIndex = 121;
+            this.button17.Text = "Clear Form";
+            this.button17.UseVisualStyleBackColor = true;
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.Location = new System.Drawing.Point(390, 175);
+            this.label83.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(70, 38);
+            this.label83.TabIndex = 120;
+            this.label83.Text = "VIN";
+            // 
+            // search_vin_empl
+            // 
+            this.search_vin_empl.Location = new System.Drawing.Point(598, 172);
+            this.search_vin_empl.Margin = new System.Windows.Forms.Padding(4);
+            this.search_vin_empl.Name = "search_vin_empl";
+            this.search_vin_empl.Size = new System.Drawing.Size(320, 45);
+            this.search_vin_empl.TabIndex = 119;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Location = new System.Drawing.Point(3, 49);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(373, 204);
+            this.pictureBox8.TabIndex = 105;
+            this.pictureBox8.TabStop = false;
+            // 
+            // button20
+            // 
+            this.button20.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.Location = new System.Drawing.Point(313, 552);
+            this.button20.Margin = new System.Windows.Forms.Padding(4);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(412, 48);
+            this.button20.TabIndex = 118;
+            this.button20.Text = "Update Car Info";
+            this.button20.UseVisualStyleBackColor = true;
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.Location = new System.Drawing.Point(15, 392);
+            this.label86.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(126, 38);
+            this.label86.TabIndex = 115;
+            this.label86.Text = "Branch";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.Location = new System.Drawing.Point(1180, 308);
+            this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(152, 38);
+            this.label87.TabIndex = 114;
+            this.label87.Text = "Car Type";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.Location = new System.Drawing.Point(567, 306);
+            this.label88.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(109, 38);
+            this.label88.TabIndex = 113;
+            this.label88.Text = "Model";
+            // 
+            // dspl_car_model
+            // 
+            this.dspl_car_model.Location = new System.Drawing.Point(829, 314);
+            this.dspl_car_model.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_car_model.Name = "dspl_car_model";
+            this.dspl_car_model.Size = new System.Drawing.Size(320, 45);
+            this.dspl_car_model.TabIndex = 107;
+            // 
+            // dspl_car_col
+            // 
+            this.dspl_car_col.Location = new System.Drawing.Point(217, 308);
+            this.dspl_car_col.Margin = new System.Windows.Forms.Padding(4);
+            this.dspl_car_col.Name = "dspl_car_col";
+            this.dspl_car_col.Size = new System.Drawing.Size(320, 45);
+            this.dspl_car_col.TabIndex = 106;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.add_car_type);
+            this.groupBox6.Controls.Add(this.add_car_branch);
+            this.groupBox6.Controls.Add(this.pictureBox9);
+            this.groupBox6.Controls.Add(this.add_car);
+            this.groupBox6.Controls.Add(this.label90);
+            this.groupBox6.Controls.Add(this.label91);
+            this.groupBox6.Controls.Add(this.label92);
+            this.groupBox6.Controls.Add(this.label93);
+            this.groupBox6.Controls.Add(this.add_car_model);
+            this.groupBox6.Controls.Add(this.add_car_color);
+            this.groupBox6.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(44, 27);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(1706, 566);
+            this.groupBox6.TabIndex = 125;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Add Car";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Location = new System.Drawing.Point(10, 43);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(373, 204);
+            this.pictureBox9.TabIndex = 80;
+            this.pictureBox9.TabStop = false;
+            // 
+            // add_car
+            // 
+            this.add_car.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_car.Location = new System.Drawing.Point(572, 478);
+            this.add_car.Margin = new System.Windows.Forms.Padding(4);
+            this.add_car.Name = "add_car";
+            this.add_car.Size = new System.Drawing.Size(412, 48);
+            this.add_car.TabIndex = 101;
+            this.add_car.Text = "Add Car";
+            this.add_car.UseVisualStyleBackColor = true;
+            this.add_car.Click += new System.EventHandler(this.button21_Click);
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.Location = new System.Drawing.Point(574, 375);
+            this.label90.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(126, 38);
+            this.label90.TabIndex = 97;
+            this.label90.Text = "Branch";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label91.Location = new System.Drawing.Point(13, 374);
+            this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(152, 38);
+            this.label91.TabIndex = 96;
+            this.label91.Text = "Car Type";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label92.Location = new System.Drawing.Point(1199, 298);
+            this.label92.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(109, 38);
+            this.label92.TabIndex = 95;
+            this.label92.Text = "Model";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label93.Location = new System.Drawing.Point(565, 290);
+            this.label93.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(98, 38);
+            this.label93.TabIndex = 94;
+            this.label93.Text = "Color";
+            // 
+            // add_car_model
+            // 
+            this.add_car_model.Location = new System.Drawing.Point(1336, 296);
+            this.add_car_model.Margin = new System.Windows.Forms.Padding(4);
+            this.add_car_model.Name = "add_car_model";
+            this.add_car_model.Size = new System.Drawing.Size(320, 45);
+            this.add_car_model.TabIndex = 87;
+            // 
+            // add_car_color
+            // 
+            this.add_car_color.Location = new System.Drawing.Point(827, 298);
+            this.add_car_color.Margin = new System.Windows.Forms.Padding(4);
+            this.add_car_color.Name = "add_car_color";
+            this.add_car_color.Size = new System.Drawing.Size(320, 45);
+            this.add_car_color.TabIndex = 85;
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Helvetica", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label95.Location = new System.Drawing.Point(47, 901);
+            this.label95.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(206, 38);
+            this.label95.TabIndex = 124;
+            this.label95.Text = "Street Name";
+            // 
+            // add_car_branch
+            // 
+            this.add_car_branch.FormattingEnabled = true;
+            this.add_car_branch.Location = new System.Drawing.Point(827, 382);
+            this.add_car_branch.Name = "add_car_branch";
+            this.add_car_branch.Size = new System.Drawing.Size(320, 45);
+            this.add_car_branch.TabIndex = 102;
+            // 
+            // add_car_type
+            // 
+            this.add_car_type.FormattingEnabled = true;
+            this.add_car_type.Location = new System.Drawing.Point(183, 375);
+            this.add_car_type.Name = "add_car_type";
+            this.add_car_type.Size = new System.Drawing.Size(320, 45);
+            this.add_car_type.TabIndex = 103;
+            // 
+            // dspl_car_type_combo
+            // 
+            this.dspl_car_type_combo.FormattingEnabled = true;
+            this.dspl_car_type_combo.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.dspl_car_type_combo.Location = new System.Drawing.Point(1339, 304);
+            this.dspl_car_type_combo.Name = "dspl_car_type_combo";
+            this.dspl_car_type_combo.Size = new System.Drawing.Size(310, 45);
+            this.dspl_car_type_combo.TabIndex = 128;
+            // 
+            // dspl_car_branch_combo
+            // 
+            this.dspl_car_branch_combo.FormattingEnabled = true;
+            this.dspl_car_branch_combo.Items.AddRange(new object[] {
+            "Yes",
+            "No"});
+            this.dspl_car_branch_combo.Location = new System.Drawing.Point(217, 395);
+            this.dspl_car_branch_combo.Name = "dspl_car_branch_combo";
+            this.dspl_car_branch_combo.Size = new System.Drawing.Size(310, 45);
+            this.dspl_car_branch_combo.TabIndex = 129;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -3125,12 +2823,6 @@ namespace _291GroupProject
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
@@ -3147,6 +2839,14 @@ namespace _291GroupProject
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._291_group_projectDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchesBindingSource)).EndInit();
+            this.car_info.ResumeLayout(false);
+            this.car_info.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3189,68 +2889,7 @@ namespace _291GroupProject
         private System.Windows.Forms.Button employee_search;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.Label label31;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.Label label42;
         private System.Windows.Forms.TextBox dspl_cty;
         private System.Windows.Forms.TextBox dspl_str_num;
         private System.Windows.Forms.TextBox dspl_str_nm;
@@ -3346,7 +2985,6 @@ namespace _291GroupProject
         private System.Windows.Forms.DataGridViewTextBoxColumn VIN_rt;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button new_employee;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
@@ -3421,5 +3059,39 @@ namespace _291GroupProject
         private System.Windows.Forms.TextBox change_branch_txt;
         private System.Windows.Forms.ComboBox employee_add_branch_combo;
         private System.Windows.Forms.ComboBox edit_empl_branch;
+        private System.Windows.Forms.ComboBox branch_active_combo;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TabPage car_info;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.ComboBox car_active;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.TextBox dspl_vin;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Button emply_search_btn;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.TextBox search_vin_empl;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.TextBox dspl_car_model;
+        private System.Windows.Forms.TextBox dspl_car_col;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Button add_car;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.TextBox add_car_model;
+        private System.Windows.Forms.TextBox add_car_color;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.ComboBox add_car_branch;
+        private System.Windows.Forms.ComboBox add_car_type;
+        private System.Windows.Forms.ComboBox dspl_car_branch_combo;
+        private System.Windows.Forms.ComboBox dspl_car_type_combo;
     }
 }
