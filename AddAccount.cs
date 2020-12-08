@@ -93,5 +93,10 @@ namespace _291GroupProject
             MessageBox.Show("Inserted a User into database (Message is a placeholder, I'll show the first name and ID or something", "Message");
 
         }
+
+        private void LastNameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
