@@ -16,6 +16,7 @@ namespace _291GroupProject
 {
     public partial class SearchCar : Form
     {
+        public string CarModel;
         SqlConnection BranchBoxConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["291proj"].ConnectionString);
         public SearchCar()
         {
@@ -145,40 +146,60 @@ namespace _291GroupProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //string CarLabelStr = button2.Text + " VIN";
-            // CarLabel.Text = CarLabelStr;
-            //We could use a select statement to grab the VIN from database.
-            //Search car_types database for Prices
+            //The MessageBox is just for testing and visual purposes, we will delete it later.
             SelectedCarImage.BackgroundImage = button2.BackgroundImage;
+            CarModel = (string)button2.Tag;
+            MessageBox.Show(CarModel);
         }
 
         private void button1_click(object sender, EventArgs e)
         {
             SelectedCarImage.BackgroundImage = button1.BackgroundImage;
+            CarModel = (string)button1.Tag;
+            MessageBox.Show(CarModel);
         }
 
         private void button3_click(object sender, EventArgs e)
         {
             SelectedCarImage.BackgroundImage = button3.BackgroundImage;
+            CarModel = (string)button3.Tag;
+            MessageBox.Show(CarModel);
         }
 
         private void button4_click(object sender, EventArgs e)
         {
             SelectedCarImage.BackgroundImage = button4.BackgroundImage;
+            CarModel = (string)button4.Tag;
+            MessageBox.Show(CarModel);
         }
 
         private void button5_click(object sender, EventArgs e)
         {
             SelectedCarImage.BackgroundImage = button5.BackgroundImage;
+            CarModel = (string)button5.Tag;
+            MessageBox.Show(CarModel);
         }
 
         private void button6_click(object sender, EventArgs e)
         {
             SelectedCarImage.BackgroundImage = button6.BackgroundImage;
+            CarModel = (string)button6.Tag;
+            MessageBox.Show(CarModel);
         }
 
         private void RentButton_Click(object sender, EventArgs e)
         {
+            try
+            {
+                BranchBoxConnection.Open();
+                SqlCommand RentCommand = new SqlCommand("Select * from Cars where Model = 'Dodge_Ram' and active != 'Yes';", BranchBoxConnection);
+            }
+            catch 
+            
+            {
+            
+            }
+            
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
