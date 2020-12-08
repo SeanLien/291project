@@ -17,8 +17,10 @@ namespace _291GroupProject
         public SqlConnection myConnection;
         public SqlCommand myCommand;
         public SqlDataReader myReader;
+        public SqlDataReader myReader2;
         public SqlCommand myCommand2;
         public SqlCommand myCommand3;
+        public SqlDataReader myReader3;
 
 
 
@@ -139,6 +141,7 @@ namespace _291GroupProject
             myCommand.CommandText = "select * from Employees";
             if (employee_txt.Text != " ")
                 myCommand.CommandText += " where Employees.Employee_ID = " + employee_txt.Text;
+
 
 
             try
@@ -729,6 +732,89 @@ namespace _291GroupProject
             dspl_car_branch_combo.ResetText();
             dspl_car_type_combo.ResetText();
             dspl_car_active.ResetText();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (invoice_search_rental_id.Text != " ") { 
+            
+            invoice_display_car_type.Clear();
+            invoice_display_first_name.Clear();
+            invoice_display_lat_name.Clear();
+            invoice_display_pickup_branch.Clear();
+            invoice_display_return_date.ResetText();
+            invoice_display_pickup_date.ResetText();
+            invoice_display_return_branch.Clear();
+            invoice_dsplay_rental_id.Clear();
+            invoice_display_total.Clear();
+            invoice_display_vin.Clear();
+            invoice_display_cust_id.Clear();
+
+            
+            myCommand.CommandText = "select * from Rental_trans";
+
+            myCommand.CommandText += " where Rental_trans.Rental_ID = " + invoice_search_rental_id;
+            myCommand2.CommandText = "Select first_name, last_name from customers where Customer_ID ='" + invoice_display_cust_id + "';";
+            myCommand3.CommandText = "Select CarType from Cars where VIN ='" +invoice_display_vin +"';";
+
+
+            try
+            {
+
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+                myReader2 = myCommand2.ExecuteReader();
+                myReader3 = myCommand3.ExecuteReader();
+
+
+
+
+                    while (myReader.Read())
+                    {
+                        invoice_dsplay_rental_id.Text = myReader.GetInt32(0).ToString();
+                        invoice_display_pickup_date.Text = myReader.GetString(1);
+                        invoice_display_return_date.Text = myReader.GetDateTimeOffset(3).ToString();
+                        invoice_display_total.Text = myReader.GetDateTimeOffset(3).ToString();
+                        invoice_display_cust_id.Text = myReader.GetInt32(4).ToString();
+                        invoice_display_pickup_branch.Text = myReader.GetInt32(6).ToString();
+                        invoice_display_return_branch.Text = myReader.GetInt32(7).ToString();
+                        invoice_display_vin.Text = myReader.GetInt32(8).ToString();
+                    }
+
+                    while (myReader2.Read())
+                    {
+
+                        invoice_display_first_name.Text = myReader2.GetString(0);
+                        invoice_display_lat_name.Text = myReader.GetString(1);
+
+                    }
+
+                    while (myReader3.Read())
+                    {
+
+                        invoice_display_car_type.Text = myReader3.GetString(0);
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+                    employee_txt.Clear();
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+            }
+        }
         }
     }
 }
