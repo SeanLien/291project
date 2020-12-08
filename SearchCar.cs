@@ -54,13 +54,23 @@ namespace _291GroupProject
         {   //Need to create a function to make this less copy paste
             //Function would just take an input like truck/sedan, then just change button1-6
 
-            button1.BackgroundImage = _291GroupProject.Properties.Resources.truck_1;
-            button2.BackgroundImage = _291GroupProject.Properties.Resources.truck_2;
-            button2.Text = "Ram";
+            button5.BackgroundImage = _291GroupProject.Properties.Resources.truck_1;
+            button5.Tag = "Jeep_Gladiator";
+
+            button4.BackgroundImage = _291GroupProject.Properties.Resources.truck_2;
+            button4.Tag = "Dodge_Ram";
+
             button3.BackgroundImage = _291GroupProject.Properties.Resources.truck_3;
-            button4.BackgroundImage = _291GroupProject.Properties.Resources.truck_4;
-            button5.BackgroundImage = _291GroupProject.Properties.Resources.truck_5;
-            button6.BackgroundImage = _291GroupProject.Properties.Resources.truck_6;
+            button3.Tag = "Ford_Raptor";
+
+            button6.BackgroundImage = _291GroupProject.Properties.Resources.truck_4;
+            button6.Tag = "Chevy_Silverado";
+
+            button2.BackgroundImage = _291GroupProject.Properties.Resources.truck_5;
+            button2.Tag = "Ford-F350";
+
+            button1.BackgroundImage = _291GroupProject.Properties.Resources.truck_6;
+            button1.Tag = "Chevy_Sierra";
         }
 
         private void SUVbutton_Click(object sender, EventArgs e)
