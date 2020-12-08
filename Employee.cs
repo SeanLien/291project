@@ -199,7 +199,7 @@ namespace _291GroupProject
                 dataGridView1.Rows.Clear();
                 while (myReader.Read())
                 {
-                    dataGridView1.Rows.Add(myReader["Customer_ID"].ToString(), myReader["first_name"].ToString(), myReader["last_name"].ToString(), myReader["middle_initial"].ToString(), myReader["membershilp"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["apt_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
+                    dataGridView1.Rows.Add(myReader["Customer_ID"].ToString(), myReader["first_name"].ToString(), myReader["last_name"].ToString(), myReader["Driving_licence"].ToString(), myReader["membership"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["apt_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
                 }
 
                 myReader.Close();
@@ -222,7 +222,7 @@ namespace _291GroupProject
                 dataGridView5.Rows.Clear();
                 while (myReader.Read())
                 {
-                    dataGridView5.Rows.Add(myReader["VIN"].ToString(), myReader["Color"].ToString(), myReader["Model"].ToString(), myReader["Family"].ToString(), myReader["Branch_ID"].ToString());
+                    dataGridView5.Rows.Add(myReader["VIN"].ToString(), myReader["Color"].ToString(), myReader["Model"].ToString(), myReader["CarType"].ToString(), myReader["Branch_ID"].ToString(), myReader["active"].ToString());
                 }
 
                 myReader.Close();
@@ -245,7 +245,7 @@ namespace _291GroupProject
                 dataGridView4.Rows.Clear();
                 while (myReader.Read())
                 {
-                    dataGridView4.Rows.Add(myReader["Family"].ToString(), myReader["price_D"].ToString(), myReader["price_W"].ToString(), myReader["priceM"].ToString());
+                    dataGridView4.Rows.Add(myReader["CarType"].ToString(), myReader["price_D"].ToString(), myReader["price_W"].ToString(), myReader["price_M"].ToString());
                 }
 
                 myReader.Close();
@@ -268,7 +268,7 @@ namespace _291GroupProject
                 dataGridView3.Rows.Clear();
                 while (myReader.Read())
                 {
-                    dataGridView3.Rows.Add(myReader["Branch_ID"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
+                    dataGridView3.Rows.Add(myReader["Branch_ID"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString(), myReader["active"].ToString());
                 }
 
                 myReader.Close();
@@ -291,7 +291,7 @@ namespace _291GroupProject
                 dataGridView2.Rows.Clear();
                 while (myReader.Read())
                 {
-                    dataGridView2.Rows.Add(myReader["Employee_ID"].ToString(), myReader["first_name"].ToString(), myReader["middle_initial"].ToString(), myReader["last_name"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString());
+                    dataGridView2.Rows.Add(myReader["Employee_ID"].ToString(), myReader["first_name"].ToString(), myReader["middle_initial"].ToString(), myReader["last_name"].ToString(), myReader["street_name"].ToString(), myReader["street_number"].ToString(), myReader["city"].ToString(), myReader["province"].ToString(), myReader["zip"].ToString(), myReader["phone_number"].ToString(), myReader["Branch_ID"].ToString(), myReader["active"].ToString());
                 }
 
                 myReader.Close();
@@ -314,7 +314,7 @@ namespace _291GroupProject
                 dataGridView6.Rows.Clear();
                 while (myReader.Read())
                 {
-                    dataGridView6.Rows.Add(myReader["Rental_ID"].ToString(), myReader["S_date"].ToString(), myReader["E_date"].ToString(), myReader["price"].ToString(), myReader["returnDate"].ToString(), myReader["Customer_ID"].ToString(), myReader["Employee_ID"].ToString(), myReader["pickup_Branch_ID"].ToString(), myReader["return_Branch_ID"].ToString(), myReader["VIN"].ToString());
+                    dataGridView6.Rows.Add(myReader["Rental_ID"].ToString(), myReader["pickup_date"].ToString(), myReader["return_date"].ToString(), myReader["price"].ToString(), myReader["returnDate"].ToString(), myReader["Customer_ID"].ToString(), myReader["Employee_ID"].ToString(), myReader["pickup_Branch_ID"].ToString(), myReader["return_Branch_ID"].ToString(), myReader["VIN"].ToString());
                 }
 
                 myReader.Close();

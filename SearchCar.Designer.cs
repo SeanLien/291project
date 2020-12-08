@@ -82,11 +82,23 @@ namespace _291GroupProject
             this.return_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedCarImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -311,7 +323,7 @@ namespace _291GroupProject
             this.SelectedCarImage.Size = new System.Drawing.Size(625, 249);
             this.SelectedCarImage.TabIndex = 15;
             this.SelectedCarImage.TabStop = false;
-            this.SelectedCarImage.Tag = "reportCarImage";
+            this.SelectedCarImage.Tag = "";
             // 
             // pictureBox7
             // 
@@ -401,6 +413,18 @@ namespace _291GroupProject
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label23);
+            this.tabPage2.Controls.Add(this.textBox11);
+            this.tabPage2.Controls.Add(this.label22);
+            this.tabPage2.Controls.Add(this.label21);
+            this.tabPage2.Controls.Add(this.label20);
+            this.tabPage2.Controls.Add(this.label19);
+            this.tabPage2.Controls.Add(this.label18);
+            this.tabPage2.Controls.Add(this.label17);
+            this.tabPage2.Controls.Add(this.label16);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.button7);
             this.tabPage2.Controls.Add(this.label15);
             this.tabPage2.Controls.Add(this.textBox12);
@@ -441,118 +465,117 @@ namespace _291GroupProject
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(720, 574);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(720, 635);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 17);
+            this.label15.Size = new System.Drawing.Size(59, 17);
             this.label15.TabIndex = 20;
             this.label15.Text = "Branch";
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(721, 594);
+            this.textBox12.Location = new System.Drawing.Point(721, 672);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(184, 22);
             this.textBox12.TabIndex = 17;
-            this.textBox12.Text = "Enter a Branch ID";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(718, 496);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(718, 548);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(40, 17);
+            this.label14.Size = new System.Drawing.Size(45, 17);
             this.label14.TabIndex = 16;
             this.label14.Text = "Price";
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(1165, 516);
+            this.textBox7.Location = new System.Drawing.Point(1167, 586);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(184, 22);
             this.textBox7.TabIndex = 15;
-            this.textBox7.Text = "Enter a min price";
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(944, 516);
+            this.textBox8.Location = new System.Drawing.Point(946, 586);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(184, 22);
             this.textBox8.TabIndex = 14;
-            this.textBox8.Text = "Enter a max price";
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(719, 516);
+            this.textBox9.Location = new System.Drawing.Point(721, 586);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(184, 22);
             this.textBox9.TabIndex = 13;
-            this.textBox9.Text = "Enter a price";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(720, 417);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(30, 17);
+            this.label13.Size = new System.Drawing.Size(33, 17);
             this.label13.TabIndex = 12;
             this.label13.Text = "Car";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(1167, 437);
+            this.textBox4.Location = new System.Drawing.Point(1167, 456);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(184, 22);
             this.textBox4.TabIndex = 11;
-            this.textBox4.Text = "Enter a Car colour";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(946, 437);
+            this.textBox5.Location = new System.Drawing.Point(946, 456);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(184, 22);
             this.textBox5.TabIndex = 10;
-            this.textBox5.Text = "Enter a Car model";
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(721, 437);
+            this.textBox6.Location = new System.Drawing.Point(721, 456);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(184, 22);
             this.textBox6.TabIndex = 9;
-            this.textBox6.Text = "Enter a Car ID";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(720, 331);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(39, 17);
+            this.label12.Size = new System.Drawing.Size(43, 17);
             this.label12.TabIndex = 8;
             this.label12.Text = "Time";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(1167, 351);
+            this.textBox3.Location = new System.Drawing.Point(1167, 374);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(184, 22);
             this.textBox3.TabIndex = 7;
-            this.textBox3.Text = "Enter a day";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(946, 351);
+            this.textBox2.Location = new System.Drawing.Point(946, 374);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(184, 22);
             this.textBox2.TabIndex = 6;
-            this.textBox2.Text = "Enter a month";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(721, 351);
+            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox1.Location = new System.Drawing.Point(721, 374);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(184, 22);
             this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Enter a year";
             // 
             // label11
             // 
@@ -682,33 +705,6 @@ namespace _291GroupProject
             this.tabPage1.Text = "Add a Report";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(1230, 428);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 22);
-            this.textBox10.TabIndex = 48;
-            this.textBox10.Text = "CUSTOMER ID";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(787, 428);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(105, 24);
-            this.comboBox2.TabIndex = 49;
-            this.comboBox2.Text = "Branchs";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(709, 431);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 17);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Branch";
-            // 
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
@@ -727,6 +723,139 @@ namespace _291GroupProject
             this.label7.Size = new System.Drawing.Size(49, 17);
             this.label7.TabIndex = 50;
             this.label7.Text = "Colour";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(787, 428);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(105, 24);
+            this.comboBox2.TabIndex = 49;
+            this.comboBox2.Text = "Branchs";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(1230, 428);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 22);
+            this.textBox10.TabIndex = 48;
+            this.textBox10.Text = "CUSTOMER ID";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(709, 431);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 17);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "Branch";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(720, 652);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 17);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Enter a Branch ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(720, 354);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 17);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Enter a year";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(943, 354);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(97, 17);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "Enter a month";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(1164, 354);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(81, 17);
+            this.label16.TabIndex = 25;
+            this.label16.Text = "Enter a day";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(720, 436);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(97, 17);
+            this.label17.TabIndex = 26;
+            this.label17.Text = "Enter a Car ID";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(943, 436);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(116, 17);
+            this.label18.TabIndex = 27;
+            this.label18.Text = "Enter a Car Type";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(1164, 436);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(122, 17);
+            this.label19.TabIndex = 28;
+            this.label19.Text = "Enter a Car Model";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(720, 565);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(89, 17);
+            this.label20.TabIndex = 29;
+            this.label20.Text = "Enter a price";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(943, 566);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(118, 17);
+            this.label21.TabIndex = 30;
+            this.label21.Text = "Enter a max price";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(1164, 565);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(115, 17);
+            this.label22.TabIndex = 31;
+            this.label22.Text = "Enter a min price";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(720, 489);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(125, 17);
+            this.label23.TabIndex = 33;
+            this.label23.Text = "Enter a Car Colour";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(721, 509);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(184, 22);
+            this.textBox11.TabIndex = 32;
             // 
             // SearchCar
             // 
@@ -813,6 +942,18 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

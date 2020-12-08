@@ -213,44 +213,18 @@ namespace _291GroupProject
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.VIN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Family_c = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Branch_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button13 = new System.Windows.Forms.Button();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.Family = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price_D = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price_w = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button12 = new System.Windows.Forms.Button();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.Branch_ID_t = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.street_name_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.street_number_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.city_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.province_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zip_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phone_number_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button11 = new System.Windows.Forms.Button();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Employee_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.first_name_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.middle_initial_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.family_name_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.street_name_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.street_number_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.city_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.province_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.zip_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phone_number_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button10 = new System.Windows.Forms.Button();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.tabPage10 = new System.Windows.Forms.TabPage();
@@ -270,6 +244,36 @@ namespace _291GroupProject
             this._291_group_projectDataSet = new _291GroupProject._291_group_projectDataSet();
             this.branchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.branchesTableAdapter = new _291GroupProject._291_group_projectDataSetTableAdapters.BranchesTableAdapter();
+            this.Family = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price_D = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price_w = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VIN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Model = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Family_c = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Branch_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.active_car = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Branch_ID_t = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.street_name_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.street_number_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.city_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.province_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zip_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone_number_b = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.active_branch = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Employee_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.first_name_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.middle_initial_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.family_name_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.street_name_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.street_number_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.city_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.province_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zip_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone_number_e = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.branch_id_employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.active_employee = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prev_rental.SuspendLayout();
             this.edit_employee.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -2150,7 +2154,8 @@ namespace _291GroupProject
             this.Color,
             this.Model,
             this.Family_c,
-            this.Branch_ID});
+            this.Branch_ID,
+            this.active_car});
             this.dataGridView5.Location = new System.Drawing.Point(7, 5);
             this.dataGridView5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView5.Name = "dataGridView5";
@@ -2158,41 +2163,6 @@ namespace _291GroupProject
             this.dataGridView5.RowTemplate.Height = 24;
             this.dataGridView5.Size = new System.Drawing.Size(787, 427);
             this.dataGridView5.TabIndex = 3;
-            // 
-            // VIN
-            // 
-            this.VIN.HeaderText = "VIN";
-            this.VIN.MinimumWidth = 6;
-            this.VIN.Name = "VIN";
-            this.VIN.Width = 125;
-            // 
-            // Color
-            // 
-            this.Color.HeaderText = "Colour";
-            this.Color.MinimumWidth = 6;
-            this.Color.Name = "Color";
-            this.Color.Width = 125;
-            // 
-            // Model
-            // 
-            this.Model.HeaderText = "Model";
-            this.Model.MinimumWidth = 6;
-            this.Model.Name = "Model";
-            this.Model.Width = 125;
-            // 
-            // Family_c
-            // 
-            this.Family_c.HeaderText = "Family";
-            this.Family_c.MinimumWidth = 6;
-            this.Family_c.Name = "Family_c";
-            this.Family_c.Width = 125;
-            // 
-            // Branch_ID
-            // 
-            this.Branch_ID.HeaderText = "Branch";
-            this.Branch_ID.MinimumWidth = 6;
-            this.Branch_ID.Name = "Branch_ID";
-            this.Branch_ID.Width = 125;
             // 
             // button13
             // 
@@ -2245,34 +2215,6 @@ namespace _291GroupProject
             this.dataGridView4.Size = new System.Drawing.Size(787, 427);
             this.dataGridView4.TabIndex = 3;
             // 
-            // Family
-            // 
-            this.Family.HeaderText = "Family";
-            this.Family.MinimumWidth = 6;
-            this.Family.Name = "Family";
-            this.Family.Width = 125;
-            // 
-            // price_D
-            // 
-            this.price_D.HeaderText = "Price Day";
-            this.price_D.MinimumWidth = 6;
-            this.price_D.Name = "price_D";
-            this.price_D.Width = 125;
-            // 
-            // price_w
-            // 
-            this.price_w.HeaderText = "Price Week";
-            this.price_w.MinimumWidth = 6;
-            this.price_w.Name = "price_w";
-            this.price_w.Width = 125;
-            // 
-            // priceM
-            // 
-            this.priceM.HeaderText = "Price Month";
-            this.priceM.MinimumWidth = 6;
-            this.priceM.Name = "priceM";
-            this.priceM.Width = 125;
-            // 
             // button12
             // 
             this.button12.Location = new System.Drawing.Point(813, 380);
@@ -2318,7 +2260,8 @@ namespace _291GroupProject
             this.city_b,
             this.province_b,
             this.zip_b,
-            this.phone_number_b});
+            this.phone_number_b,
+            this.active_branch});
             this.dataGridView3.Location = new System.Drawing.Point(7, 5);
             this.dataGridView3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView3.Name = "dataGridView3";
@@ -2326,55 +2269,6 @@ namespace _291GroupProject
             this.dataGridView3.RowTemplate.Height = 24;
             this.dataGridView3.Size = new System.Drawing.Size(787, 427);
             this.dataGridView3.TabIndex = 3;
-            // 
-            // Branch_ID_t
-            // 
-            this.Branch_ID_t.HeaderText = "ID";
-            this.Branch_ID_t.MinimumWidth = 6;
-            this.Branch_ID_t.Name = "Branch_ID_t";
-            this.Branch_ID_t.Width = 125;
-            // 
-            // street_name_b
-            // 
-            this.street_name_b.HeaderText = "Street";
-            this.street_name_b.MinimumWidth = 6;
-            this.street_name_b.Name = "street_name_b";
-            this.street_name_b.Width = 125;
-            // 
-            // street_number_b
-            // 
-            this.street_number_b.HeaderText = "Street #";
-            this.street_number_b.MinimumWidth = 6;
-            this.street_number_b.Name = "street_number_b";
-            this.street_number_b.Width = 125;
-            // 
-            // city_b
-            // 
-            this.city_b.HeaderText = "City";
-            this.city_b.MinimumWidth = 6;
-            this.city_b.Name = "city_b";
-            this.city_b.Width = 125;
-            // 
-            // province_b
-            // 
-            this.province_b.HeaderText = "Province";
-            this.province_b.MinimumWidth = 6;
-            this.province_b.Name = "province_b";
-            this.province_b.Width = 125;
-            // 
-            // zip_b
-            // 
-            this.zip_b.HeaderText = "Postal";
-            this.zip_b.MinimumWidth = 6;
-            this.zip_b.Name = "zip_b";
-            this.zip_b.Width = 125;
-            // 
-            // phone_number_b
-            // 
-            this.phone_number_b.HeaderText = "Phone";
-            this.phone_number_b.MinimumWidth = 6;
-            this.phone_number_b.Name = "phone_number_b";
-            this.phone_number_b.Width = 125;
             // 
             // button11
             // 
@@ -2424,7 +2318,9 @@ namespace _291GroupProject
             this.city_e,
             this.province_e,
             this.zip_e,
-            this.phone_number_e});
+            this.phone_number_e,
+            this.branch_id_employee,
+            this.active_employee});
             this.dataGridView2.Location = new System.Drawing.Point(7, 5);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView2.Name = "dataGridView2";
@@ -2432,76 +2328,6 @@ namespace _291GroupProject
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(787, 427);
             this.dataGridView2.TabIndex = 3;
-            // 
-            // Employee_ID
-            // 
-            this.Employee_ID.HeaderText = "ID";
-            this.Employee_ID.MinimumWidth = 6;
-            this.Employee_ID.Name = "Employee_ID";
-            this.Employee_ID.Width = 125;
-            // 
-            // first_name_e
-            // 
-            this.first_name_e.HeaderText = "First Name";
-            this.first_name_e.MinimumWidth = 6;
-            this.first_name_e.Name = "first_name_e";
-            this.first_name_e.Width = 125;
-            // 
-            // middle_initial_e
-            // 
-            this.middle_initial_e.HeaderText = "Initial";
-            this.middle_initial_e.MinimumWidth = 6;
-            this.middle_initial_e.Name = "middle_initial_e";
-            this.middle_initial_e.Width = 125;
-            // 
-            // family_name_e
-            // 
-            this.family_name_e.HeaderText = "Family Name";
-            this.family_name_e.MinimumWidth = 6;
-            this.family_name_e.Name = "family_name_e";
-            this.family_name_e.Width = 125;
-            // 
-            // street_name_e
-            // 
-            this.street_name_e.HeaderText = "Street";
-            this.street_name_e.MinimumWidth = 6;
-            this.street_name_e.Name = "street_name_e";
-            this.street_name_e.Width = 125;
-            // 
-            // street_number_e
-            // 
-            this.street_number_e.HeaderText = "Street #";
-            this.street_number_e.MinimumWidth = 6;
-            this.street_number_e.Name = "street_number_e";
-            this.street_number_e.Width = 125;
-            // 
-            // city_e
-            // 
-            this.city_e.HeaderText = "City";
-            this.city_e.MinimumWidth = 6;
-            this.city_e.Name = "city_e";
-            this.city_e.Width = 125;
-            // 
-            // province_e
-            // 
-            this.province_e.HeaderText = "Province";
-            this.province_e.MinimumWidth = 6;
-            this.province_e.Name = "province_e";
-            this.province_e.Width = 125;
-            // 
-            // zip_e
-            // 
-            this.zip_e.HeaderText = "Postal";
-            this.zip_e.MinimumWidth = 6;
-            this.zip_e.Name = "zip_e";
-            this.zip_e.Width = 125;
-            // 
-            // phone_number_e
-            // 
-            this.phone_number_e.HeaderText = "Phone";
-            this.phone_number_e.MinimumWidth = 6;
-            this.phone_number_e.Name = "phone_number_e";
-            this.phone_number_e.Width = 125;
             // 
             // button10
             // 
@@ -2664,6 +2490,216 @@ namespace _291GroupProject
             // 
             this.branchesTableAdapter.ClearBeforeFill = true;
             // 
+            // Family
+            // 
+            this.Family.HeaderText = "Car Type";
+            this.Family.MinimumWidth = 6;
+            this.Family.Name = "Family";
+            this.Family.Width = 125;
+            // 
+            // price_D
+            // 
+            this.price_D.HeaderText = "Price Day";
+            this.price_D.MinimumWidth = 6;
+            this.price_D.Name = "price_D";
+            this.price_D.Width = 125;
+            // 
+            // price_w
+            // 
+            this.price_w.HeaderText = "Price Week";
+            this.price_w.MinimumWidth = 6;
+            this.price_w.Name = "price_w";
+            this.price_w.Width = 125;
+            // 
+            // priceM
+            // 
+            this.priceM.HeaderText = "Price Month";
+            this.priceM.MinimumWidth = 6;
+            this.priceM.Name = "priceM";
+            this.priceM.Width = 125;
+            // 
+            // VIN
+            // 
+            this.VIN.HeaderText = "VIN";
+            this.VIN.MinimumWidth = 6;
+            this.VIN.Name = "VIN";
+            this.VIN.Width = 125;
+            // 
+            // Color
+            // 
+            this.Color.HeaderText = "Colour";
+            this.Color.MinimumWidth = 6;
+            this.Color.Name = "Color";
+            this.Color.Width = 125;
+            // 
+            // Model
+            // 
+            this.Model.HeaderText = "Model";
+            this.Model.MinimumWidth = 6;
+            this.Model.Name = "Model";
+            this.Model.Width = 125;
+            // 
+            // Family_c
+            // 
+            this.Family_c.HeaderText = "Car Type";
+            this.Family_c.MinimumWidth = 6;
+            this.Family_c.Name = "Family_c";
+            this.Family_c.Width = 125;
+            // 
+            // Branch_ID
+            // 
+            this.Branch_ID.HeaderText = "Branch";
+            this.Branch_ID.MinimumWidth = 6;
+            this.Branch_ID.Name = "Branch_ID";
+            this.Branch_ID.Width = 125;
+            // 
+            // active_car
+            // 
+            this.active_car.HeaderText = "Active";
+            this.active_car.MinimumWidth = 6;
+            this.active_car.Name = "active_car";
+            this.active_car.Width = 125;
+            // 
+            // Branch_ID_t
+            // 
+            this.Branch_ID_t.HeaderText = "ID";
+            this.Branch_ID_t.MinimumWidth = 6;
+            this.Branch_ID_t.Name = "Branch_ID_t";
+            this.Branch_ID_t.Width = 125;
+            // 
+            // street_name_b
+            // 
+            this.street_name_b.HeaderText = "Street";
+            this.street_name_b.MinimumWidth = 6;
+            this.street_name_b.Name = "street_name_b";
+            this.street_name_b.Width = 125;
+            // 
+            // street_number_b
+            // 
+            this.street_number_b.HeaderText = "Street #";
+            this.street_number_b.MinimumWidth = 6;
+            this.street_number_b.Name = "street_number_b";
+            this.street_number_b.Width = 125;
+            // 
+            // city_b
+            // 
+            this.city_b.HeaderText = "City";
+            this.city_b.MinimumWidth = 6;
+            this.city_b.Name = "city_b";
+            this.city_b.Width = 125;
+            // 
+            // province_b
+            // 
+            this.province_b.HeaderText = "Province";
+            this.province_b.MinimumWidth = 6;
+            this.province_b.Name = "province_b";
+            this.province_b.Width = 125;
+            // 
+            // zip_b
+            // 
+            this.zip_b.HeaderText = "Postal";
+            this.zip_b.MinimumWidth = 6;
+            this.zip_b.Name = "zip_b";
+            this.zip_b.Width = 125;
+            // 
+            // phone_number_b
+            // 
+            this.phone_number_b.HeaderText = "Phone";
+            this.phone_number_b.MinimumWidth = 6;
+            this.phone_number_b.Name = "phone_number_b";
+            this.phone_number_b.Width = 125;
+            // 
+            // active_branch
+            // 
+            this.active_branch.HeaderText = "Active";
+            this.active_branch.MinimumWidth = 6;
+            this.active_branch.Name = "active_branch";
+            this.active_branch.Width = 125;
+            // 
+            // Employee_ID
+            // 
+            this.Employee_ID.HeaderText = "ID";
+            this.Employee_ID.MinimumWidth = 6;
+            this.Employee_ID.Name = "Employee_ID";
+            this.Employee_ID.Width = 125;
+            // 
+            // first_name_e
+            // 
+            this.first_name_e.HeaderText = "First Name";
+            this.first_name_e.MinimumWidth = 6;
+            this.first_name_e.Name = "first_name_e";
+            this.first_name_e.Width = 125;
+            // 
+            // middle_initial_e
+            // 
+            this.middle_initial_e.HeaderText = "Initial";
+            this.middle_initial_e.MinimumWidth = 6;
+            this.middle_initial_e.Name = "middle_initial_e";
+            this.middle_initial_e.Width = 125;
+            // 
+            // family_name_e
+            // 
+            this.family_name_e.HeaderText = "Family Name";
+            this.family_name_e.MinimumWidth = 6;
+            this.family_name_e.Name = "family_name_e";
+            this.family_name_e.Width = 125;
+            // 
+            // street_name_e
+            // 
+            this.street_name_e.HeaderText = "Street";
+            this.street_name_e.MinimumWidth = 6;
+            this.street_name_e.Name = "street_name_e";
+            this.street_name_e.Width = 125;
+            // 
+            // street_number_e
+            // 
+            this.street_number_e.HeaderText = "Street #";
+            this.street_number_e.MinimumWidth = 6;
+            this.street_number_e.Name = "street_number_e";
+            this.street_number_e.Width = 125;
+            // 
+            // city_e
+            // 
+            this.city_e.HeaderText = "City";
+            this.city_e.MinimumWidth = 6;
+            this.city_e.Name = "city_e";
+            this.city_e.Width = 125;
+            // 
+            // province_e
+            // 
+            this.province_e.HeaderText = "Province";
+            this.province_e.MinimumWidth = 6;
+            this.province_e.Name = "province_e";
+            this.province_e.Width = 125;
+            // 
+            // zip_e
+            // 
+            this.zip_e.HeaderText = "Postal";
+            this.zip_e.MinimumWidth = 6;
+            this.zip_e.Name = "zip_e";
+            this.zip_e.Width = 125;
+            // 
+            // phone_number_e
+            // 
+            this.phone_number_e.HeaderText = "Phone";
+            this.phone_number_e.MinimumWidth = 6;
+            this.phone_number_e.Name = "phone_number_e";
+            this.phone_number_e.Width = 125;
+            // 
+            // branch_id_employee
+            // 
+            this.branch_id_employee.HeaderText = "Branch ID";
+            this.branch_id_employee.MinimumWidth = 6;
+            this.branch_id_employee.Name = "branch_id_employee";
+            this.branch_id_employee.Width = 125;
+            // 
+            // active_employee
+            // 
+            this.active_employee.HeaderText = "Active";
+            this.active_employee.MinimumWidth = 6;
+            this.active_employee.Name = "active_employee";
+            this.active_employee.Width = 125;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2818,32 +2854,6 @@ namespace _291GroupProject
         private System.Windows.Forms.DataGridViewTextBoxColumn province;
         private System.Windows.Forms.DataGridViewTextBoxColumn zip;
         private System.Windows.Forms.DataGridViewTextBoxColumn phone_number;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VIN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Color;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Model;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Family_c;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Branch_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Family;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price_D;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price_w;
-        private System.Windows.Forms.DataGridViewTextBoxColumn priceM;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Branch_ID_t;
-        private System.Windows.Forms.DataGridViewTextBoxColumn street_name_b;
-        private System.Windows.Forms.DataGridViewTextBoxColumn street_number_b;
-        private System.Windows.Forms.DataGridViewTextBoxColumn city_b;
-        private System.Windows.Forms.DataGridViewTextBoxColumn province_b;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zip_b;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phone_number_b;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Employee_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn first_name_e;
-        private System.Windows.Forms.DataGridViewTextBoxColumn middle_initial_e;
-        private System.Windows.Forms.DataGridViewTextBoxColumn family_name_e;
-        private System.Windows.Forms.DataGridViewTextBoxColumn street_name_e;
-        private System.Windows.Forms.DataGridViewTextBoxColumn street_number_e;
-        private System.Windows.Forms.DataGridViewTextBoxColumn city_e;
-        private System.Windows.Forms.DataGridViewTextBoxColumn province_e;
-        private System.Windows.Forms.DataGridViewTextBoxColumn zip_e;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phone_number_e;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rental_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn S_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn E_date;
@@ -2964,5 +2974,35 @@ namespace _291GroupProject
         private System.Windows.Forms.ComboBox add_car_type;
         private System.Windows.Forms.ComboBox dspl_car_branch_combo;
         private System.Windows.Forms.ComboBox dspl_car_type_combo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Family;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price_D;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price_w;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VIN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Color;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Model;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Family_c;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Branch_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn active_car;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Branch_ID_t;
+        private System.Windows.Forms.DataGridViewTextBoxColumn street_name_b;
+        private System.Windows.Forms.DataGridViewTextBoxColumn street_number_b;
+        private System.Windows.Forms.DataGridViewTextBoxColumn city_b;
+        private System.Windows.Forms.DataGridViewTextBoxColumn province_b;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zip_b;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone_number_b;
+        private System.Windows.Forms.DataGridViewTextBoxColumn active_branch;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Employee_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn first_name_e;
+        private System.Windows.Forms.DataGridViewTextBoxColumn middle_initial_e;
+        private System.Windows.Forms.DataGridViewTextBoxColumn family_name_e;
+        private System.Windows.Forms.DataGridViewTextBoxColumn street_name_e;
+        private System.Windows.Forms.DataGridViewTextBoxColumn street_number_e;
+        private System.Windows.Forms.DataGridViewTextBoxColumn city_e;
+        private System.Windows.Forms.DataGridViewTextBoxColumn province_e;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zip_e;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone_number_e;
+        private System.Windows.Forms.DataGridViewTextBoxColumn branch_id_employee;
+        private System.Windows.Forms.DataGridViewTextBoxColumn active_employee;
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Data.SqlClient;
 
 namespace _291GroupProject
 {
@@ -16,7 +17,6 @@ namespace _291GroupProject
         public SearchCar()
         {
             InitializeComponent();
-            SelectedCarImage.BackColor = Color.Transparent;
         }
 
         private void SearchBackButton_Click(object sender, EventArgs e)
