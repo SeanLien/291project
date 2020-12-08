@@ -192,7 +192,27 @@ namespace _291GroupProject
             try
             {
                 BranchBoxConnection.Open();
-                SqlCommand RentCommand = new SqlCommand("Select * from Cars where Model = 'Dodge_Ram' and active != 'Yes';", BranchBoxConnection);
+                //Need to include the branch ID in the sql command and the color
+                SqlCommand RentCommand = new SqlCommand("Select (VIN) from Cars where Model = '" + CarModel + "'" + " and active != 'Yes' and Branch_ID = '" + BranchBox.Text + "';", BranchBoxConnection);
+                if (RentCommand.ExecuteScalar() == null)
+                {
+                    MessageBox.Show("No VIN came up");
+                    BranchBoxConnection.Close();
+                }
+                else
+                {
+                    //testing purposes, it shows the VIN number that is returned
+                    int VIN = (int)RentCommand.ExecuteScalar();
+                    MessageBox.Show(VIN.ToString());
+                    BranchBoxConnection.Close();
+                    //Here we would also have a rental trans sqlcommand
+                    //Change the car active to no.
+
+                }
+               
+                    
+                
+                
             }
             catch 
             
