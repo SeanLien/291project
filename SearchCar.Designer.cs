@@ -63,9 +63,17 @@ namespace _291GroupProject
             this.SelectedCarImage = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedCarImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // SearchCarBox
@@ -181,7 +189,7 @@ namespace _291GroupProject
             this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(931, 560);
+            this.label1.Location = new System.Drawing.Point(1122, 516);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 29);
@@ -195,7 +203,7 @@ namespace _291GroupProject
             this.RedButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.RedButton.FlatAppearance.BorderSize = 0;
             this.RedButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.RedButton.Location = new System.Drawing.Point(895, 593);
+            this.RedButton.Location = new System.Drawing.Point(1086, 549);
             this.RedButton.Margin = new System.Windows.Forms.Padding(4);
             this.RedButton.Name = "RedButton";
             this.RedButton.Size = new System.Drawing.Size(51, 39);
@@ -209,7 +217,7 @@ namespace _291GroupProject
             this.CyanButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.CyanButton.FlatAppearance.BorderSize = 0;
             this.CyanButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CyanButton.Location = new System.Drawing.Point(1011, 641);
+            this.CyanButton.Location = new System.Drawing.Point(1202, 597);
             this.CyanButton.Margin = new System.Windows.Forms.Padding(4);
             this.CyanButton.Name = "CyanButton";
             this.CyanButton.Size = new System.Drawing.Size(51, 39);
@@ -223,7 +231,7 @@ namespace _291GroupProject
             this.WhiteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.WhiteButton.FlatAppearance.BorderSize = 0;
             this.WhiteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.WhiteButton.Location = new System.Drawing.Point(1069, 593);
+            this.WhiteButton.Location = new System.Drawing.Point(1260, 549);
             this.WhiteButton.Margin = new System.Windows.Forms.Padding(4);
             this.WhiteButton.Name = "WhiteButton";
             this.WhiteButton.Size = new System.Drawing.Size(51, 39);
@@ -237,7 +245,7 @@ namespace _291GroupProject
             this.BlackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.BlackButton.FlatAppearance.BorderSize = 0;
             this.BlackButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BlackButton.Location = new System.Drawing.Point(1127, 593);
+            this.BlackButton.Location = new System.Drawing.Point(1318, 549);
             this.BlackButton.Margin = new System.Windows.Forms.Padding(4);
             this.BlackButton.Name = "BlackButton";
             this.BlackButton.Size = new System.Drawing.Size(51, 39);
@@ -251,7 +259,7 @@ namespace _291GroupProject
             this.Yellowbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Yellowbutton.FlatAppearance.BorderSize = 0;
             this.Yellowbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Yellowbutton.Location = new System.Drawing.Point(951, 641);
+            this.Yellowbutton.Location = new System.Drawing.Point(1142, 597);
             this.Yellowbutton.Margin = new System.Windows.Forms.Padding(4);
             this.Yellowbutton.Name = "Yellowbutton";
             this.Yellowbutton.Size = new System.Drawing.Size(51, 39);
@@ -265,7 +273,7 @@ namespace _291GroupProject
             this.GreyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.GreyButton.FlatAppearance.BorderSize = 0;
             this.GreyButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.GreyButton.Location = new System.Drawing.Point(1011, 593);
+            this.GreyButton.Location = new System.Drawing.Point(1202, 549);
             this.GreyButton.Margin = new System.Windows.Forms.Padding(4);
             this.GreyButton.Name = "GreyButton";
             this.GreyButton.Size = new System.Drawing.Size(51, 39);
@@ -279,7 +287,7 @@ namespace _291GroupProject
             this.OrangeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.OrangeButton.FlatAppearance.BorderSize = 0;
             this.OrangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.OrangeButton.Location = new System.Drawing.Point(1069, 641);
+            this.OrangeButton.Location = new System.Drawing.Point(1260, 597);
             this.OrangeButton.Margin = new System.Windows.Forms.Padding(4);
             this.OrangeButton.Name = "OrangeButton";
             this.OrangeButton.Size = new System.Drawing.Size(51, 39);
@@ -293,7 +301,7 @@ namespace _291GroupProject
             this.GreenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.GreenButton.FlatAppearance.BorderSize = 0;
             this.GreenButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.GreenButton.Location = new System.Drawing.Point(895, 641);
+            this.GreenButton.Location = new System.Drawing.Point(1086, 597);
             this.GreenButton.Margin = new System.Windows.Forms.Padding(4);
             this.GreenButton.Name = "GreenButton";
             this.GreenButton.Size = new System.Drawing.Size(51, 39);
@@ -307,7 +315,7 @@ namespace _291GroupProject
             this.BlueButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.BlueButton.FlatAppearance.BorderSize = 0;
             this.BlueButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BlueButton.Location = new System.Drawing.Point(953, 593);
+            this.BlueButton.Location = new System.Drawing.Point(1144, 549);
             this.BlueButton.Margin = new System.Windows.Forms.Padding(4);
             this.BlueButton.Name = "BlueButton";
             this.BlueButton.Size = new System.Drawing.Size(51, 39);
@@ -321,7 +329,7 @@ namespace _291GroupProject
             this.PurpleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.PurpleButton.FlatAppearance.BorderSize = 0;
             this.PurpleButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.PurpleButton.Location = new System.Drawing.Point(1127, 641);
+            this.PurpleButton.Location = new System.Drawing.Point(1318, 597);
             this.PurpleButton.Margin = new System.Windows.Forms.Padding(4);
             this.PurpleButton.Name = "PurpleButton";
             this.PurpleButton.Size = new System.Drawing.Size(51, 39);
@@ -344,7 +352,7 @@ namespace _291GroupProject
             // 
             this.RentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RentButton.ForeColor = System.Drawing.Color.Black;
-            this.RentButton.Location = new System.Drawing.Point(869, 690);
+            this.RentButton.Location = new System.Drawing.Point(1044, 694);
             this.RentButton.Margin = new System.Windows.Forms.Padding(4);
             this.RentButton.Name = "RentButton";
             this.RentButton.Size = new System.Drawing.Size(325, 97);
@@ -356,7 +364,7 @@ namespace _291GroupProject
             // CarLabel
             // 
             this.CarLabel.AutoSize = true;
-            this.CarLabel.Location = new System.Drawing.Point(948, 409);
+            this.CarLabel.Location = new System.Drawing.Point(1162, 223);
             this.CarLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CarLabel.Name = "CarLabel";
             this.CarLabel.Size = new System.Drawing.Size(175, 17);
@@ -366,31 +374,32 @@ namespace _291GroupProject
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(792, 460);
+            this.label3.Location = new System.Drawing.Point(709, 516);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(440, 17);
+            this.label3.Size = new System.Drawing.Size(105, 17);
             this.label3.TabIndex = 30;
-            this.label3.Text = "Current location (Branch) (User can choose a branch and see stock)";
+            this.label3.Text = "branch location";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(948, 437);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(785, 713);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 17);
+            this.label4.Size = new System.Drawing.Size(171, 55);
             this.label4.TabIndex = 31;
-            this.label4.Text = "Prices (day, week, month)";
+            this.label4.Text = "PRICE";
             // 
             // button6
             // 
             this.button6.BackgroundImage = global::_291GroupProject.Properties.Resources.hybrid_6;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.Location = new System.Drawing.Point(347, 613);
+            this.button6.Location = new System.Drawing.Point(4, 4);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(227, 139);
+            this.button6.Size = new System.Drawing.Size(309, 175);
             this.button6.TabIndex = 39;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_click);
@@ -399,10 +408,10 @@ namespace _291GroupProject
             // 
             this.button5.BackgroundImage = global::_291GroupProject.Properties.Resources.convertible_1;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Location = new System.Drawing.Point(64, 613);
+            this.button5.Location = new System.Drawing.Point(321, 4);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(227, 139);
+            this.button5.Size = new System.Drawing.Size(325, 175);
             this.button5.TabIndex = 38;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_click);
@@ -411,10 +420,10 @@ namespace _291GroupProject
             // 
             this.button4.BackgroundImage = global::_291GroupProject.Properties.Resources.sports_5;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Location = new System.Drawing.Point(347, 437);
+            this.button4.Location = new System.Drawing.Point(321, 370);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(227, 139);
+            this.button4.Size = new System.Drawing.Size(325, 175);
             this.button4.TabIndex = 37;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_click);
@@ -423,10 +432,10 @@ namespace _291GroupProject
             // 
             this.button3.BackgroundImage = global::_291GroupProject.Properties.Resources.sedan_3;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(64, 437);
+            this.button3.Location = new System.Drawing.Point(4, 187);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(227, 139);
+            this.button3.Size = new System.Drawing.Size(309, 175);
             this.button3.TabIndex = 36;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_click);
@@ -436,10 +445,10 @@ namespace _291GroupProject
             this.button2.BackgroundImage = global::_291GroupProject.Properties.Resources.truck_2;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(347, 252);
+            this.button2.Location = new System.Drawing.Point(321, 187);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(227, 139);
+            this.button2.Size = new System.Drawing.Size(325, 175);
             this.button2.TabIndex = 35;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -448,10 +457,10 @@ namespace _291GroupProject
             // 
             this.button1.BackgroundImage = global::_291GroupProject.Properties.Resources.jeep_1;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(64, 252);
+            this.button1.Location = new System.Drawing.Point(4, 370);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(227, 139);
+            this.button1.Size = new System.Drawing.Size(309, 175);
             this.button1.TabIndex = 34;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_click);
@@ -487,17 +496,91 @@ namespace _291GroupProject
             this.pictureBox8.TabIndex = 33;
             this.pictureBox8.TabStop = false;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.Controls.Add(this.button4, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.button6, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.button5, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 223);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(650, 551);
+            this.tableLayoutPanel1.TabIndex = 41;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(709, 223);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 17);
+            this.label2.TabIndex = 42;
+            this.label2.Text = "Report ID";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(795, 566);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 43;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(795, 612);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker2.TabIndex = 44;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(709, 566);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 17);
+            this.label5.TabIndex = 45;
+            this.label5.Text = "start date";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(713, 612);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(64, 17);
+            this.label6.TabIndex = 46;
+            this.label6.Text = "end date";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(842, 516);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(59, 17);
+            this.label7.TabIndex = 47;
+            this.label7.Text = "address";
+            // 
             // SearchCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 804);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.CarLabel);
@@ -534,6 +617,7 @@ namespace _291GroupProject
             ((System.ComponentModel.ISupportInitialize)(this.SelectedCarImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -575,6 +659,13 @@ namespace _291GroupProject
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox SelectedCarImage;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
