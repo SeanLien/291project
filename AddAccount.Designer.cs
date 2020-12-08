@@ -95,7 +95,6 @@ namespace _291GroupProject
             this.LastNameBox.Size = new System.Drawing.Size(161, 20);
             this.LastNameBox.TabIndex = 3;
             this.LastNameBox.Text = "Last Name";
-            this.LastNameBox.TextChanged += new System.EventHandler(this.LastNameBox_TextChanged);
             // 
             // label3
             // 

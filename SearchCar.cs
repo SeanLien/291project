@@ -9,14 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Data.SqlClient;
-using System.Configuration;
-
 
 namespace _291GroupProject
 {
     public partial class SearchCar : Form
     {
-        SqlConnection BranchBoxConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["291proj"].ConnectionString);
         public SearchCar()
         {
             InitializeComponent();
@@ -31,23 +28,7 @@ namespace _291GroupProject
 
         private void SearchCar_Load(object sender, EventArgs e)
         {
-            try
-            {
-                BranchBoxConnection.Open();
-                SqlCommand BranchBoxCommand = new SqlCommand("select (Branch_ID) from Branches", BranchBoxConnection);
-                SqlDataReader myreader;
-                myreader = BranchBoxCommand.ExecuteReader();
-                DataTable DT = new DataTable();
-                DT.Columns.Add("Branch_ID", typeof(int));
-                DT.Load(myreader);
-                BranchBox.ValueMember = "Branch_ID";
-                BranchBox.DataSource = DT;
-                BranchBoxConnection.Close();
-            }
-            catch (Exception) 
-            {
-            
-            }
+
         }
 
         private void TruckButton_Click(object sender, EventArgs e)
@@ -169,11 +150,6 @@ namespace _291GroupProject
 
         private void RentButton_Click(object sender, EventArgs e)
         {
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
