@@ -29,7 +29,7 @@ namespace _291GroupProject
         /// </summary>
         private void InitializeComponent()
         {
-            this.SearchCarBox = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
             this.TruckButton = new System.Windows.Forms.Button();
             this.SUVbutton = new System.Windows.Forms.Button();
             this.SedanButton = new System.Windows.Forms.Button();
@@ -70,39 +70,66 @@ namespace _291GroupProject
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Rental_ID = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.VIN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pickup_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.return_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this._291_group_projectDataSet = new _291GroupProject._291_group_projectDataSet();
+            this.groupprojectDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedCarImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._291_group_projectDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupprojectDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // SearchCarBox
-            // 
-            this.SearchCarBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchCarBox.Location = new System.Drawing.Point(77, 60);
-            this.SearchCarBox.Margin = new System.Windows.Forms.Padding(4);
-            this.SearchCarBox.Name = "SearchCarBox";
-            this.SearchCarBox.Size = new System.Drawing.Size(1204, 32);
-            this.SearchCarBox.TabIndex = 0;
-            this.SearchCarBox.Text = "Search";
             // 
             // TruckButton
             // 
-            this.TruckButton.BackColor = System.Drawing.SystemColors.Control;
+            this.TruckButton.BackColor = System.Drawing.Color.Transparent;
             this.TruckButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.TruckButton.Location = new System.Drawing.Point(77, 124);
+            this.TruckButton.Location = new System.Drawing.Point(114, 22);
             this.TruckButton.Margin = new System.Windows.Forms.Padding(4);
             this.TruckButton.Name = "TruckButton";
             this.TruckButton.Size = new System.Drawing.Size(141, 66);
             this.TruckButton.TabIndex = 1;
             this.TruckButton.Text = "Truck";
-            this.TruckButton.UseVisualStyleBackColor = false;
+            this.TruckButton.UseVisualStyleBackColor = true;
             this.TruckButton.Click += new System.EventHandler(this.TruckButton_Click);
             // 
             // SUVbutton
             // 
             this.SUVbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SUVbutton.Location = new System.Drawing.Point(227, 124);
+            this.SUVbutton.Location = new System.Drawing.Point(263, 22);
             this.SUVbutton.Margin = new System.Windows.Forms.Padding(4);
             this.SUVbutton.Name = "SUVbutton";
             this.SUVbutton.Size = new System.Drawing.Size(141, 66);
@@ -114,7 +141,7 @@ namespace _291GroupProject
             // SedanButton
             // 
             this.SedanButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SedanButton.Location = new System.Drawing.Point(377, 124);
+            this.SedanButton.Location = new System.Drawing.Point(412, 22);
             this.SedanButton.Margin = new System.Windows.Forms.Padding(4);
             this.SedanButton.Name = "SedanButton";
             this.SedanButton.Size = new System.Drawing.Size(141, 66);
@@ -126,7 +153,7 @@ namespace _291GroupProject
             // JeepButton
             // 
             this.JeepButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.JeepButton.Location = new System.Drawing.Point(527, 124);
+            this.JeepButton.Location = new System.Drawing.Point(561, 22);
             this.JeepButton.Margin = new System.Windows.Forms.Padding(4);
             this.JeepButton.Name = "JeepButton";
             this.JeepButton.Size = new System.Drawing.Size(141, 66);
@@ -138,7 +165,7 @@ namespace _291GroupProject
             // SportsCarButton
             // 
             this.SportsCarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SportsCarButton.Location = new System.Drawing.Point(677, 124);
+            this.SportsCarButton.Location = new System.Drawing.Point(710, 22);
             this.SportsCarButton.Margin = new System.Windows.Forms.Padding(4);
             this.SportsCarButton.Name = "SportsCarButton";
             this.SportsCarButton.Size = new System.Drawing.Size(141, 66);
@@ -150,7 +177,7 @@ namespace _291GroupProject
             // HybridButton
             // 
             this.HybridButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.HybridButton.Location = new System.Drawing.Point(827, 124);
+            this.HybridButton.Location = new System.Drawing.Point(859, 22);
             this.HybridButton.Margin = new System.Windows.Forms.Padding(4);
             this.HybridButton.Name = "HybridButton";
             this.HybridButton.Size = new System.Drawing.Size(141, 66);
@@ -162,7 +189,7 @@ namespace _291GroupProject
             // CompactButton
             // 
             this.CompactButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CompactButton.Location = new System.Drawing.Point(977, 124);
+            this.CompactButton.Location = new System.Drawing.Point(1008, 22);
             this.CompactButton.Margin = new System.Windows.Forms.Padding(4);
             this.CompactButton.Name = "CompactButton";
             this.CompactButton.Size = new System.Drawing.Size(141, 66);
@@ -174,7 +201,7 @@ namespace _291GroupProject
             // ConvertibleButton
             // 
             this.ConvertibleButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ConvertibleButton.Location = new System.Drawing.Point(1127, 124);
+            this.ConvertibleButton.Location = new System.Drawing.Point(1157, 22);
             this.ConvertibleButton.Margin = new System.Windows.Forms.Padding(4);
             this.ConvertibleButton.Name = "ConvertibleButton";
             this.ConvertibleButton.Size = new System.Drawing.Size(141, 66);
@@ -189,7 +216,7 @@ namespace _291GroupProject
             this.label1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(1122, 516);
+            this.label1.Location = new System.Drawing.Point(1138, 427);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 29);
@@ -203,7 +230,7 @@ namespace _291GroupProject
             this.RedButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.RedButton.FlatAppearance.BorderSize = 0;
             this.RedButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.RedButton.Location = new System.Drawing.Point(1086, 549);
+            this.RedButton.Location = new System.Drawing.Point(1143, 460);
             this.RedButton.Margin = new System.Windows.Forms.Padding(4);
             this.RedButton.Name = "RedButton";
             this.RedButton.Size = new System.Drawing.Size(51, 39);
@@ -217,7 +244,7 @@ namespace _291GroupProject
             this.CyanButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.CyanButton.FlatAppearance.BorderSize = 0;
             this.CyanButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CyanButton.Location = new System.Drawing.Point(1202, 597);
+            this.CyanButton.Location = new System.Drawing.Point(1261, 507);
             this.CyanButton.Margin = new System.Windows.Forms.Padding(4);
             this.CyanButton.Name = "CyanButton";
             this.CyanButton.Size = new System.Drawing.Size(51, 39);
@@ -231,7 +258,7 @@ namespace _291GroupProject
             this.WhiteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.WhiteButton.FlatAppearance.BorderSize = 0;
             this.WhiteButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.WhiteButton.Location = new System.Drawing.Point(1260, 549);
+            this.WhiteButton.Location = new System.Drawing.Point(1320, 460);
             this.WhiteButton.Margin = new System.Windows.Forms.Padding(4);
             this.WhiteButton.Name = "WhiteButton";
             this.WhiteButton.Size = new System.Drawing.Size(51, 39);
@@ -245,7 +272,7 @@ namespace _291GroupProject
             this.BlackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.BlackButton.FlatAppearance.BorderSize = 0;
             this.BlackButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BlackButton.Location = new System.Drawing.Point(1318, 549);
+            this.BlackButton.Location = new System.Drawing.Point(1320, 507);
             this.BlackButton.Margin = new System.Windows.Forms.Padding(4);
             this.BlackButton.Name = "BlackButton";
             this.BlackButton.Size = new System.Drawing.Size(51, 39);
@@ -259,7 +286,7 @@ namespace _291GroupProject
             this.Yellowbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Yellowbutton.FlatAppearance.BorderSize = 0;
             this.Yellowbutton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Yellowbutton.Location = new System.Drawing.Point(1142, 597);
+            this.Yellowbutton.Location = new System.Drawing.Point(1202, 507);
             this.Yellowbutton.Margin = new System.Windows.Forms.Padding(4);
             this.Yellowbutton.Name = "Yellowbutton";
             this.Yellowbutton.Size = new System.Drawing.Size(51, 39);
@@ -273,7 +300,7 @@ namespace _291GroupProject
             this.GreyButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.GreyButton.FlatAppearance.BorderSize = 0;
             this.GreyButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.GreyButton.Location = new System.Drawing.Point(1202, 549);
+            this.GreyButton.Location = new System.Drawing.Point(1261, 460);
             this.GreyButton.Margin = new System.Windows.Forms.Padding(4);
             this.GreyButton.Name = "GreyButton";
             this.GreyButton.Size = new System.Drawing.Size(51, 39);
@@ -287,7 +314,7 @@ namespace _291GroupProject
             this.OrangeButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.OrangeButton.FlatAppearance.BorderSize = 0;
             this.OrangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.OrangeButton.Location = new System.Drawing.Point(1260, 597);
+            this.OrangeButton.Location = new System.Drawing.Point(1261, 554);
             this.OrangeButton.Margin = new System.Windows.Forms.Padding(4);
             this.OrangeButton.Name = "OrangeButton";
             this.OrangeButton.Size = new System.Drawing.Size(51, 39);
@@ -301,7 +328,7 @@ namespace _291GroupProject
             this.GreenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.GreenButton.FlatAppearance.BorderSize = 0;
             this.GreenButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.GreenButton.Location = new System.Drawing.Point(1086, 597);
+            this.GreenButton.Location = new System.Drawing.Point(1143, 507);
             this.GreenButton.Margin = new System.Windows.Forms.Padding(4);
             this.GreenButton.Name = "GreenButton";
             this.GreenButton.Size = new System.Drawing.Size(51, 39);
@@ -315,7 +342,7 @@ namespace _291GroupProject
             this.BlueButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.BlueButton.FlatAppearance.BorderSize = 0;
             this.BlueButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BlueButton.Location = new System.Drawing.Point(1144, 549);
+            this.BlueButton.Location = new System.Drawing.Point(1202, 460);
             this.BlueButton.Margin = new System.Windows.Forms.Padding(4);
             this.BlueButton.Name = "BlueButton";
             this.BlueButton.Size = new System.Drawing.Size(51, 39);
@@ -329,7 +356,7 @@ namespace _291GroupProject
             this.PurpleButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.PurpleButton.FlatAppearance.BorderSize = 0;
             this.PurpleButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.PurpleButton.Location = new System.Drawing.Point(1318, 597);
+            this.PurpleButton.Location = new System.Drawing.Point(1320, 554);
             this.PurpleButton.Margin = new System.Windows.Forms.Padding(4);
             this.PurpleButton.Name = "PurpleButton";
             this.PurpleButton.Size = new System.Drawing.Size(51, 39);
@@ -352,7 +379,7 @@ namespace _291GroupProject
             // 
             this.RentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RentButton.ForeColor = System.Drawing.Color.Black;
-            this.RentButton.Location = new System.Drawing.Point(1044, 694);
+            this.RentButton.Location = new System.Drawing.Point(1021, 607);
             this.RentButton.Margin = new System.Windows.Forms.Padding(4);
             this.RentButton.Name = "RentButton";
             this.RentButton.Size = new System.Drawing.Size(325, 97);
@@ -364,17 +391,18 @@ namespace _291GroupProject
             // CarLabel
             // 
             this.CarLabel.AutoSize = true;
-            this.CarLabel.Location = new System.Drawing.Point(1162, 223);
+            this.CarLabel.Location = new System.Drawing.Point(1300, 153);
             this.CarLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CarLabel.Name = "CarLabel";
-            this.CarLabel.Size = new System.Drawing.Size(175, 17);
+            this.CarLabel.Size = new System.Drawing.Size(30, 17);
             this.CarLabel.TabIndex = 29;
-            this.CarLabel.Text = "Car Name, model, Number";
+            this.CarLabel.Text = "VIN";
+            this.CarLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(709, 516);
+            this.label3.Location = new System.Drawing.Point(707, 427);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 17);
@@ -385,7 +413,7 @@ namespace _291GroupProject
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(785, 713);
+            this.label4.Location = new System.Drawing.Point(711, 623);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(171, 55);
@@ -468,7 +496,7 @@ namespace _291GroupProject
             // SelectedCarImage
             // 
             this.SelectedCarImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SelectedCarImage.Location = new System.Drawing.Point(712, 252);
+            this.SelectedCarImage.Location = new System.Drawing.Point(705, 174);
             this.SelectedCarImage.Margin = new System.Windows.Forms.Padding(4);
             this.SelectedCarImage.Name = "SelectedCarImage";
             this.SelectedCarImage.Size = new System.Drawing.Size(625, 249);
@@ -479,7 +507,7 @@ namespace _291GroupProject
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBox7.Location = new System.Drawing.Point(3, 102);
+            this.pictureBox7.Location = new System.Drawing.Point(3, 0);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(1379, 108);
@@ -489,7 +517,7 @@ namespace _291GroupProject
             // pictureBox8
             // 
             this.pictureBox8.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pictureBox8.Location = new System.Drawing.Point(659, 198);
+            this.pictureBox8.Location = new System.Drawing.Point(659, 111);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(723, 614);
@@ -507,19 +535,19 @@ namespace _291GroupProject
             this.tableLayoutPanel1.Controls.Add(this.button3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.button5, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 2);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 223);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 115);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(650, 551);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(650, 563);
             this.tableLayoutPanel1.TabIndex = 41;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(709, 223);
+            this.label2.Location = new System.Drawing.Point(706, 153);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 17);
@@ -528,14 +556,14 @@ namespace _291GroupProject
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(795, 566);
+            this.dateTimePicker1.Location = new System.Drawing.Point(800, 496);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 43;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(795, 612);
+            this.dateTimePicker2.Location = new System.Drawing.Point(800, 542);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker2.TabIndex = 44;
@@ -543,7 +571,7 @@ namespace _291GroupProject
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(709, 566);
+            this.label5.Location = new System.Drawing.Point(714, 496);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 17);
@@ -553,7 +581,7 @@ namespace _291GroupProject
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(713, 612);
+            this.label6.Location = new System.Drawing.Point(718, 542);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 17);
@@ -563,52 +591,344 @@ namespace _291GroupProject
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(842, 516);
+            this.label7.Location = new System.Drawing.Point(819, 427);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(59, 17);
             this.label7.TabIndex = 47;
             this.label7.Text = "address";
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.AllowDrop = true;
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.tabControl1.Location = new System.Drawing.Point(3, 45);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1390, 754);
+            this.tabControl1.TabIndex = 48;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.button7);
+            this.tabPage2.Controls.Add(this.label15);
+            this.tabPage2.Controls.Add(this.textBox12);
+            this.tabPage2.Controls.Add(this.label14);
+            this.tabPage2.Controls.Add(this.textBox7);
+            this.tabPage2.Controls.Add(this.textBox8);
+            this.tabPage2.Controls.Add(this.textBox9);
+            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.textBox6);
+            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.comboBox1);
+            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.label8);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1382, 725);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "View Reports";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(1167, 351);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(184, 22);
+            this.textBox3.TabIndex = 7;
+            this.textBox3.Text = "Enter a day";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(946, 351);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(184, 22);
+            this.textBox2.TabIndex = 6;
+            this.textBox2.Text = "Enter a month";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(721, 351);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(184, 22);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.Text = "Enter a year";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(720, 265);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 17);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Advanced";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(720, 98);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(114, 17);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Make a selection";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Show All Reports",
+            "Outstanding Reports",
+            "Currently Active Reports",
+            "Completed Reports",
+            "Late Reports"});
+            this.comboBox1.Location = new System.Drawing.Point(723, 118);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(512, 24);
+            this.comboBox1.TabIndex = 2;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Rental_ID,
+            this.VIN,
+            this.price,
+            this.pickup_date,
+            this.return_date});
+            this.dataGridView1.Location = new System.Drawing.Point(10, 62);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(678, 657);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // Rental_ID
+            // 
+            this.Rental_ID.HeaderText = "Report ID";
+            this.Rental_ID.MinimumWidth = 6;
+            this.Rental_ID.Name = "Rental_ID";
+            this.Rental_ID.Width = 125;
+            // 
+            // VIN
+            // 
+            this.VIN.HeaderText = "Car";
+            this.VIN.MinimumWidth = 6;
+            this.VIN.Name = "VIN";
+            this.VIN.Width = 125;
+            // 
+            // price
+            // 
+            this.price.HeaderText = "$";
+            this.price.MinimumWidth = 6;
+            this.price.Name = "price";
+            this.price.Width = 125;
+            // 
+            // pickup_date
+            // 
+            this.pickup_date.HeaderText = "Start date";
+            this.pickup_date.MinimumWidth = 6;
+            this.pickup_date.Name = "pickup_date";
+            this.pickup_date.Width = 125;
+            // 
+            // return_date
+            // 
+            this.return_date.HeaderText = "End date";
+            this.return_date.MinimumWidth = 6;
+            this.return_date.Name = "return_date";
+            this.return_date.Width = 125;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(181, 18);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(208, 29);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Customer Reports";
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.tableLayoutPanel1);
+            this.tabPage1.Controls.Add(this.label7);
+            this.tabPage1.Controls.Add(this.RentButton);
+            this.tabPage1.Controls.Add(this.OrangeButton);
+            this.tabPage1.Controls.Add(this.PurpleButton);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.GreenButton);
+            this.tabPage1.Controls.Add(this.BlackButton);
+            this.tabPage1.Controls.Add(this.Yellowbutton);
+            this.tabPage1.Controls.Add(this.CyanButton);
+            this.tabPage1.Controls.Add(this.BlueButton);
+            this.tabPage1.Controls.Add(this.label4);
+            this.tabPage1.Controls.Add(this.GreyButton);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.WhiteButton);
+            this.tabPage1.Controls.Add(this.dateTimePicker2);
+            this.tabPage1.Controls.Add(this.dateTimePicker1);
+            this.tabPage1.Controls.Add(this.TruckButton);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.SUVbutton);
+            this.tabPage1.Controls.Add(this.RedButton);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.CarLabel);
+            this.tabPage1.Controls.Add(this.SedanButton);
+            this.tabPage1.Controls.Add(this.JeepButton);
+            this.tabPage1.Controls.Add(this.SportsCarButton);
+            this.tabPage1.Controls.Add(this.HybridButton);
+            this.tabPage1.Controls.Add(this.CompactButton);
+            this.tabPage1.Controls.Add(this.ConvertibleButton);
+            this.tabPage1.Controls.Add(this.SelectedCarImage);
+            this.tabPage1.Controls.Add(this.pictureBox8);
+            this.tabPage1.Controls.Add(this.pictureBox7);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tabPage1.Size = new System.Drawing.Size(1382, 725);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Add a Report";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // _291_group_projectDataSet
+            // 
+            this._291_group_projectDataSet.DataSetName = "_291_group_projectDataSet";
+            this._291_group_projectDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // groupprojectDataSetBindingSource
+            // 
+            this.groupprojectDataSetBindingSource.DataSource = this._291_group_projectDataSet;
+            this.groupprojectDataSetBindingSource.Position = 0;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(1300, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(85, 17);
+            this.label10.TabIndex = 49;
+            this.label10.Text = "Customer ID";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(720, 331);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(39, 17);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Time";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(720, 417);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(30, 17);
+            this.label13.TabIndex = 12;
+            this.label13.Text = "Car";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(1167, 437);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(184, 22);
+            this.textBox4.TabIndex = 11;
+            this.textBox4.Text = "Enter a Car colour";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(946, 437);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(184, 22);
+            this.textBox5.TabIndex = 10;
+            this.textBox5.Text = "Enter a Car model";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(721, 437);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(184, 22);
+            this.textBox6.TabIndex = 9;
+            this.textBox6.Text = "Enter a Car ID";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(718, 496);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(40, 17);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Price";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(1165, 516);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(184, 22);
+            this.textBox7.TabIndex = 15;
+            this.textBox7.Text = "Enter a min price";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(944, 516);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(184, 22);
+            this.textBox8.TabIndex = 14;
+            this.textBox8.Text = "Enter a max price";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(719, 516);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(184, 22);
+            this.textBox9.TabIndex = 13;
+            this.textBox9.Text = "Enter a price";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(720, 574);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 17);
+            this.label15.TabIndex = 20;
+            this.label15.Text = "Branch";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(721, 594);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(184, 22);
+            this.textBox12.TabIndex = 17;
+            this.textBox12.Text = "Enter a Branch ID";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(723, 165);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(212, 67);
+            this.button7.TabIndex = 21;
+            this.button7.Text = "CONFIRM";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // SearchCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 804);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.CarLabel);
-            this.Controls.Add(this.RentButton);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.SearchBackButton);
-            this.Controls.Add(this.PurpleButton);
-            this.Controls.Add(this.BlueButton);
-            this.Controls.Add(this.GreenButton);
-            this.Controls.Add(this.OrangeButton);
-            this.Controls.Add(this.GreyButton);
-            this.Controls.Add(this.Yellowbutton);
-            this.Controls.Add(this.BlackButton);
-            this.Controls.Add(this.WhiteButton);
-            this.Controls.Add(this.CyanButton);
-            this.Controls.Add(this.RedButton);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.SelectedCarImage);
-            this.Controls.Add(this.ConvertibleButton);
-            this.Controls.Add(this.CompactButton);
-            this.Controls.Add(this.HybridButton);
-            this.Controls.Add(this.SportsCarButton);
-            this.Controls.Add(this.JeepButton);
-            this.Controls.Add(this.SedanButton);
-            this.Controls.Add(this.SUVbutton);
-            this.Controls.Add(this.TruckButton);
-            this.Controls.Add(this.SearchCarBox);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.tabControl1);
             this.ForeColor = System.Drawing.Color.DarkBlue;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SearchCar";
@@ -618,14 +938,20 @@ namespace _291GroupProject
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._291_group_projectDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupprojectDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox SearchCarBox;
         private System.Windows.Forms.Button TruckButton;
         private System.Windows.Forms.Button SUVbutton;
         private System.Windows.Forms.Button SedanButton;
@@ -666,6 +992,37 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DataGridViewLinkColumn Rental_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VIN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pickup_date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn return_date;
+        private System.Windows.Forms.BindingSource groupprojectDataSetBindingSource;
+        private _291_group_projectDataSet _291_group_projectDataSet;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Button button7;
     }
 }
 
