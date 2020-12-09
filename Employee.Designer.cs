@@ -176,7 +176,6 @@ namespace _291GroupProject
             this.label60 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.invoice_display_return_branch = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.invoice_display_return_date = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
@@ -275,6 +274,7 @@ namespace _291GroupProject
             this.branchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.branchesTableAdapter = new _291GroupProject._291_group_projectDataSetTableAdapters.BranchesTableAdapter();
             this.invoice_display_pickup_date = new System.Windows.Forms.DateTimePicker();
+            this.invoice_display_return_branch = new System.Windows.Forms.ComboBox();
             this.prev_rental.SuspendLayout();
             this.edit_employee.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -1784,6 +1784,7 @@ namespace _291GroupProject
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tabPage1.Controls.Add(this.invoice_display_return_branch);
             this.tabPage1.Controls.Add(this.invoice_display_pickup_date);
             this.tabPage1.Controls.Add(this.invoice_display_cust_id);
             this.tabPage1.Controls.Add(this.label5);
@@ -1796,7 +1797,6 @@ namespace _291GroupProject
             this.tabPage1.Controls.Add(this.label60);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.invoice_display_return_branch);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.invoice_display_return_date);
             this.tabPage1.Controls.Add(this.label11);
@@ -1870,6 +1870,7 @@ namespace _291GroupProject
             this.invoice_confirm.TabIndex = 31;
             this.invoice_confirm.Text = "Confirm Drop Off";
             this.invoice_confirm.UseVisualStyleBackColor = false;
+            this.invoice_confirm.Click += new System.EventHandler(this.invoice_confirm_Click);
             // 
             // invoice_display_lat_name
             // 
@@ -1933,14 +1934,6 @@ namespace _291GroupProject
             this.button2.Text = "Print Invoice";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // invoice_display_return_branch
-            // 
-            this.invoice_display_return_branch.Location = new System.Drawing.Point(889, 705);
-            this.invoice_display_return_branch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.invoice_display_return_branch.Name = "invoice_display_return_branch";
-            this.invoice_display_return_branch.Size = new System.Drawing.Size(276, 31);
-            this.invoice_display_return_branch.TabIndex = 23;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -1954,10 +1947,10 @@ namespace _291GroupProject
             // 
             // invoice_display_return_date
             // 
-            this.invoice_display_return_date.Location = new System.Drawing.Point(889, 622);
+            this.invoice_display_return_date.Location = new System.Drawing.Point(809, 631);
             this.invoice_display_return_date.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.invoice_display_return_date.Name = "invoice_display_return_date";
-            this.invoice_display_return_date.Size = new System.Drawing.Size(276, 31);
+            this.invoice_display_return_date.Size = new System.Drawing.Size(363, 31);
             this.invoice_display_return_date.TabIndex = 21;
             // 
             // label11
@@ -2840,10 +2833,18 @@ namespace _291GroupProject
             // 
             // invoice_display_pickup_date
             // 
-            this.invoice_display_pickup_date.Location = new System.Drawing.Point(282, 631);
+            this.invoice_display_pickup_date.Location = new System.Drawing.Point(239, 627);
             this.invoice_display_pickup_date.Name = "invoice_display_pickup_date";
-            this.invoice_display_pickup_date.Size = new System.Drawing.Size(282, 31);
+            this.invoice_display_pickup_date.Size = new System.Drawing.Size(357, 31);
             this.invoice_display_pickup_date.TabIndex = 36;
+            // 
+            // invoice_display_return_branch
+            // 
+            this.invoice_display_return_branch.FormattingEnabled = true;
+            this.invoice_display_return_branch.Location = new System.Drawing.Point(872, 700);
+            this.invoice_display_return_branch.Name = "invoice_display_return_branch";
+            this.invoice_display_return_branch.Size = new System.Drawing.Size(285, 33);
+            this.invoice_display_return_branch.TabIndex = 37;
             // 
             // Employee
             // 
@@ -2851,7 +2852,7 @@ namespace _291GroupProject
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1924, 1282);
             this.Controls.Add(this.prev_rental);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Employee";
@@ -2910,7 +2911,6 @@ namespace _291GroupProject
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox invoice_display_return_branch;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker invoice_display_return_date;
         private System.Windows.Forms.Label label11;
@@ -3151,5 +3151,6 @@ namespace _291GroupProject
         private System.Windows.Forms.TextBox invoice_display_cust_id;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker invoice_display_pickup_date;
+        private System.Windows.Forms.ComboBox invoice_display_return_branch;
     }
 }

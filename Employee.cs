@@ -69,7 +69,7 @@ namespace _291GroupProject
         {
             // TODO: This line of code loads data into the '_291_group_projectDataSet.Branches' table. You can move, or remove it, as needed.
             this.branchesTableAdapter.Fill(this._291_group_projectDataSet.Branches);
-            myCommand.CommandText = "select Branch_ID from Branches;";
+            myCommand.CommandText = "select Branch_ID from Branches where Branches.active = 'Yes';";
             myCommand2.CommandText = "select CarType from Car_Types;";
 
             try
@@ -83,6 +83,7 @@ namespace _291GroupProject
                     employee_add_branch_combo.Items.Add(myReader.GetValue(0).ToString());
                     edit_empl_branch.Items.Add(myReader.GetValue(0).ToString());
                     add_car_branch.Items.Add(myReader.GetValue(0).ToString());
+                    invoice_display_return_branch.Items.Add(myReader.GetValue(0).ToString());
 
 
 
@@ -744,7 +745,7 @@ namespace _291GroupProject
             invoice_display_pickup_branch.Clear();
             invoice_display_return_date.ResetText();
             invoice_display_pickup_date.ResetText();
-            invoice_display_return_branch.Clear();
+                invoice_display_return_branch.ResetText();
             invoice_dsplay_rental_id.Clear();
             invoice_display_total.Clear();
             invoice_display_vin.Clear();
@@ -782,6 +783,7 @@ namespace _291GroupProject
                         invoice_display_first_name.Text = myReader.GetString(8);
                         invoice_display_lat_name.Text = myReader.GetString(9);
                         invoice_display_car_type.Text = myReader.GetString(10);
+
                     }
 
                     
@@ -795,6 +797,78 @@ namespace _291GroupProject
                 MessageBox.Show(e3.ToString(), "Error");
             }
         }
+        }
+
+        private void invoice_confirm_Click(object sender, EventArgs e)
+        {
+            int month, days, weeks, total;
+            double total_price =0, monthly_price =0, daily_price=0, weekly_price=0;
+
+            myCommand.CommandText = "select price_D, price_W, price_M from Rental_trans, cars, Customers, Car_Types";
+
+            myCommand.CommandText += " where Rental_trans.Rental_ID = " + invoice_search_rental_id.Text + "and Rental_trans.Customer_ID = Customers.Customer_ID  and Rental_Trans.VIN = Cars.VIN and Cars.CarType = Car_Types.CarType;";
+
+
+            myCommand2.CommandText = "select count (*) From Branches Where Branch_ID = '" + invoice_display_return_branch.Text + "';";
+            int num_branch = (int)myCommand2.ExecuteScalar();
+
+            try
+            {
+
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+
+
+
+
+
+                while (myReader.Read())
+                {
+                    daily_price = myReader.GetDouble(0);
+                    weekly_price = myReader.GetDouble(1);
+                    monthly_price = myReader.GetDouble(2);
+                    
+
+                }
+
+
+
+
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+            }
+
+
+
+
+            if (num_branch < 1)
+            {
+                MessageBox.Show("Invalid Branch ID try again");
+            }
+
+            else
+            {
+                total = (int)(invoice_display_return_date.Value.ToOADate() - invoice_display_pickup_date.Value.ToOADate());
+                month = (int)total / 30;
+                days = (int)total % 30;
+                weeks = (int)days / 7;
+                days = (int) days % 7;
+
+                total_price = days * daily_price + weeks * weekly_price + month * monthly_price;
+
+                invoice_display_total.Text = total_price.ToString();
+
+
+
+
+
+
+
+            }
+
         }
     }
 }
