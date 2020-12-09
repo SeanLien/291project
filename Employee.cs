@@ -809,8 +809,13 @@ namespace _291GroupProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (invoice_search_rental_id.Text != " ") { 
-            
+            if (String.IsNullOrEmpty(invoice_search_rental_id.Text))
+            {
+                MessageBox.Show(" Please enter a rental ID");
+
+            }
+            else { 
+
             invoice_display_car_type.Clear();
             invoice_display_first_name.Clear();
             invoice_display_lat_name.Clear();
@@ -870,6 +875,7 @@ namespace _291GroupProject
             }
         }
             invoice_search_rental_id.Clear();
+            
         }
 
         private void invoice_confirm_Click(object sender, EventArgs e)
@@ -881,7 +887,7 @@ namespace _291GroupProject
 
             myCommand.CommandText = "select price_D, price_W, price_M from Rental_trans, cars, Customers, Car_Types";
 
-            myCommand.CommandText += " where Rental_trans.Rental_ID = " + invoice_search_rental_id.Text + "and Rental_trans.Customer_ID = Customers.Customer_ID  and Rental_Trans.VIN = Cars.VIN and Cars.CarType = Car_Types.CarType;";
+            myCommand.CommandText += " where Rental_trans.Rental_ID = '" + invoice_dsplay_rental_id.Text + "'and Rental_trans.Customer_ID = Customers.Customer_ID  and Rental_Trans.VIN = Cars.VIN and Cars.CarType = Car_Types.CarType;";
 
 
             myCommand2.CommandText = "select count (*) From Branches Where Branch_ID = '" + invoice_display_return_branch.Text + "';";
@@ -1074,6 +1080,8 @@ namespace _291GroupProject
                 invoice_display_total.Clear();
                 invoice_display_vin.Clear();
                 invoice_display_cust_id.Clear();
+                discounted_price.Clear();
+
 
 
 
@@ -1095,6 +1103,7 @@ namespace _291GroupProject
             invoice_display_vin.Clear();
             invoice_display_cust_id.Clear();
             invoice_search_rental_id.Clear();
+            discounted_price.Clear();
 
         }
 
