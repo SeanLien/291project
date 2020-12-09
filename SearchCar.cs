@@ -129,14 +129,17 @@ namespace _291GroupProject
         {
             CarType = (string)SUVbutton.Tag;
             button1.BackgroundImage = _291GroupProject.Properties.Resources.suv_1;
+            button1.Tag = "Hyundai_Santafe";
             button2.BackgroundImage = _291GroupProject.Properties.Resources.suv_2;
+            button2.Tag = "Infiniti_Qx50";
             button3.BackgroundImage = _291GroupProject.Properties.Resources.suv_3;
+            button3.Tag = "Volkswagen_Tiguan";
             button4.BackgroundImage = _291GroupProject.Properties.Resources.suv_4;
+            button4.Tag = "Jeep_Cherokee";
             button5.BackgroundImage = _291GroupProject.Properties.Resources.suv_5;
+            button5.Tag = "Cadillac_Escalade";
             button6.BackgroundImage = _291GroupProject.Properties.Resources.suv_6;
-
-            BranchBox.ResetText();
-            ColorComboBox.ResetText();
+            button6.Tag = "Jeep_Compass";
 
             try
             {
@@ -172,11 +175,17 @@ namespace _291GroupProject
         {
             CarType = (string)SedanButton.Tag;
             button1.BackgroundImage = _291GroupProject.Properties.Resources.sedan_1;
+            button1.Tag = "Toyota_Yaris";
             button2.BackgroundImage = _291GroupProject.Properties.Resources.sedan_2;
+            button2.Tag = "Ford_Fusion";
             button3.BackgroundImage = _291GroupProject.Properties.Resources.sedan_3;
+            button3.Tag = "Honda_CivicSi";
             button4.BackgroundImage = _291GroupProject.Properties.Resources.sedan_4;
+            button4.Tag = "Honda_Accord";
             button5.BackgroundImage = _291GroupProject.Properties.Resources.sedan_5;
+            button5.Tag = "Hyundai_Elantra";
             button6.BackgroundImage = _291GroupProject.Properties.Resources.sedan_6;
+            button6.Tag = "Honda_Civic";
 
             BranchBox.ResetText();
             ColorComboBox.ResetText();
@@ -215,11 +224,17 @@ namespace _291GroupProject
         {
             CarType = (string)JeepButton.Tag;
             button6.BackgroundImage = _291GroupProject.Properties.Resources.jeep_6;
+            button6.Tag = "Jeep_1950";
             button1.BackgroundImage = _291GroupProject.Properties.Resources.jeep_1;
+            button1.Tag = "Jeep_Patriot";
             button2.BackgroundImage = _291GroupProject.Properties.Resources.jeep_2;
+            button2.Tag = "Jeep_WranglerOutback";
             button3.BackgroundImage = _291GroupProject.Properties.Resources.jeep_3;
+            button3.Tag = "Jeep_Wrangler";
             button4.BackgroundImage = _291GroupProject.Properties.Resources.jeep_4;
+            button4.Tag = "Jeep_GladiatorEvolved";
             button5.BackgroundImage = _291GroupProject.Properties.Resources.jeep_5;
+            button5.Tag = "Jeep_WranglerOutdoor";
 
             BranchBox.ResetText();
             ColorComboBox.ResetText();
@@ -258,11 +273,17 @@ namespace _291GroupProject
         {
             CarType = (string)SportsCarButton.Tag;
             button1.BackgroundImage = _291GroupProject.Properties.Resources.sports_1;
+            button1.Tag = "Ferrari_Spyder";
             button2.BackgroundImage = _291GroupProject.Properties.Resources.sports_2;
+            button2.Tag = "Lambo_Countach";
             button3.BackgroundImage = _291GroupProject.Properties.Resources.sports_3;
+            button3.Tag = "Corvette";
             button4.BackgroundImage = _291GroupProject.Properties.Resources.sports_4;
+            button4.Tag = "Porsche_911";
             button5.BackgroundImage = _291GroupProject.Properties.Resources.sports_5;
+            button5.Tag = "Lambo_Gallardo";
             button6.BackgroundImage = _291GroupProject.Properties.Resources.sports_6;
+            button6.Tag = "Honda_Sports";
 
             BranchBox.ResetText();
             ColorComboBox.ResetText();
@@ -301,11 +322,17 @@ namespace _291GroupProject
         {
             CarType = (string)HybridButton.Tag;
             button1.BackgroundImage = _291GroupProject.Properties.Resources.hybrid_1;
+            button1.Tag = "Toyota_PriusV";
             button2.BackgroundImage = _291GroupProject.Properties.Resources.hybrid_2;
+            button2.Tag = "Hyundai_Hybrid";
             button3.BackgroundImage = _291GroupProject.Properties.Resources.hybrid_3;
+            button3.Tag = "Yellow_Hybrid";
             button4.BackgroundImage = _291GroupProject.Properties.Resources.hybrid_4;
+            button4.Tag = "BMW_Hybrid";
             button5.BackgroundImage = _291GroupProject.Properties.Resources.hybrid_5;
+            button5.Tag = "Audi_Hybrid";
             button6.BackgroundImage = _291GroupProject.Properties.Resources.hybrid_6;
+            button6.Tag = "Honda_Insight";
 
             BranchBox.ResetText();
             ColorComboBox.ResetText();
@@ -344,11 +371,17 @@ namespace _291GroupProject
         {
             CarType = (string)CompactButton.Tag;
             button1.BackgroundImage = _291GroupProject.Properties.Resources.compact_1;
+            button1.Tag = "Mazda3";
             button2.BackgroundImage = _291GroupProject.Properties.Resources.compact_2;
+            button2.Tag = "Volkswagen_Jetta";
             button3.BackgroundImage = _291GroupProject.Properties.Resources.compact_3;
+            button3.Tag = "Kia_Forte";
             button4.BackgroundImage = _291GroupProject.Properties.Resources.compact_4;
+            button4.Tag = "Volkswagen_OldBeetle";
             button5.BackgroundImage = _291GroupProject.Properties.Resources.compact_5;
+            button5.Tag = "Volkswagen_Beetle";
             button6.BackgroundImage = _291GroupProject.Properties.Resources.compact_6;
+            button6.Tag = "Hyundai_Compact";
 
             BranchBox.ResetText();
             ColorComboBox.ResetText();
@@ -387,11 +420,17 @@ namespace _291GroupProject
         {
             CarType = (string)ConvertibleButton.Tag;
             button1.BackgroundImage = _291GroupProject.Properties.Resources.convertible_1;
+            button1.Tag = "Ferrari_Convertible";
             button2.BackgroundImage = _291GroupProject.Properties.Resources.convertible_2;
+            button2.Tag = "Volkswagen_Convertible";
             button3.BackgroundImage = _291GroupProject.Properties.Resources.convertible_3;
+            button3.Tag = "Ford_1950Convertible";
             button4.BackgroundImage = _291GroupProject.Properties.Resources.convertible_4;
+            button4.Tag = "Camero_Convertible";
             button5.BackgroundImage = _291GroupProject.Properties.Resources.convertible_5;
+            button5.Tag = "BMW_Convertible";
             button6.BackgroundImage = _291GroupProject.Properties.Resources.convertible_6;
+            button6.Tag = "Rolls_Convertible";
 
             BranchBox.ResetText();
             ColorComboBox.ResetText();
@@ -656,7 +695,7 @@ namespace _291GroupProject
             {
                 BranchBoxConnection.Open();
                 //Need to include the branch ID in the sql command and the color
-                SqlCommand RentCommand = new SqlCommand("Select (VIN) from Cars where Model = '" + CarModel + "'" + " and active != 'Yes' and Branch_ID = '" + BranchBox.Text + "';", BranchBoxConnection);
+                SqlCommand RentCommand = new SqlCommand("Select (VIN) from Cars where Model = '" + CarModel + "'" + " and active != 'Yes' and Branch_ID = '" + BranchBox.Text + "'" + " and color = '" + ColorComboBox.Text +  "';", BranchBoxConnection);
                 if (RentCommand.ExecuteScalar() == null)
                 {
                     MessageBox.Show("No VIN came up");
@@ -666,7 +705,8 @@ namespace _291GroupProject
                 {
                     //testing purposes, it shows the VIN number that is returned
                     int VIN = (int)RentCommand.ExecuteScalar();
-                    MessageBox.Show(VIN.ToString());
+                    //Used this for errorchecking to see the VIN
+                   // MessageBox.Show(VIN.ToString());
                     //Create the command to add a rental to rental_trans
 
                     SqlCommand AddRental = new SqlCommand();
@@ -706,12 +746,14 @@ namespace _291GroupProject
                     weeks = (int)days / 7;
                     days = (int)days % 7;
                     total_price = days * daily_price + weeks * weekly_price + month * monthly_price;
-                    MessageBox.Show(total_price.ToString());
+                    //Shows total price of the current VIN with the return dates
+                    //MessageBox.Show(total_price.ToString());
 
 
                     AddRental.CommandText = "insert into Rental_trans Values(";
-                    AddRental.CommandText += "'" + dateTimePicker1.Value + "', '" + dateTimePicker2.Value + "', '" + total_price.ToString() + "', '" + textBox10.Text + "', '" + "1" + "', '" + BranchBox.Text + "', '" + "1" + "', '" + VIN.ToString() + "')";
+                    AddRental.CommandText += "'" + dateTimePicker1.Value + "', '" + dateTimePicker2.Value + "', '" + total_price.ToString() + "', '" + textBox10.Text + "', '" + "1" + "', '" + BranchBox.Text + "', '" + BranchBox.Text + "', '" + VIN.ToString() + "')";
                     AddRental.ExecuteNonQuery();
+                    MessageBox.Show("Thank you for renting with us!");
                     BranchBoxConnection.Close();
                 }
             }
@@ -950,6 +992,45 @@ namespace _291GroupProject
                 myReader.Close();
             }
             catch (Exception) { }
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            BranchBoxConnection.Open();
+            SqlCommand myCommand = new SqlCommand();
+            myCommand.Connection = BranchBoxConnection;
+            //find out number of days
+            int total = (dateTimePicker2.Value - dateTimePicker1.Value).Days;
+            int month, weeks, days;
+            double total_price = 0, monthly_price = 0, daily_price = 0, weekly_price = 0;
+
+            //Construct price command
+
+            myCommand.CommandText = "select price_D, price_W, price_M from Car_Types";
+            myCommand.CommandText += " where CarType = " + "'" + CarType + "'" + ";";
+            try
+            {
+                SqlDataReader PriceReader;
+                PriceReader = myCommand.ExecuteReader();
+                while (PriceReader.Read())
+                {
+                    daily_price = PriceReader.GetDouble(0);
+                    weekly_price = PriceReader.GetDouble(1);
+                    monthly_price = PriceReader.GetDouble(2);
+                }
+                PriceReader.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+            month = (int)total / 30;
+            days = (int)total % 30;
+            weeks = (int)days / 7;
+            days = (int)days % 7;
+            total_price = days * daily_price + weeks * weekly_price + month * monthly_price;
+            label4.Text = "$" + total_price.ToString();
+            BranchBoxConnection.Close();
         }
     }
 }
