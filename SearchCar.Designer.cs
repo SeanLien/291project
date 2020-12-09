@@ -59,7 +59,7 @@ namespace _291GroupProject
             this.label26 = new System.Windows.Forms.Label();
             this.customer_id = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox07 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -74,17 +74,17 @@ namespace _291GroupProject
             this.label15 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox09 = new System.Windows.Forms.TextBox();
+            this.textBox08 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox06 = new System.Windows.Forms.TextBox();
+            this.textBox05 = new System.Windows.Forms.TextBox();
+            this.textBox04 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox03 = new System.Windows.Forms.TextBox();
+            this.textBox02 = new System.Windows.Forms.TextBox();
+            this.textBox01 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox_customerReport = new System.Windows.Forms.ComboBox();
@@ -101,6 +101,8 @@ namespace _291GroupProject
             this.Customer_ID_cr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VIN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pickup_Branch_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.return_Branch_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pickup_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.return_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedCarImage)).BeginInit();
@@ -432,7 +434,7 @@ namespace _291GroupProject
             this.tabPage2.Controls.Add(this.label26);
             this.tabPage2.Controls.Add(this.customer_id);
             this.tabPage2.Controls.Add(this.label23);
-            this.tabPage2.Controls.Add(this.textBox11);
+            this.tabPage2.Controls.Add(this.textBox07);
             this.tabPage2.Controls.Add(this.label22);
             this.tabPage2.Controls.Add(this.label21);
             this.tabPage2.Controls.Add(this.label20);
@@ -447,17 +449,17 @@ namespace _291GroupProject
             this.tabPage2.Controls.Add(this.label15);
             this.tabPage2.Controls.Add(this.textBox12);
             this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Controls.Add(this.textBox7);
-            this.tabPage2.Controls.Add(this.textBox8);
-            this.tabPage2.Controls.Add(this.textBox9);
+            this.tabPage2.Controls.Add(this.textBox11);
+            this.tabPage2.Controls.Add(this.textBox09);
+            this.tabPage2.Controls.Add(this.textBox08);
             this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.textBox5);
-            this.tabPage2.Controls.Add(this.textBox6);
+            this.tabPage2.Controls.Add(this.textBox06);
+            this.tabPage2.Controls.Add(this.textBox05);
+            this.tabPage2.Controls.Add(this.textBox04);
             this.tabPage2.Controls.Add(this.label12);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.textBox03);
+            this.tabPage2.Controls.Add(this.textBox02);
+            this.tabPage2.Controls.Add(this.textBox01);
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.comboBox_customerReport);
@@ -497,13 +499,13 @@ namespace _291GroupProject
             this.label23.TabIndex = 33;
             this.label23.Text = "Enter a Car Colour";
             // 
-            // textBox11
+            // textBox07
             // 
-            this.textBox11.Location = new System.Drawing.Point(721, 510);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(184, 22);
-            this.textBox11.TabIndex = 32;
+            this.textBox07.Location = new System.Drawing.Point(721, 510);
+            this.textBox07.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox07.Name = "textBox07";
+            this.textBox07.Size = new System.Drawing.Size(184, 22);
+            this.textBox07.TabIndex = 32;
             // 
             // label22
             // 
@@ -636,29 +638,29 @@ namespace _291GroupProject
             this.label14.TabIndex = 16;
             this.label14.Text = "Price";
             // 
-            // textBox7
+            // textBox11
             // 
-            this.textBox7.Location = new System.Drawing.Point(1167, 586);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(184, 22);
-            this.textBox7.TabIndex = 15;
+            this.textBox11.Location = new System.Drawing.Point(1167, 586);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(184, 22);
+            this.textBox11.TabIndex = 15;
             // 
-            // textBox8
+            // textBox09
             // 
-            this.textBox8.Location = new System.Drawing.Point(947, 586);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(184, 22);
-            this.textBox8.TabIndex = 14;
+            this.textBox09.Location = new System.Drawing.Point(947, 586);
+            this.textBox09.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox09.Name = "textBox09";
+            this.textBox09.Size = new System.Drawing.Size(184, 22);
+            this.textBox09.TabIndex = 14;
             // 
-            // textBox9
+            // textBox08
             // 
-            this.textBox9.Location = new System.Drawing.Point(721, 586);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(184, 22);
-            this.textBox9.TabIndex = 13;
+            this.textBox08.Location = new System.Drawing.Point(721, 586);
+            this.textBox08.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox08.Name = "textBox08";
+            this.textBox08.Size = new System.Drawing.Size(184, 22);
+            this.textBox08.TabIndex = 13;
             // 
             // label13
             // 
@@ -671,29 +673,29 @@ namespace _291GroupProject
             this.label13.TabIndex = 12;
             this.label13.Text = "Car";
             // 
-            // textBox4
+            // textBox06
             // 
-            this.textBox4.Location = new System.Drawing.Point(1167, 455);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(184, 22);
-            this.textBox4.TabIndex = 11;
+            this.textBox06.Location = new System.Drawing.Point(1167, 455);
+            this.textBox06.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox06.Name = "textBox06";
+            this.textBox06.Size = new System.Drawing.Size(184, 22);
+            this.textBox06.TabIndex = 11;
             // 
-            // textBox5
+            // textBox05
             // 
-            this.textBox5.Location = new System.Drawing.Point(947, 455);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(184, 22);
-            this.textBox5.TabIndex = 10;
+            this.textBox05.Location = new System.Drawing.Point(947, 455);
+            this.textBox05.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox05.Name = "textBox05";
+            this.textBox05.Size = new System.Drawing.Size(184, 22);
+            this.textBox05.TabIndex = 10;
             // 
-            // textBox6
+            // textBox04
             // 
-            this.textBox6.Location = new System.Drawing.Point(721, 455);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(184, 22);
-            this.textBox6.TabIndex = 9;
+            this.textBox04.Location = new System.Drawing.Point(721, 455);
+            this.textBox04.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox04.Name = "textBox04";
+            this.textBox04.Size = new System.Drawing.Size(184, 22);
+            this.textBox04.TabIndex = 9;
             // 
             // label12
             // 
@@ -706,30 +708,30 @@ namespace _291GroupProject
             this.label12.TabIndex = 8;
             this.label12.Text = "Time";
             // 
-            // textBox3
+            // textBox03
             // 
-            this.textBox3.Location = new System.Drawing.Point(1167, 374);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(184, 22);
-            this.textBox3.TabIndex = 7;
+            this.textBox03.Location = new System.Drawing.Point(1167, 374);
+            this.textBox03.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox03.Name = "textBox03";
+            this.textBox03.Size = new System.Drawing.Size(184, 22);
+            this.textBox03.TabIndex = 7;
             // 
-            // textBox2
+            // textBox02
             // 
-            this.textBox2.Location = new System.Drawing.Point(947, 374);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 22);
-            this.textBox2.TabIndex = 6;
+            this.textBox02.Location = new System.Drawing.Point(947, 374);
+            this.textBox02.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox02.Name = "textBox02";
+            this.textBox02.Size = new System.Drawing.Size(184, 22);
+            this.textBox02.TabIndex = 6;
             // 
-            // textBox1
+            // textBox01
             // 
-            this.textBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.textBox1.Location = new System.Drawing.Point(721, 374);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 22);
-            this.textBox1.TabIndex = 5;
+            this.textBox01.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.textBox01.Location = new System.Drawing.Point(721, 374);
+            this.textBox01.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox01.Name = "textBox01";
+            this.textBox01.Size = new System.Drawing.Size(184, 22);
+            this.textBox01.TabIndex = 5;
             // 
             // label11
             // 
@@ -763,6 +765,7 @@ namespace _291GroupProject
             this.comboBox_customerReport.Name = "comboBox_customerReport";
             this.comboBox_customerReport.Size = new System.Drawing.Size(512, 24);
             this.comboBox_customerReport.TabIndex = 2;
+            this.comboBox_customerReport.SelectedIndexChanged += new System.EventHandler(this.customer_selection);
             // 
             // dataGridView1
             // 
@@ -773,6 +776,8 @@ namespace _291GroupProject
             this.Customer_ID_cr,
             this.VIN,
             this.price,
+            this.pickup_Branch_ID,
+            this.return_Branch_ID,
             this.pickup_date,
             this.return_date});
             this.dataGridView1.Location = new System.Drawing.Point(11, 62);
@@ -903,7 +908,7 @@ namespace _291GroupProject
             // 
             // VIN
             // 
-            this.VIN.HeaderText = "Car";
+            this.VIN.HeaderText = "VIN";
             this.VIN.MinimumWidth = 6;
             this.VIN.Name = "VIN";
             this.VIN.Width = 125;
@@ -914,6 +919,20 @@ namespace _291GroupProject
             this.price.MinimumWidth = 6;
             this.price.Name = "price";
             this.price.Width = 125;
+            // 
+            // pickup_Branch_ID
+            // 
+            this.pickup_Branch_ID.HeaderText = "pickup BIN";
+            this.pickup_Branch_ID.MinimumWidth = 6;
+            this.pickup_Branch_ID.Name = "pickup_Branch_ID";
+            this.pickup_Branch_ID.Width = 125;
+            // 
+            // return_Branch_ID
+            // 
+            this.return_Branch_ID.HeaderText = "return BIN";
+            this.return_Branch_ID.MinimumWidth = 6;
+            this.return_Branch_ID.Name = "return_Branch_ID";
+            this.return_Branch_ID.Width = 125;
             // 
             // pickup_date
             // 
@@ -988,19 +1007,19 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox_customerReport;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox03;
+        private System.Windows.Forms.TextBox textBox02;
+        private System.Windows.Forms.TextBox textBox01;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox06;
+        private System.Windows.Forms.TextBox textBox05;
+        private System.Windows.Forms.TextBox textBox04;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox09;
+        private System.Windows.Forms.TextBox textBox08;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Button customer_report;
@@ -1010,7 +1029,7 @@ namespace _291GroupProject
         private System.Windows.Forms.ComboBox ColorComboBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox07;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
@@ -1028,6 +1047,8 @@ namespace _291GroupProject
         private System.Windows.Forms.DataGridViewTextBoxColumn Customer_ID_cr;
         private System.Windows.Forms.DataGridViewTextBoxColumn VIN;
         private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pickup_Branch_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn return_Branch_ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn pickup_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn return_date;
     }
