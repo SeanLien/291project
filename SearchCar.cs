@@ -697,7 +697,7 @@ namespace _291GroupProject
                         }
                         PriceReader.Close();
                     }
-                    catch (Exception e3)
+                    catch (Exception)
                     {
 
                     }
@@ -815,40 +815,47 @@ namespace _291GroupProject
             catch(Exception) {}
         }
 
-        private void searchTime(object sender, MouseEventArgs e)
+        private void searchBranch(object sender, MouseEventArgs e)
         {
-            myCommand.CommandText = "Select * from Rental_trans";
-            if (textBox01.Text != " ") {
-                myCommand.CommandText += " where year(return_date) = " + textBox01.Text;
-                if (textBox02.Text != " ")
+
+        }
+
+        private void search_time_MouseClick(object sender, MouseEventArgs e)
+        {
+            myCommand.CommandText = "Select * from Rental_trans where Customer_ID = '" + customer_id.Text + "'";
+            if (!string.IsNullOrEmpty(textBox01.Text))
+            {
+                myCommand.CommandText += " and year(return_date) = '" + textBox01.Text + "'";
+                if (!string.IsNullOrEmpty(textBox02.Text))
                 {
-                    myCommand.CommandText += " and month(return_date) = " + textBox02.Text;
-                    if (textBox03.Text != " ")
+                    myCommand.CommandText += " and month(return_date) = '" + textBox02.Text + "'";
+                    if (!string.IsNullOrEmpty(textBox03.Text))
                     {
-                        myCommand.CommandText += " and day(return_date) = " + textBox03.Text;
+                        myCommand.CommandText += " and day(return_date) = '" + textBox03.Text + "'";
                     }
                 }
-                if (textBox03.Text != " ")
+                if (!string.IsNullOrEmpty(textBox03.Text))
                 {
-                    myCommand.CommandText += " and day(return_date) = " + textBox03.Text;
+                    myCommand.CommandText += " and day(return_date) = '" + textBox03.Text + "'";
                 }
             }
-            if (textBox02.Text != " ") {
-                myCommand.CommandText += " where month(return_date) = " + textBox02.Text;
-                if (textBox03.Text != " ")
+            if (!string.IsNullOrEmpty(textBox02.Text))
+            {
+                myCommand.CommandText += " and month(return_date) = '" + textBox02.Text + "'";
+                if (!string.IsNullOrEmpty(textBox03.Text))
                 {
-                    myCommand.CommandText += " and day(return_date) = " + textBox03.Text;
+                    myCommand.CommandText += " and day(return_date) = '" + textBox03.Text + "'";
                 }
             }
-            if (textBox03.Text != " ") {
-                myCommand.CommandText += " where day(return_date) = " + textBox03.Text;
+            if (!string.IsNullOrEmpty(textBox03.Text))
+            {
+                myCommand.CommandText += " and day(return_date) = '" + textBox03.Text + "'";
             }
             try
             {
                 myReader = myCommand.ExecuteReader();
                 //MessageBox.Show(myCommand.CommandText);
                 dataGridView1.Rows.Clear();
-
                 while (myReader.Read())
                 {
                     dataGridView1.Rows.Add(myReader["Rental_ID"].ToString(), myReader["Customer_ID"].ToString(), myReader["VIN"].ToString(), myReader["price"].ToString(), myReader["pickup_Branch_ID"].ToString(), myReader["return_Branch_ID"].ToString(), myReader["pickup_date"].ToString(), myReader["return_date"].ToString());
@@ -858,19 +865,147 @@ namespace _291GroupProject
             catch (Exception) { }
         }
 
-        private void searchCar(object sender, MouseEventArgs e)
+        private void searchCar_MouseClick(object sender, MouseEventArgs e)
         {
-
+            myCommand.CommandText = "Select * from Rental_trans as RT, Cars as C where Customer_ID = '" + customer_id.Text + "' and C.VIN=RT.VIN";
+            if (!string.IsNullOrEmpty(textBox04.Text))
+            {
+                myCommand.CommandText += " and C.VIN = '" + textBox04.Text + "'";
+                if (!string.IsNullOrEmpty(textBox05.Text))
+                {
+                    myCommand.CommandText += " and C.CarType = '" + textBox05.Text + "'";
+                    if (!string.IsNullOrEmpty(textBox06.Text))
+                    {
+                        myCommand.CommandText += " and C.Model = '" + textBox06.Text + "'";
+                        if (!string.IsNullOrEmpty(textBox07.Text))
+                        {
+                            myCommand.CommandText += " and Car.Color = '" + textBox07.Text + "'";
+                        }
+                    }
+                    if (!string.IsNullOrEmpty(textBox07.Text))
+                    {
+                        myCommand.CommandText += " and Car.Color = '" + textBox07.Text + "'";
+                    }
+                }
+                if (!string.IsNullOrEmpty(textBox06.Text))
+                {
+                    myCommand.CommandText += " and C.Model = '" + textBox06.Text + "'";
+                    if (!string.IsNullOrEmpty(textBox07.Text))
+                    {
+                        myCommand.CommandText += " and Car.Color = '" + textBox07.Text + "'";
+                    }
+                }
+                if (!string.IsNullOrEmpty(textBox07.Text))
+                {
+                    myCommand.CommandText += " and Car.Color = '" + textBox07.Text + "'";
+                }
+            }
+            if (!string.IsNullOrEmpty(textBox05.Text))
+            {
+                myCommand.CommandText += " and C.CarType = '" + textBox05.Text + "'";
+                if (!string.IsNullOrEmpty(textBox06.Text))
+                {
+                    myCommand.CommandText += " and C.Model = '" + textBox06.Text + "'";
+                    if (!string.IsNullOrEmpty(textBox07.Text))
+                    {
+                        myCommand.CommandText += " and Car.Color = '" + textBox07.Text + "'";
+                    }
+                }
+                if (!string.IsNullOrEmpty(textBox07.Text))
+                {
+                    myCommand.CommandText += " and Car.Color = '" + textBox07.Text + "'";
+                }
+            }
+            if (!string.IsNullOrEmpty(textBox06.Text))
+            {
+                myCommand.CommandText += " and C.Model = '" + textBox06.Text + "'";
+                if (!string.IsNullOrEmpty(textBox07.Text))
+                {
+                    myCommand.CommandText += " and Car.Color = '" + textBox07.Text + "'";
+                }
+            }
+            if (!string.IsNullOrEmpty(textBox07.Text))
+            {
+                myCommand.CommandText += " and Car.Color = '" + textBox07.Text + "'";
+            }
+            try
+            {
+                myReader = myCommand.ExecuteReader();
+                //MessageBox.Show(myCommand.CommandText);
+                dataGridView1.Rows.Clear();
+                while (myReader.Read())
+                {
+                    dataGridView1.Rows.Add(myReader["Rental_ID"].ToString(), myReader["Customer_ID"].ToString(), myReader["VIN"].ToString(), myReader["price"].ToString(), myReader["pickup_Branch_ID"].ToString(), myReader["return_Branch_ID"].ToString(), myReader["pickup_date"].ToString(), myReader["return_date"].ToString());
+                }
+                myReader.Close();
+            }
+            catch (Exception) { }
         }
 
-        private void searchPrice(object sender, MouseEventArgs e)
+        private void searchPrice_MouseClick(object sender, MouseEventArgs e)
         {
-
+            myCommand.CommandText = "Select * from Rental_trans where Customer_ID = '" + customer_id.Text + "'";
+            if (!string.IsNullOrEmpty(textBox08.Text))
+            {
+                myCommand.CommandText += " and price = '" + textBox08.Text + "'";
+                if (!string.IsNullOrEmpty(textBox09.Text))
+                {
+                    myCommand.CommandText += " and price <= '" + textBox09.Text + "'";
+                    if (!string.IsNullOrEmpty(textBox11.Text))
+                    {
+                        myCommand.CommandText += " and price >= '" + textBox11.Text + "'";
+                    }
+                }
+                if (!string.IsNullOrEmpty(textBox11.Text))
+                {
+                    myCommand.CommandText += " and price >= '" + textBox11.Text + "'";
+                }
+            }
+            if (!string.IsNullOrEmpty(textBox09.Text))
+            {
+                myCommand.CommandText += " and price <= '" + textBox09.Text + "'";
+                if (!string.IsNullOrEmpty(textBox11.Text))
+                {
+                    myCommand.CommandText += " and price >= '" + textBox11.Text + "'";
+                }
+            }
+            if (!string.IsNullOrEmpty(textBox11.Text))
+            {
+                myCommand.CommandText += " and price >= '" + textBox11.Text + "'";
+            }
+            try
+            {
+                myReader = myCommand.ExecuteReader();
+                //MessageBox.Show(myCommand.CommandText);
+                dataGridView1.Rows.Clear();
+                while (myReader.Read())
+                {
+                    dataGridView1.Rows.Add(myReader["Rental_ID"].ToString(), myReader["Customer_ID"].ToString(), myReader["VIN"].ToString(), myReader["price"].ToString(), myReader["pickup_Branch_ID"].ToString(), myReader["return_Branch_ID"].ToString(), myReader["pickup_date"].ToString(), myReader["return_date"].ToString());
+                }
+                myReader.Close();
+            }
+            catch (Exception) { }
         }
 
-        private void searchBranch(object sender, MouseEventArgs e)
+        private void searchBranch_MouseClick(object sender, MouseEventArgs e)
         {
-
+            myCommand.CommandText = "Select * from Rental_trans where Customer_ID = '" + customer_id.Text + "'";
+            if (!string.IsNullOrEmpty(textBox12.Text))
+            {
+                myCommand.CommandText += " and (pickup_Branch_ID = '" + textBox12.Text + "' or return_Branch_ID = '" + textBox12.Text + "')";
+            }
+                try
+            {
+                myReader = myCommand.ExecuteReader();
+                //MessageBox.Show(myCommand.CommandText);
+                dataGridView1.Rows.Clear();
+                while (myReader.Read())
+                {
+                    dataGridView1.Rows.Add(myReader["Rental_ID"].ToString(), myReader["Customer_ID"].ToString(), myReader["VIN"].ToString(), myReader["price"].ToString(), myReader["pickup_Branch_ID"].ToString(), myReader["return_Branch_ID"].ToString(), myReader["pickup_date"].ToString(), myReader["return_date"].ToString());
+                }
+                myReader.Close();
+            }
+            catch (Exception) { }
         }
     }
 }
