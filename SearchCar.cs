@@ -705,7 +705,8 @@ namespace _291GroupProject
                 {
                     //testing purposes, it shows the VIN number that is returned
                     int VIN = (int)RentCommand.ExecuteScalar();
-                    MessageBox.Show(VIN.ToString());
+                    //Used this for errorchecking to see the VIN
+                   // MessageBox.Show(VIN.ToString());
                     //Create the command to add a rental to rental_trans
 
                     SqlCommand AddRental = new SqlCommand();
@@ -745,12 +746,14 @@ namespace _291GroupProject
                     weeks = (int)days / 7;
                     days = (int)days % 7;
                     total_price = days * daily_price + weeks * weekly_price + month * monthly_price;
-                    MessageBox.Show(total_price.ToString());
+                    //Shows total price of the current VIN with the return dates
+                    //MessageBox.Show(total_price.ToString());
 
 
                     AddRental.CommandText = "insert into Rental_trans Values(";
                     AddRental.CommandText += "'" + dateTimePicker1.Value + "', '" + dateTimePicker2.Value + "', '" + total_price.ToString() + "', '" + textBox10.Text + "', '" + "1" + "', '" + BranchBox.Text + "', '" + BranchBox.Text + "', '" + VIN.ToString() + "')";
                     AddRental.ExecuteNonQuery();
+                    MessageBox.Show("Thank you for renting with us!");
                     BranchBoxConnection.Close();
                 }
             }
@@ -989,6 +992,45 @@ namespace _291GroupProject
                 myReader.Close();
             }
             catch (Exception) { }
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            BranchBoxConnection.Open();
+            SqlCommand myCommand = new SqlCommand();
+            myCommand.Connection = BranchBoxConnection;
+            //find out number of days
+            int total = (dateTimePicker2.Value - dateTimePicker1.Value).Days;
+            int month, weeks, days;
+            double total_price = 0, monthly_price = 0, daily_price = 0, weekly_price = 0;
+
+            //Construct price command
+
+            myCommand.CommandText = "select price_D, price_W, price_M from Car_Types";
+            myCommand.CommandText += " where CarType = " + "'" + CarType + "'" + ";";
+            try
+            {
+                SqlDataReader PriceReader;
+                PriceReader = myCommand.ExecuteReader();
+                while (PriceReader.Read())
+                {
+                    daily_price = PriceReader.GetDouble(0);
+                    weekly_price = PriceReader.GetDouble(1);
+                    monthly_price = PriceReader.GetDouble(2);
+                }
+                PriceReader.Close();
+            }
+            catch (Exception)
+            {
+
+            }
+            month = (int)total / 30;
+            days = (int)total % 30;
+            weeks = (int)days / 7;
+            days = (int)days % 7;
+            total_price = days * daily_price + weeks * weekly_price + month * monthly_price;
+            label4.Text = "$" + total_price.ToString();
+            BranchBoxConnection.Close();
         }
     }
 }
