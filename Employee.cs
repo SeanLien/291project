@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Drawing.Printing;
+
 
 
 namespace _291GroupProject
@@ -799,10 +801,13 @@ namespace _291GroupProject
                 MessageBox.Show(e3.ToString(), "Error");
             }
         }
+            invoice_search_rental_id.Clear();
         }
 
         private void invoice_confirm_Click(object sender, EventArgs e)
         {
+
+            
             int month, days, weeks, total;
             double total_price =0, monthly_price =0, daily_price=0, weekly_price=0;
 
@@ -884,14 +889,20 @@ namespace _291GroupProject
                 if (count_rentals >= 3)
                 {
                     total_price = total_price - total_price * 0.10;
-                    discounted_price.Text = total_price.ToString();
-                    discount_label.Show();
-                    discounted_price.Show();
+                   
+                    
                 }
-                
+
+                discounted_price.Text = total_price.ToString();
+
+                if (total_price < 0)
+
+                {
+                    MessageBox.Show("Check dates");
+                    invoice_display_total.Text = " ";
 
 
-
+                }
 
 
 
@@ -900,6 +911,107 @@ namespace _291GroupProject
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            {
+                // Create document
+                PrintDocument _document = new PrintDocument();
+                // Add print handler
+                _document.PrintPage += new PrintPageEventHandler(Document_PrintPage);
+                // Create the dialog to display results
+                PrintPreviewDialog _dlg = new PrintPreviewDialog();
+                _dlg.ClientSize = new System.Drawing.Size(Width / 2, Height / 2);
+                _dlg.Location = new System.Drawing.Point(Left, Top);
+                _dlg.MinimumSize = new System.Drawing.Size(375, 400);
+                _dlg.UseAntiAlias = true;
+                // Setting up our document
+                _dlg.Document = _document;
+                // Show it
+                _dlg.ShowDialog(this);
+                // Dispose document
+                _document.Dispose();
+            }
+            // Print handler
+            
+                
+            
+        }
+
+        private void Document_PrintPage(object sender, PrintPageEventArgs e)
+
+        {
+            // Create Bitmap according form size
+            Bitmap _bitmap = new Bitmap(Width, Height, System.Drawing.Imaging.PixelFormat.Format32bppRgb);
+            // Draw from into Bitmap DC
+            this.DrawToBitmap(_bitmap, this.DisplayRectangle);
+            // Draw Bitmap into Printer DC
+            e.Graphics.DrawImage(_bitmap, 0, 0);
+            // No longer deeded - dispose it
+            _bitmap.Dispose();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (invoice_display_total.Text == " ")
+            {
+
+                MessageBox.Show("Please enter a transaction");
+
+            }
+
+
+            else if(invoice_display_pickup_date.Value > invoice_display_return_date.Value)
+            {
+
+
+                MessageBox.Show("Please check dates");
+
+            }
+
+
+            else
+            {
+
+                myCommand.CommandText = "update Rental_trans";
+
+                myCommand.CommandText += " set " + "return_date = '" + invoice_display_return_date.Value + "', return_Branch_ID = '" + invoice_display_return_branch.Text + "',";
+                
+                myCommand.CommandText += "price = '" + discounted_price.Text + "'";
+                myCommand.CommandText += " where Rental_trans.Rental_ID  = " + invoice_dsplay_rental_id.Text;
+
+                try
+                {
+
+                    MessageBox.Show(myCommand.CommandText);
+                    myCommand.ExecuteNonQuery();
+                    
+
+
+
+
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show(e.ToString(), "Error");
+                }
+                invoice_display_car_type.Clear();
+                invoice_display_first_name.Clear();
+                invoice_display_lat_name.Clear();
+                invoice_display_pickup_branch.Clear();
+                invoice_display_return_date.ResetText();
+                invoice_display_pickup_date.ResetText();
+                invoice_display_return_branch.ResetText();
+                invoice_dsplay_rental_id.Clear();
+                invoice_display_total.Clear();
+                invoice_display_vin.Clear();
+                invoice_display_cust_id.Clear();
+
+
+
+            }
+
+        }
     }
 }
 
