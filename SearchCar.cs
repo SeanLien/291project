@@ -686,7 +686,7 @@ namespace _291GroupProject
             switch (selectedIndex)
             {
                 case 0:
-                    myCommand.CommandText = "select * from Rental_trans as RT, Customers as C where RT.Customer_ID = '" + customer_id.Text + "'";
+                    myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id.Text + "'";
                     break;
                 case 1:
                     myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id.Text + "' and RT.pickup_branch_id = '" + null + "' ";
@@ -720,11 +720,24 @@ namespace _291GroupProject
     }
         private void customer_report_button(object sender, MouseEventArgs e)
         {
-            myCommand.CommandText = "Select * from Rental_trans as RT where";
+            dataGridView1.Rows.Clear(); // clears the current table when inputting
+            textBox01.Clear();
+            textBox02.Clear();
+            textBox03.Clear();
+            textBox04.Clear();
+            textBox05.Clear();
+            textBox06.Clear();
+            textBox07.Clear();
+            textBox08.Clear();
+            textBox09.Clear();
+            textBox11.Clear();
+            textBox12.Clear();
+
+            myCommand.CommandText = "Select * from Rental_trans as RT where ";
 
             if (textBox01 != null) {
                 myCommand.CommandText += "year(return_date) <= '" + textBox01.Text + "'";
-                    }
+            }
             if (textBox02 != null) {
                 myCommand.CommandText += "month(return_date) <= '" + textBox02.Text + "'";
             }
@@ -763,11 +776,31 @@ namespace _291GroupProject
 
                 while (myReader.Read())
                 {
-                    dataGridView1.Rows.Add(myReader["Rental_ID"].ToString(), myReader["Customer_ID"].ToString(), myReader["VIN"].ToString(), myReader["pickup_Branch_ID"].ToString(), myReader["return_Branch_ID"].ToString(), myReader["price"].ToString(), myReader["pickup_date"].ToString(), myReader["return_date"].ToString());
+                    dataGridView1.Rows.Add(myReader["Rental_ID"].ToString(), myReader["Customer_ID"].ToString(), myReader["VIN"].ToString(), myReader["price"].ToString(), myReader["pickup_Branch_ID"].ToString(), myReader["return_Branch_ID"].ToString(), myReader["pickup_date"].ToString(), myReader["return_date"].ToString());
                 }
                 myReader.Close();
             }
             catch(Exception) {}
+        }
+
+        private void searchTime(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void searchCar(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void searchPrice(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void searchBranch(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
