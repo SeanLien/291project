@@ -683,26 +683,26 @@ namespace _291GroupProject
         private void customer_report_button(object sender, MouseEventArgs e)
         {
             int selectedIndex = comboBox_customerReport.SelectedIndex;
-            MessageBox.Show(selectedIndex.ToString());
+            //MessageBox.Show(selectedIndex.ToString());
             DateTime localDate = DateTime.Now.Date;
             switch (selectedIndex) {
                 case 0:
                     myCommand.CommandText = "select * from Rental_trans as RT, Customers as C where RT.Customer_ID = '" + customer_id.Text + "'";
                     break;
                 case 1:
-                    myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id + "' and RT.pickup_branch_id == null ";
+                    myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id.Text + "' and RT.pickup_branch_id == null ";
                     break;
                 case 2:
-                    myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id + "' and RT.pickup_branch_id != null and RT.return_branch_id == null ";
+                    myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id.Text + "' and RT.pickup_branch_id != null and RT.return_branch_id == null ";
                     break;
                 case 3:
-                    myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id + "' and RT.return_branch_id != null";
+                    myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id.Text + "' and RT.return_branch_id != null";
                     break;
                 case 4:
-                    myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id + "' and RT.return_date < '" + localDate + "' ";
+                    myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id.Text + "' and RT.return_date < '" + localDate + "' ";
                     break;
                 default:
-                    myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id + "'";
+                    myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id.Text + "'";
                     break;
             }
             try
