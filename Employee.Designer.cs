@@ -278,6 +278,12 @@ namespace _291GroupProject
             this._291_group_projectDataSet = new _291GroupProject._291_group_projectDataSet();
             this.branchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.branchesTableAdapter = new _291GroupProject._291_group_projectDataSetTableAdapters.BranchesTableAdapter();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.sales_years = new System.Windows.Forms.Button();
+            this.sales_branc_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Total_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Yr_mo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prev_rental.SuspendLayout();
             this.edit_employee.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -312,6 +318,8 @@ namespace _291GroupProject
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._291_group_projectDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchesBindingSource)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
             this.SuspendLayout();
             // 
             // prev_rental
@@ -321,6 +329,7 @@ namespace _291GroupProject
             this.prev_rental.Controls.Add(this.car_info);
             this.prev_rental.Controls.Add(this.tabPage1);
             this.prev_rental.Controls.Add(this.tabPage2);
+            this.prev_rental.Controls.Add(this.tabPage3);
             this.prev_rental.Location = new System.Drawing.Point(14, 12);
             this.prev_rental.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.prev_rental.Name = "prev_rental";
@@ -2892,6 +2901,63 @@ namespace _291GroupProject
             // 
             this.branchesTableAdapter.ClearBeforeFill = true;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.sales_years);
+            this.tabPage3.Controls.Add(this.dataGridView7);
+            this.tabPage3.Location = new System.Drawing.Point(8, 39);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(2106, 1320);
+            this.tabPage3.TabIndex = 8;
+            this.tabPage3.Text = "Sales Reports";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView7
+            // 
+            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sales_branc_id,
+            this.Total_sales,
+            this.Yr_mo});
+            this.dataGridView7.Location = new System.Drawing.Point(24, 62);
+            this.dataGridView7.Name = "dataGridView7";
+            this.dataGridView7.RowHeadersWidth = 82;
+            this.dataGridView7.RowTemplate.Height = 33;
+            this.dataGridView7.Size = new System.Drawing.Size(1202, 488);
+            this.dataGridView7.TabIndex = 0;
+            this.dataGridView7.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView7_CellContentClick);
+            // 
+            // sales_years
+            // 
+            this.sales_years.Location = new System.Drawing.Point(1263, 146);
+            this.sales_years.Name = "sales_years";
+            this.sales_years.Size = new System.Drawing.Size(284, 64);
+            this.sales_years.TabIndex = 1;
+            this.sales_years.Text = "Sales";
+            this.sales_years.UseVisualStyleBackColor = true;
+            this.sales_years.Click += new System.EventHandler(this.sales_years_Click);
+            // 
+            // sales_branc_id
+            // 
+            this.sales_branc_id.HeaderText = "Branch ID";
+            this.sales_branc_id.MinimumWidth = 10;
+            this.sales_branc_id.Name = "sales_branc_id";
+            this.sales_branc_id.Width = 200;
+            // 
+            // Total_sales
+            // 
+            this.Total_sales.HeaderText = "Total Sales";
+            this.Total_sales.MinimumWidth = 10;
+            this.Total_sales.Name = "Total_sales";
+            this.Total_sales.Width = 200;
+            // 
+            // Yr_mo
+            // 
+            this.Yr_mo.HeaderText = "Year_month";
+            this.Yr_mo.MinimumWidth = 10;
+            this.Yr_mo.Name = "Yr_mo";
+            this.Yr_mo.Width = 200;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -2947,6 +3013,8 @@ namespace _291GroupProject
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._291_group_projectDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.branchesBindingSource)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3201,5 +3269,11 @@ namespace _291GroupProject
         private System.Windows.Forms.TextBox discounted_price;
         private System.Windows.Forms.Label discount_label;
         private System.Windows.Forms.Button invoice_clear;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Button sales_years;
+        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sales_branc_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Total_sales;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Yr_mo;
     }
 }
