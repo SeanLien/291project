@@ -165,9 +165,15 @@ namespace _291GroupProject
             this.add_car_color = new System.Windows.Forms.TextBox();
             this.label95 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.invoice_display_cust_id = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.invoice_display_vin = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.invoice_confirm = new System.Windows.Forms.Button();
+            this.invoice_display_lat_name = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.invoice_display_total = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
-            this.invoice_display_pickup_date = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.invoice_display_return_branch = new System.Windows.Forms.TextBox();
@@ -268,13 +274,7 @@ namespace _291GroupProject
             this._291_group_projectDataSet = new _291GroupProject._291_group_projectDataSet();
             this.branchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.branchesTableAdapter = new _291GroupProject._291_group_projectDataSetTableAdapters.BranchesTableAdapter();
-            this.invoice_display_lat_name = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.invoice_confirm = new System.Windows.Forms.Button();
-            this.invoice_display_vin = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.invoice_display_cust_id = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.invoice_display_pickup_date = new System.Windows.Forms.DateTimePicker();
             this.prev_rental.SuspendLayout();
             this.edit_employee.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -998,7 +998,7 @@ namespace _291GroupProject
             this.tabPage11.Controls.Add(this.label76);
             this.tabPage11.Location = new System.Drawing.Point(8, 39);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage11.Size = new System.Drawing.Size(2106, 1320);
             this.tabPage11.TabIndex = 6;
             this.tabPage11.Text = "Branch Information";
@@ -1784,6 +1784,7 @@ namespace _291GroupProject
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tabPage1.Controls.Add(this.invoice_display_pickup_date);
             this.tabPage1.Controls.Add(this.invoice_display_cust_id);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.invoice_display_vin);
@@ -1793,7 +1794,6 @@ namespace _291GroupProject
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.invoice_display_total);
             this.tabPage1.Controls.Add(this.label60);
-            this.tabPage1.Controls.Add(this.invoice_display_pickup_date);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.invoice_display_return_branch);
@@ -1821,6 +1821,75 @@ namespace _291GroupProject
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Previous Rentals";
             // 
+            // invoice_display_cust_id
+            // 
+            this.invoice_display_cust_id.Location = new System.Drawing.Point(1466, 624);
+            this.invoice_display_cust_id.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.invoice_display_cust_id.Name = "invoice_display_cust_id";
+            this.invoice_display_cust_id.Size = new System.Drawing.Size(276, 31);
+            this.invoice_display_cust_id.TabIndex = 35;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1180, 616);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(206, 37);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Customer ID";
+            // 
+            // invoice_display_vin
+            // 
+            this.invoice_display_vin.Location = new System.Drawing.Point(1374, 697);
+            this.invoice_display_vin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.invoice_display_vin.Name = "invoice_display_vin";
+            this.invoice_display_vin.Size = new System.Drawing.Size(276, 31);
+            this.invoice_display_vin.TabIndex = 33;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1250, 690);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 37);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "VIN";
+            // 
+            // invoice_confirm
+            // 
+            this.invoice_confirm.BackColor = System.Drawing.Color.Silver;
+            this.invoice_confirm.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoice_confirm.Location = new System.Drawing.Point(578, 763);
+            this.invoice_confirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.invoice_confirm.Name = "invoice_confirm";
+            this.invoice_confirm.Size = new System.Drawing.Size(386, 52);
+            this.invoice_confirm.TabIndex = 31;
+            this.invoice_confirm.Text = "Confirm Drop Off";
+            this.invoice_confirm.UseVisualStyleBackColor = false;
+            // 
+            // invoice_display_lat_name
+            // 
+            this.invoice_display_lat_name.Location = new System.Drawing.Point(847, 541);
+            this.invoice_display_lat_name.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.invoice_display_lat_name.Name = "invoice_display_lat_name";
+            this.invoice_display_lat_name.Size = new System.Drawing.Size(276, 31);
+            this.invoice_display_lat_name.TabIndex = 30;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(571, 541);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(179, 37);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Last Name";
+            // 
             // invoice_display_total
             // 
             this.invoice_display_total.Location = new System.Drawing.Point(714, 841);
@@ -1839,14 +1908,6 @@ namespace _291GroupProject
             this.label60.Size = new System.Drawing.Size(181, 37);
             this.label60.TabIndex = 27;
             this.label60.Text = "Total Price";
-            // 
-            // invoice_display_pickup_date
-            // 
-            this.invoice_display_pickup_date.Location = new System.Drawing.Point(289, 625);
-            this.invoice_display_pickup_date.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.invoice_display_pickup_date.Name = "invoice_display_pickup_date";
-            this.invoice_display_pickup_date.Size = new System.Drawing.Size(276, 31);
-            this.invoice_display_pickup_date.TabIndex = 26;
             // 
             // button3
             // 
@@ -2777,74 +2838,12 @@ namespace _291GroupProject
             // 
             this.branchesTableAdapter.ClearBeforeFill = true;
             // 
-            // invoice_display_lat_name
+            // invoice_display_pickup_date
             // 
-            this.invoice_display_lat_name.Location = new System.Drawing.Point(847, 541);
-            this.invoice_display_lat_name.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.invoice_display_lat_name.Name = "invoice_display_lat_name";
-            this.invoice_display_lat_name.Size = new System.Drawing.Size(276, 31);
-            this.invoice_display_lat_name.TabIndex = 30;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(571, 541);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(179, 37);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Last Name";
-            // 
-            // invoice_confirm
-            // 
-            this.invoice_confirm.BackColor = System.Drawing.Color.Silver;
-            this.invoice_confirm.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.invoice_confirm.Location = new System.Drawing.Point(578, 763);
-            this.invoice_confirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.invoice_confirm.Name = "invoice_confirm";
-            this.invoice_confirm.Size = new System.Drawing.Size(386, 52);
-            this.invoice_confirm.TabIndex = 31;
-            this.invoice_confirm.Text = "Confirm Drop Off";
-            this.invoice_confirm.UseVisualStyleBackColor = false;
-            // 
-            // invoice_display_vin
-            // 
-            this.invoice_display_vin.Location = new System.Drawing.Point(1374, 697);
-            this.invoice_display_vin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.invoice_display_vin.Name = "invoice_display_vin";
-            this.invoice_display_vin.Size = new System.Drawing.Size(276, 31);
-            this.invoice_display_vin.TabIndex = 33;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1250, 690);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 37);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "VIN";
-            // 
-            // invoice_display_cust_id
-            // 
-            this.invoice_display_cust_id.Location = new System.Drawing.Point(1466, 624);
-            this.invoice_display_cust_id.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.invoice_display_cust_id.Name = "invoice_display_cust_id";
-            this.invoice_display_cust_id.Size = new System.Drawing.Size(276, 31);
-            this.invoice_display_cust_id.TabIndex = 35;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1180, 616);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(206, 37);
-            this.label5.TabIndex = 34;
-            this.label5.Text = "Customer ID";
+            this.invoice_display_pickup_date.Location = new System.Drawing.Point(282, 631);
+            this.invoice_display_pickup_date.Name = "invoice_display_pickup_date";
+            this.invoice_display_pickup_date.Size = new System.Drawing.Size(282, 31);
+            this.invoice_display_pickup_date.TabIndex = 36;
             // 
             // Employee
             // 
@@ -2929,7 +2928,6 @@ namespace _291GroupProject
         private System.Windows.Forms.TextBox invoice_search_rental_id;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage edit_employee;
-        private System.Windows.Forms.TextBox invoice_display_pickup_date;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox employee_txt;
@@ -3152,5 +3150,6 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox invoice_display_cust_id;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker invoice_display_pickup_date;
     }
 }

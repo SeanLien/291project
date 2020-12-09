@@ -751,11 +751,9 @@ namespace _291GroupProject
             invoice_display_cust_id.Clear();
 
             
-            myCommand.CommandText = "select * from Rental_trans";
+            myCommand.CommandText = "select Rental_trans.Rental_ID, Rental_trans.pickup_date, Rental_trans.return_date, Rental_trans.price, Rental_trans.Customer_id, Rental_trans.pickup_Branch_ID, Rental_trans.return_Branch_ID, Rental_trans.VIN, first_name, last_name, CarType from Rental_trans, cars, Customers";
 
-            myCommand.CommandText += " where Rental_trans.Rental_ID = " + invoice_search_rental_id;
-            myCommand2.CommandText = "Select first_name, last_name from customers where Customer_ID ='" + invoice_display_cust_id + "';";
-            myCommand3.CommandText = "Select CarType from Cars where VIN ='" +invoice_display_vin +"';";
+                myCommand.CommandText += " where Rental_trans.Rental_ID = " + invoice_search_rental_id.Text + "and Rental_trans.Customer_ID = Customers.Customer_ID  and Rental_Trans.VIN = Cars.VIN;";
 
 
             try
@@ -763,8 +761,7 @@ namespace _291GroupProject
 
                 MessageBox.Show(myCommand.CommandText);
                 myReader = myCommand.ExecuteReader();
-                myReader2 = myCommand2.ExecuteReader();
-                myReader3 = myCommand3.ExecuteReader();
+               
 
 
 
@@ -772,39 +769,22 @@ namespace _291GroupProject
                     while (myReader.Read())
                     {
                         invoice_dsplay_rental_id.Text = myReader.GetInt32(0).ToString();
-                        invoice_display_pickup_date.Text = myReader.GetString(1);
-                        invoice_display_return_date.Text = myReader.GetDateTimeOffset(3).ToString();
-                        invoice_display_total.Text = myReader.GetDateTimeOffset(3).ToString();
+                        invoice_display_pickup_date.Value = myReader.GetDateTime(1);
+                        invoice_display_return_date.Value = myReader.GetDateTime(2);
+                        if (!myReader.IsDBNull(3))
+                        {
+                            invoice_display_total.Text = myReader.GetDouble(3).ToString();
+                        }
                         invoice_display_cust_id.Text = myReader.GetInt32(4).ToString();
-                        invoice_display_pickup_branch.Text = myReader.GetInt32(6).ToString();
-                        invoice_display_return_branch.Text = myReader.GetInt32(7).ToString();
-                        invoice_display_vin.Text = myReader.GetInt32(8).ToString();
+                        invoice_display_pickup_branch.Text = myReader.GetInt32(5).ToString();
+                        invoice_display_return_branch.Text = myReader.GetInt32(6).ToString();
+                        invoice_display_vin.Text = myReader.GetInt32(7).ToString();
+                        invoice_display_first_name.Text = myReader.GetString(8);
+                        invoice_display_lat_name.Text = myReader.GetString(9);
+                        invoice_display_car_type.Text = myReader.GetString(10);
                     }
 
-                    while (myReader2.Read())
-                    {
-
-                        invoice_display_first_name.Text = myReader2.GetString(0);
-                        invoice_display_lat_name.Text = myReader.GetString(1);
-
-                    }
-
-                    while (myReader3.Read())
-                    {
-
-                        invoice_display_car_type.Text = myReader3.GetString(0);
-
-                    }
-
-
-
-
-
-
-
-
-
-
+                    
 
 
                     employee_txt.Clear();
