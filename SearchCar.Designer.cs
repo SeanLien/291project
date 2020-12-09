@@ -94,13 +94,15 @@ namespace _291GroupProject
             this.return_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label25 = new System.Windows.Forms.Label();
+            this.vin_rental = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.ColorComboBox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.BranchBox = new System.Windows.Forms.ComboBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedCarImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -427,6 +429,8 @@ namespace _291GroupProject
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label26);
+            this.tabPage2.Controls.Add(this.textBox13);
             this.tabPage2.Controls.Add(this.label23);
             this.tabPage2.Controls.Add(this.textBox11);
             this.tabPage2.Controls.Add(this.label22);
@@ -809,7 +813,7 @@ namespace _291GroupProject
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.label25);
+            this.tabPage1.Controls.Add(this.vin_rental);
             this.tabPage1.Controls.Add(this.label24);
             this.tabPage1.Controls.Add(this.ColorComboBox);
             this.tabPage1.Controls.Add(this.label7);
@@ -844,15 +848,15 @@ namespace _291GroupProject
             this.tabPage1.Text = "Add a Report";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // label25
+            // vin_rental
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(702, 144);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(30, 17);
-            this.label25.TabIndex = 53;
-            this.label25.Text = "VIN";
+            this.vin_rental.AutoSize = true;
+            this.vin_rental.Location = new System.Drawing.Point(702, 144);
+            this.vin_rental.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.vin_rental.Name = "vin_rental";
+            this.vin_rental.Size = new System.Drawing.Size(30, 17);
+            this.vin_rental.TabIndex = 53;
+            this.vin_rental.Text = "VIN";
             // 
             // label24
             // 
@@ -911,6 +915,22 @@ namespace _291GroupProject
             this.label3.Size = new System.Drawing.Size(53, 17);
             this.label3.TabIndex = 30;
             this.label3.Text = "Branch";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(809, 59);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(135, 22);
+            this.textBox13.TabIndex = 34;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(718, 62);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(85, 17);
+            this.label26.TabIndex = 35;
+            this.label26.Text = "Customer ID";
             // 
             // SearchCar
             // 
@@ -1009,8 +1029,10 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label vin_rental;
     }
 }
 
