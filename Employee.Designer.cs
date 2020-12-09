@@ -277,6 +277,7 @@ namespace _291GroupProject
             this._291_group_projectDataSet = new _291GroupProject._291_group_projectDataSet();
             this.branchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.branchesTableAdapter = new _291GroupProject._291_group_projectDataSetTableAdapters.BranchesTableAdapter();
+            this.invoice_clear = new System.Windows.Forms.Button();
             this.prev_rental.SuspendLayout();
             this.edit_employee.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -1786,6 +1787,7 @@ namespace _291GroupProject
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tabPage1.Controls.Add(this.invoice_clear);
             this.tabPage1.Controls.Add(this.discounted_price);
             this.tabPage1.Controls.Add(this.discount_label);
             this.tabPage1.Controls.Add(this.invoice_display_return_branch);
@@ -2882,6 +2884,19 @@ namespace _291GroupProject
             // 
             this.branchesTableAdapter.ClearBeforeFill = true;
             // 
+            // invoice_clear
+            // 
+            this.invoice_clear.BackColor = System.Drawing.Color.Silver;
+            this.invoice_clear.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoice_clear.Location = new System.Drawing.Point(739, 393);
+            this.invoice_clear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.invoice_clear.Name = "invoice_clear";
+            this.invoice_clear.Size = new System.Drawing.Size(272, 52);
+            this.invoice_clear.TabIndex = 40;
+            this.invoice_clear.Text = "Clear Form";
+            this.invoice_clear.UseVisualStyleBackColor = false;
+            this.invoice_clear.Click += new System.EventHandler(this.invoice_clear_Click);
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -3190,5 +3205,6 @@ namespace _291GroupProject
         private System.Windows.Forms.ComboBox invoice_display_return_branch;
         private System.Windows.Forms.TextBox discounted_price;
         private System.Windows.Forms.Label discount_label;
+        private System.Windows.Forms.Button invoice_clear;
     }
 }

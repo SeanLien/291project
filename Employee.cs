@@ -1012,6 +1012,23 @@ namespace _291GroupProject
             }
 
         }
+
+        private void invoice_clear_Click(object sender, EventArgs e)
+        {
+            invoice_display_car_type.Clear();
+            invoice_display_first_name.Clear();
+            invoice_display_lat_name.Clear();
+            invoice_display_pickup_branch.Clear();
+            invoice_display_return_date.ResetText();
+            invoice_display_pickup_date.ResetText();
+            invoice_display_return_branch.ResetText();
+            invoice_dsplay_rental_id.Clear();
+            invoice_display_total.Clear();
+            invoice_display_vin.Clear();
+            invoice_display_cust_id.Clear();
+            invoice_search_rental_id.Clear();
+
+        }
     }
 }
 
