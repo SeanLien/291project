@@ -20,9 +20,11 @@ namespace _291GroupProject
         public string CarType;
         public SqlConnection myConnection;
         public SqlCommand myCommand;
+        public SqlCommand Rental2;
         public SqlDataReader myReader;
         public SqlConnection BranchBoxConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["291proj"].ConnectionString);
         public SqlConnection BranchBoxColor = new SqlConnection(ConfigurationManager.ConnectionStrings["291proj"].ConnectionString);
+        public SqlConnection RentingConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["291proj"].ConnectionString);
         public SearchCar()
         {
             InitializeComponent();
@@ -98,7 +100,7 @@ namespace _291GroupProject
             try
             {
                 BranchBoxConnection.Open();
-                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxConnection);
                 SqlDataReader myreader;
                 myreader = BranchBoxCommand.ExecuteReader();
                 DataTable DT = new DataTable();
@@ -112,7 +114,7 @@ namespace _291GroupProject
             try
             {
                 BranchBoxColor.Open();
-                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxColor);
                 SqlDataReader myreader1;
                 myreader1 = BranchBoxColours.ExecuteReader();
                 DataTable DT1 = new DataTable();
@@ -470,6 +472,7 @@ namespace _291GroupProject
             //The MessageBox is just for testing and visual purposes, we will delete it later.
             SelectedCarImage.BackgroundImage = button2.BackgroundImage;
             CarModel = (string)button2.Tag;
+            CarTitle.Text = CarModel;
             //MessageBox.Show(CarModel);
             BranchBox.ResetText();
             ColorComboBox.ResetText();
@@ -507,6 +510,7 @@ namespace _291GroupProject
         {
             SelectedCarImage.BackgroundImage = button1.BackgroundImage;
             CarModel = (string)button1.Tag;
+            CarTitle.Text = CarModel;
             //MessageBox.Show(CarModel);
             BranchBox.ResetText();
             ColorComboBox.ResetText();
@@ -544,6 +548,7 @@ namespace _291GroupProject
         {
             SelectedCarImage.BackgroundImage = button3.BackgroundImage;
             CarModel = (string)button3.Tag;
+            CarTitle.Text = CarModel;
             //MessageBox.Show(CarModel);
             BranchBox.ResetText();
             ColorComboBox.ResetText();
@@ -579,15 +584,17 @@ namespace _291GroupProject
 
         private void button4_click(object sender, EventArgs e)
         {
+            
             SelectedCarImage.BackgroundImage = button4.BackgroundImage;
             CarModel = (string)button4.Tag;
+            CarTitle.Text = CarModel;
             //MessageBox.Show(CarModel);
             BranchBox.ResetText();
             ColorComboBox.ResetText();
             try
             {
                 BranchBoxConnection.Open();
-                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "' and C.Model = '" + CarModel + "';", BranchBoxConnection);
+                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "' and C.active = 'Yes' and C.Model = '" + CarModel + "';", BranchBoxConnection);
                 SqlDataReader myreader;
                 myreader = BranchBoxCommand.ExecuteReader();
                 DataTable DT = new DataTable();
@@ -601,7 +608,7 @@ namespace _291GroupProject
             try
             {
                 BranchBoxColor.Open();
-                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "' and C.Model = '" + CarModel + "';", BranchBoxColor);
+                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "' and C.active = 'Yes' and C.Model = '" + CarModel + "';", BranchBoxColor);
                 SqlDataReader myreader1;
                 myreader1 = BranchBoxColours.ExecuteReader();
                 DataTable DT1 = new DataTable();
@@ -618,6 +625,7 @@ namespace _291GroupProject
         {
             SelectedCarImage.BackgroundImage = button5.BackgroundImage;
             CarModel = (string)button5.Tag;
+            CarTitle.Text = CarModel;
             //MessageBox.Show(CarModel);
             BranchBox.ResetText();
             ColorComboBox.ResetText();
@@ -655,6 +663,7 @@ namespace _291GroupProject
         {
             SelectedCarImage.BackgroundImage = button6.BackgroundImage;
             CarModel = (string)button6.Tag;
+            CarTitle.Text = CarModel;
             //MessageBox.Show(CarModel);
             BranchBox.ResetText();
             ColorComboBox.ResetText();
@@ -694,8 +703,14 @@ namespace _291GroupProject
             try
             {
                 BranchBoxConnection.Open();
+                SqlCommand CheckCustomer = new SqlCommand("Select Customer_ID from Customers where Customer_ID = " + textBox10.Text + ";", BranchBoxConnection);
+                if (CheckCustomer.ExecuteScalar() == null) 
+                {
+                    MessageBox.Show("This customer does not exist");
+                    BranchBoxConnection.Close();
+                }
                 //Need to include the branch ID in the sql command and the color
-                SqlCommand RentCommand = new SqlCommand("Select (VIN) from Cars where Model = '" + CarModel + "'" + " and active != 'Yes' and Branch_ID = '" + BranchBox.Text + "'" + " and color = '" + ColorComboBox.Text +  "';", BranchBoxConnection);
+                SqlCommand RentCommand = new SqlCommand("Select (VIN) from Cars where Model = '" + CarModel + "'" + " and active = 'Yes' and Branch_ID = '" + BranchBox.Text + "'" + " and color = '" + ColorComboBox.Text + "';", BranchBoxConnection);
                 if (RentCommand.ExecuteScalar() == null)
                 {
                     MessageBox.Show("Sorry, this is not available");
@@ -706,7 +721,7 @@ namespace _291GroupProject
                     //testing purposes, it shows the VIN number that is returned
                     int VIN = (int)RentCommand.ExecuteScalar();
                     //Used this for errorchecking to see the VIN
-                   // MessageBox.Show(VIN.ToString());
+                    // MessageBox.Show(VIN.ToString());
                     //Create the command to add a rental to rental_trans
 
                     SqlCommand AddRental = new SqlCommand();
@@ -752,6 +767,8 @@ namespace _291GroupProject
 
                     AddRental.CommandText = "insert into Rental_trans Values(";
                     AddRental.CommandText += "'" + dateTimePicker1.Value + "', '" + dateTimePicker2.Value + "', '" + total_price.ToString() + "', '" + textBox10.Text + "', '" + "1" + "', '" + BranchBox.Text + "', '" + BranchBox.Text + "', '" + VIN.ToString() + "')";
+                    AddRental.ExecuteNonQuery();
+                    AddRental.CommandText = "UPDATE Cars SET active = 'No' WHERE VIN = " + VIN.ToString() + ";";
                     AddRental.ExecuteNonQuery();
                     MessageBox.Show("Thank you for renting with us!");
                     BranchBoxConnection.Close();
@@ -1022,7 +1039,7 @@ namespace _291GroupProject
             }
             catch (Exception)
             {
-
+                BranchBoxConnection.Close();
             }
             month = (int)total / 30;
             days = (int)total % 30;

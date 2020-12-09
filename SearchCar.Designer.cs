@@ -111,6 +111,7 @@ namespace _291GroupProject
             this.BranchBox = new System.Windows.Forms.ComboBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.CarTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedCarImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -243,7 +244,9 @@ namespace _291GroupProject
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.GhostWhite;
             this.label4.Location = new System.Drawing.Point(692, 424);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(134, 44);
@@ -359,7 +362,7 @@ namespace _291GroupProject
             this.tableLayoutPanel1.Controls.Add(this.button5, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 93);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -371,7 +374,7 @@ namespace _291GroupProject
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(600, 384);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(151, 20);
             this.dateTimePicker1.TabIndex = 43;
@@ -379,7 +382,7 @@ namespace _291GroupProject
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(848, 384);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(151, 20);
             this.dateTimePicker2.TabIndex = 44;
@@ -410,7 +413,7 @@ namespace _291GroupProject
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.tabControl1.Location = new System.Drawing.Point(2, 37);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1042, 677);
@@ -459,9 +462,9 @@ namespace _291GroupProject
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(1034, 651);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "View Reports";
@@ -482,7 +485,7 @@ namespace _291GroupProject
             // search_branch
             // 
             this.search_branch.Location = new System.Drawing.Point(538, 610);
-            this.search_branch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search_branch.Margin = new System.Windows.Forms.Padding(2);
             this.search_branch.Name = "search_branch";
             this.search_branch.Size = new System.Drawing.Size(78, 24);
             this.search_branch.TabIndex = 40;
@@ -493,7 +496,7 @@ namespace _291GroupProject
             // search_price
             // 
             this.search_price.Location = new System.Drawing.Point(541, 513);
-            this.search_price.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search_price.Margin = new System.Windows.Forms.Padding(2);
             this.search_price.Name = "search_price";
             this.search_price.Size = new System.Drawing.Size(78, 24);
             this.search_price.TabIndex = 39;
@@ -504,7 +507,7 @@ namespace _291GroupProject
             // search_car
             // 
             this.search_car.Location = new System.Drawing.Point(539, 420);
-            this.search_car.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search_car.Margin = new System.Windows.Forms.Padding(2);
             this.search_car.Name = "search_car";
             this.search_car.Size = new System.Drawing.Size(78, 24);
             this.search_car.TabIndex = 38;
@@ -515,7 +518,7 @@ namespace _291GroupProject
             // search_time
             // 
             this.search_time.Location = new System.Drawing.Point(541, 295);
-            this.search_time.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search_time.Margin = new System.Windows.Forms.Padding(2);
             this.search_time.Name = "search_time";
             this.search_time.Size = new System.Drawing.Size(78, 24);
             this.search_time.TabIndex = 37;
@@ -526,7 +529,7 @@ namespace _291GroupProject
             // customer_reset
             // 
             this.customer_reset.Location = new System.Drawing.Point(767, 134);
-            this.customer_reset.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customer_reset.Margin = new System.Windows.Forms.Padding(2);
             this.customer_reset.Name = "customer_reset";
             this.customer_reset.Size = new System.Drawing.Size(159, 54);
             this.customer_reset.TabIndex = 36;
@@ -546,7 +549,7 @@ namespace _291GroupProject
             // customer_id
             // 
             this.customer_id.Location = new System.Drawing.Point(607, 48);
-            this.customer_id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customer_id.Margin = new System.Windows.Forms.Padding(2);
             this.customer_id.Name = "customer_id";
             this.customer_id.Size = new System.Drawing.Size(102, 20);
             this.customer_id.TabIndex = 34;
@@ -565,7 +568,7 @@ namespace _291GroupProject
             // textBox07
             // 
             this.textBox07.Location = new System.Drawing.Point(539, 399);
-            this.textBox07.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox07.Margin = new System.Windows.Forms.Padding(2);
             this.textBox07.Name = "textBox07";
             this.textBox07.Size = new System.Drawing.Size(139, 20);
             this.textBox07.TabIndex = 32;
@@ -673,7 +676,7 @@ namespace _291GroupProject
             // customer_report
             // 
             this.customer_report.Location = new System.Drawing.Point(542, 134);
-            this.customer_report.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.customer_report.Margin = new System.Windows.Forms.Padding(2);
             this.customer_report.Name = "customer_report";
             this.customer_report.Size = new System.Drawing.Size(159, 54);
             this.customer_report.TabIndex = 21;
@@ -696,7 +699,7 @@ namespace _291GroupProject
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(538, 589);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(139, 20);
             this.textBox12.TabIndex = 17;
@@ -716,7 +719,7 @@ namespace _291GroupProject
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(878, 492);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(139, 20);
             this.textBox11.TabIndex = 15;
@@ -724,7 +727,7 @@ namespace _291GroupProject
             // textBox09
             // 
             this.textBox09.Location = new System.Drawing.Point(712, 492);
-            this.textBox09.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox09.Margin = new System.Windows.Forms.Padding(2);
             this.textBox09.Name = "textBox09";
             this.textBox09.Size = new System.Drawing.Size(139, 20);
             this.textBox09.TabIndex = 14;
@@ -732,7 +735,7 @@ namespace _291GroupProject
             // textBox08
             // 
             this.textBox08.Location = new System.Drawing.Point(543, 492);
-            this.textBox08.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox08.Margin = new System.Windows.Forms.Padding(2);
             this.textBox08.Name = "textBox08";
             this.textBox08.Size = new System.Drawing.Size(139, 20);
             this.textBox08.TabIndex = 13;
@@ -752,7 +755,7 @@ namespace _291GroupProject
             // textBox06
             // 
             this.textBox06.Location = new System.Drawing.Point(874, 354);
-            this.textBox06.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox06.Margin = new System.Windows.Forms.Padding(2);
             this.textBox06.Name = "textBox06";
             this.textBox06.Size = new System.Drawing.Size(139, 20);
             this.textBox06.TabIndex = 11;
@@ -760,7 +763,7 @@ namespace _291GroupProject
             // textBox05
             // 
             this.textBox05.Location = new System.Drawing.Point(709, 354);
-            this.textBox05.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox05.Margin = new System.Windows.Forms.Padding(2);
             this.textBox05.Name = "textBox05";
             this.textBox05.Size = new System.Drawing.Size(139, 20);
             this.textBox05.TabIndex = 10;
@@ -768,7 +771,7 @@ namespace _291GroupProject
             // textBox04
             // 
             this.textBox04.Location = new System.Drawing.Point(539, 354);
-            this.textBox04.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox04.Margin = new System.Windows.Forms.Padding(2);
             this.textBox04.Name = "textBox04";
             this.textBox04.Size = new System.Drawing.Size(139, 20);
             this.textBox04.TabIndex = 9;
@@ -788,7 +791,7 @@ namespace _291GroupProject
             // textBox03
             // 
             this.textBox03.Location = new System.Drawing.Point(875, 274);
-            this.textBox03.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox03.Margin = new System.Windows.Forms.Padding(2);
             this.textBox03.Name = "textBox03";
             this.textBox03.Size = new System.Drawing.Size(139, 20);
             this.textBox03.TabIndex = 7;
@@ -796,7 +799,7 @@ namespace _291GroupProject
             // textBox02
             // 
             this.textBox02.Location = new System.Drawing.Point(710, 274);
-            this.textBox02.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox02.Margin = new System.Windows.Forms.Padding(2);
             this.textBox02.Name = "textBox02";
             this.textBox02.Size = new System.Drawing.Size(139, 20);
             this.textBox02.TabIndex = 6;
@@ -805,7 +808,7 @@ namespace _291GroupProject
             // 
             this.textBox01.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.textBox01.Location = new System.Drawing.Point(541, 274);
-            this.textBox01.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox01.Margin = new System.Windows.Forms.Padding(2);
             this.textBox01.Name = "textBox01";
             this.textBox01.Size = new System.Drawing.Size(139, 20);
             this.textBox01.TabIndex = 5;
@@ -840,7 +843,7 @@ namespace _291GroupProject
             "Completed Reports",
             "Late Reports"});
             this.comboBox_customerReport.Location = new System.Drawing.Point(542, 96);
-            this.comboBox_customerReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_customerReport.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox_customerReport.Name = "comboBox_customerReport";
             this.comboBox_customerReport.Size = new System.Drawing.Size(385, 21);
             this.comboBox_customerReport.TabIndex = 2;
@@ -860,7 +863,7 @@ namespace _291GroupProject
             this.pickup_date,
             this.return_date});
             this.dataGridView1.Location = new System.Drawing.Point(8, 50);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -936,6 +939,7 @@ namespace _291GroupProject
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.CarTitle);
             this.tabPage1.Controls.Add(this.label24);
             this.tabPage1.Controls.Add(this.ColorComboBox);
             this.tabPage1.Controls.Add(this.label7);
@@ -961,9 +965,9 @@ namespace _291GroupProject
             this.tabPage1.Controls.Add(this.pictureBox8);
             this.tabPage1.Controls.Add(this.pictureBox7);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabPage1.Size = new System.Drawing.Size(1034, 651);
             this.tabPage1.TabIndex = 0;
@@ -983,7 +987,7 @@ namespace _291GroupProject
             // 
             this.ColorComboBox.FormattingEnabled = true;
             this.ColorComboBox.Location = new System.Drawing.Point(722, 346);
-            this.ColorComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ColorComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.ColorComboBox.Name = "ColorComboBox";
             this.ColorComboBox.Size = new System.Drawing.Size(80, 21);
             this.ColorComboBox.TabIndex = 51;
@@ -1002,7 +1006,7 @@ namespace _291GroupProject
             // 
             this.BranchBox.FormattingEnabled = true;
             this.BranchBox.Location = new System.Drawing.Point(577, 348);
-            this.BranchBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BranchBox.Margin = new System.Windows.Forms.Padding(2);
             this.BranchBox.Name = "BranchBox";
             this.BranchBox.Size = new System.Drawing.Size(80, 21);
             this.BranchBox.TabIndex = 49;
@@ -1011,7 +1015,7 @@ namespace _291GroupProject
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(922, 348);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(76, 20);
             this.textBox10.TabIndex = 48;
@@ -1024,6 +1028,19 @@ namespace _291GroupProject
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 30;
             this.label3.Text = "Branch";
+            // 
+            // CarTitle
+            // 
+            this.CarTitle.AutoSize = true;
+            this.CarTitle.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CarTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CarTitle.ForeColor = System.Drawing.Color.GhostWhite;
+            this.CarTitle.Location = new System.Drawing.Point(717, 109);
+            this.CarTitle.Name = "CarTitle";
+            this.CarTitle.Size = new System.Drawing.Size(81, 29);
+            this.CarTitle.TabIndex = 53;
+            this.CarTitle.Text = "Model";
+            this.CarTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SearchCar
             // 
@@ -1133,6 +1150,7 @@ namespace _291GroupProject
         private System.Windows.Forms.Button search_time;
         private System.Windows.Forms.Button customer_reset;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label CarTitle;
     }
 }
 
