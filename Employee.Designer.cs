@@ -284,6 +284,10 @@ namespace _291GroupProject
             this.sales_branc_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total_sales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Yr_mo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button5 = new System.Windows.Forms.Button();
+            this.dataGridView8 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prev_rental.SuspendLayout();
             this.edit_employee.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -320,6 +324,7 @@ namespace _291GroupProject
             ((System.ComponentModel.ISupportInitialize)(this.branchesBindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
             this.SuspendLayout();
             // 
             // prev_rental
@@ -2903,13 +2908,15 @@ namespace _291GroupProject
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button5);
+            this.tabPage3.Controls.Add(this.dataGridView8);
             this.tabPage3.Controls.Add(this.sales_years);
             this.tabPage3.Controls.Add(this.dataGridView7);
             this.tabPage3.Location = new System.Drawing.Point(8, 39);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(2106, 1320);
             this.tabPage3.TabIndex = 8;
-            this.tabPage3.Text = "Sales Reports";
+            this.tabPage3.Text = "Sales reports";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dataGridView7
@@ -2957,6 +2964,43 @@ namespace _291GroupProject
             this.Yr_mo.MinimumWidth = 10;
             this.Yr_mo.Name = "Yr_mo";
             this.Yr_mo.Width = 200;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1263, 713);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(284, 64);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Car Sales";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // dataGridView8
+            // 
+            this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.dataGridView8.Location = new System.Drawing.Point(24, 629);
+            this.dataGridView8.Name = "dataGridView8";
+            this.dataGridView8.RowHeadersWidth = 82;
+            this.dataGridView8.RowTemplate.Height = 33;
+            this.dataGridView8.Size = new System.Drawing.Size(1202, 488);
+            this.dataGridView8.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Car Type";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 200;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Total Sales";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 10;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 200;
             // 
             // Employee
             // 
@@ -3015,6 +3059,7 @@ namespace _291GroupProject
             ((System.ComponentModel.ISupportInitialize)(this.branchesBindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3275,5 +3320,9 @@ namespace _291GroupProject
         private System.Windows.Forms.DataGridViewTextBoxColumn sales_branc_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total_sales;
         private System.Windows.Forms.DataGridViewTextBoxColumn Yr_mo;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView dataGridView8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }
