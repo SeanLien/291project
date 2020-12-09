@@ -56,6 +56,12 @@ namespace _291GroupProject
             this.label6 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label25 = new System.Windows.Forms.Label();
+            this.search_branch = new System.Windows.Forms.Button();
+            this.search_price = new System.Windows.Forms.Button();
+            this.search_car = new System.Windows.Forms.Button();
+            this.search_time = new System.Windows.Forms.Button();
+            this.customer_reset = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.customer_id = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -105,12 +111,6 @@ namespace _291GroupProject
             this.BranchBox = new System.Windows.Forms.ComboBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.customer_reset = new System.Windows.Forms.Button();
-            this.search_time = new System.Windows.Forms.Button();
-            this.search_car = new System.Windows.Forms.Button();
-            this.search_price = new System.Windows.Forms.Button();
-            this.search_branch = new System.Windows.Forms.Button();
-            this.label25 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedCarImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -485,6 +485,71 @@ namespace _291GroupProject
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "View Reports";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Crimson;
+            this.label25.Location = new System.Drawing.Point(945, 59);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(24, 29);
+            this.label25.TabIndex = 41;
+            this.label25.Text = "*";
+            // 
+            // search_branch
+            // 
+            this.search_branch.Location = new System.Drawing.Point(717, 751);
+            this.search_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.search_branch.Name = "search_branch";
+            this.search_branch.Size = new System.Drawing.Size(104, 30);
+            this.search_branch.TabIndex = 40;
+            this.search_branch.Text = "SEARCH";
+            this.search_branch.UseVisualStyleBackColor = true;
+            this.search_branch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.searchBranch_MouseClick);
+            // 
+            // search_price
+            // 
+            this.search_price.Location = new System.Drawing.Point(721, 631);
+            this.search_price.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.search_price.Name = "search_price";
+            this.search_price.Size = new System.Drawing.Size(104, 30);
+            this.search_price.TabIndex = 39;
+            this.search_price.Text = "SEARCH";
+            this.search_price.UseVisualStyleBackColor = true;
+            this.search_price.MouseClick += new System.Windows.Forms.MouseEventHandler(this.searchPrice_MouseClick);
+            // 
+            // search_car
+            // 
+            this.search_car.Location = new System.Drawing.Point(719, 517);
+            this.search_car.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.search_car.Name = "search_car";
+            this.search_car.Size = new System.Drawing.Size(104, 30);
+            this.search_car.TabIndex = 38;
+            this.search_car.Text = "SEARCH";
+            this.search_car.UseVisualStyleBackColor = true;
+            this.search_car.MouseClick += new System.Windows.Forms.MouseEventHandler(this.searchCar_MouseClick);
+            // 
+            // search_time
+            // 
+            this.search_time.Location = new System.Drawing.Point(721, 363);
+            this.search_time.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.search_time.Name = "search_time";
+            this.search_time.Size = new System.Drawing.Size(104, 30);
+            this.search_time.TabIndex = 37;
+            this.search_time.Text = "SEARCH";
+            this.search_time.UseVisualStyleBackColor = true;
+            this.search_time.MouseClick += new System.Windows.Forms.MouseEventHandler(this.search_time_MouseClick);
+            // 
+            // customer_reset
+            // 
+            this.customer_reset.Location = new System.Drawing.Point(1023, 165);
+            this.customer_reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customer_reset.Name = "customer_reset";
+            this.customer_reset.Size = new System.Drawing.Size(212, 66);
+            this.customer_reset.TabIndex = 36;
+            this.customer_reset.Text = "RESET";
+            this.customer_reset.UseVisualStyleBackColor = true;
             // 
             // label26
             // 
@@ -898,7 +963,7 @@ namespace _291GroupProject
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage1.Size = new System.Drawing.Size(1381, 725);
+            this.tabPage1.Size = new System.Drawing.Size(1381, 804);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add a Report";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -960,71 +1025,6 @@ namespace _291GroupProject
             this.label3.Size = new System.Drawing.Size(53, 17);
             this.label3.TabIndex = 30;
             this.label3.Text = "Branch";
-            // 
-            // customer_reset
-            // 
-            this.customer_reset.Location = new System.Drawing.Point(1023, 165);
-            this.customer_reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.customer_reset.Name = "customer_reset";
-            this.customer_reset.Size = new System.Drawing.Size(212, 66);
-            this.customer_reset.TabIndex = 36;
-            this.customer_reset.Text = "RESET";
-            this.customer_reset.UseVisualStyleBackColor = true;
-            // 
-            // search_time
-            // 
-            this.search_time.Location = new System.Drawing.Point(721, 363);
-            this.search_time.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.search_time.Name = "search_time";
-            this.search_time.Size = new System.Drawing.Size(104, 30);
-            this.search_time.TabIndex = 37;
-            this.search_time.Text = "SEARCH";
-            this.search_time.UseVisualStyleBackColor = true;
-            this.search_time.MouseClick += new System.Windows.Forms.MouseEventHandler(this.searchTime);
-            // 
-            // search_car
-            // 
-            this.search_car.Location = new System.Drawing.Point(719, 517);
-            this.search_car.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.search_car.Name = "search_car";
-            this.search_car.Size = new System.Drawing.Size(104, 30);
-            this.search_car.TabIndex = 38;
-            this.search_car.Text = "SEARCH";
-            this.search_car.UseVisualStyleBackColor = true;
-            this.search_car.MouseClick += new System.Windows.Forms.MouseEventHandler(this.searchCar);
-            // 
-            // search_price
-            // 
-            this.search_price.Location = new System.Drawing.Point(721, 631);
-            this.search_price.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.search_price.Name = "search_price";
-            this.search_price.Size = new System.Drawing.Size(104, 30);
-            this.search_price.TabIndex = 39;
-            this.search_price.Text = "SEARCH";
-            this.search_price.UseVisualStyleBackColor = true;
-            this.search_price.MouseClick += new System.Windows.Forms.MouseEventHandler(this.searchPrice);
-            // 
-            // search_branch
-            // 
-            this.search_branch.Location = new System.Drawing.Point(717, 751);
-            this.search_branch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.search_branch.Name = "search_branch";
-            this.search_branch.Size = new System.Drawing.Size(104, 30);
-            this.search_branch.TabIndex = 40;
-            this.search_branch.Text = "SEARCH";
-            this.search_branch.UseVisualStyleBackColor = true;
-            this.search_branch.MouseClick += new System.Windows.Forms.MouseEventHandler(this.searchBranch);
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.Crimson;
-            this.label25.Location = new System.Drawing.Point(945, 59);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(24, 29);
-            this.label25.TabIndex = 41;
-            this.label25.Text = "*";
             // 
             // SearchCar
             // 
