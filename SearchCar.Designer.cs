@@ -501,6 +501,7 @@ namespace _291GroupProject
             this.customer_id.Name = "customer_id";
             this.customer_id.Size = new System.Drawing.Size(135, 22);
             this.customer_id.TabIndex = 34;
+            this.customer_id.Text = "0";
             // 
             // label23
             // 
