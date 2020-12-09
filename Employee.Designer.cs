@@ -275,6 +275,8 @@ namespace _291GroupProject
             this.branchesTableAdapter = new _291GroupProject._291_group_projectDataSetTableAdapters.BranchesTableAdapter();
             this.invoice_display_pickup_date = new System.Windows.Forms.DateTimePicker();
             this.invoice_display_return_branch = new System.Windows.Forms.ComboBox();
+            this.discounted_price = new System.Windows.Forms.TextBox();
+            this.discount_label = new System.Windows.Forms.Label();
             this.prev_rental.SuspendLayout();
             this.edit_employee.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -1784,6 +1786,8 @@ namespace _291GroupProject
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.tabPage1.Controls.Add(this.discounted_price);
+            this.tabPage1.Controls.Add(this.discount_label);
             this.tabPage1.Controls.Add(this.invoice_display_return_branch);
             this.tabPage1.Controls.Add(this.invoice_display_pickup_date);
             this.tabPage1.Controls.Add(this.invoice_display_cust_id);
@@ -2846,6 +2850,27 @@ namespace _291GroupProject
             this.invoice_display_return_branch.Size = new System.Drawing.Size(285, 33);
             this.invoice_display_return_branch.TabIndex = 37;
             // 
+            // discounted_price
+            // 
+            this.discounted_price.Location = new System.Drawing.Point(714, 898);
+            this.discounted_price.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.discounted_price.Name = "discounted_price";
+            this.discounted_price.Size = new System.Drawing.Size(276, 31);
+            this.discounted_price.TabIndex = 39;
+            this.discounted_price.Visible = false;
+            // 
+            // discount_label
+            // 
+            this.discount_label.AutoSize = true;
+            this.discount_label.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.discount_label.Location = new System.Drawing.Point(428, 898);
+            this.discount_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.discount_label.Name = "discount_label";
+            this.discount_label.Size = new System.Drawing.Size(260, 37);
+            this.discount_label.TabIndex = 38;
+            this.discount_label.Text = "Discouted Price";
+            this.discount_label.Visible = false;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -3152,5 +3177,7 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker invoice_display_pickup_date;
         private System.Windows.Forms.ComboBox invoice_display_return_branch;
+        private System.Windows.Forms.TextBox discounted_price;
+        private System.Windows.Forms.Label discount_label;
     }
 }

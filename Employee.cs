@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
 
+
 namespace _291GroupProject
 {
     public partial class Employee : Form
@@ -21,6 +22,7 @@ namespace _291GroupProject
         public SqlCommand myCommand2;
         public SqlCommand myCommand3;
         public SqlDataReader myReader3;
+        
 
 
 
@@ -859,7 +861,34 @@ namespace _291GroupProject
 
                 total_price = days * daily_price + weeks * weekly_price + month * monthly_price;
 
+                
+
+               
+
+                myCommand3.CommandText = "select count (*) From Rental_trans Where Customer_ID = '" + invoice_display_cust_id.Text + "';";
+                int count_rentals = (int)myCommand3.ExecuteScalar();
+
+                if(invoice_display_pickup_branch.Text != invoice_display_return_branch.Text)
+                {
+                    MessageBox.Show("returnes at different Branch $50 dollar charge");
+                    total_price += 50;
+
+                }
+
                 invoice_display_total.Text = total_price.ToString();
+
+
+
+
+
+                if (count_rentals >= 3)
+                {
+                    total_price = total_price - total_price * 0.10;
+                    discounted_price.Text = total_price.ToString();
+                    discount_label.Show();
+                    discounted_price.Show();
+                }
+                
 
 
 
@@ -870,6 +899,7 @@ namespace _291GroupProject
             }
 
         }
+
     }
 }
 
