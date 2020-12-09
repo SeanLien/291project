@@ -1029,10 +1029,10 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label vin_rental;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.Label vin_rental;
     }
 }
 

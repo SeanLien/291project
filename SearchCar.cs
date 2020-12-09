@@ -20,6 +20,7 @@ namespace _291GroupProject
         public string CarType;
         public SqlConnection BranchBoxConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["291proj"].ConnectionString);
         public SqlConnection BranchBoxColor = new SqlConnection(ConfigurationManager.ConnectionStrings["291proj"].ConnectionString);
+        public SqlConnection vinReportCar = new SqlConnection(ConfigurationManager.ConnectionStrings["291proj"].ConnectionString);
         public SearchCar()
         {
             InitializeComponent();
@@ -450,7 +451,7 @@ namespace _291GroupProject
             catch (Exception) { }
             try
             {
-                BranchBoxConnection.Open();
+                vinReportCar.Open();
                 SqlCommand readLabelVIN = new SqlCommand("select (C.VIN) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "' and C.Model = '" + CarModel + "';", BranchBoxColor);
                 SqlDataReader myreader2;
                 myreader2 = readLabelVIN.ExecuteReader();
@@ -459,7 +460,7 @@ namespace _291GroupProject
                     vin_rental.Text = myreader2["VIN"].ToString();
                 }
                 myreader2.Close();
-                BranchBoxConnection.Close();
+                vinReportCar.Close();
             }
             catch (Exception) { }
         }
@@ -502,7 +503,7 @@ namespace _291GroupProject
             catch (Exception) { }
             try
             {
-                BranchBoxConnection.Open();
+                vinReportCar.Open();
                 SqlCommand readLabelVIN = new SqlCommand("select (C.VIN) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "' and C.Model = '" + CarModel + "';", BranchBoxColor);
                 SqlDataReader myreader2;
                 myreader2 = readLabelVIN.ExecuteReader();
@@ -511,7 +512,7 @@ namespace _291GroupProject
                     vin_rental.Text = myreader2["VIN"].ToString();
                 }
                 myreader2.Close();
-                BranchBoxConnection.Close();
+                vinReportCar.Close();
             }
             catch (Exception) { }
         }
@@ -554,7 +555,7 @@ namespace _291GroupProject
             catch (Exception) { }
             try
             {
-                BranchBoxConnection.Open();
+                vinReportCar.Open();
                 SqlCommand readLabelVIN = new SqlCommand("select (C.VIN) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "' and C.Model = '" + CarModel + "';", BranchBoxColor);
                 SqlDataReader myreader2;
                 myreader2 = readLabelVIN.ExecuteReader();
@@ -563,7 +564,7 @@ namespace _291GroupProject
                     vin_rental.Text = myreader2["VIN"].ToString();
                 }
                 myreader2.Close();
-                BranchBoxConnection.Close();
+                vinReportCar.Close();
             }
             catch (Exception) { }
         }
@@ -606,7 +607,7 @@ namespace _291GroupProject
             catch (Exception) { }
             try
             {
-                BranchBoxConnection.Open();
+                vinReportCar.Open();
                 SqlCommand readLabelVIN = new SqlCommand("select (C.VIN) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "' and C.Model = '" + CarModel + "';", BranchBoxColor);
                 SqlDataReader myreader2;
                 myreader2 = readLabelVIN.ExecuteReader();
@@ -615,7 +616,7 @@ namespace _291GroupProject
                     vin_rental.Text = myreader2["VIN"].ToString();
                 }
                 myreader2.Close();
-                BranchBoxConnection.Close();
+                vinReportCar.Close();
             }
             catch (Exception) { }
         }
@@ -658,7 +659,7 @@ namespace _291GroupProject
             catch (Exception) { }
             try
             {
-                BranchBoxConnection.Open();
+                vinReportCar.Open();
                 SqlCommand readLabelVIN = new SqlCommand("select (C.VIN) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "' and C.Model = '" + CarModel + "';", BranchBoxColor);
                 SqlDataReader myreader2;
                 myreader2 = readLabelVIN.ExecuteReader();
@@ -667,7 +668,7 @@ namespace _291GroupProject
                     vin_rental.Text = myreader2["VIN"].ToString();
                 }
                 myreader2.Close();
-                BranchBoxConnection.Close();
+                vinReportCar.Close();
             }
             catch (Exception) { }
         }
@@ -710,16 +711,17 @@ namespace _291GroupProject
             catch (Exception) { }
             try
             {
-                BranchBoxConnection.Open();
+                vinReportCar.Open();
                 SqlCommand readLabelVIN = new SqlCommand("select (C.VIN) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "' and C.Model = '" + CarModel + "';", BranchBoxColor);
                 SqlDataReader myreader2;
                 myreader2 = readLabelVIN.ExecuteReader();
                 while (myreader2.Read())
                 {
+                    //vin_rental.Text.(myreader2.GetValue(0).ToString());
                     vin_rental.Text = myreader2["VIN"].ToString();
                 }
                 myreader2.Close();
-                BranchBoxConnection.Close();
+                vinReportCar.Close();
             }
             catch (Exception) { }
         }
