@@ -56,6 +56,8 @@ namespace _291GroupProject
             this.label6 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label26 = new System.Windows.Forms.Label();
+            this.customer_id = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
@@ -68,7 +70,7 @@ namespace _291GroupProject
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            this.customer_report = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -87,22 +89,20 @@ namespace _291GroupProject
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox_customerReport = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Rental_ID = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.VIN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pickup_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.return_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.vin_rental = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.ColorComboBox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.BranchBox = new System.Windows.Forms.ComboBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
+            this.Rental_ID = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.Customer_ID_cr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VIN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pickup_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.return_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.SelectedCarImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -430,7 +430,7 @@ namespace _291GroupProject
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.label26);
-            this.tabPage2.Controls.Add(this.textBox13);
+            this.tabPage2.Controls.Add(this.customer_id);
             this.tabPage2.Controls.Add(this.label23);
             this.tabPage2.Controls.Add(this.textBox11);
             this.tabPage2.Controls.Add(this.label22);
@@ -443,7 +443,7 @@ namespace _291GroupProject
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.button7);
+            this.tabPage2.Controls.Add(this.customer_report);
             this.tabPage2.Controls.Add(this.label15);
             this.tabPage2.Controls.Add(this.textBox12);
             this.tabPage2.Controls.Add(this.label14);
@@ -471,6 +471,22 @@ namespace _291GroupProject
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "View Reports";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(718, 62);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(85, 17);
+            this.label26.TabIndex = 35;
+            this.label26.Text = "Customer ID";
+            // 
+            // customer_id
+            // 
+            this.customer_id.Location = new System.Drawing.Point(809, 59);
+            this.customer_id.Name = "customer_id";
+            this.customer_id.Size = new System.Drawing.Size(135, 22);
+            this.customer_id.TabIndex = 34;
             // 
             // label23
             // 
@@ -579,15 +595,16 @@ namespace _291GroupProject
             this.label1.TabIndex = 22;
             this.label1.Text = "Enter a Branch ID";
             // 
-            // button7
+            // customer_report
             // 
-            this.button7.Location = new System.Drawing.Point(723, 165);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(212, 66);
-            this.button7.TabIndex = 21;
-            this.button7.Text = "CONFIRM";
-            this.button7.UseVisualStyleBackColor = true;
+            this.customer_report.Location = new System.Drawing.Point(723, 165);
+            this.customer_report.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.customer_report.Name = "customer_report";
+            this.customer_report.Size = new System.Drawing.Size(212, 66);
+            this.customer_report.TabIndex = 21;
+            this.customer_report.Text = "CONFIRM";
+            this.customer_report.UseVisualStyleBackColor = true;
+            this.customer_report.MouseClick += new System.Windows.Forms.MouseEventHandler(this.customer_report_button);
             // 
             // label15
             // 
@@ -737,7 +754,7 @@ namespace _291GroupProject
             this.comboBox_customerReport.FormattingEnabled = true;
             this.comboBox_customerReport.Items.AddRange(new object[] {
             "Show All Reports",
-            "Outstanding Reports",
+            "In Inventory",
             "Currently Active Reports",
             "Completed Reports",
             "Late Reports"});
@@ -746,7 +763,6 @@ namespace _291GroupProject
             this.comboBox_customerReport.Name = "comboBox_customerReport";
             this.comboBox_customerReport.Size = new System.Drawing.Size(512, 24);
             this.comboBox_customerReport.TabIndex = 2;
-            this.comboBox_customerReport.SelectedIndexChanged += new System.EventHandler(this.customer_report_show);
             // 
             // dataGridView1
             // 
@@ -754,6 +770,7 @@ namespace _291GroupProject
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Rental_ID,
+            this.Customer_ID_cr,
             this.VIN,
             this.price,
             this.pickup_date,
@@ -765,41 +782,6 @@ namespace _291GroupProject
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(677, 657);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // Rental_ID
-            // 
-            this.Rental_ID.HeaderText = "Report ID";
-            this.Rental_ID.MinimumWidth = 6;
-            this.Rental_ID.Name = "Rental_ID";
-            this.Rental_ID.Width = 125;
-            // 
-            // VIN
-            // 
-            this.VIN.HeaderText = "Car";
-            this.VIN.MinimumWidth = 6;
-            this.VIN.Name = "VIN";
-            this.VIN.Width = 125;
-            // 
-            // price
-            // 
-            this.price.HeaderText = "$";
-            this.price.MinimumWidth = 6;
-            this.price.Name = "price";
-            this.price.Width = 125;
-            // 
-            // pickup_date
-            // 
-            this.pickup_date.HeaderText = "Start date";
-            this.pickup_date.MinimumWidth = 6;
-            this.pickup_date.Name = "pickup_date";
-            this.pickup_date.Width = 125;
-            // 
-            // return_date
-            // 
-            this.return_date.HeaderText = "End date";
-            this.return_date.MinimumWidth = 6;
-            this.return_date.Name = "return_date";
-            this.return_date.Width = 125;
             // 
             // label8
             // 
@@ -813,7 +795,6 @@ namespace _291GroupProject
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.vin_rental);
             this.tabPage1.Controls.Add(this.label24);
             this.tabPage1.Controls.Add(this.ColorComboBox);
             this.tabPage1.Controls.Add(this.label7);
@@ -847,16 +828,6 @@ namespace _291GroupProject
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Add a Report";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // vin_rental
-            // 
-            this.vin_rental.AutoSize = true;
-            this.vin_rental.Location = new System.Drawing.Point(702, 144);
-            this.vin_rental.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.vin_rental.Name = "vin_rental";
-            this.vin_rental.Size = new System.Drawing.Size(30, 17);
-            this.vin_rental.TabIndex = 53;
-            this.vin_rental.Text = "VIN";
             // 
             // label24
             // 
@@ -916,21 +887,47 @@ namespace _291GroupProject
             this.label3.TabIndex = 30;
             this.label3.Text = "Branch";
             // 
-            // textBox13
+            // Rental_ID
             // 
-            this.textBox13.Location = new System.Drawing.Point(809, 59);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(135, 22);
-            this.textBox13.TabIndex = 34;
+            this.Rental_ID.HeaderText = "Report ID";
+            this.Rental_ID.MinimumWidth = 6;
+            this.Rental_ID.Name = "Rental_ID";
+            this.Rental_ID.Width = 125;
             // 
-            // label26
+            // Customer_ID_cr
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(718, 62);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(85, 17);
-            this.label26.TabIndex = 35;
-            this.label26.Text = "Customer ID";
+            this.Customer_ID_cr.HeaderText = "CID";
+            this.Customer_ID_cr.MinimumWidth = 6;
+            this.Customer_ID_cr.Name = "Customer_ID_cr";
+            this.Customer_ID_cr.Width = 125;
+            // 
+            // VIN
+            // 
+            this.VIN.HeaderText = "Car";
+            this.VIN.MinimumWidth = 6;
+            this.VIN.Name = "VIN";
+            this.VIN.Width = 125;
+            // 
+            // price
+            // 
+            this.price.HeaderText = "$";
+            this.price.MinimumWidth = 6;
+            this.price.Name = "price";
+            this.price.Width = 125;
+            // 
+            // pickup_date
+            // 
+            this.pickup_date.HeaderText = "Start date";
+            this.pickup_date.MinimumWidth = 6;
+            this.pickup_date.Name = "pickup_date";
+            this.pickup_date.Width = 125;
+            // 
+            // return_date
+            // 
+            this.return_date.HeaderText = "End date";
+            this.return_date.MinimumWidth = 6;
+            this.return_date.Name = "return_date";
+            this.return_date.Width = 125;
             // 
             // SearchCar
             // 
@@ -989,11 +986,6 @@ namespace _291GroupProject
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridViewLinkColumn Rental_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VIN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pickup_date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn return_date;
         private System.Windows.Forms.ComboBox comboBox_customerReport;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox3;
@@ -1011,7 +1003,7 @@ namespace _291GroupProject
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button customer_report;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.ComboBox BranchBox;
         private System.Windows.Forms.Label label3;
@@ -1031,8 +1023,13 @@ namespace _291GroupProject
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Label vin_rental;
+        private System.Windows.Forms.TextBox customer_id;
+        private System.Windows.Forms.DataGridViewLinkColumn Rental_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Customer_ID_cr;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VIN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pickup_date;
+        private System.Windows.Forms.DataGridViewTextBoxColumn return_date;
     }
 }
 
