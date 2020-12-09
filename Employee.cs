@@ -1111,6 +1111,34 @@ namespace _291GroupProject
         {
 
         }
+
+        private void sales_years_Click(object sender, EventArgs e)
+        {
+            myCommand.CommandText = " select pickup_branch_ID, format(pickup_date, 'Y') as Yr,  sum(price) as total_sales from Rental_trans group by pickup_branch_ID, format(pickup_date, 'Y') ;";
+
+            try
+            {
+                MessageBox.Show(myCommand.CommandText);
+                myReader = myCommand.ExecuteReader();
+
+                dataGridView1.Rows.Clear();
+                while (myReader.Read())
+                {
+                    dataGridView7.Rows.Add(myReader["pickup_branch_ID"].ToString(), myReader["total_sales"].ToString(), myReader["Yr"].ToString());
+                }
+
+                myReader.Close();
+            }
+            catch (Exception e3)
+            {
+                MessageBox.Show(e3.ToString(), "Error");
+            }
+        }
+
+        private void dataGridView7_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
 
