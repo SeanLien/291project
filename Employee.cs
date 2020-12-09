@@ -1142,7 +1142,7 @@ namespace _291GroupProject
 
         private void button5_Click(object sender, EventArgs e)
         {
-            myCommand.CommandText = " Select Distinct Car_Types.CarType, B.YD, B.tot_price From Car_Types Left Join (Select A.tot_price, A.VIN, Cars.CarType, a.YD from Cars Left Join  (Select Rental_trans.VIN, sum(price) as tot_price, format(pickup_date, 'Y') as YD from Rental_trans Group By format(pickup_date, 'Y'),Rental_trans.VIN ) as A ON A.VIN = Cars.VIN) as B On B.CarType= Car_types.CarType Order by tot_price;";
+            myCommand.CommandText = " Select Distinct z.CarType, sum(z.tot_price) as tot_sales From (Select Distinct Car_Types.CarType,  B.tot_price From Car_Types Left Join (Select A.tot_price, A.VIN, Cars.CarType from Cars Left Join  (Select Distinct Rental_trans.VIN, sum(price) as tot_price from Rental_trans Group By Rental_trans.VIN ) as A ON A.VIN = Cars.VIN) as B On B.CarType= Car_types.CarType) as z  group by z.CarType;";
 
             try
             {
@@ -1152,7 +1152,7 @@ namespace _291GroupProject
                 dataGridView8.Rows.Clear();
                 while (myReader.Read())
                 {
-                    dataGridView8.Rows.Add(myReader["CarType"].ToString(), myReader["tot_price"].ToString());
+                    dataGridView8.Rows.Add(myReader["CarType"].ToString(), myReader["tot_sales"].ToString());
                 }
 
                 myReader.Close();

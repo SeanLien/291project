@@ -2940,7 +2940,7 @@ namespace _291GroupProject
             this.sales_years.Name = "sales_years";
             this.sales_years.Size = new System.Drawing.Size(284, 64);
             this.sales_years.TabIndex = 1;
-            this.sales_years.Text = "Sales";
+            this.sales_years.Text = "Sales by Branch";
             this.sales_years.UseVisualStyleBackColor = true;
             this.sales_years.Click += new System.EventHandler(this.sales_years_Click);
             // 
@@ -2971,7 +2971,7 @@ namespace _291GroupProject
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(284, 64);
             this.button5.TabIndex = 3;
-            this.button5.Text = "Car Sales";
+            this.button5.Text = "Car Sales by Type";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
