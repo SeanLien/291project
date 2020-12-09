@@ -695,7 +695,7 @@ namespace _291GroupProject
             {
                 BranchBoxConnection.Open();
                 //Need to include the branch ID in the sql command and the color
-                SqlCommand RentCommand = new SqlCommand("Select (VIN) from Cars where Model = '" + CarModel + "'" + " and active != 'Yes' and Branch_ID = '" + BranchBox.Text + " and Color = '" + ColorComboBox.Text + "';", BranchBoxConnection);
+                SqlCommand RentCommand = new SqlCommand("Select (VIN) from Cars where Model = '" + CarModel + "'" + " and active != 'Yes' and Branch_ID = '" + BranchBox.Text + "'" + " and color = '" + ColorComboBox.Text +  "';", BranchBoxConnection);
                 if (RentCommand.ExecuteScalar() == null)
                 {
                     MessageBox.Show("No VIN came up");
