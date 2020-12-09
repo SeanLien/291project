@@ -698,7 +698,7 @@ namespace _291GroupProject
                 SqlCommand RentCommand = new SqlCommand("Select (VIN) from Cars where Model = '" + CarModel + "'" + " and active != 'Yes' and Branch_ID = '" + BranchBox.Text + "'" + " and color = '" + ColorComboBox.Text +  "';", BranchBoxConnection);
                 if (RentCommand.ExecuteScalar() == null)
                 {
-                    MessageBox.Show("No VIN came up");
+                    MessageBox.Show("Sorry, this is not available");
                     BranchBoxConnection.Close();
                 }
                 else
