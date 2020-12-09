@@ -165,6 +165,7 @@ namespace _291GroupProject
             this.add_car_color = new System.Windows.Forms.TextBox();
             this.label95 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.invoice_clear = new System.Windows.Forms.Button();
             this.discounted_price = new System.Windows.Forms.TextBox();
             this.discount_label = new System.Windows.Forms.Label();
             this.invoice_display_return_branch = new System.Windows.Forms.ComboBox();
@@ -277,7 +278,6 @@ namespace _291GroupProject
             this._291_group_projectDataSet = new _291GroupProject._291_group_projectDataSet();
             this.branchesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.branchesTableAdapter = new _291GroupProject._291_group_projectDataSetTableAdapters.BranchesTableAdapter();
-            this.invoice_clear = new System.Windows.Forms.Button();
             this.prev_rental.SuspendLayout();
             this.edit_employee.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -1471,9 +1471,6 @@ namespace _291GroupProject
             // dspl_car_branch_combo
             // 
             this.dspl_car_branch_combo.FormattingEnabled = true;
-            this.dspl_car_branch_combo.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
             this.dspl_car_branch_combo.Location = new System.Drawing.Point(218, 395);
             this.dspl_car_branch_combo.Name = "dspl_car_branch_combo";
             this.dspl_car_branch_combo.Size = new System.Drawing.Size(310, 45);
@@ -1482,13 +1479,11 @@ namespace _291GroupProject
             // dspl_car_type_combo
             // 
             this.dspl_car_type_combo.FormattingEnabled = true;
-            this.dspl_car_type_combo.Items.AddRange(new object[] {
-            "Yes",
-            "No"});
             this.dspl_car_type_combo.Location = new System.Drawing.Point(1340, 305);
             this.dspl_car_type_combo.Name = "dspl_car_type_combo";
             this.dspl_car_type_combo.Size = new System.Drawing.Size(310, 45);
             this.dspl_car_type_combo.TabIndex = 128;
+            this.dspl_car_type_combo.SelectedIndexChanged += new System.EventHandler(this.dspl_car_type_combo_SelectedIndexChanged);
             // 
             // dspl_car_active
             // 
@@ -1826,6 +1821,19 @@ namespace _291GroupProject
             this.tabPage1.Size = new System.Drawing.Size(2106, 1320);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Previous Rentals";
+            // 
+            // invoice_clear
+            // 
+            this.invoice_clear.BackColor = System.Drawing.Color.Silver;
+            this.invoice_clear.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoice_clear.Location = new System.Drawing.Point(739, 393);
+            this.invoice_clear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.invoice_clear.Name = "invoice_clear";
+            this.invoice_clear.Size = new System.Drawing.Size(272, 52);
+            this.invoice_clear.TabIndex = 40;
+            this.invoice_clear.Text = "Clear Form";
+            this.invoice_clear.UseVisualStyleBackColor = false;
+            this.invoice_clear.Click += new System.EventHandler(this.invoice_clear_Click);
             // 
             // discounted_price
             // 
@@ -2883,19 +2891,6 @@ namespace _291GroupProject
             // branchesTableAdapter
             // 
             this.branchesTableAdapter.ClearBeforeFill = true;
-            // 
-            // invoice_clear
-            // 
-            this.invoice_clear.BackColor = System.Drawing.Color.Silver;
-            this.invoice_clear.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.invoice_clear.Location = new System.Drawing.Point(739, 393);
-            this.invoice_clear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.invoice_clear.Name = "invoice_clear";
-            this.invoice_clear.Size = new System.Drawing.Size(272, 52);
-            this.invoice_clear.TabIndex = 40;
-            this.invoice_clear.Text = "Clear Form";
-            this.invoice_clear.UseVisualStyleBackColor = false;
-            this.invoice_clear.Click += new System.EventHandler(this.invoice_clear_Click);
             // 
             // Employee
             // 

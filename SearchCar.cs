@@ -651,6 +651,7 @@ namespace _291GroupProject
 
         private void RentButton_Click(object sender, EventArgs e)
         {
+            //TODO, change the car with the VIN to be not active inside dbo.Cars, use an UPDATE statement
             try
             {
                 BranchBoxConnection.Open();
@@ -666,18 +667,58 @@ namespace _291GroupProject
                     //testing purposes, it shows the VIN number that is returned
                     int VIN = (int)RentCommand.ExecuteScalar();
                     MessageBox.Show(VIN.ToString());
-                    BranchBoxConnection.Close();
-                    //Here we would also have a rental trans sqlcommand
-                    //Change the car active to no.
+                    //Create the command to add a rental to rental_trans
 
+                    SqlCommand AddRental = new SqlCommand();
+                    //Use myCommand for finding the price
+
+                    SqlCommand myCommand = new SqlCommand();
+                    myCommand.Connection = BranchBoxConnection;
+                    AddRental.Connection = BranchBoxConnection;
+
+                    //find out number of days
+                    int total = (dateTimePicker2.Value - dateTimePicker1.Value).Days;
+                    int month, weeks, days;
+                    double total_price = 0, monthly_price = 0, daily_price = 0, weekly_price = 0;
+
+                    //Construct price command
+
+                    myCommand.CommandText = "select price_D, price_W, price_M from Car_Types";
+                    myCommand.CommandText += " where CarType = " + "'" + CarType + "'" + ";";
+                    try
+                    {
+                        SqlDataReader PriceReader;
+                        PriceReader = myCommand.ExecuteReader();
+                        while (PriceReader.Read())
+                        {
+                            daily_price = PriceReader.GetDouble(0);
+                            weekly_price = PriceReader.GetDouble(1);
+                            monthly_price = PriceReader.GetDouble(2);
+                        }
+                        PriceReader.Close();
+                    }
+                    catch (Exception e3)
+                    {
+
+                    }
+                    month = (int)total / 30;
+                    days = (int)total % 30;
+                    weeks = (int)days / 7;
+                    days = (int)days % 7;
+                    total_price = days * daily_price + weeks * weekly_price + month * monthly_price;
+                    MessageBox.Show(total_price.ToString());
+
+
+                    AddRental.CommandText = "insert into Rental_trans Values(";
+                    AddRental.CommandText += "'" + dateTimePicker1.Value + "', '" + dateTimePicker2.Value + "', '" + total_price.ToString() + "', '" + textBox10.Text + "', '" + "1" + "', '" + BranchBox.Text + "', '" + "1" + "', '" + VIN.ToString() + "')";
+                    AddRental.ExecuteNonQuery();
+                    BranchBoxConnection.Close();
                 }
             }
-            catch 
-            
+            catch
             {
-            
+
             }
-            
         }
         private void customer_selection(object sender, EventArgs e)
         {

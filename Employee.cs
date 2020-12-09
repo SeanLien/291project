@@ -88,7 +88,7 @@ namespace _291GroupProject
                     edit_empl_branch.Items.Add(myReader.GetValue(0).ToString());
                     add_car_branch.Items.Add(myReader.GetValue(0).ToString());
                     invoice_display_return_branch.Items.Add(myReader.GetValue(0).ToString());
-
+                    dspl_car_branch_combo.Items.Add(myReader.GetValue(0).ToString());
 
 
 
@@ -111,6 +111,7 @@ namespace _291GroupProject
                 {
                     
                     add_car_type.Items.Add(myReader.GetValue(0).ToString());
+                    dspl_car_type_combo.Items.Add(myReader.GetValue(0).ToString());
 
 
 
@@ -470,107 +471,59 @@ namespace _291GroupProject
 
         private void button17_Click(object sender, EventArgs e)
         {
-            myCommand.CommandText = "insert into Branches Values(";
-            myCommand.CommandText += "'" + branch_add_str_name.Text + "', '" + branch_add_str_num.Text + " ', '" + branch_add_city.Text + "', '";
-            myCommand.CommandText += branch_add_prov.Text + "', '" + branch_add_zip.Text + "', '" + branch_add_phone.Text + "', 'Yes')";
-            
-
-
-
-
-            try
+            if ( String.IsNullOrEmpty(branch_add_str_name.Text) || String.IsNullOrEmpty(branch_add_str_num.Text) || String.IsNullOrEmpty(branch_add_city.Text) || String.IsNullOrEmpty(branch_add_prov.Text) || String.IsNullOrEmpty(branch_add_zip.Text) || String.IsNullOrEmpty(branch_add_phone.Text))
             {
 
-                MessageBox.Show(myCommand.CommandText);
-                myCommand.ExecuteNonQuery();
-                branch_add_str_name.Clear();
-                branch_add_str_num.Clear();
-                branch_add_city.Clear();
-                branch_add_prov.Clear();
-                branch_add_zip.Clear();
-                branch_add_phone.Clear();
+                MessageBox.Show(" Please ad branch information");
                 
 
-
-
             }
-            catch (Exception e3)
+
+
+            else
             {
-                MessageBox.Show(e3.ToString(), "Error");
+
+                myCommand.CommandText = "insert into Branches Values(";
+                myCommand.CommandText += "'" + branch_add_str_name.Text + "', '" + branch_add_str_num.Text + " ', '" + branch_add_city.Text + "', '";
+                myCommand.CommandText += branch_add_prov.Text + "', '" + branch_add_zip.Text + "', '" + branch_add_phone.Text + "', 'Yes')";
+
+
+
+
+
+                try
+                {
+
+                    MessageBox.Show(myCommand.CommandText);
+                    myCommand.ExecuteNonQuery();
+                    branch_add_str_name.Clear();
+                    branch_add_str_num.Clear();
+                    branch_add_city.Clear();
+                    branch_add_prov.Clear();
+                    branch_add_zip.Clear();
+                    branch_add_phone.Clear();
+
+
+
+
+                }
+                catch (Exception e3)
+                {
+                    MessageBox.Show(e3.ToString(), "Error");
+                }
             }
         }
 
         private void search_branch_Click(object sender, EventArgs e)
         {
-            dspl_branch_str_name.Clear();
-            dspl_branch_str_no.Clear();
-            dspl_branch_city.Clear();
-            dspl_branch_prov.Clear();
-            dspl_branch_zip.Clear();
-            dspl_branch_phone.Clear();
-            branch_active_combo.ResetText();
-
-            myCommand.CommandText = "select * from Branches";
-            if (dspl_branch_id.Text != " ")
+            if (String.IsNullOrEmpty(dspl_branch_id.Text))
             {
-                myCommand.CommandText += " where Branches.Branch_ID = " + dspl_branch_id.Text;
+                MessageBox.Show(" Please ad branch information");
+
             }
-
-            try
+            else
             {
 
-                MessageBox.Show(myCommand.CommandText);
-                myReader = myCommand.ExecuteReader();
-
-
-
-
-                while (myReader.Read())
-                {
-                   if (!myReader.IsDBNull(0))
-                    change_branch_txt.Text = myReader.GetInt32(0).ToString();
-                   if (!myReader.IsDBNull(1))
-                     dspl_branch_str_name.Text = myReader.GetString(1);
-                   if (!myReader.IsDBNull(2))
-                      dspl_branch_str_no.Text = myReader.GetString(2);
-                   if (!myReader.IsDBNull(3))
-                       dspl_branch_city.Text = myReader.GetString(3);
-                   if (!myReader.IsDBNull(4))
-                        dspl_branch_prov.Text = myReader.GetString(4);
-                   if (!myReader.IsDBNull(5))
-                        dspl_branch_zip.Text = myReader.GetString(5);
-                   if (!myReader.IsDBNull(6))
-                        dspl_branch_phone.Text = myReader.GetString(6);
-                    if (!myReader.IsDBNull(7))
-                        branch_active_combo.Text = myReader.GetString(7);
-
-
-                }
-
-                myReader.Close();
-            }
-            catch (Exception e3)
-            {
-                MessageBox.Show(e3.ToString(), "Error");
-                myReader.Close();
-            }
-            dspl_branch_id.Clear();
-        }
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-            myCommand.CommandText = "update Branches";
-
-            myCommand.CommandText += " set " + "street_name = '" + dspl_branch_str_name.Text + "', street_number = '" + dspl_branch_str_no.Text+ "',";
-            myCommand.CommandText += "city ='" + dspl_branch_city.Text + "', province = '" + dspl_branch_prov.Text + "',";
-            myCommand.CommandText += "zip = '" + dspl_branch_zip.Text + "', phone_number = '" + dspl_branch_phone.Text + "', active ='"+ branch_active_combo.Text +"'";
-            myCommand.CommandText += " where Branches.Branch_ID = " + change_branch_txt.Text;
-
-            try
-            {
-
-                MessageBox.Show(myCommand.CommandText);
-                myCommand.ExecuteNonQuery();
                 dspl_branch_str_name.Clear();
                 dspl_branch_str_no.Clear();
                 dspl_branch_city.Clear();
@@ -579,17 +532,100 @@ namespace _291GroupProject
                 dspl_branch_phone.Clear();
                 branch_active_combo.ResetText();
 
+                myCommand.CommandText = "select * from Branches";
+                if (dspl_branch_id.Text != " ")
+                {
+                    myCommand.CommandText += " where Branches.Branch_ID = " + dspl_branch_id.Text;
+                }
+
+                try
+                {
+
+                    MessageBox.Show(myCommand.CommandText);
+                    myReader = myCommand.ExecuteReader();
 
 
 
 
+                    while (myReader.Read())
+                    {
+                        if (!myReader.IsDBNull(0))
+                            change_branch_txt.Text = myReader.GetInt32(0).ToString();
+                        if (!myReader.IsDBNull(1))
+                            dspl_branch_str_name.Text = myReader.GetString(1);
+                        if (!myReader.IsDBNull(2))
+                            dspl_branch_str_no.Text = myReader.GetString(2);
+                        if (!myReader.IsDBNull(3))
+                            dspl_branch_city.Text = myReader.GetString(3);
+                        if (!myReader.IsDBNull(4))
+                            dspl_branch_prov.Text = myReader.GetString(4);
+                        if (!myReader.IsDBNull(5))
+                            dspl_branch_zip.Text = myReader.GetString(5);
+                        if (!myReader.IsDBNull(6))
+                            dspl_branch_phone.Text = myReader.GetString(6);
+                        if (!myReader.IsDBNull(7))
+                            branch_active_combo.Text = myReader.GetString(7);
+
+
+                    }
+
+                    myReader.Close();
+                }
+                catch (Exception e3)
+                {
+                    MessageBox.Show(e3.ToString(), "Error");
+                    myReader.Close();
+                }
+                dspl_branch_id.Clear();
             }
-            catch (Exception)
-            {
-                MessageBox.Show(e.ToString(), "Error");
-            }
-            change_branch_txt.Clear();
+
         }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(change_branch_txt.Text))
+            {
+
+                MessageBox.Show(" No Branch Selectted plese search for a branch then try and update");
+
+            }
+            else
+            {
+                myCommand.CommandText = "update Branches";
+
+                myCommand.CommandText += " set " + "street_name = '" + dspl_branch_str_name.Text + "', street_number = '" + dspl_branch_str_no.Text + "',";
+                myCommand.CommandText += "city ='" + dspl_branch_city.Text + "', province = '" + dspl_branch_prov.Text + "',";
+                myCommand.CommandText += "zip = '" + dspl_branch_zip.Text + "', phone_number = '" + dspl_branch_phone.Text + "', active ='" + branch_active_combo.Text + "'";
+                myCommand.CommandText += " where Branches.Branch_ID = " + change_branch_txt.Text;
+
+                try
+                {
+
+                    MessageBox.Show(myCommand.CommandText);
+                    myCommand.ExecuteNonQuery();
+                    dspl_branch_str_name.Clear();
+                    dspl_branch_str_no.Clear();
+                    dspl_branch_city.Clear();
+                    dspl_branch_prov.Clear();
+                    dspl_branch_zip.Clear();
+                    dspl_branch_phone.Clear();
+                    branch_active_combo.ResetText();
+
+
+
+
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show(e.ToString(), "Error");
+                }
+
+                change_branch_txt.Clear();
+            }
+
+        }
+
 
         private void button18_Click(object sender, EventArgs e)
         {
@@ -647,86 +683,118 @@ namespace _291GroupProject
 
         private void emply_search_btn_Click(object sender, EventArgs e)
         {
-            dspl_car_branch_combo.ResetText();
-            dspl_car_col.Clear();
-            dspl_car_model.ResetText();
-            dspl_car_type_combo.ResetText();
 
-            myCommand.CommandText = "select * from Cars";
-            if (search_vin_empl.Text != " ")
+            if (String.IsNullOrEmpty(search_vin_empl.Text))
             {
-                myCommand.CommandText += " where Cars.VIN = " + search_vin_empl.Text;
+                MessageBox.Show("Please enter VIN");
             }
 
-            try
+            else
             {
+                dspl_car_branch_combo.ResetText();
+                dspl_car_col.Clear();
+                dspl_car_model.ResetText();
+                dspl_car_type_combo.ResetText();
 
-                MessageBox.Show(myCommand.CommandText);
-                myReader = myCommand.ExecuteReader();
-
-
-
-
-                while (myReader.Read())
+                myCommand.CommandText = "select * from Cars";
+                if (search_vin_empl.Text != " ")
                 {
-                    if (!myReader.IsDBNull(0))
-                        dspl_vin.Text = myReader.GetInt32(0).ToString();
-                    if (!myReader.IsDBNull(1))
-                        dspl_car_col.Text = myReader.GetString(1);
-                    if (!myReader.IsDBNull(2))
-                        dspl_car_model.Text = myReader.GetString(2);
-                    if (!myReader.IsDBNull(3))
-                        dspl_car_type_combo.Text = myReader.GetString(3);
-                    if (!myReader.IsDBNull(4))
-                        dspl_car_branch_combo.Text = myReader.GetInt32(4).ToString();
-                    if (!myReader.IsDBNull(5))
-                        dspl_car_active.Text = myReader.GetString(5);
-                    
-
-
+                    myCommand.CommandText += " where Cars.VIN = " + search_vin_empl.Text;
                 }
 
-                myReader.Close();
+                try
+                {
+
+                    MessageBox.Show(myCommand.CommandText);
+                    myReader = myCommand.ExecuteReader();
+
+
+
+
+                    while (myReader.Read())
+                    {
+                        if (!myReader.IsDBNull(0))
+                            dspl_vin.Text = myReader.GetInt32(0).ToString();
+                        if (!myReader.IsDBNull(1))
+                            dspl_car_col.Text = myReader.GetString(1);
+                        if (!myReader.IsDBNull(2))
+                            dspl_car_model.Text = myReader.GetString(2);
+                        if (!myReader.IsDBNull(3))
+                            dspl_car_type_combo.Text = myReader.GetString(3);
+                        if (!myReader.IsDBNull(4))
+                            dspl_car_branch_combo.Text = myReader.GetInt32(4).ToString();
+                        if (!myReader.IsDBNull(5))
+                            dspl_car_active.Text = myReader.GetString(5);
+
+
+
+                    }
+
+                    myReader.Close();
+                }
+                catch (Exception e3)
+                {
+                    MessageBox.Show(e3.ToString(), "Error");
+                    myReader.Close();
+                }
+                search_vin_empl.Clear();
             }
-            catch (Exception e3)
-            {
-                MessageBox.Show(e3.ToString(), "Error");
-                myReader.Close();
-            }
-           search_vin_empl.Clear();
+
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
-            myCommand.CommandText = "update Cars";
 
-            myCommand.CommandText += " set " + "Color = '" + dspl_car_col.Text + "', Model = '" + dspl_car_model.Text + "',";
-            myCommand.CommandText += "CarType ='" + dspl_car_type_combo.Text + "', Branch_ID = '" + dspl_car_branch_combo.Text + "',";
-            myCommand.CommandText += "active = '" + dspl_car_active.Text + "'";
-            myCommand.CommandText += " where Cars.VIN = " + dspl_vin.Text;
-
-            try
+            if (string.IsNullOrEmpty(dspl_vin.Text))
             {
 
-                MessageBox.Show(myCommand.CommandText);
-                myCommand.ExecuteNonQuery();
-                dspl_vin.Clear();
-                dspl_car_col.Clear();
-                dspl_car_model.Clear();
-                dspl_car_branch_combo.ResetText();
-                dspl_car_type_combo.ResetText();
-                dspl_car_active.ResetText();
-
-
-
-
+                MessageBox.Show("Please search for car then update");
 
             }
-            catch (Exception)
+            else
             {
-                MessageBox.Show(e.ToString(), "Error");
+                myCommand2.CommandText = "select count (*) From Branches Where Branch_ID = '" + dspl_car_branch_combo.Text + "';";
+                int num_branch = (int)myCommand2.ExecuteScalar();
+
+                if (num_branch < 1)
+                {
+                    MessageBox.Show("Invalid Branch ID try again");
+                }
+
+                else
+                {
+
+                    myCommand.CommandText = "update Cars";
+
+                    myCommand.CommandText += " set " + "Color = '" + dspl_car_col.Text + "', Model = '" + dspl_car_model.Text + "',";
+                    myCommand.CommandText += "CarType ='" + dspl_car_type_combo.Text + "', Branch_ID = '" + dspl_car_branch_combo.Text + "',";
+                    myCommand.CommandText += "active = '" + dspl_car_active.Text + "'";
+                    myCommand.CommandText += " where Cars.VIN = " + dspl_vin.Text;
+
+                    try
+                    {
+
+                        MessageBox.Show(myCommand.CommandText);
+                        myCommand.ExecuteNonQuery();
+                        dspl_vin.Clear();
+                        dspl_car_col.Clear();
+                        dspl_car_model.Clear();
+                        dspl_car_branch_combo.ResetText();
+                        dspl_car_type_combo.ResetText();
+                        dspl_car_active.ResetText();
+
+
+
+
+
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show(e.ToString(), "Error");
+                    }
+                    change_branch_txt.Clear();
+                }
             }
-            change_branch_txt.Clear();
         }
 
         private void button17_Click_1(object sender, EventArgs e)
@@ -1027,6 +1095,11 @@ namespace _291GroupProject
             invoice_display_vin.Clear();
             invoice_display_cust_id.Clear();
             invoice_search_rental_id.Clear();
+
+        }
+
+        private void dspl_car_type_combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
