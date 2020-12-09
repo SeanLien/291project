@@ -745,61 +745,10 @@ namespace _291GroupProject
                     myCommand.CommandText = "select * from Rental_trans as RT where RT.Customer_ID = '" + customer_id.Text + "'";
                     break;
             }
-            /*
-            try
-            {
-                myReader = myCommand.ExecuteReader();
-                //MessageBox.Show(myCommand.CommandText);
-                dataGridView1.Rows.Clear();
+        }
 
-                while (myReader.Read())
-                {
-                    dataGridView1.Rows.Add(myReader["Rental_ID"].ToString(), myReader["Customer_ID"].ToString(), myReader["VIN"].ToString(), myReader["price"].ToString(), myReader["pickup_Branch_ID"].ToString(), myReader["return_Branch_ID"].ToString(), myReader["pickup_date"].ToString(), myReader["return_date"].ToString());
-                }
-                myReader.Close();
-            }
-            catch (Exception) { }
-            */
-    }
         private void customer_report_button(object sender, MouseEventArgs e)
         {
-            /*
-            myCommand.CommandText = "Select * from Rental_trans as RT where ";
-
-            if (textBox01 != null) {
-                myCommand.CommandText += "year(return_date) <= '" + textBox01.Text + "'";
-            }
-            if (textBox02 != null) {
-                myCommand.CommandText += "month(return_date) <= '" + textBox02.Text + "'";
-            }
-            if (textBox03 != null) {
-                myCommand.CommandText += "day(return_date) <= '" + textBox03.Text + "'";
-            }
-            if (textBox04 != null) {
-                myCommand.CommandText += "VIN = '" + textBox04.Text + "'";
-            }
-            if (textBox05 != null) {
-                myCommand.CommandText = "select * from Rental_trans as RT where RT.VIN = (select VIN from Cars as C where C.CarType = '" + textBox05 + "')";
-            }
-            if (textBox06 != null) {
-                myCommand.CommandText = "select * from Rental_trans as RT where RT.VIN = (select VIN from Cars as C where C.Model = '" + textBox06 + "')";
-            }
-            if (textBox07 != null) {
-                myCommand.CommandText = "select * from Rental_trans as RT where RT.VIN = (select VIN from Cars as C where C.Color = '" + textBox07 + "')";
-            }
-            if (textBox08 != null) {
-                myCommand.CommandText += "price = '" + textBox08.Text + "'";
-            }
-            if (textBox09 != null) {
-                myCommand.CommandText += "price <= '" + textBox09.Text + "'";
-            }
-            if (textBox11 != null) {
-                myCommand.CommandText += "price >= '" + textBox11.Text + "'";
-            }
-            if (textBox12 != null) {
-                myCommand.CommandText += "pickup_Branch_ID = '" + textBox12.Text + "' or return_Branch_ID = '" + textBox12.Text + "'";
-            }
-            */
             try
             {
                 myReader = myCommand.ExecuteReader();
@@ -813,11 +762,6 @@ namespace _291GroupProject
                 myReader.Close();
             }
             catch(Exception) {}
-        }
-
-        private void searchBranch(object sender, MouseEventArgs e)
-        {
-
         }
 
         private void search_time_MouseClick(object sender, MouseEventArgs e)
