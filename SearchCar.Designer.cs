@@ -977,6 +977,7 @@ namespace _291GroupProject
             // CarTitle
             // 
             this.CarTitle.AutoEllipsis = true;
+            this.CarTitle.AutoSize = true;
             this.CarTitle.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.CarTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CarTitle.ForeColor = System.Drawing.Color.GhostWhite;
@@ -1034,6 +1035,7 @@ namespace _291GroupProject
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 22);
             this.textBox10.TabIndex = 48;
+            this.textBox10.Text = "0";
             // 
             // label3
             // 
