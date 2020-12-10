@@ -988,6 +988,7 @@ namespace _291GroupProject
         private void button2_Click(object sender, EventArgs e)
         {
             {
+                /* print function from here https://stackoverflow.com/questions/10605840/print-panel-in-windows-form-c-sharp*/
                 // Create document
                 PrintDocument _document = new PrintDocument();
                 // Add print handler
