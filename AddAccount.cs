@@ -99,7 +99,7 @@ namespace _291GroupProject
                 myCommand.CommandText += ProvinceBox.Text + "','" + ZipBox.Text + "','" + PhoneBox.Text + "')";
                 myCommand.ExecuteNonQuery();
 
-                MessageBox.Show("Inserted a User into database (Message is a placeholder, I'll show the first name and ID or something", "Message");
+                MessageBox.Show("Congrats, your account has been successfully created!");
             }
             else
             {
