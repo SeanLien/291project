@@ -61,7 +61,6 @@ namespace _291GroupProject
             this.search_price = new System.Windows.Forms.Button();
             this.search_car = new System.Windows.Forms.Button();
             this.search_time = new System.Windows.Forms.Button();
-            this.customer_reset = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.customer_id = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -446,7 +445,6 @@ namespace _291GroupProject
             this.tabPage2.Controls.Add(this.search_price);
             this.tabPage2.Controls.Add(this.search_car);
             this.tabPage2.Controls.Add(this.search_time);
-            this.tabPage2.Controls.Add(this.customer_reset);
             this.tabPage2.Controls.Add(this.label26);
             this.tabPage2.Controls.Add(this.customer_id);
             this.tabPage2.Controls.Add(this.label23);
@@ -544,16 +542,6 @@ namespace _291GroupProject
             this.search_time.Text = "SEARCH";
             this.search_time.UseVisualStyleBackColor = true;
             this.search_time.MouseClick += new System.Windows.Forms.MouseEventHandler(this.search_time_MouseClick);
-            // 
-            // customer_reset
-            // 
-            this.customer_reset.Location = new System.Drawing.Point(1023, 165);
-            this.customer_reset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.customer_reset.Name = "customer_reset";
-            this.customer_reset.Size = new System.Drawing.Size(212, 66);
-            this.customer_reset.TabIndex = 36;
-            this.customer_reset.Text = "RESET";
-            this.customer_reset.UseVisualStyleBackColor = true;
             // 
             // label26
             // 
@@ -1154,7 +1142,6 @@ namespace _291GroupProject
         private System.Windows.Forms.Button search_price;
         private System.Windows.Forms.Button search_car;
         private System.Windows.Forms.Button search_time;
-        private System.Windows.Forms.Button customer_reset;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label CarTitle;
     }

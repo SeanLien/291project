@@ -146,7 +146,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxConnection.Open();
-                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                //SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxConnection);
                 SqlDataReader myreader;
                 myreader = BranchBoxCommand.ExecuteReader();
                 DataTable DT = new DataTable();
@@ -160,7 +161,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxColor.Open();
-                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                //SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxColor);
                 SqlDataReader myreader1;
                 myreader1 = BranchBoxColours.ExecuteReader();
                 DataTable DT1 = new DataTable();
@@ -195,7 +197,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxConnection.Open();
-                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                //SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxConnection);
                 SqlDataReader myreader;
                 myreader = BranchBoxCommand.ExecuteReader();
                 DataTable DT = new DataTable();
@@ -209,7 +212,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxColor.Open();
-                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                //SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxColor);
                 SqlDataReader myreader1;
                 myreader1 = BranchBoxColours.ExecuteReader();
                 DataTable DT1 = new DataTable();
@@ -244,7 +248,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxConnection.Open();
-                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                //SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxConnection);
                 SqlDataReader myreader;
                 myreader = BranchBoxCommand.ExecuteReader();
                 DataTable DT = new DataTable();
@@ -258,7 +263,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxColor.Open();
-                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                //SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxColor);
                 SqlDataReader myreader1;
                 myreader1 = BranchBoxColours.ExecuteReader();
                 DataTable DT1 = new DataTable();
@@ -293,7 +299,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxConnection.Open();
-                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                //SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxConnection);
                 SqlDataReader myreader;
                 myreader = BranchBoxCommand.ExecuteReader();
                 DataTable DT = new DataTable();
@@ -307,7 +314,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxColor.Open();
-                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                //SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxColor);
                 SqlDataReader myreader1;
                 myreader1 = BranchBoxColours.ExecuteReader();
                 DataTable DT1 = new DataTable();
@@ -342,7 +350,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxConnection.Open();
-                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                //SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxConnection);
                 SqlDataReader myreader;
                 myreader = BranchBoxCommand.ExecuteReader();
                 DataTable DT = new DataTable();
@@ -356,7 +365,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxColor.Open();
-                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                //SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxColor);
                 SqlDataReader myreader1;
                 myreader1 = BranchBoxColours.ExecuteReader();
                 DataTable DT1 = new DataTable();
@@ -391,7 +401,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxConnection.Open();
-                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                //SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxConnection);
                 SqlDataReader myreader;
                 myreader = BranchBoxCommand.ExecuteReader();
                 DataTable DT = new DataTable();
@@ -405,7 +416,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxColor.Open();
-                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                //SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxColor);
                 SqlDataReader myreader1;
                 myreader1 = BranchBoxColours.ExecuteReader();
                 DataTable DT1 = new DataTable();
@@ -440,7 +452,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxConnection.Open();
-                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                //SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxConnection);
+                SqlCommand BranchBoxCommand = new SqlCommand("select distinct(C.Branch_ID) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxConnection);
                 SqlDataReader myreader;
                 myreader = BranchBoxCommand.ExecuteReader();
                 DataTable DT = new DataTable();
@@ -454,7 +467,8 @@ namespace _291GroupProject
             try
             {
                 BranchBoxColor.Open();
-                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                //SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.CarType = '" + CarType + "';", BranchBoxColor);
+                SqlCommand BranchBoxColours = new SqlCommand("select distinct(C.Color) from Cars as C, Branches as B where C.Branch_ID=B.Branch_ID and C.active = 'Yes' and C.CarType = '" + CarType + "';", BranchBoxColor);
                 SqlDataReader myreader1;
                 myreader1 = BranchBoxColours.ExecuteReader();
                 DataTable DT1 = new DataTable();
